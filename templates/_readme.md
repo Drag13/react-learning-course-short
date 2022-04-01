@@ -40,4 +40,4 @@ Installed [VsCode](https://code.visualstudio.com/)
 
 ## Full programm
 
-More detailed program can be found [here](PROGRAM.MD)
+More detailed program can be found in [program.md](PROGRAM.md)
