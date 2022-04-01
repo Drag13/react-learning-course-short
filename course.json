@@ -1,0 +1,159 @@
+{
+  "title": "Free React Learning Course by Itera - Short",
+  "lessons": [
+    {
+      "title": "What is React",
+      "type": "Lecture",
+      "shortSummary": "Introduction to React.JS, the idea and JSX",
+      "keyPoints": [
+        "What is the React and it's main idea",
+        "Advantages and disadvantages",
+        "JSX"
+      ]
+    },
+    {
+      "title": "Starting new project with create-react-app",
+      "type": "Lecture",
+      "keyPoints": [
+        "How to start new project from scratch",
+        "A project structure",
+        "Writing a first component",
+        "Debug the app"
+      ],
+      "hometask": [
+        "Create new repository at [github](https://github.io) and name it **react-for-beginners-itera**",
+        "Select .gitignore from VisualStudio",
+        "Clone repo locally using `git clone`",
+        "Initialize new project with `npm init -y`",
+        "Initialize new react application using `npx create-react-app my-page --template typescript`",
+        "Create a [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON#example_json) with next information:",
+        "First Name, Short biography",
+        "Short biography",
+        "Public contacts",
+        "Use React to display data from the JSON on the page",
+        "Commit and push the results with `git add .`, `git commit -m \"Initial commit\"`, `git push`"
+      ]
+    },
+    {
+      "title": "What is component and why you should use it",
+      "type": "Lecture",
+      "keyPoints": [
+        "What is the component",
+        "Why to use the components",
+        "How to pass data into the component",
+        "How to get data from the component"
+      ]
+    },
+    {
+      "title": "Building your own component",
+      "type": "Lecture",
+      "keyPoints": [
+        "Design your first component",
+        "Building static component",
+        "Building component with interaction"
+      ],
+      "hometask": [
+        "Add footer to your application",
+        "Split the application you've built previously into components",
+        "Create a component named `<AppLink>` which will render `a`. Component should:",
+        "Be typed",
+        "Accept custom text",
+        "Accept custom url",
+        "Accept callback that should be invoked before the click",
+        "Put the new component into the footer",
+        "When clicked, it should log into the console next text: `redirecting user to the next {link}` where `{link}` should be a's href"
+      ]
+    },
+    {
+      "title": "Change Detection",
+      "type": "Lecture",
+      "keyPoints": [
+        "What is change detection",
+        "How it works in React (simplified)",
+        "React not rendering my changes examples"
+      ]
+    },
+    {
+      "title": "Managing state in React",
+      "type": "Lecture",
+      "keyPoints": [
+        "`setState` and `useState`",
+        "[Context](https://reactjs.org/docs/context.html)",
+        "[Redux](https://redux.js.org/) + [Redux Toolkit](https://reduxtoolkit.js.org/),",
+        "[MobX](https://mobx.js.org/react-integration.html)"
+      ],
+      "hometask": [
+        "Install redux and redux toolkit",
+        "Write the timer that will with two buttons ",
+        "start and stop",
+        "Timer should:",
+        "Be stopped by default",
+        "On start it should display time in format HH:MM:SS",
+        "On start page title (<title>) should be changed to \"Timer is running\"",
+        "On stop timer should be stopped and show the last value",
+        "Page title should be returned back to normal",
+        "Uninstall redux",
+        "Install MobX",
+        "Implement same functionality"
+      ]
+    },
+    {
+      "title": "Forms with React, Formik and Yup",
+      "type": "Workshop",
+      "keyPoints": [
+        "Building your first form with [Formik](https://formik.org/docs/overview)",
+        "Validation with [Yup](https://github.com/jquense/yup)"
+      ],
+      "prerequsits": ["Install formik and yup before the workshop"]
+    },
+    {
+      "title": "Single Page Application",
+      "type": "Lecture",
+      "keyPoints": [
+        "Server side routing",
+        "Client side routing",
+        "Benefits",
+        "React router"
+      ]
+    },
+    {
+      "title": "React Router",
+      "type": "Lecture",
+      "keyPoints": [
+        "Install react router",
+        "Basic setup",
+        "Data Binding",
+        "Router guard"
+      ],
+      "hometask": [
+        "Add header for your application",
+        "Create new page named `about`",
+        "Move all content related yourself to the page about",
+        "Add new query parameter named `ln` to your link like this: `https://8080?ln=ua`",
+        "If `ln` equals `ua` all texts should be in Ukrainian language",
+        "If `ln` equals `en` all text should be in English (feel free to use google translate if needed)"
+      ]
+    },
+    {
+      "title": "Network, Fetch and Axios",
+      "keyPoints": ["Default way with fetch", "Setup axios"]
+    },
+    {
+      "title": "Styling, CSS Modules and Styled Components",
+      "keyPoints": ["Preprocessors", "CSS Modules", "CSS in JS"],
+      "hometask": ["TBD"]
+    },
+    {
+      "title": "UI libraries",
+      "keyPoints": ["Purpose", "How to choose", "Material UI"]
+    },
+    {
+      "title": "Tests",
+      "keyPoints": [
+        "Why test",
+        "Unit tests VS integration tests vs e2e",
+        "Jest"
+      ]
+    }
+  ]
+}

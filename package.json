@@ -1,0 +1,35 @@
+{
+  "name": "react-learning-course-short",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "parcel ./presentations/0/index.html",
+    "build": "parcel build ./presentations/**/index.html",
+    "readme": "node generator.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drag13/react-learning-course-short.git"
+  },
+  "keywords": [
+    "react",
+    "tutorial",
+    "courses",
+    "mobx",
+    "react-router"
+  ],
+  "author": "drag13",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Drag13/react-learning-course-short/issues"
+  },
+  "homepage": "https://github.com/Drag13/react-learning-course-short#readme",
+  "dependencies": {
+    "reveal.js": "^4.3.1"
+  },
+  "devDependencies": {
+    "mustache": "^4.2.0",
+    "parcel": "^2.4.0"
+  }
+}

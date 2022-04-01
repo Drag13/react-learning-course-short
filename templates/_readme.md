@@ -1,6 +1,6 @@
 ![StandsWithUkraine](https://github.com/Drag13/drag13.github.io/blob/development/swu.PNG)
 
-# Free React Learning Course by Itera - Short
+# {{title}}
 
 ## PreRequisits
 
@@ -33,32 +33,10 @@ Installed [VsCode](https://code.visualstudio.com/)
 
 ## Programm summary
 
-### 0 What is React
+{{#lessons}}
+### {{i}} {{title}}
 
-### 1 Starting new project with create-react-app
-
-### 2 What is component and why you should use it
-
-### 3 Building your own component
-
-### 4 Change Detection
-
-### 5 Managing state in React
-
-### 6 Forms with React, Formik and Yup
-
-### 7 Single Page Application
-
-### 8 React Router
-
-### 9 Network, Fetch and Axios
-
-### 10 Styling, CSS Modules and Styled Components
-
-### 11 UI libraries
-
-### 12 Tests
-
+{{/lessons}}
 
 ## Full programm
 
