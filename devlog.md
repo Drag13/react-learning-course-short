@@ -17,3 +17,7 @@ npm run readme
 ```
 
 If you need to tweak the documentation - check the `_templates` folder
+
+## Deployment
+
+Deployment is automated, appears after the push to the master branch and done with help [github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action)
