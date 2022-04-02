@@ -1,4 +1,4 @@
-![StandsWithUkraine](https://github.com/Drag13/drag13.github.io/blob/development/swu.PNG)
+[![StandsWithUkraine](https://raw.githubusercontent.com/Drag13/drag13.github.io/development/swu.PNG)](https://savelife.in.ua/en/donate/)
 
 # {{title}}
 
