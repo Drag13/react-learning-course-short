@@ -2,7 +2,19 @@
 
 # Free React Learning Course by Itera - Short
 
-## PreRequisits
+## About
+
+**DISCLAIMER:**
+All requests to "remove politics" will be removed completely without any comments. If you have another opinion - just skip this course.
+
+This repo dedicated to the course "React for Beginners". The course was created to support Ukraine 🇺🇦 and Ukrainians in the war against russia. It's completely free and open-sourced. Feel free to contribute or make any relevant suggestions.
+
+- Full program is [here](PROGRAM.MD)
+- Presentations can be found here - [https://drag13.io/react-learning-course-short/1/](https://drag13.io/react-learning-course-short/1/) where the number equals the number of the lesson
+- Changelog is [here](CHANGELOG.md)
+- Video - pending. I will record the lessons and publish them afterwards
+
+## PreRequisites
 
 Basic knowledge with HTML/CSS/JS
 
@@ -31,7 +43,7 @@ Installed [VsCode](https://code.visualstudio.com/)
 - 01:40 - 01:45 - New Home Task
 - 01:45 - 02:00 - Questions
 
-## Programm summary
+## Program summary
 
 ### 0 What is React
 
@@ -60,6 +72,8 @@ Installed [VsCode](https://code.visualstudio.com/)
 ### 12 Tests
 
 
-## Full programm
+## Donations
 
-More detailed program can be found in [program.md](PROGRAM.md)
+All donations are highly welcomed. You can donate any amount to the [National Bank of Ukraine directly](https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi) or to the well known [charity fund Come Back Alive](https://www.comebackalive.in.ua/donate).
+
+Feel free to contact me directly if any question

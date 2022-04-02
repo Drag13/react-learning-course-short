@@ -7,3 +7,4 @@
 - - What is React?
 - - React - advantages and disadvantages
 - - Why to learn React nowadays
+- Added automated publish to the gh-pages
