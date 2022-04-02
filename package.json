@@ -5,9 +5,7 @@
   "private": true,
   "scripts": {
     "start": "parcel ./presentations/0/index.html",
-    "build": "parcel build ./presentations/**/index.html",
-    "build:0": "parcel build ./presentations/0/index.html --dist-dir dist/l0",
-    "build:1": "parcel build ./presentations/1/index.html --dist-dir dist/l1",
+    "build": "parcel build ./presentations/**/index.html --public-url https://drag13.io/react-learning-course-short",
     "readme": "node generator.js"
   },
   "repository": {
@@ -31,6 +29,7 @@
     "reveal.js": "^4.3.1"
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "mustache": "^4.2.0",
     "parcel": "^2.4.0"
   }
