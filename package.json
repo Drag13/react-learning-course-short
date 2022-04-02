@@ -6,6 +6,8 @@
   "scripts": {
     "start": "parcel ./presentations/0/index.html",
     "build": "parcel build ./presentations/**/index.html",
+    "build:0": "parcel build ./presentations/0/index.html --dist-dir dist/l0",
+    "build:1": "parcel build ./presentations/1/index.html --dist-dir dist/l1",
     "readme": "node generator.js"
   },
   "repository": {

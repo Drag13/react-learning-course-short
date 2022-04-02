@@ -4,9 +4,9 @@
 
 ### Keypoints: 
 
-- What is the React and it's main idea
-- Advantages and disadvantages
-- JSX
+- What is the React
+- React - advantages and disadvantages
+- Why to learn React nowadays
 
 ### Hometask: 
 
