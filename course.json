@@ -1,5 +1,5 @@
 {
-  "title": "Free React Learning Course by Itera - Short",
+  "title": "Free React For Beginners Course by Itera - Short",
   "lessons": [
     {
       "title": "What is React",
@@ -9,17 +9,23 @@
         "What is the React",
         "React - advantages and disadvantages",
         "Why to learn React nowadays"
-      ]
+      ],
+      "presentation": "https://drag13.io/react-learning-course-short/0/index.html"
     },
     {
       "title": "Starting new project with create-react-app",
-      "type": "Lecture",
+      "type": "Workshop",
       "keyPoints": [
         "How to start new project from scratch",
         "A project structure",
         "Writing a first component",
         "Debug the app"
       ],
+      "prerequisite": [
+        "Install [Node.JS](https://nodejs.org/en/) with NPM",
+        "Install [VsCode](https://code.visualstudio.com/)"
+      ],
+      "presentation": "https://drag13.io/react-learning-course-short/1/index.html",
       "hometask": [
         "Create new repository at [github](https://github.io) and name it **react-for-beginners-itera**",
         "Select .gitignore from VisualStudio",
@@ -104,7 +110,9 @@
         "Building your first form with [Formik](https://formik.org/docs/overview)",
         "Validation with [Yup](https://github.com/jquense/yup)"
       ],
-      "prerequsits": ["Install formik and yup before the workshop"]
+      "prerequisite": [
+        "Install [Formik](https://www.npmjs.com/package/formik) and [Yup](https://www.npmjs.com/package/yup) before the workshop"
+      ]
     },
     {
       "title": "Single Page Application",
@@ -136,19 +144,23 @@
     },
     {
       "title": "Network, Fetch and Axios",
+      "type": "Lecture",
       "keyPoints": ["Default way with fetch", "Setup axios"]
     },
     {
       "title": "Styling, CSS Modules and Styled Components",
+      "type": "Lecture",
       "keyPoints": ["Preprocessors", "CSS Modules", "CSS in JS"],
       "hometask": ["TBD"]
     },
     {
       "title": "UI libraries",
+      "type": "Lecture",
       "keyPoints": ["Purpose", "How to choose", "Material UI"]
     },
     {
       "title": "Tests",
+      "type": "Lecture",
       "keyPoints": [
         "Why test",
         "Unit tests VS integration tests vs e2e",
