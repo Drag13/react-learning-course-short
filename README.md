@@ -1,6 +1,6 @@
 [![StandsWithUkraine](https://raw.githubusercontent.com/Drag13/drag13.github.io/development/swu.PNG)](https://savelife.in.ua/en/donate/)
 
-# Free React Learning Course by Itera - Short
+# Free React For Beginners Course by Itera - Short
 
 ## About
 
@@ -46,32 +46,35 @@ Installed [VsCode](https://code.visualstudio.com/)
 
 ## Program summary
 
-### 0 What is React
+### 0 Lecture: What is React
 
-### 1 Starting new project with create-react-app
+Presentation: https://drag13.io/react-learning-course-short/0/index.html
 
-### 2 What is component and why you should use it
+### 1 Workshop: Starting new project with create-react-app
 
-### 3 Building your own component
+Presentation: https://drag13.io/react-learning-course-short/1/index.html
 
-### 4 Change Detection
+### 2 Lecture: What is component and why you should use it
 
-### 5 Managing state in React
+### 3 Lecture: Building your own component
 
-### 6 Forms with React, Formik and Yup
+### 4 Lecture: Change Detection
 
-### 7 Single Page Application
+### 5 Lecture: Managing state in React
 
-### 8 React Router
+### 6 Workshop: Forms with React, Formik and Yup
 
-### 9 Network, Fetch and Axios
+### 7 Lecture: Single Page Application
 
-### 10 Styling, CSS Modules and Styled Components
+### 8 Lecture: React Router
 
-### 11 UI libraries
+### 9 Lecture: Network, Fetch and Axios
 
-### 12 Tests
+### 10 Lecture: Styling, CSS Modules and Styled Components
 
+### 11 Lecture: UI libraries
+
+### 12 Lecture: Tests
 
 ## Donations
 

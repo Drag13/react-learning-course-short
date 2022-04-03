@@ -1,27 +1,36 @@
-# Free React Learning Course by Itera - Short
+# Free React For Beginners Course by Itera - Short
 
-## 0 What is React
+## 0 Lecture: What is React
 
-### Keypoints: 
+### Key points: 
 
 - What is the React
 - React - advantages and disadvantages
 - Why to learn React nowadays
 
-### Hometask: 
+Presentation - https://drag13.io/react-learning-course-short/0/index.html
+
+### Home task: 
 
 Not specified
 
-## 1 Starting new project with create-react-app
+## 1 Workshop: Starting new project with create-react-app
 
-### Keypoints: 
+### Key points: 
 
 - How to start new project from scratch
 - A project structure
 - Writing a first component
 - Debug the app
 
-### Hometask: 
+Presentation - https://drag13.io/react-learning-course-short/1/index.html
+
+### Prerequisite
+
+- Install [Node.JS](https://nodejs.org/en/) with NPM
+- Install [VsCode](https://code.visualstudio.com/)
+
+### Home task: 
 
 - Create new repository at [github](https://github.io) and name it **react-for-beginners-itera**
 - Select .gitignore from VisualStudio
@@ -35,28 +44,28 @@ Not specified
 - Use React to display data from the JSON on the page
 - Commit and push the results with `git add .`, `git commit -m "Initial commit"`, `git push`
 
-## 2 What is component and why you should use it
+## 2 Lecture: What is component and why you should use it
 
-### Keypoints: 
+### Key points: 
 
 - What is the component
 - Why to use the components
 - How to pass data into the component
 - How to get data from the component
 
-### Hometask: 
+### Home task: 
 
 Not specified
 
-## 3 Building your own component
+## 3 Lecture: Building your own component
 
-### Keypoints: 
+### Key points: 
 
 - Design your first component
 - Building static component
 - Building component with interaction
 
-### Hometask: 
+### Home task: 
 
 - Add footer to your application
 - Split the application you've built previously into components
@@ -68,28 +77,28 @@ Not specified
 - Put the new component into the footer
 - When clicked, it should log into the console next text: `redirecting user to the next {link}` where `{link}` should be a's href
 
-## 4 Change Detection
+## 4 Lecture: Change Detection
 
-### Keypoints: 
+### Key points: 
 
 - What is change detection
 - How it works in React (simplified)
 - React not rendering my changes examples
 
-### Hometask: 
+### Home task: 
 
 Not specified
 
-## 5 Managing state in React
+## 5 Lecture: Managing state in React
 
-### Keypoints: 
+### Key points: 
 
 - `setState` and `useState`
 - [Context](https://reactjs.org/docs/context.html)
 - [Redux](https://redux.js.org/) + [Redux Toolkit](https://reduxtoolkit.js.org/),
 - [MobX](https://mobx.js.org/react-integration.html)
 
-### Hometask: 
+### Home task: 
 
 - Install redux and redux toolkit
 - Write the timer that will with two buttons 
@@ -104,40 +113,44 @@ Not specified
 - Install MobX
 - Implement same functionality
 
-## 6 Forms with React, Formik and Yup
+## 6 Workshop: Forms with React, Formik and Yup
 
-### Keypoints: 
+### Key points: 
 
 - Building your first form with [Formik](https://formik.org/docs/overview)
 - Validation with [Yup](https://github.com/jquense/yup)
 
-### Hometask: 
+### Prerequisite
+
+- Install [Formik](https://www.npmjs.com/package/formik) and [Yup](https://www.npmjs.com/package/yup) before the workshop
+
+### Home task: 
 
 Not specified
 
-## 7 Single Page Application
+## 7 Lecture: Single Page Application
 
-### Keypoints: 
+### Key points: 
 
 - Server side routing
 - Client side routing
 - Benefits
 - React router
 
-### Hometask: 
+### Home task: 
 
 Not specified
 
-## 8 React Router
+## 8 Lecture: React Router
 
-### Keypoints: 
+### Key points: 
 
 - Install react router
 - Basic setup
 - Data Binding
 - Router guard
 
-### Hometask: 
+### Home task: 
 
 - Add header for your application
 - Create new page named `about`
@@ -146,49 +159,49 @@ Not specified
 - If `ln` equals `ua` all texts should be in Ukrainian language
 - If `ln` equals `en` all text should be in English (feel free to use google translate if needed)
 
-## 9 Network, Fetch and Axios
+## 9 Lecture: Network, Fetch and Axios
 
-### Keypoints: 
+### Key points: 
 
 - Default way with fetch
 - Setup axios
 
-### Hometask: 
+### Home task: 
 
 Not specified
 
-## 10 Styling, CSS Modules and Styled Components
+## 10 Lecture: Styling, CSS Modules and Styled Components
 
-### Keypoints: 
+### Key points: 
 
 - Preprocessors
 - CSS Modules
 - CSS in JS
 
-### Hometask: 
+### Home task: 
 
 - TBD
 
-## 11 UI libraries
+## 11 Lecture: UI libraries
 
-### Keypoints: 
+### Key points: 
 
 - Purpose
 - How to choose
 - Material UI
 
-### Hometask: 
+### Home task: 
 
 Not specified
 
-## 12 Tests
+## 12 Lecture: Tests
 
-### Keypoints: 
+### Key points: 
 
 - Why test
 - Unit tests VS integration tests vs e2e
 - Jest
 
-### Hometask: 
+### Home task: 
 
 Not specified
