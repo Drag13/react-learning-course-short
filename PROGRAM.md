@@ -1,4 +1,4 @@
-# Free React For Beginners Course by Itera - Short
+# React For Beginners - free course by Itera
 
 ## 0 Lecture: What is React
 
