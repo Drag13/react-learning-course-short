@@ -1,15 +1,29 @@
 # {{title}}
 {{#lessons}}
 
-## {{i}} {{title}}
+## {{i}} {{type}}: {{title}}
 
-### Keypoints: 
+### Key points: 
 
 {{#keyPoints}}
 - {{{.}}}
 {{/keyPoints}}
 
-### Hometask: 
+{{#presentation}}
+Presentation - {{{.}}}
+
+{{/presentation}}
+{{#prerequisite.length}}
+### Prerequisite
+
+{{/prerequisite.length}}
+{{#prerequisite}}
+- {{{.}}}
+{{/prerequisite}}
+{{#prerequisite.length}}
+
+{{/prerequisite.length}}
+### Home task: 
 
 {{^hometask}}
 Not specified
