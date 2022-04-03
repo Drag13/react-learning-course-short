@@ -1,1 +1,63 @@
-<!DOCTYPE html><html lang="en"><head><script type="module" src="https://drag13.io/react-learning-course-short/0/index.26c26830.js"></script><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Learning React - new project with create-react-app</title><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/0/index.1568b79b.css"><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/0/index.698ea738.css"><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/0/index.22ba7868.css"><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/0/index.1a965f80.css"></head><body> <div class="reveal"> <div class="slides"> <section> <h1> <u>React</u> </h1> <h2> Short Learning Course for Beginners - L1 </h2> </section> <section> <h1>Useful links</h1> <ul> <li> </li> </ul> </section> </div> </div> <script src="https://drag13.io/react-learning-course-short/1/index.098285d9.js" type="module"></script> </body></html>
+<!DOCTYPE html><html lang="en"><head><script type="module" src="https://drag13.io/react-learning-course-short/0/index.303a1c9d.js"></script><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Learning React - new project with create-react-app</title><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/0/index.1568b79b.css"><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/0/index.698ea738.css"><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/0/index.22ba7868.css"><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/0/index.1a965f80.css"><style>pre>code.pre-code-l{max-height:500px}</style></head><body> <div class="reveal"> <div class="slides"> <section> <h1> <u>React</u> </h1> <h2> Short Learning Course for Beginners - L1 </h2> </section> <section> <section> <h1> Install </h1> <ul> <li> <a href="https://nodejs.org/en/" rel="noopener noreferrer" target="_blank"> Node.JS - V8 based runtime for JavaScript </a> </li> <li> <a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank"> VsCode - lightweight code editor </a> </li> </ul> </section> <section> <h2>Check</h2> <pre><code>node -v</code></pre> <pre><code>npm -v</code></pre> </section> </section> <section> <section> <h2>Starting new React project from scratch - easy way using create-react-app</h2> </section> <section> <pre>
+                        <code>
+    npx create-react-app myproj --template typescript
+                        </code>
+                    </pre> </section> <section> <ul> <li> <i>npx</i> - the tool that allow you to download npm package and execute it </li> <li> <i>create-react-app</i> - npm package from Meta (Facebook) that creates new project with default structure and all dependencies </li> <li> <i>myproj</i> - name of the project </li> <li> <i>--template typescript</i> - template to use for project scaffolding. We will use template with typescript </li> </ul> </section> <section> Simply saying: <p class="left"> Download the create-react-app package from npm and execute it with parameter template equals to typescript </p> </section> </section> <section> <section> <h2>Project structure</h2> </section> <section> <img src="https://drag13.io/react-learning-course-short/create-react-app-project.a56c1995.png" alt="create-react-app-project"> </section> <section> <pre>
+                        <code class="pre-code-l" data-line-numbers="1-3|4-11|12-15">/public
+    index.html          // root file to load
+    manifest.json       // web app metadata
+/src
+    App.css             // styles related to the App component
+    App.test.tsx        // tests related to the App component
+    App.tsx             // App component
+    index.css           // Global styles
+    react-app-env.d.ts  // extra types
+    reportWebVitals.ts  // performance metrics report
+    setupTests.ts       // test configuration
+.gitignore              // git ignore configuration
+package-lock.json       // all project dependencies
+package.json            // project configuration file
+tsconfig.json           // typescript configuration file
+                        </code>
+                    </pre> </section> </section> <section> <section> <h2>Predefined commands</h2> </section> <section> <h3>Start</h3> <p class="left">Start application for <strong>local</strong> development</p> <pre><code>npm start</code></pre> </section> <section> <h3>Test</h3> <p class="left">Tests application</p> <pre><code>npm test</code></pre> </section> <section> <h3>Build</h3> <p class="left">Builds application for production - bundling, minification, etc</p> <pre><code>npm run build</code></pre> </section> <section> <h3>Eject</h3> <p class="left">Converts create-react-app to the regular front-end app</p> <pre><code>npm run eject</code></pre> </section> </section> <section> <section> <h2>CODE</h2> </section> <section> <ul> <li>Open the folder with VsCode</li> <li>Hit <i>CTRL ~</i> to start terminal</li> <li>type <i>npm start</i> in the console</li> </ul> </section> <section> <img src="https://drag13.io/react-learning-course-short/create-react-app-ui-example.3b02f235.png" alt="Default UI wit create-react-app"> </section> <section> Change code in the <i>app.tsx</i> and save file <pre>
+                        <code>    import "./App.css";
+
+    function App() {
+        return (
+        <div classname="App">
+            <header classname="App-header">hello world</header>
+        </div>
+        );
+    }
+
+    export default App;
+                        </code>
+                    </pre> </section> <section> <pre>
+                        <code data-line-numbers="1|3-9|11">    import "./App.css";
+
+    function App() {
+        return (
+        <div classname="App">
+            <header classname="App-header">hello world</header>
+        </div>
+        );
+    }
+
+    export default App;
+                    </code>
+                </pre> </section> <section> <p class="left"> Feel free to alter the code inside the <i>div</i>. You can add any other HTML tag you know or text. However, tags are not HTML this is typed version of the <a href="https://reactjs.org/docs/introducing-jsx.html" target="_blank">JSX</a> </p> <p class="left"> After saving the file React will update the UI automatically. This called Hot Module Reloading </p> </section> <section> However, React is able to render the data as well <pre>
+                        <code data-line-numbers="3|8">    import "./App.css";
+
+    const data = { greetings: "Hello World!" };
+    
+    function App() {
+        return (<div classname="App">
+            <header classname="App-header">
+                {data.greetings}
+            </header> 
+        </div>);
+    }
+    
+    export default App;
+                        </code>
+                    </pre> </section> </section> <section> <h2>Useful links</h2> <ul> <li> <a href="https://create-react-app.dev/" target="_blank" rel="noopener noreferrer"> Create React App documentation </a> </li> </ul> </section> </div> </div> <script src="https://drag13.io/react-learning-course-short/1/index.098285d9.js" type="module"></script> </body></html>
