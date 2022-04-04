@@ -48,11 +48,12 @@
         "Why to use the components",
         "How to pass data into the component",
         "How to get data from the component"
-      ]
+      ],
+      "presentation":"https://drag13.io/react-learning-course-short/2/index.html"
     },
     {
       "title": "Building your own component",
-      "type": "Lecture",
+      "type": "Workshop",
       "keyPoints": [
         "Design your first component",
         "Building static component",
