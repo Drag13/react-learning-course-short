@@ -53,11 +53,13 @@ Presentation - https://drag13.io/react-learning-course-short/1/index.html
 - How to pass data into the component
 - How to get data from the component
 
+Presentation - https://drag13.io/react-learning-course-short/2/index.html
+
 ### Home task: 
 
 Not specified
 
-## 3 Lecture: Building your own component
+## 3 Workshop: Building your own component
 
 ### Key points: 
 
