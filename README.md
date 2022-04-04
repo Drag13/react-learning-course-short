@@ -56,7 +56,9 @@ Presentation: https://drag13.io/react-learning-course-short/1/index.html
 
 ### 2 Lecture: What is component and why you should use it
 
-### 3 Lecture: Building your own component
+Presentation: https://drag13.io/react-learning-course-short/2/index.html
+
+### 3 Workshop: Building your own component
 
 ### 4 Lecture: Change Detection
 
