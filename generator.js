@@ -6,7 +6,7 @@ const writeFile = (path, data) =>
 const readFile = (path) => readFileSync(path, { encoding: "utf-8" });
 
 function renderProgram(data) {
-  const template = readFile("./templates/_full-programm.md");
+  const template = readFile("./templates/_full-program.md");
   const res = mustache.render(template, data);
   writeFile("PROGRAM.md", res);
 }
