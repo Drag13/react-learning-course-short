@@ -18,10 +18,10 @@ Not specified
 
 ### Key points: 
 
-- How to start new project from scratch
-- A project structure
-- Writing a first component
-- Debug the app
+- Starting new React project from scratch using create-react-app
+- Project structure
+- Predefined commands
+- Code examples
 
 Presentation - https://drag13.io/react-learning-course-short/1/index.html
 
