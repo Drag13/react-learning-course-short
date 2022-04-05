@@ -52,6 +52,7 @@ Presentation - https://drag13.io/react-learning-course-short/1/index.html
 - Why to use the components
 - How to pass data into the component
 - How to get data from the component
+- Why TypeScript
 
 Presentation - https://drag13.io/react-learning-course-short/2/index.html
 
