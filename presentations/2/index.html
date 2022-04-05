@@ -35,37 +35,38 @@
                 </section>
 
                 <section>
+                    <p>From React prospective - component is a <i class="fragment highlight-current-green">function</i> or
+                        <i class="fragment highlight-current-green">class</i> that accepts
+                        <i class="fragment highlight-current-green">props (input)</i> and returns <i class="fragment highlight-current-green">JSX</i>
+                    </p>
+                </section>
+
+                <section>
                     <h4>JSX - JavaScript XML</h4>
                     <p>XML like syntax that is parsed and transformed to the regular JavaScript code</p>
                 </section>
 
                 <section>
-                    <p>From React prospective - component is a <i>function</i> or <i>class</i> that accepts <i>props
-                            (input data)</i> and returns <i>JSX</i>
-                    </p>
-                </section>
-
-                <section>
                     <h4>Component as a function</h4>
                     <pre><code>
-const AppHeader = (props) => (
-    <header>My first Application - {props.title}</header>
-);
+    const AppHeader = (props) => (
+        <header>My first Application - {props.title}</header>
+    );
                         </code></pre>
                 </section>
 
                 <section>
                     <h4>Component as a class</h4>
-                    <pre><code>
-class AppHeader extends React.PureComponent {
-    render() {
-        return (
-            <header>
-                My first Application - {this.props.title}
-            </header>
-        );
+                    <pre><code  data-line-numbers="2-10|2|3|5-7">
+    class AppHeader extends React.PureComponent {
+        render() {
+            return (
+                <header>
+                    My first Application - {this.props.title}
+                </header>
+            );
+        }
     }
-}
                         </code></pre>
                 </section>
             </section>
@@ -114,15 +115,13 @@ class AppHeader extends React.PureComponent {
 
                 <section>
                     <h2>Component types</h2>
-                    <ul>
-                        <li>Dumb</li>
-                        <li>Smart</li>
-                    </ul>
                 </section>
 
                 <section>
-                    <h4>Dumb</h4>
-                    <p>The component cares only about the view. No state inside</p>
+                    <ul>
+                        <li>Dumb - the component cares only about the view. No state inside</li>
+                        <li>Smart - the component maintains state and contains some logic</li>
+                    </ul>
                 </section>
 
                 <section>
@@ -135,10 +134,11 @@ class AppHeader extends React.PureComponent {
                 </section>
 
                 <section>
-                    <h4>Smart</h4>
-                    <p>
-                        Component maintains state and implement a logic inside
-                    </p>
+                    <h4>Examples</h4>
+                    <ul>
+                        <li>Headers, labels, cards</li>
+                        <li>Simple buttons and inputs</li>
+                    </ul>
                 </section>
 
                 <section>
@@ -163,6 +163,16 @@ class AppHeader extends React.PureComponent {
     export default () => &lt;Expand&gt;VERY BIG TEXT &lt;/Expand&gt;;</code>
                     </pre>
                 </section>
+
+                <section>
+                    <h4>Examples</h4>
+                    <ul>
+                        <li>ExpandCollapse, carousels</li>
+                        <li>Inputs with logic inside</li>
+                        <li>Button with loaders</li>
+                    </ul>
+                </section>
+
             </section>
 
             <section>
@@ -185,7 +195,7 @@ class AppHeader extends React.PureComponent {
                 <section>
                     <h4>Using props - the most correct</h4>
                     <pre>
-                        <code>    
+                        <code data-line-numbers="1-11|4|6|7|10">    
     import { FC } from "react";
     
     type H1Props = { userName: string };
@@ -195,6 +205,7 @@ class AppHeader extends React.PureComponent {
     );
     
     export default () => &lt;AppH1 userName="Hello world" /&gt;
+
                         </code>
                     </pre>
                 </section>
@@ -220,7 +231,7 @@ class AppHeader extends React.PureComponent {
 
                 <section>
                     <pre>
-                        <code>
+                        <code data-line-numbers="1-10|4|6|9">
     import { FC } from "react";
 
     type BtnProps = { onClick: (val: string) => void };
@@ -229,8 +240,51 @@ class AppHeader extends React.PureComponent {
     );
 
     export default () => &lt;Btn onClick={(v) => alert(v)} /&gt;;
+
                         </code>
                 </pre>
+                </section>
+
+                <section class="left">
+                    <strong>⚠️Important: </strong> Using anonymous functions as a callback might heart the performance
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Why TypeScript</h2>
+                </section>
+
+                <section>
+                    <h4>Maintainability</h4>
+                    <p>Much easier to check a type than read the whole code</p>
+                </section>
+
+                <section>
+                    <h4>
+                        Developer Experience
+                    </h4>
+                    <p>
+                        IDE will provide you with much better hints and autocomplete
+                    </p>
+                </section>
+
+                <section>
+                    <h4>
+                        Less bugs
+                    </h4>
+                    <p>
+                        Types will be checked at the build time and highlight some developers mistakes
+                    </p>
+                </section>
+                <section class="left">
+                    <p>
+                        <strong>⚠️Important:</strong> - TypeScript not exists in runtime
+                    </p>
+
+                    <p>
+                        <strong>⚠️Important:</strong> - TypeScript will not catch all - tests are important
+                    </p>
                 </section>
             </section>
 
@@ -253,6 +307,10 @@ class AppHeader extends React.PureComponent {
                             target="_blank" rel="noreferrer noopener">
                             Smart VS Dumb components
                         </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.typescriptlang.org/">TypeScript</a>
                     </li>
                 </ul>
             </section>
