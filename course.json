@@ -47,7 +47,8 @@
         "What is the component",
         "Why to use the components",
         "How to pass data into the component",
-        "How to get data from the component"
+        "How to get data from the component",
+        "Why TypeScript"
       ],
       "presentation":"https://drag13.io/react-learning-course-short/2/index.html"
     },
