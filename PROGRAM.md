@@ -20,6 +20,7 @@ Not specified
 
 - Starting new React project from scratch using create-react-app
 - Project structure
+- Files you need to know
 - Predefined commands
 - Code examples
 
