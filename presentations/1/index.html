@@ -20,7 +20,7 @@
                     <u>React For Beginners by Itera</u>
                 </h2>
                 <h4>
-                    L1 - Starting new project with create-react-app    
+                    L1 - Starting new project with create-react-app
                 </h4>
             </section>
 
@@ -67,19 +67,19 @@
                 </section>
 
                 <section>
+                    <h4>Let's read it</h4>
                     <ul>
-                        <li>
+                        <li class="fragment fade-up">
                             <i>npx</i> - the tool that allow you to download npm package and execute it
-
                         </li>
-                        <li>
+                        <li class="fragment fade-up">
                             <i>create-react-app</i> - npm package from Meta (Facebook) that creates new project
                             with default structure and all dependencies
                         </li>
-                        <li>
+                        <li class="fragment fade-up">
                             <i>myproj</i> - name of the project
                         </li>
-                        <li>
+                        <li class="fragment fade-up">
                             <i>--template typescript</i> - template to use for project scaffolding. We will use
                             template with typescript
                         </li>
@@ -104,7 +104,7 @@
                 <section>
                     <img src="./img/create-react-app-project.png" alt="create-react-app-project">
                 </section>
-    
+
                 <section>
                     <pre>
                         <code class="pre-code-l" data-line-numbers="1-3|4-11|12-15">/public
@@ -125,6 +125,40 @@ tsconfig.json           // typescript configuration file
                         </code>
                     </pre>
 
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Files you need to know</h2>
+                </section>
+
+                <section>
+                    <h4>Index.html</h4>
+
+                    <img src="./img/index-html.png" alt="react - index.html">
+                </section>
+
+                <section>
+                    <h4>index.tsx</h4>
+
+                    <img src="./img/index-tsx.png" alt="react - index.tsx">
+                </section>
+
+                <section>
+                    <h4>App.tsx</h4>
+
+                    <img src="./img/app-tsx.png" alt="react - app.tsx">
+                </section>
+
+                <section>
+                    <h4>App.test.tsx</h4>
+                    <img src="./img/test-tsx.png" alt="react - app.text.tsx">
+                </section>
+
+                <section>
+                    <h4>package.json</h4>
+                    <img src="./img/package-json.png" alt="react - package.json">
                 </section>
             </section>
 
@@ -154,28 +188,27 @@ tsconfig.json           // typescript configuration file
                     <h3>Eject</h3>
                     <p class="left">Converts create-react-app to the regular front-end app</p>
                     <pre><code>npm run eject</code></pre>
+                    <p class="fragment fade-up left">⚠️ It's one time action</p>
                 </section>
             </section>
 
             <section>
                 <section>
                     <h2>CODE</h2>
-
                 </section>
 
                 <section>
                     <ul>
                         <li>Open the folder with VsCode</li>
-                        <li>Hit <i>CTRL ~</i> to start terminal</li>
-                        <li>type <i>npm start</i> in the console</li>
+                        <li class="fragment fade-up">Hit <i>CTRL ~</i> to start terminal</li>
+                        <li class="fragment fade-up">type <i>npm start</i> in the console</li>
                     </ul>
-
                 </section>
 
                 <section>
                     <img src="./img/create-react-app-ui-example.png" alt="Default UI wit create-react-app">
                 </section>
-    
+
                 <section>
                     Change code in the <i>app.tsx</i> and save file
                     <pre>
@@ -195,13 +228,14 @@ tsconfig.json           // typescript configuration file
 
                 </section>
                 <section>
+                    <h4>Line by line</h4>
                     <pre>
-                        <code data-line-numbers="1|3-9|11">    import "./App.css";
+                        <code data-line-numbers="1-11|1|3-9|11">    import "./App.css";
 
     function App() {
         return (
         <div className="App">
-            <header className="App-header">hello world</header>
+            &lt;header className="App-header"&gt;hello world&lt;/header&gt;
         </div>
         );
     }
@@ -246,18 +280,22 @@ tsconfig.json           // typescript configuration file
                 </section>
             </section>
 
-
-       
-
             <section>
                 <h2>Useful links</h2>
-
                 <ul>
                     <li>
                         <a href="https://create-react-app.dev/" target="_blank" rel="noreferrer noopener">
-                            Create React App documentation
+                            Create-React-App documentation
                         </a>
                     </li>
+
+                    <li><a href="https://reactjs.org/docs/create-a-new-react-app.html" target="_blank"
+                            rel="noreferrer noopener">Create a new react app</a>
+                    </li>
+
+                    <li><a href="https://docs.npmjs.com/cli/v7/configuring-npm/package-json" target="_blank"
+                            rel="noreferrer noopener">Package.json -
+                            documentation</a></li>
                 </ul>
             </section>
         </div>
