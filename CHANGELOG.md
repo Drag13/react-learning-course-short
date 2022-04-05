@@ -18,3 +18,9 @@
 
 - Changed "Building your own component" lecture to the workshop
 - Added draft version of the 3rd lecture ["What is component and why you should use it"](https://drag13.io/react-learning-course-short/2/index.html). Work still in progress
+
+## 05/04/2022
+
+- Extended presentation ["What is component and why you should use it"](https://drag13.io/react-learning-course-short/2/index.html) with short section about TypeScript
+
+- Partially added new presentation for Workshop - ["Building your own component"](https://drag13.io/react-learning-course-short/3/index.html)
