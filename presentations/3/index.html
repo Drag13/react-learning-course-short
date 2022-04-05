@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React For Beginners - introduction</title>
+    <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="/node_modules/reveal.js/dist/theme/black.css">
+    <link rel="stylesheet" href="/node_modules/reveal.js/plugin/highlight/zenburn.css">
+    <link rel="stylesheet" href="../shared/helpers.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>
+                    <u>React For Beginners by Itera</u>
+                </h1>
+                <h4>
+                    L3 - Building your own component
+                </h4>
+            </section>
+
+            <section>
+                <h2>Program</h2>
+
+                <ul>
+                    <li class="fragment fade-up">Create <i>class based</i> <i>dumb</i> component - MessageBlock</li>
+                    <li class="fragment fade-up">Turn it to the functional component</li>
+                    <li class="fragment fade-up">Create <i>smart</i> <i>class-based</i> component - button with a loader
+                        inside</li>
+                    <li class="fragment fade-up">Rework previous component to the functional</li>
+                    <li class="fragment fade-up">Combine it all together</li>
+                </ul>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Quick recap</h2>
+                </section>
+
+                <section>
+                    <ul>
+                        <li>Component - unit of code that encapsulate single, logical functionality</li>
+                        <li class="fragment fade-up">Component can be dumb or smart</li>
+                        <li class="fragment fade-up">Component accepts props and returns JSX</li>
+                        <li class="fragment fade-up">Component can be build as a class or function</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Message block - class-based</h2>
+                </section>
+
+                <section>
+                    <ul>
+                        <li>Create a class named MeesageBlock</li>
+                        <li class="fragment fade-up">Extend PureComponent</li>
+                        <li class="fragment fade-up">Create method render inside the class</li>
+                        <li class="fragment fade-up">Return from the render method some JSX</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <pre><code data-line-numbers>import { PureComponent } from "react";
+
+type MessageBlockProps = { message: string };
+
+class MessageBlock extends PureComponent&lt;MessageBlockProps&gt; {
+    render() {
+    const { message } = this.props;
+        return &lt;div className="ma-message"&gt;{message}&lt;/div&gt;;
+    }
+}
+    </code></pre>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Message block - functional</h2>
+                </section>
+
+
+                <section>
+                    <ul class="left">
+                        <li>Create a function that returns JSX</li>
+                        <li>Enjoy! 😊</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <pre><code data-line-numbers>
+import { FC } from "react";
+
+type MessageBlockProps = { message: string };
+
+const MessageBlock: FC&lt;MessageBlockProps&gt; = ({ message }) =&gt; (
+    &lt;div className="ma-message"&gt;{message}&lt;/div&gt;
+);
+
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h4>Functional components are great for the dumb type of component</h4>
+                </section>
+
+            </section>
+        </div>
+    </div>
+    <script src="./index.js" type="module"></script>
+</body>
+
+</html>
