@@ -44,6 +44,8 @@ Installed [VsCode](https://code.visualstudio.com/)
 - 01:40 - 01:45 - New Home Task
 - 01:45 - 02:00 - Questions
 
+Workshop timing - about 1 hour
+
 ## Program summary
 
 {{#lessons}}
