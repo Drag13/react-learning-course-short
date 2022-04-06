@@ -44,6 +44,8 @@ Installed [VsCode](https://code.visualstudio.com/)
 - 01:40 - 01:45 - New Home Task
 - 01:45 - 02:00 - Questions
 
+Workshop timing - about 1 hour
+
 ## Program summary
 
 ### 0 Lecture: What is React
@@ -59,6 +61,8 @@ Presentation: https://drag13.io/react-learning-course-short/1/index.html
 Presentation: https://drag13.io/react-learning-course-short/2/index.html
 
 ### 3 Workshop: Building your own component
+
+Presentation: https://drag13.io/react-learning-course-short/3/index.html
 
 ### 4 Lecture: Change Detection
 

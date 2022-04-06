@@ -65,9 +65,17 @@ Not specified
 
 ### Key points: 
 
-- Design your first component
-- Building static component
-- Building component with interaction
+- What is component - quick recap
+- Building "dumb" components - functional and class-based
+- Building "smart" component - functional and class-based
+- What and when to use
+- Components - best practices
+
+Presentation - https://drag13.io/react-learning-course-short/3/index.html
+
+### Prerequisite
+
+- Create new project with [create-react-app](https://drag13.io/react-learning-course-short/1/index.html)
 
 ### Home task: 
 
