@@ -51,16 +51,21 @@
         "How to get data from the component",
         "Why TypeScript"
       ],
-      "presentation":"https://drag13.io/react-learning-course-short/2/index.html"
+      "presentation": "https://drag13.io/react-learning-course-short/2/index.html"
     },
     {
       "title": "Building your own component",
       "type": "Workshop",
       "keyPoints": [
-        "Design your first component",
-        "Building static component",
-        "Building component with interaction"
+        "What is component - quick recap",
+        "Building \"dumb\" components - functional and class-based",
+        "Building \"smart\" component - functional and class-based",
+        "Components - best practices"
       ],
+      "prerequisite": [
+        "Create new project with [create-react-app](https://drag13.io/react-learning-course-short/1/index.html)"
+      ],
+      "presentation": "https://drag13.io/react-learning-course-short/3/index.html",
       "hometask": [
         "Add footer to your application",
         "Split the application you've built previously into components",
