@@ -60,6 +60,7 @@
         "What is component - quick recap",
         "Building \"dumb\" components - functional and class-based",
         "Building \"smart\" component - functional and class-based",
+        "What and when to use",
         "Components - best practices"
       ],
       "prerequisite": [
