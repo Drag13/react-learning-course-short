@@ -92,5 +92,5 @@ Feel free to contact me directly if any question
 
 ## Sponsors
 [
-![](../presentations/shared/imgs/Itera-logo-white-fuchsia.jpg)
+![](/presentations/shared/imgs/Itera-logo-white-fuchsia.jpg)
 ](itera.com)

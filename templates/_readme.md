@@ -63,3 +63,8 @@ Presentation: {{{.}}}
 All donations are highly welcomed. You can donate any amount to the [National Bank of Ukraine directly](https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi) or to the well known [charity fund Come Back Alive](https://www.comebackalive.in.ua/donate).
 
 Feel free to contact me directly if any question
+
+## Sponsors
+[
+![](/presentations/shared/imgs/Itera-logo-white-fuchsia.jpg)
+](itera.com)
