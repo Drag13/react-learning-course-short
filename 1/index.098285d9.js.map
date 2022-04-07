@@ -1,1 +1,0 @@
-{"mappings":"oeAAAA,EAAA,SAEAC","sources":["presentations/1/index.js"],"sourcesContent":["import { init } from \"../shared/init\";\n\ninit();\n"],"names":["parcelRequire","init"],"version":3,"file":"index.098285d9.js.map"}
