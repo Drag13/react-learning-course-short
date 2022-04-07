@@ -7,7 +7,7 @@
     "start": "parcel ./presentations/0/index.html",
     "build": "parcel build ./presentations/**/index.html --public-url https://drag13.io/react-learning-course-short",
     "readme": "node tools/generator.js",
-    "gp": "node tools/gp.js",
+    "scaffold": "node tools/scaffold.js",
     "encode": "node tools/encode.js"
   },
   "repository": {

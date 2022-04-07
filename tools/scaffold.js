@@ -10,9 +10,8 @@ const TEMPLATE = "./templates/_index.html";
 
 const fromIndex = (i) => join(cwd(), ROOT, i.toString(), "index.html");
 
-course.lessons.forEach((lesson, i) => {
+function scaffold(template, lesson, i) {
   const pathToFile = fromIndex(i);
-  const template = readFile(TEMPLATE);
   lesson.i = i;
 
   if (exists(pathToFile)) {
@@ -31,4 +30,16 @@ course.lessons.forEach((lesson, i) => {
   const result = render(template, lesson);
 
   writeFile(pathToFile, result);
-});
+}
+
+(function cli([lessonNumber = -1]) {
+  const template = readFile(TEMPLATE);
+  const lesson = course.lessons[lessonNumber];
+  if (lesson) {
+    scaffold(template, lesson, lessonNumber);
+  } else {
+    course.lessons.forEach((lesson, index) =>
+      scaffold(template, lesson, index)
+    );
+  }
+})(process.argv.splice(2));

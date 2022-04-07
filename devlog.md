@@ -33,7 +33,7 @@ If you need to tweak the documentation - check the `_templates` folder
 ## How to add new presentation
 
 - Add new lecture to the `course.json`
-- Run `npm gp` command
+- Run `npm run scaffold` command without arguments
 
 ## Deployment
 
