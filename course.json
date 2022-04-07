@@ -80,12 +80,13 @@
       ]
     },
     {
-      "title": "Change Detection",
+      "title": "Detecting changes",
       "type": "Lecture",
       "keyPoints": [
         "What is change detection",
+        "Two ways to track changes",
         "How it works in React (simplified)",
-        "React not rendering my changes examples"
+        "Typical mistakes"
       ]
     },
     {
