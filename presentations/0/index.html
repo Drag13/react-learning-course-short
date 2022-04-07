@@ -15,6 +15,10 @@
 <body>
     <div class="reveal">
         <div class="slides">
+
+            <section>
+                <h1>Free React course for Beginners</h1>
+            </section>
             <section>
                 <h1>
                     L0 - Introduction
@@ -98,16 +102,31 @@
 
                 <section>
                     <pre>
-                        <code>
+                        <code data-line-numbers="2|3|4">
  const data = {name: 'Vitalii'};
- const App = ({name}) => &lt;h2 className="green"&gt;Hello - {name}&lt;/h2&gt;
+ function App() {
+     return &lt;h2 className="green"&gt;Hello - {data.name}&lt;/h2&gt
+ }
+
                         </code>
                     </pre>
 
-                    <div class="fragment fade-up" data-fragment-index="1">⬇️</div>
-                    <h2 class="fragment fade-up " data-fragment-index="1">
-                        <span class="fragment highlight-green" data-fragment-index="1">Hello - Vitalii</span>
+                    <div class="fragment fade-up">⬇️</div>
+                    <h2 class="fragment fade-up green">
+                        Hello - Vitalii
                     </h2>
+                </section>
+
+                <section>
+                    <h2>JSX - just a syntax sugar</h2>
+
+                    <pre><code>
+    function a() {
+        return r.jsxs("h2", {
+            children: [' className="green" Hello - ', l, " "],
+        });
+    }
+                    </code></pre>
                 </section>
 
                 <section>
@@ -174,18 +193,29 @@
                 </section>
 
                 <section>
-                    <h2>It's popular</h2>
+                    <h3>Popular - more chances to find a job</h3>
                     <img src="./img/react-ang-vue-downloads-020422.png" alt="react is the most popular ui framework">
-                    <p class="left">Means: more chances to find a job</p>
                 </section>
 
                 <section>
-                    <h2>Mature</h2>
-                    <p class="left">Means: very low amount of bugs, good stability and support</p>
+                    <h3>Mature - good stability and support</h3>
+                    <ul>
+                        <li>
+                            16.0.0 -September 26, 2017
+                        </li>
+
+                        <li>
+                            17.0.0 October 20, 2020
+                        </li>
+
+                        <li>
+                            18.0.0 March 29, 2022
+                        </li>
+                    </ul>
                 </section>
 
                 <section>
-                    <h2>Has rich ecosystem</h2>
+                    <h3>Rich ecosystem - efficient development</h3>
                     <ul>
                         <li>Frameworks: - <a target="_blank" rel="noopener noreferrer"
                                 href="https://nextjs.org/">Next.JS</a>,
@@ -219,8 +249,6 @@
                                 Developer Tools</a>
                         </li>
                     </ul>
-
-                    <p class="left">Means: Efficient development</p>
                 </section>
             </section>
 
@@ -230,12 +258,8 @@
                 <ul>
                     <li>
                         <a target="_blank" rel="noopener noreferrer"
-                            href="https://reactjs.org/docs/getting-started.html">Documentation - MUST READ</a>
-                    </li>
-
-                    <li>
-                        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/dan_abramov">"Father" of
-                            the React
+                            href="https://reactjs.org/docs/getting-started.html">
+                            Documentation
                         </a>
                     </li>
 
@@ -243,8 +267,15 @@
                         <a target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/react">
                             React - source code
                         </a>
-
                     </li>
+
+                    <li>
+                        <a href="https://github.com/facebook/react/blob/main/CHANGELOG.md" target="_blank"
+                            rel="noopener noreferrer">
+                            React changelog
+                        </a>
+                    </li>
+
                     <li>
                         <a target="_blank" rel="noopener noreferrer"
                             href="https://blog.devgenius.io/react-costs-companies-a-lot-of-money-6bfa3e5cc6f4">
