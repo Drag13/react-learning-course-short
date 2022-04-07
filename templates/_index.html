@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React For Beginners - introduction</title>
+    <title>React For Beginners - {{title}}</title>
     <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css">
     <link rel="stylesheet" href="/node_modules/reveal.js/dist/theme/black.css">
     <link rel="stylesheet" href="/node_modules/reveal.js/plugin/highlight/zenburn.css">
@@ -22,7 +22,7 @@
 
             <section>
                 <h1>
-                    L0 - Introduction
+                    L{{i}} - {{title}}
                 </h1>
                 <h4>
                     <u>
@@ -30,9 +30,38 @@
                     </u>
                 </h4>
             </section>
+
+            {{#prerequisite.length}}
+            <section>
+                <ul>
+                    {{{#prerequisite}}}
+                    <li>{{.}}</li>
+                    {{{/prerequisite}}}
+                </ul>
+            </section>
+            {{/prerequisite.length}}
+
+            {{#keyPoints}}
+                <section>
+                    <section>
+                        <h2>{{{.}}}</h2>
+                    </section>
+                </section>
+            {{/keyPoints}}
+
+            {{#hometask.length}}
+            <section>
+                <h2>Home task</h2>
+                <ul>
+                    {{{#hometask}}}
+                    <li>{{.}}</li>
+                    {{{/hometask}}}
+                </ul>
+            </section>
+            {{/hometask.length}}
         </div>
     </div>
-    <script src="./index.js" type="module"></script>
+    <script src="../shared/init.js" type="module"></script>
 </body>
 
 </html>
