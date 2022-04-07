@@ -13,6 +13,7 @@ const fromIndex = (i) => join(cwd(), ROOT, i.toString(), "index.html");
 course.lessons.forEach((lesson, i) => {
   const pathToFile = fromIndex(i);
   const template = readFile(TEMPLATE);
+  lesson.i = i;
 
   if (exists(pathToFile)) {
     console.log(`File ${pathToFile} already exists, skipping...`);
