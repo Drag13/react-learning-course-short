@@ -1,6 +1,18 @@
 # Technical points
 
-## How to start the presentation
+The course is built with:
+
+- [Reveal.js](https://revealjs.com/) - presentation
+- [MustacheJs](https://github.com/janl/mustache.js/) - rendering documentation
+- [Parcel](https://parceljs.org/docs/) - building and bundling presentation
+
+## Install
+
+```cmd
+npm ci`
+```
+
+## Start the presentation locally
 
 If you want to start particular presentation - execute the next command where number should be equal to the lesson number
 
