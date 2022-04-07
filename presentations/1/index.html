@@ -15,6 +15,11 @@
 <body>
     <div class="reveal">
         <div class="slides">
+
+            <section>
+                <h1>Free React course for Beginners</h1>
+            </section>
+
             <section>
                 <h2>
                     L1 - New project with create-react-app
@@ -33,13 +38,13 @@
                     <ul>
                         <li>
                             <a href="https://nodejs.org/en/" rel="noopener noreferrer" target="_blank">
-                                Node.JS - V8 based runtime for JavaScript
+                                Install Node.JS - V8 based runtime for JavaScript
                             </a>
                         </li>
 
                         <li>
                             <a href="https://code.visualstudio.com/" rel="noopener noreferrer" target="_blank">
-                                VsCode - lightweight code editor
+                                Install VsCode - lightweight code editor
                             </a>
                         </li>
                     </ul>
@@ -70,7 +75,7 @@
                     <h4>Let's read it</h4>
                     <ul>
                         <li class="fragment fade-up">
-                            <i>npx</i> - the tool that allow you to download npm package and execute it
+                            <i>npx</i> - the npm tool that allow you to download npm package and execute it
                         </li>
                         <li class="fragment fade-up">
                             <i>create-react-app</i> - npm package from Meta (Facebook) that creates new project
@@ -101,7 +106,7 @@
                     <h2>Project structure</h2>
                 </section>
 
-                <section>
+                <section data-visibility="hidden">
                     <img src="./img/create-react-app-project.png" alt="create-react-app-project">
                 </section>
 
@@ -212,17 +217,17 @@ tsconfig.json           // typescript configuration file
                 <section>
                     Change code in the <i>app.tsx</i> and save file
                     <pre>
-                        <code>    import "./App.css";
+                        <code data-line-numbers="">import "./App.css";
 
-    function App() {
-        return (
-        <div className="App">
-            <header className="App-header">hello world</header>
-        </div>
-        );
-    }
+function App() {
+    return (
+        &lt;div className="App"&gt;
+            &lt;header className="App-header"&gt;hello world&lt;/header&gt;
+        &lt;/div&gt;;
+    );
+}
 
-    export default App;
+export default App;
                         </code>
                     </pre>
 
@@ -230,17 +235,17 @@ tsconfig.json           // typescript configuration file
                 <section>
                     <h4>Line by line</h4>
                     <pre>
-                        <code data-line-numbers="1-11|1|3-9|11">    import "./App.css";
+                        <code data-line-numbers="1-11|1|3-9|11">import "./App.css";
 
-    function App() {
-        return (
-        <div className="App">
+function App() {
+    return (
+        &lt;div className="App"&gt;
             &lt;header className="App-header"&gt;hello world&lt;/header&gt;
-        </div>
-        );
-    }
+        &lt;/div&gt;;
+    );
+}
 
-    export default App;
+export default App;
                     </code>
                 </pre>
 
@@ -249,8 +254,8 @@ tsconfig.json           // typescript configuration file
                 <section>
                     <p class="left">
                         Feel free to alter the code inside the <i>div</i>. You can add any other HTML tag you know or
-                        text. However, tags are not HTML this is typed version of the <a
-                            href="https://reactjs.org/docs/introducing-jsx.html" target="_blank">JSX</a>
+                        text. However, tags are not HTML - it's <a
+                            href="https://reactjs.org/docs/introducing-jsx.html" target="_blank">TSX</a>
                     </p>
 
                     <p class="left">
@@ -259,7 +264,7 @@ tsconfig.json           // typescript configuration file
                 </section>
 
                 <section>
-                    However, React is able to render the data as well
+                    React is able to render the data as well
 
                     <pre>
                         <code data-line-numbers="3|8">    import "./App.css";
