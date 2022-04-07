@@ -33,5 +33,5 @@
 
 - Light improvements for the 0-3 presentation
 - Updated program for 4th presentation - ["Detecting changes"](https://drag13.io/react-learning-course-short/4/index.html)
-- Created draft for the 4th presentation 
-- Added script `pg.js` to generate presentations from `course.json`
+- Added script `scaffold.js` to generate presentations from `course.json`
+- Added draft for the new presentation - "Detecting changes"
