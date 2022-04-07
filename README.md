@@ -66,7 +66,7 @@ Presentation: https://drag13.io/react-learning-course-short/2/index.html
 
 Presentation: https://drag13.io/react-learning-course-short/3/index.html
 
-### 4 Lecture: Change Detection
+### 4 Lecture: Detecting changes
 
 ### 5 Lecture: Managing state in React
 

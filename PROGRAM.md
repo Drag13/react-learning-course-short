@@ -89,13 +89,14 @@ Presentation - https://drag13.io/react-learning-course-short/3/index.html
 - Put the new component into the footer
 - When clicked, it should log into the console next text: `redirecting user to the next {link}` where `{link}` should be a's href
 
-## 4 Lecture: Change Detection
+## 4 Lecture: Detecting changes
 
 ### Key points: 
 
 - What is change detection
+- Two ways to track changes
 - How it works in React (simplified)
-- React not rendering my changes examples
+- Typical mistakes
 
 ### Home task: 
 
