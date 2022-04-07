@@ -2,6 +2,8 @@
 
 # React For Beginners - free course by Itera
 
+✔️ ✔️ ✔️ ✔️ ⏳ ⏳ ⏳ ⏳ ⏳ ⏳ ⏳ ⏳ ⏳ 
+
 ## About
 
 **DISCLAIMER:**

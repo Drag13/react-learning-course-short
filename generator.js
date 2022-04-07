@@ -20,6 +20,7 @@ function renderReadme(data) {
 (function cli() {
   const data = require("./course.json");
   data.lessons = data.lessons.map((l, i) => ({ ...l, i }));
+  data.progress = data.lessons.map((ls) => (ls.presentation ? `✔️ ` : `⏳ `));
   renderProgram(data);
   renderReadme(data);
 })(process.argv.splice(2));
