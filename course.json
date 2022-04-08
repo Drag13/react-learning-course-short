@@ -10,7 +10,19 @@
         "React - advantages and disadvantages",
         "Why to learn React nowadays"
       ],
-      "presentation": "https://drag13.io/react-learning-course-short/0/index.html"
+      "presentation": "https://drag13.io/react-learning-course-short/0/index.html",
+      "links": [
+        ["Documentation", "https://reactjs.org/docs/getting-started.html"],
+        ["React - source code", "https://github.com/facebook/react"],
+        [
+          "React changelog",
+          "https://github.com/facebook/react/blob/main/CHANGELOG.md"
+        ],
+        [
+          "Why React is a bad idea",
+          "https://blog.devgenius.io/react-costs-companies-a-lot-of-money-6bfa3e5cc6f4"
+        ]
+      ]
     },
     {
       "title": "Starting new project with create-react-app",
