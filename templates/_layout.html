@@ -32,6 +32,28 @@
             </section>
 
             <include src="./{{i}}/body.html"></include>
+
+            {{#hometask.length}}
+            <section>
+                <h2>Home task</h2>
+                <ul>
+                    {{#hometask}}
+                    <li>{{{.}}}</li>
+                    {{/hometask}}
+                </ul>
+            </section>
+            {{/hometask.length}}
+
+            {{#links.length}}
+            <section>
+                <h2>Useful links</h2>
+                <ul>
+                    {{#links}}
+                    <li> <a target="_blank" rel="noreferrer noopener" href="{{{1}}}">{{0}}</a> </li>
+                    {{/links}}
+                </ul>
+            </section>
+            {{/links.length}}
         </div>
     </div>
     <script src="../shared/init.js" type="module"></script>
