@@ -84,27 +84,22 @@
                 <section>
                     <h4>Create the type for the props</h4>
                     <pre>
-                        <code>
-    type MessageBlockProps = { message: string };
-                        </code>
+                        <code data-line-numbers="">type MessageBlockProps = { message: string };</code>
                     </pre>
                 </section>
 
                 <section>
                     <h4>Create a class named MessageBlock</h4>
                     <pre>
-                    <code>
-    class MessageBlock extends PureComponent&lt;MessageBlockProps&gt; {}
-                    </code>
-                </pre>
+                        <code data-line-numbers="">class MessageBlock extends PureComponent&lt;MessageBlockProps&gt; {}</code>
+                    </pre>
                 </section>
 
                 <section>
                     <h4>Create method render inside the class</h4>
-                    <pre><code>
-    class MessageBlock extends PureComponent&lt;MessageBlockProps&gt; {
-        render(){}
-    }
+                    <pre><code data-line-numbers="">class MessageBlock extends PureComponent&lt;MessageBlockProps&gt; {
+    render(){}
+}
                     </code></pre>
                 </section>
 
@@ -112,13 +107,12 @@
                     <h4>Return from the render method some JSX</h4>
 
                     <pre>
-                        <code>
-    class MessageBlock extends PureComponent&lt;MessageBlockProps&gt; {
-        render() {
-        const { message } = this.props;
-            return &lt;div className="ma-message"&gt;{message}&lt;/div&gt;;
-        }
+                        <code data-line-numbers="">class MessageBlock extends PureComponent&lt;MessageBlockProps&gt; {
+    render() {
+    const { message } = this.props;
+        return &lt;div className="ma-message"&gt;{message}&lt;/div&gt;;
     }
+}
                         </code>
                     </pre>
                 </section>
@@ -132,18 +126,13 @@
                 <section>
                     <h4>Create the type for the props 😊</h4>
                     <pre>
-                        <code>
-    type MessageBlockProps = { message: string };
-                        </code>
+                        <code data-line-numbers="">type MessageBlockProps = { message: string }; </code>
                     </pre>
                 </section>
 
                 <section>
                     <h4>Define a function with correct type</h4>
-                    <pre><code>
-                        
-const MessageBlock: FC&lt;MessageBlockProps&gt; = ({ message }) =&gt; (
-);
+                    <pre><code data-line-numbers="">const MessageBlock: FC&lt;MessageBlockProps&gt; = ({ message }) =&gt; ();
                     </code></pre>
                 </section>
 
@@ -151,13 +140,12 @@ const MessageBlock: FC&lt;MessageBlockProps&gt; = ({ message }) =&gt; (
                     <h4>Return from the function some JSX 😊</h4>
 
                     <pre>
-                        <code>
-    class MessageBlock extends PureComponent&lt;MessageBlockProps&gt; {
-        render() {
-        const { message } = this.props;
-            return &lt;div className="ma-message"&gt;{message}&lt;/div&gt;;
-        }
+                        <code data-line-numbers="">class MessageBlock extends PureComponent&lt;MessageBlockProps&gt; {
+    render() {
+    const { message } = this.props;
+        return &lt;div className="ma-message"&gt;{message}&lt;/div&gt;;
     }
+}
                         </code>
                     </pre>
                 </section>
@@ -179,55 +167,46 @@ const MessageBlock: FC&lt;MessageBlockProps&gt; = ({ message }) =&gt; (
                 </section>
 
                 <section>
-                    <h4>Define type for </h4>
-                    <pre><code>
-    type BtnProps = {
-    };
-                    </code></pre>
+                    <h4>Define types...</h4>
+                    <pre><code data-line-numbers="">type BtnProps = {};</code></pre>
                 </section>
 
                 <section>
                     <h4>Write the new class BtnWithCounter</h4>
-                    <pre><code data-line-numbers="">
-    class BtnWithCounter extends PureComponent&lt;BtnProps&gt; {
-    }
-
+                    <pre><code data-line-numbers="">class BtnWithCounter extends PureComponent&lt;BtnProps&gt; {}
                     </code></pre>
                 </section>
 
                 <section>
-                    <h4>Create new object named state. Put counter equal to 0 inside</h4>
-                    <pre><code data-line-numbers="">
-    class BtnWithCounter extends PureComponent&lt;BtnProps&gt; {
-        state = { counter: 0 };
-    }
+                    <h4>Create new object named state and put counter equal to 0 inside</h4>
+                    <pre><code data-line-numbers="">class BtnWithCounter extends PureComponent&lt;BtnProps&gt; {
+    state = { counter: 0 };
+}
                     </code></pre>
                 </section>
 
 
                 <section>
                     <h4>Write a method that will handle click</h4>
-                    <pre><code data-line-numbers>
-    handleClick = () =&gt; {
-        const { counter: oldValue } = this.state;
-        const counter = oldValue + 1;
-        this.setState({ counter });
-        this.props.onAfterChange(counter);
-    };
+                    <pre><code data-line-numbers>handleClick = () =&gt; {
+    const { counter: oldValue } = this.state;
+    const counter = oldValue + 1;
+    this.setState({ counter });
+    this.props.onAfterChange(counter);
+};
                     </code></pre>
                 </section>
 
                 <section>
                     <h4 class="">Write render method that will return btn and counter</h4>
-                    <pre><code>
-    render() {
-        const { counter } = this.state;
-        return (
-            &lt;button type="button" onClick={this.handleClick}&gt;
-            Clicked {counter} times
-            &lt;/button&gt;
-        );
-    }
+                    <pre><code data-line-numbers="">render() {
+    const { counter } = this.state;
+    return (
+        &lt;button type="button" onClick={this.handleClick}&gt;
+        Clicked {counter} times
+        &lt;/button&gt;
+    );
+}
                     </code></pre>
                 </section>
 
@@ -254,36 +233,32 @@ const MessageBlock: FC&lt;MessageBlockProps&gt; = ({ message }) =&gt; (
 
                 <section>
                     <h4>Define type</h4>
-                    <pre><code data-line-numbers>
-    type BtnProps = {
-        onAfterChange: (v: number) =&gt; void;
-    };
+                    <pre><code data-line-numbers>type BtnProps = {
+    onAfterChange: (v: number) =&gt; void;
+};
                     </code></pre>
                 </section>
 
                 <section>
                     <h4>Create a function</h4>
-                    <pre><code>
-    const BtnWithCounter: FC&lt;BtnProps&gt; = ({ onAfterChange }) =&gt; {
-        return &lt;&gt;&lt;/&gt;
-    }
+                    <pre><code data-line-numbers="">const BtnWithCounter: FC&lt;BtnProps&gt; = ({ onAfterChange }) =&gt; {
+    return &lt;&gt;&lt;/&gt;
+}
                     </code></pre>
                 </section>
 
                 <section>
                     <h4>Setup state</h4>
-                    <pre><code>
-    const [counter, setCounter] = useState(0); // setup state
-    const BtnWithCounter: FC&lt;BtnProps&gt; = ({ onAfterChange }) =&gt; {
-        return &lt;&gt;&lt;/&gt;
-    }    
+                    <pre><code data-line-numbers>const [counter, setCounter] = useState(0); // setup state
+const BtnWithCounter: FC&lt;BtnProps&gt; = ({ onAfterChange }) =&gt; {
+    return &lt;&gt;&lt;/&gt;
+}    
 </code></pre>
                 </section>
 
                 <section>
                     <h4>Define handler for click</h4>
-                    <pre><code>
-const handleClick = () =&gt; {                // define handler
+                    <pre><code data-line-numbers="">const handleClick = () =&gt; {                // define handler
     const newValue = counter + 1;             // implement logic
     setCounter(newValue);                     // update state 
     onAfterChange(newValue);                  // invoke callback
@@ -294,13 +269,11 @@ const handleClick = () =&gt; {                // define handler
                 <section>
                     <h4>Return JSX</h4>
 
-                    <pre><code>
-return (
+                    <pre><code data-line-numbers="">return (
     &lt;button type="button" onClick={handleClick}&gt;
         Clicked {counter} times
     &lt;/button&gt;
-);
-                        </code></pre>
+);                        </code></pre>
                 </section>
 
             </section>
