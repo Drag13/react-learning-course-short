@@ -31,6 +31,17 @@
                 </h4>
             </section>
 
+            {{#prerequisite.length}}
+            <section>
+                <h2>Prerequisite</h2>
+                <ul>
+                    {{#prerequisite}}
+                    <li>{{{.}}}</li>
+                    {{/prerequisite}}
+                </ul>
+            </section>
+            {{/prerequisite.length}}
+
             <include src="./{{i}}/body.html"></include>
 
             {{#hometask.length}}
