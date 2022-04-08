@@ -94,22 +94,25 @@ Presentation - https://drag13.io/react-learning-course-short/3/index.html
 ### Key points: 
 
 - What is change detection
-- Two ways to track changes
+- Implicit change detection with Angular
+- Explicit change detection with React
 - How it works in React (simplified)
 - Typical mistakes
+
+Presentation - https://drag13.io/react-learning-course-short/4/index.html
 
 ### Home task: 
 
 Not specified
 
-## 5 Lecture: Managing state in React
+## 5 Workshop: Managing state in React
 
 ### Key points: 
 
 - `setState` and `useState`
-- [Context](https://reactjs.org/docs/context.html)
-- [Redux](https://redux.js.org/) + [Redux Toolkit](https://reduxtoolkit.js.org/),
-- [MobX](https://mobx.js.org/react-integration.html)
+- Working with context
+- Redux and Redux Toolkit
+- MobX
 
 ### Home task: 
 

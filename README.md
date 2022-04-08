@@ -2,7 +2,7 @@
 
 # React For Beginners - free course by Itera
 
-✔️ ✔️ ✔️ ✔️ ⏳ ⏳ ⏳ ⏳ ⏳ ⏳ ⏳ ⏳ ⏳ 
+✔️ ✔️ ✔️ ✔️ ✔️ ⏳ ⏳ ⏳ ⏳ ⏳ ⏳ ⏳ ⏳ 
 
 ## About
 
@@ -68,7 +68,9 @@ Presentation: https://drag13.io/react-learning-course-short/3/index.html
 
 ### 4 Lecture: Detecting changes
 
-### 5 Lecture: Managing state in React
+Presentation: https://drag13.io/react-learning-course-short/4/index.html
+
+### 5 Workshop: Managing state in React
 
 ### 6 Workshop: Forms with React, Formik and Yup
 

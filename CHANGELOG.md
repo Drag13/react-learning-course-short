@@ -12,7 +12,7 @@
 ## 03/04/2022
 
 - The second lecture - "Starting new project with create-react-app" - turned to workshop
-- Added presentation for the workshop - ["Starting new project with create-react-app"](https://drag13.io/react-learning-course-short/1/index.html) 
+- Added presentation for the workshop - ["Starting new project with create-react-app"](https://drag13.io/react-learning-course-short/1/index.html)
 
 ## 04/04/2022
 
@@ -35,3 +35,10 @@
 - Updated program for 4th presentation - ["Detecting changes"](https://drag13.io/react-learning-course-short/4/index.html)
 - Added script `scaffold.js` to generate presentations from `course.json`
 - Added draft for the new presentation - "Detecting changes"
+
+## 08/04/2022
+
+- Made program for the ["Detecting changes"](https://drag13.io/react-learning-course-short/4/index.html) a bit more clear
+- Improved scaffolding process - now it will generate the layout file and body files. Layout is rewritable, body no.
+- Added main content for the "Detecting changes" lecture
+- "Managing state in React" turned into workshop
