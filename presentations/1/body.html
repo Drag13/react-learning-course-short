@@ -1,0 +1,225 @@
+<section>
+    <section>
+        <h2>Starting new React project from scratch using create-react-app</h2>
+    </section>
+
+    <section>
+        <pre>
+            <code>
+npx create-react-app myproj --template typescript
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h4>Let's read it</h4>
+        <ul>
+            <li class="fragment fade-up">
+                <i>npx</i> - the npm tool that allow you to download npm package and execute it
+            </li>
+            <li class="fragment fade-up">
+                <i>create-react-app</i> - npm package from Meta (Facebook) that creates new project
+                with default structure and all dependencies
+            </li>
+            <li class="fragment fade-up">
+                <i>myproj</i> - name of the project
+            </li>
+            <li class="fragment fade-up">
+                <i>--template typescript</i> - template to use for project scaffolding. We will use
+                template with typescript
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        Simply saying:
+        <p class="left">
+            Download the create-react-app package from npm and execute it with parameter template equals to
+            typescript
+        </p>
+    </section>
+
+</section>
+<section>
+    <section>
+        <h2>Project structure</h2>
+    </section>
+
+    <section data-visibility="hidden">
+        <img src="./img/create-react-app-project.png" alt="create-react-app-project">
+    </section>
+
+    <section>
+        <pre>
+            <code class="pre-code-l" data-line-numbers="1-3|4-11|12-15">/public
+index.html          // root file to load
+manifest.json       // web app metadata
+/src
+App.css             // styles related to the App component
+App.test.tsx        // tests related to the App component
+App.tsx             // App component
+index.css           // Global styles
+react-app-env.d.ts  // extra types
+reportWebVitals.ts  // performance metrics report
+setupTests.ts       // test configuration
+.gitignore              // git ignore configuration
+package-lock.json       // all project dependencies
+package.json            // project configuration file
+tsconfig.json           // typescript configuration file
+            </code>
+        </pre>
+
+    </section>
+</section>
+
+<section>
+    <section>
+        <h2>Files you need to know</h2>
+    </section>
+
+    <section>
+        <h4>Index.html</h4>
+
+        <img src="./img/index-html.png" alt="react - index.html">
+    </section>
+
+    <section>
+        <h4>index.tsx</h4>
+
+        <img src="./img/index-tsx.png" alt="react - index.tsx">
+    </section>
+
+    <section>
+        <h4>App.tsx</h4>
+
+        <img src="./img/app-tsx.png" alt="react - app.tsx">
+    </section>
+
+    <section>
+        <h4>App.test.tsx</h4>
+        <img src="./img/test-tsx.png" alt="react - app.text.tsx">
+    </section>
+
+    <section>
+        <h4>package.json</h4>
+        <img src="./img/package-json.png" alt="react - package.json">
+    </section>
+</section>
+
+<section>
+    <section>
+        <h2>Predefined commands</h2>
+    </section>
+
+    <section>
+        <h3>Start</h3>
+        <p class="left">Start application for <strong>local</strong> development</p>
+        <pre><code>npm start</code></pre>
+    </section>
+
+    <section>
+        <h3>Test</h3>
+        <p class="left">Tests application</p>
+        <pre><code>npm test</code></pre>
+    </section>
+
+    <section>
+        <h3>Build</h3>
+        <p class="left">Builds application for production - bundling, minification, etc</p>
+        <pre><code>npm run build</code></pre>
+    </section>
+    <section>
+        <h3>Eject</h3>
+        <p class="left">Converts create-react-app to the regular front-end app</p>
+        <pre><code>npm run eject</code></pre>
+        <p class="fragment fade-up left">⚠️ It's one time action</p>
+    </section>
+</section>
+
+<section>
+    <section>
+        <h2>Code examples</h2>
+    </section>
+
+    <section>
+        <ul>
+            <li>Open the folder with VsCode</li>
+            <li class="fragment fade-up">Hit <i>CTRL ~</i> to start terminal</li>
+            <li class="fragment fade-up">type <i>npm start</i> in the console</li>
+        </ul>
+    </section>
+
+    <section>
+        <img src="./img/create-react-app-ui-example.png" alt="Default UI wit create-react-app">
+    </section>
+
+    <section>
+        Change code in the <i>app.tsx</i> and save file
+        <pre>
+            <code data-line-numbers="">import "./App.css";
+
+function App() {
+    return (
+        &lt;div className="App"&gt;
+            &lt;header className="App-header"&gt;hello world&lt;/header&gt;
+        &lt;/div&gt;;
+    );
+}
+
+export default App;
+            </code>
+        </pre>
+
+    </section>
+    <section>
+        <h4>Line by line</h4>
+        <pre>
+            <code data-line-numbers="1-11|1|3-9|11">import "./App.css";
+
+function App() {
+    return (
+        &lt;div className="App"&gt;
+            &lt;header className="App-header"&gt;hello world&lt;/header&gt;
+        &lt;/div&gt;;
+    );
+}
+
+export default App;
+        </code>
+    </pre>
+
+    </section>
+
+    <section>
+        <p class="left">
+            Feel free to alter the code inside the <i>div</i>. You can add any other HTML tag you know or
+            text. However, tags are not HTML - it's <a href="https://reactjs.org/docs/introducing-jsx.html"
+                target="_blank">TSX</a>
+        </p>
+
+        <p class="left">
+            After saving the file React will update the UI automatically. This called Hot Module Reloading
+        </p>
+    </section>
+
+    <section>
+        React is able to render the data as well
+
+        <pre>
+            <code data-line-numbers="3|8">import "./App.css";
+
+const data = { greetings: "Hello World!" };
+
+function App() {
+    return (<div className="App">
+        <header className="App-header">
+            {data.greetings}
+        </header> 
+    </div>);
+}
+
+export default App;
+            </code>
+        </pre>
+    </section>
+</section>
