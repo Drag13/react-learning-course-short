@@ -28,22 +28,22 @@ Presentation - https://drag13.io/react-learning-course-short/1/index.html
 
 ### Prerequisite
 
-- Install [Node.JS](https://nodejs.org/en/) with NPM
-- Install [VsCode](https://code.visualstudio.com/)
+- Install <a href="https://nodejs.org/en/">Node.JS</a>
+- Install <a href="https://code.visualstudio.com/">VsCode</a>
 
 ### Home task: 
 
-- Create new repository at [github](https://github.io) and name it **react-for-beginners-itera**
+- Create new repository at <a href="https://github.io">GitHub</a> and name it react-for-beginners-itera
 - Select .gitignore from VisualStudio
-- Clone repo locally using `git clone`
-- Initialize new project with `npm init -y`
-- Initialize new react application using `npx create-react-app my-page --template typescript`
-- Create a [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON#example_json) with next information:
-- First Name, Short biography
+- Clone repo locally using <i>git clone</i>
+- Initialize new project with <i>npm init -y</i>
+- Initialize new react application using <i>npx create-react-app my-page --template typescript</i>
+- Create a new <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON#example_json">JSON</a> with next information:
+- First Name
 - Short biography
 - Public contacts
 - Use React to display data from the JSON on the page
-- Commit and push the results with `git add .`, `git commit -m "Initial commit"`, `git push`
+- Commit and push the results with <i>git add .</i>, <i>git commit -m "Initial commit"</i>, <i>git push</i>
 
 ## 2 Lecture: What is component and why you should use it
 
