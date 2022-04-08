@@ -31,34 +31,7 @@
                 </h4>
             </section>
 
-            {{#prerequisite.length}}
-            <section>
-                <ul>
-                    {{{#prerequisite}}}
-                    <li>{{.}}</li>
-                    {{{/prerequisite}}}
-                </ul>
-            </section>
-            {{/prerequisite.length}}
-
-            {{#keyPoints}}
-                <section>
-                    <section>
-                        <h2>{{{.}}}</h2>
-                    </section>
-                </section>
-            {{/keyPoints}}
-
-            {{#hometask.length}}
-            <section>
-                <h2>Home task</h2>
-                <ul>
-                    {{{#hometask}}}
-                    <li>{{.}}</li>
-                    {{{/hometask}}}
-                </ul>
-            </section>
-            {{/hometask.length}}
+            <include src="./{{i}}/body.html"></include>
         </div>
     </div>
     <script src="../shared/init.js" type="module"></script>

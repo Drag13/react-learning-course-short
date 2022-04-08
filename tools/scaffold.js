@@ -6,40 +6,41 @@ const { mkdirSync } = require("fs");
 const course = require("../course.json");
 
 const ROOT = "./presentations";
-const TEMPLATE = "./templates/_index.html";
+const LAYOUT = "./templates/_layout.html";
+const BODY = "./templates/_body.html";
 
-const fromIndex = (i) => join(cwd(), ROOT, i.toString(), "index.html");
+function scaffold(layout, body, lesson, i) {
+  const folder = join(cwd(), ROOT, i.toString());
+  const pathToBody = join(folder, "body.html");
+  const pathToFile = join(folder, "index.html");
 
-function scaffold(template, lesson, i) {
-  const pathToFile = fromIndex(i);
   lesson.i = i;
 
-  if (exists(pathToFile)) {
-    console.log(`File ${pathToFile} already exists, skipping...`);
-    return;
+  const generated = exists(folder);
+
+  if (!generated) {
+    const bodyHtml = render(body, lesson);
+    mkdirSync(folder);
+    writeFile(pathToBody, bodyHtml);
   }
 
-  console.log(`Generating ${pathToFile} `);
-
-  const folder = join(cwd(), ROOT, i.toString());
-
-  if (!exists(folder)) {
-    mkdirSync(join(cwd(), ROOT, i.toString()));
-  }
-
-  const result = render(template, lesson);
-
-  writeFile(pathToFile, result);
+  // regenerate index.html
+  const indexHtml = render(layout, lesson);
+  writeFile(pathToFile, indexHtml);
 }
 
 (function cli([lessonNumber = -1]) {
-  const template = readFile(TEMPLATE);
+  const layout = readFile(LAYOUT);
+  const body = readFile(BODY);
   const lesson = course.lessons[lessonNumber];
   if (lesson) {
-    scaffold(template, lesson, lessonNumber);
+    scaffold(layout, body, lesson, lessonNumber);
   } else {
+    throw new Error(
+      "Massive update not working right now - it will broke prev presentations"
+    );
     course.lessons.forEach((lesson, index) =>
-      scaffold(template, lesson, index)
+      scaffold(layout, body, lesson, index)
     );
   }
 })(process.argv.splice(2));

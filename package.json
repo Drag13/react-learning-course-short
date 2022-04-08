@@ -33,6 +33,8 @@
   "devDependencies": {
     "gh-pages": "^3.2.3",
     "mustache": "^4.2.0",
-    "parcel": "^2.4.0"
+    "parcel": "^2.4.0",
+    "posthtml-doctype": "^1.1.1",
+    "posthtml-include": "^1.7.3"
   }
 }
