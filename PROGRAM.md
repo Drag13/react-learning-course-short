@@ -114,10 +114,16 @@ Not specified
 - Redux and Redux Toolkit
 - MobX
 
+### Prerequisite
+
+- Copy the <a href="">code</a> to your project
+- Install Redux - <i>npm i @reduxjs/toolkit react-redux</i>
+- Install MobX - <i>npm i mobx mobx-react-lite</i>
+
 ### Home task: 
 
 - Install redux and redux toolkit
-- Write the timer that will with two buttons 
+- Write the timer that will have two buttons 
 - start and stop
 - Timer should:
 - Be stopped by default

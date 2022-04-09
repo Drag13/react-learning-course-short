@@ -42,3 +42,9 @@
 - Improved scaffolding process - now it will generate the layout file and body files. Layout is rewritable, body no.
 - Added main content for the "Detecting changes" lecture
 - "Managing state in React" turned into workshop
+- Added some tags for the better SEO - so funny 🤣. I don't need any SEO 🤣
+
+# 09/04/2022
+
+- Start working on the next workshop - [Managing state in React](https://drag13.io/react-learning-course-short/5/index.html)
+- Added code examples for the context, redux and mobx
