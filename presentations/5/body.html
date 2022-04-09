@@ -1,0 +1,36 @@
+<section>
+    <section>
+        <h2>`setState` and `useState`</h2>
+    </section>
+</section>
+
+<section>
+    <section>
+        <h2>Working with context</h2>
+    </section>
+
+    <section>
+        <h4>Mistake</h4>
+        <pre><code data-line-numbers>const SomeContainer: FC&lt;SomeContainerProps&gt; = () =&gt; {
+const ctx = useContext(context);
+const btnHandler = () =&gt; {
+    const { nationality } = fetchUser();
+    ctx.nationality = nationality;
+};
+return &lt;MyBtn text="Fetch user" onClick={btnHandler} /&gt;;
+};
+          </code></pre>
+    </section>
+</section>
+
+<section>
+    <section>
+        <h2>Redux and Redux Toolkit</h2>
+    </section>
+</section>
+
+<section>
+    <section>
+        <h2>MobX</h2>
+    </section>
+</section>

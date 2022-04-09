@@ -113,6 +113,7 @@
         "Typical mistakes"
       ],
       "links": [
+        ["State in React", "https://reactjs.org/docs/faq-state.html"],
         ["Using the State Hook", "https://reactjs.org/docs/hooks-state.html"],
         [
           "Angular vs React - Change detection",
@@ -130,6 +131,11 @@
         "Redux and Redux Toolkit",
         "MobX"
       ],
+      "prerequisite": [
+        "Copy the <a href=\"\">code</a> to your project",
+        "Install Redux - <i>npm i @reduxjs/toolkit react-redux</i>",
+        "Install MobX - <i>npm i mobx mobx-react-lite</i>"
+      ],
       "links": [
         ["Context", "https://reactjs.org/docs/context.html"],
         ["Redux", "https://redux.js.org/"],
@@ -138,7 +144,7 @@
       ],
       "hometask": [
         "Install redux and redux toolkit",
-        "Write the timer that will with two buttons ",
+        "Write the timer that will have two buttons ",
         "start and stop",
         "Timer should:",
         "Be stopped by default",
