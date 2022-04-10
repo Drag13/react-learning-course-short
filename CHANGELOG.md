@@ -48,3 +48,7 @@
 
 - Start working on the next workshop - [Managing state in React](https://drag13.io/react-learning-course-short/5/index.html)
 - Added code examples for the context, redux and mobx
+
+# 10/04/2022
+
+- Added main content to the 5th workshop - [Managing state in React](https://drag13.io/react-learning-course-short/5/index.html). Still very far from being good enough to show anyone.

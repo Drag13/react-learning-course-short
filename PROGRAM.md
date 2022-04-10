@@ -109,31 +109,28 @@ Not specified
 
 ### Key points: 
 
-- `setState` and `useState`
-- Working with context
-- Redux and Redux Toolkit
+- Problems with setState and useState
+- Context
+- Redux
 - MobX
 
 ### Prerequisite
 
 - Copy the <a href="">code</a> to your project
-- Install Redux - <i>npm i @reduxjs/toolkit react-redux</i>
 - Install MobX - <i>npm i mobx mobx-react-lite</i>
 
 ### Home task: 
 
-- Install redux and redux toolkit
-- Write the timer that will have two buttons 
+- Using context write the timer that will have two buttons
 - start and stop
 - Timer should:
 - Be stopped by default
-- On start it should display time in format HH:MM:SS
-- On start page title (<title>) should be changed to "Timer is running"
-- On stop timer should be stopped and show the last value
+- On start, App should display time in format HH:MM:SS
+- On start page title should be changed to "Timer is running"
+- On stop timer should be stopped, the latest value should be present
 - Page title should be returned back to normal
-- Uninstall redux
 - Install MobX
-- Implement same functionality
+- Implement same functionality with MobX
 
 ## 6 Workshop: Forms with React, Formik and Yup
 
