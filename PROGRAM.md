@@ -134,12 +134,13 @@ Presentation - https://drag13.io/react-learning-course-short/5/index.html
 - Install MobX
 - Implement same functionality with MobX
 
-## 6 Lecture: Styling, CSS Modules and Styled Components
+## 6 Lecture: Styling in React - from plain CSS to CSS in JS
 
 ### Key points: 
 
-- Preprocessores
-- CSS Modules
+- Default way
+- Using CSS modules
+- Preprocessors
 - CSS in JS
 
 ### Home task: 

@@ -74,7 +74,7 @@ Presentation: https://drag13.io/react-learning-course-short/4/index.html
 
 Presentation: https://drag13.io/react-learning-course-short/5/index.html
 
-### 6 Lecture: Styling, CSS Modules and Styled Components
+### 6 Lecture: Styling in React - from plain CSS to CSS in JS
 
 ### 7 Workshop: Forms with React, Formik and Yup
 
