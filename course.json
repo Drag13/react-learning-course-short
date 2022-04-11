@@ -132,7 +132,7 @@
         "MobX"
       ],
       "prerequisite": [
-        "Copy the <a href=\"\">code</a> to your project",
+        "Copy the <a href=\"https://raw.githubusercontent.com/Drag13/react-learning-course-short/master/presentations/5/code/index_general.tsx\">code</a> to your project",
         "Install MobX - <i>npm i mobx mobx-react-lite</i>"
       ],
       "links": [
@@ -156,7 +156,14 @@
         "Page title should be returned back to normal",
         "Install MobX",
         "Implement same functionality with MobX"
-      ]
+      ],
+      "presentation":"https://drag13.io/react-learning-course-short/5/index.html"
+    },
+    {
+      "title": "Styling, CSS Modules and Styled Components",
+      "type": "Lecture",
+      "keyPoints": ["Preprocessores", "CSS Modules", "CSS in JS"],
+      "hometask": ["TBD"]
     },
     {
       "title": "Forms with React, Formik and Yup",
@@ -202,12 +209,7 @@
       "type": "Lecture",
       "keyPoints": ["Default way with fetch", "Setup axios"]
     },
-    {
-      "title": "Styling, CSS Modules and Styled Components",
-      "type": "Lecture",
-      "keyPoints": ["Preprocessors", "CSS Modules", "CSS in JS"],
-      "hometask": ["TBD"]
-    },
+
     {
       "title": "UI libraries",
       "type": "Lecture",
