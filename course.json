@@ -157,13 +157,29 @@
         "Install MobX",
         "Implement same functionality with MobX"
       ],
-      "presentation":"https://drag13.io/react-learning-course-short/5/index.html"
+      "presentation": "https://drag13.io/react-learning-course-short/5/index.html"
     },
     {
-      "title": "Styling, CSS Modules and Styled Components",
+      "title": "Styling in React - from plain CSS to CSS in JS",
       "type": "Lecture",
-      "keyPoints": ["Preprocessores", "CSS Modules", "CSS in JS"],
-      "hometask": ["TBD"]
+      "keyPoints": [
+        "Default way",
+        "Using CSS modules",
+        "Preprocessors",
+        "CSS in JS"
+      ],
+      "hometask": ["TBD"],
+      "links": [
+        ["Css Modules", "https://css-tricks.com/css-modules-part-1-need/"],
+        [
+          "Styled Components",
+          "https://styled-components.com/docs/basics#getting-started"
+        ],
+        [
+          "Styled Components extension",
+          "https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components"
+        ]
+      ]
     },
     {
       "title": "Forms with React, Formik and Yup",
