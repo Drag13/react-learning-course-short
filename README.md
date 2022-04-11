@@ -2,7 +2,7 @@
 
 # React For Beginners - free course by Itera
 
-✔️ ✔️ ✔️ ✔️ ✔️ ⏳ ⏳ ⏳ ⏳ ⏳ ⏳ ⏳ ⏳ 
+✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ⏳ ⏳ ⏳ ⏳ ⏳ ⏳ ⏳ 
 
 ## About
 
@@ -72,15 +72,17 @@ Presentation: https://drag13.io/react-learning-course-short/4/index.html
 
 ### 5 Workshop: Managing state in React
 
-### 6 Workshop: Forms with React, Formik and Yup
+Presentation: https://drag13.io/react-learning-course-short/5/index.html
 
-### 7 Lecture: Single Page Application
+### 6 Lecture: Styling, CSS Modules and Styled Components
 
-### 8 Lecture: React Router
+### 7 Workshop: Forms with React, Formik and Yup
 
-### 9 Lecture: Network, Fetch and Axios
+### 8 Lecture: Single Page Application
 
-### 10 Lecture: Styling, CSS Modules and Styled Components
+### 9 Lecture: React Router
+
+### 10 Lecture: Network, Fetch and Axios
 
 ### 11 Lecture: UI libraries
 

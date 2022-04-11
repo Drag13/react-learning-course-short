@@ -44,11 +44,15 @@
 - "Managing state in React" turned into workshop
 - Added some tags for the better SEO - so funny 🤣. I don't need any SEO 🤣
 
-# 09/04/2022
+## 09/04/2022
 
 - Start working on the next workshop - [Managing state in React](https://drag13.io/react-learning-course-short/5/index.html)
 - Added code examples for the context, redux and mobx
 
-# 10/04/2022
+## 10/04/2022
 
 - Added main content to the 5th workshop - [Managing state in React](https://drag13.io/react-learning-course-short/5/index.html). Still very far from being good enough to show anyone.
+
+## 11/04/2022
+
+- Lecture re-ordering. Instead of Form, the CSS lecture will be held. The reason is to give a break for students.

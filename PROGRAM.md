@@ -114,9 +114,11 @@ Not specified
 - Redux
 - MobX
 
+Presentation - https://drag13.io/react-learning-course-short/5/index.html
+
 ### Prerequisite
 
-- Copy the <a href="">code</a> to your project
+- Copy the <a href="https://raw.githubusercontent.com/Drag13/react-learning-course-short/master/presentations/5/code/index_general.tsx">code</a> to your project
 - Install MobX - <i>npm i mobx mobx-react-lite</i>
 
 ### Home task: 
@@ -132,7 +134,19 @@ Not specified
 - Install MobX
 - Implement same functionality with MobX
 
-## 6 Workshop: Forms with React, Formik and Yup
+## 6 Lecture: Styling, CSS Modules and Styled Components
+
+### Key points: 
+
+- Preprocessores
+- CSS Modules
+- CSS in JS
+
+### Home task: 
+
+- TBD
+
+## 7 Workshop: Forms with React, Formik and Yup
 
 ### Key points: 
 
@@ -147,7 +161,7 @@ Not specified
 
 Not specified
 
-## 7 Lecture: Single Page Application
+## 8 Lecture: Single Page Application
 
 ### Key points: 
 
@@ -160,7 +174,7 @@ Not specified
 
 Not specified
 
-## 8 Lecture: React Router
+## 9 Lecture: React Router
 
 ### Key points: 
 
@@ -178,7 +192,7 @@ Not specified
 - If `ln` equals `ua` all texts should be in Ukrainian language
 - If `ln` equals `en` all text should be in English (feel free to use google translate if needed)
 
-## 9 Lecture: Network, Fetch and Axios
+## 10 Lecture: Network, Fetch and Axios
 
 ### Key points: 
 
@@ -188,18 +202,6 @@ Not specified
 ### Home task: 
 
 Not specified
-
-## 10 Lecture: Styling, CSS Modules and Styled Components
-
-### Key points: 
-
-- Preprocessors
-- CSS Modules
-- CSS in JS
-
-### Home task: 
-
-- TBD
 
 ## 11 Lecture: UI libraries
 
