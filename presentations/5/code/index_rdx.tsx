@@ -10,7 +10,7 @@ const userDetailsSlice = createSlice({
     nationality: "unknown",
   },
   reducers: {
-    setNationality: (state, action) => (state.nationality = action.payload),
+    setNationality: (state, action) => ({...state, nationality: action.payload})
   },
 });
 
