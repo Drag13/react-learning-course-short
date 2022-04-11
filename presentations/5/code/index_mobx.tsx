@@ -56,12 +56,6 @@ const SomeContainer: FC<SomeContainerProps> = () => {
 
 // Application
 class App extends React.Component {
-  state = {
-    nationality: "Unknown",
-    setNationality: (v: string) => {
-      this.setState({ ...this.state, nationality: v });
-    },
-  };
   render() {
     return (
       <>
