@@ -45,7 +45,7 @@ Presentation - https://drag13.io/react-learning-course-short/1/index.html
 - Use React to display data from the JSON on the page
 - Commit and push the results with <i>git add .</i>, <i>git commit -m "Initial commit"</i>, <i>git push</i>
 
-## 2 Lecture: What is component and why you should use it
+## 2 Lecture: Components in React
 
 ### Key points: 
 

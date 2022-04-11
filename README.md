@@ -58,7 +58,7 @@ Presentation: https://drag13.io/react-learning-course-short/0/index.html
 
 Presentation: https://drag13.io/react-learning-course-short/1/index.html
 
-### 2 Lecture: What is component and why you should use it
+### 2 Lecture: Components in React
 
 Presentation: https://drag13.io/react-learning-course-short/2/index.html
 
