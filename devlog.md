@@ -9,7 +9,7 @@ The course is built with:
 ## Install
 
 ```cmd
-npm ci`
+npm ci
 ```
 
 ## Start the presentation locally
