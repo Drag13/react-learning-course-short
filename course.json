@@ -65,7 +65,7 @@
       ]
     },
     {
-      "title": "What is component and why you should use it",
+      "title": "Components in React",
       "type": "Lecture",
       "keyPoints": [
         "What is the component",
