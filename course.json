@@ -171,6 +171,7 @@
       "hometask": ["TBD"],
       "links": [
         ["Css Modules", "https://css-tricks.com/css-modules-part-1-need/"],
+        ["Sass - css with superpowers", "https://sass-lang.com/"],
         [
           "Styled Components",
           "https://styled-components.com/docs/basics#getting-started"

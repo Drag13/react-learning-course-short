@@ -1,7 +1,60 @@
-
 <section>
     <section>
         <h2>Default way</h2>
+    </section>
+
+    <section>
+        <h4>Just a CSS</h4>
+        <pre><code data-line-numbers>import "./index.css";
+const App = () =&gt; &lt;div className="App"&gt;My app&lt;/div&gt;</code>
+        </pre>
+    </section>
+
+    <section>
+        <h4>Pros</h4>
+
+        <ul>
+            <li class="fragment fade-up">Simple to read - just regular CSS</li>
+            <li class="fragment fade-up">Simple to use - just regular CSS</li>
+            <li class="fragment fade-up">No extra efforts - works out of the box</li>
+        </ul>
+    </section>
+
+    <section>
+        <h4>Cons - Conflicts</h4>
+        <pre><code data-line-numbers="">// App.css
+.root {padding-top: 1em;}</code></pre>
+        <pre><code data-line-numbers="">// Card.css
+.root {padding-top: 2em;}</code></pre>
+
+        <p>WTF?</p>
+    </section>
+
+    <section>
+        <h4>Cons - hard to reuse</h4>
+        <pre><code data-line-numbers="">input {
+    padding: 1em;
+    border-radius: 10%;
+}
+
+select {
+    padding: 1em;
+    border-radius: 10%;
+}</code></pre>
+
+    </section>
+
+    <section>
+        <h4>Cons - hard to track not used code</h4>
+        <pre><code data-line-numbers="">.app {font-size: 2rem;}
+.missing-class {color: red}
+        </code></pre>
+        <pre><code data-line-numbers>import "./index.css";
+const App = () =&gt; &lt;div className="app"&gt;My app&lt;/div&gt;</code></pre>
+    </section>
+
+    <section>
+        <h4>And others</h4>
     </section>
 </section>
 
@@ -9,11 +62,98 @@
     <section>
         <h2>Using CSS modules</h2>
     </section>
+
+    <section>
+        <h4>Almost the same as CSS</h4>
+        <pre><code data-line-numbers="1-2|1|2">import styles "./app.module.css";
+const App = () =&gt; &lt;div className={styles.root}&gt;My app&lt;/div&gt;</code>
+        </pre>
+    </section>
+
+    <section>
+        <h4>Absolutely same CSS but scoped to the component</h4>
+        <pre><code data-line-numbers>import "./index.css";
+const App = () =&gt; &lt;div className="app"&gt;My app&lt;/div&gt;</code> </pre>
+
+        <p>[filename]\_[classname]\_\_[hash]</p>
+        <pre><code data-line-numbers=""><div class="App_app__GmAPg">My app</div></code></pre>
+
+    </section>
+
+    <section>
+        <h4>What about other cons?</h4>
+    </section>
 </section>
 
 <section>
     <section>
         <h2>Preprocessors</h2>
+
+        <p>CSS with superpowers</p>
+    </section>
+
+    <section>
+        <h4>SCSS - Pros</h4>
+
+        <ul>
+            <li>Variables</li>
+            <li>Convenient nesting</li>
+            <li>Mixins</li>
+            <li>Math</li>
+        </ul>
+    </section>
+
+    <section>
+        <h4>Pros - variables</h4>
+
+        <pre><code data-line-numbers="">$default-padding: 1em;
+            .app{
+                padding: $default-padding;
+            }
+            .card {
+                padding: $default-padding;
+            }</code></pre>
+    </section>
+
+    <section>
+        <h4>Pros - convenient nesting</h4>
+
+        <pre><code data-line-numbers="">radio {
+    &:disabled{opacity: 0.33;}
+    &:focus {outline: 1px solid red;}
+}</code></pre>
+
+        <section>
+            <h4>Pros - mixins</h4>
+            <pre><code data-line-numbers="">@mixin theme($theme: white, $txt: black) {
+    background: $theme;
+     color:$txt;
+ }
+ 
+ .card {
+     @include theme;
+ }</code></pre>
+
+        </section>
+
+        <section>
+            <h4>Pros - math</h4>
+
+            <pre><code>@use "sass:math";
+article[role="main"] {
+  width: math.div(600px, 960px) * 100%;
+}</code></pre>
+        </section>
+
+        <section>
+            <h4>Cons</h4>
+
+            <ul>
+                <li>Extra setup needed</li>
+                <li>Learning curve</li>
+                <li>Not compatible with pure CSS</li>
+            </ul>
+        </section>
     </section>
 </section>
 
@@ -22,4 +162,3 @@
         <h2>CSS in JS</h2>
     </section>
 </section>
-
