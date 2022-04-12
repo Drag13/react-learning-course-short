@@ -16,17 +16,22 @@ function scaffold(layout, body, lesson, i) {
 
   lesson.i = i;
 
-  const generated = exists(folder);
+  const folderExists = exists(folder);
+  const bodyExists = folderExists && exists(pathToBody);
 
-  if (!generated) {
-    const bodyHtml = render(body, lesson);
+  if (!folderExists) {
     mkdirSync(folder);
-    writeFile(pathToBody, bodyHtml);
   }
 
-  // regenerate index.html
+  // always regenerate index.html for consistency
   const indexHtml = render(layout, lesson);
   writeFile(pathToFile, indexHtml);
+
+  // don't regenerate body if it already in place
+  if (!bodyExists) {
+    const bodyHtml = render(body, lesson);
+    writeFile(pathToBody, bodyHtml);
+  }
 }
 
 (function cli([lessonNumber = -1]) {
