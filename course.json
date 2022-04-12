@@ -92,6 +92,24 @@
     {
       "title": "Building your own component",
       "type": "Workshop",
+      "links": [
+        [
+          "Class-based MessageBlock example",
+          "https://github.com/Drag13/react-learning-course-short/blob/master/presentations/3/code/mb-class.tsx"
+        ],
+        [
+          "Functional MessageBlock example",
+          "https://github.com/Drag13/react-learning-course-short/blob/master/presentations/3/code/mb-functional.tsx"
+        ],
+        [
+          "Functional Counter example",
+          "https://github.com/Drag13/react-learning-course-short/blob/master/presentations/3/code/counter-functional.tsx"
+        ],
+        [
+          "Class-based Counter example",
+          "https://github.com/Drag13/react-learning-course-short/blob/master/presentations/3/code/counter-cb.tsx"
+        ]
+      ],
       "keyPoints": [
         "What is component - quick recap",
         "Building \"dumb\" components - functional and class-based",
@@ -100,7 +118,7 @@
         "Components - best practices"
       ],
       "prerequisite": [
-        "Create new project with [create-react-app](https://drag13.io/react-learning-course-short/1/index.html)"
+        "Create new project using <a href=\"https://drag13.io/react-learning-course-short/1/index.html\">example</a>"
       ],
       "presentation": "https://drag13.io/react-learning-course-short/3/index.html",
       "hometask": [
