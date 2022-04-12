@@ -199,10 +199,14 @@
         "Preprocessors",
         "CSS in JS"
       ],
-      "hometask": ["TBD"],
+      "presentation": "https://drag13.io/react-learning-course-short/6/index.html",
       "links": [
         ["Css Modules", "https://css-tricks.com/css-modules-part-1-need/"],
         ["Sass - css with superpowers", "https://sass-lang.com/"],
+        [
+          "How to add SASS to React",
+          "https://create-react-app.dev/docs/adding-a-sass-stylesheet/"
+        ],
         [
           "Styled Components",
           "https://styled-components.com/docs/basics#getting-started"

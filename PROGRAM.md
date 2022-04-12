@@ -51,6 +51,7 @@ Presentation - https://drag13.io/react-learning-course-short/1/index.html
 
 - What is the component
 - Why to use the components
+- Component types
 - How to pass data into the component
 - How to get data from the component
 - Why TypeScript
@@ -75,7 +76,7 @@ Presentation - https://drag13.io/react-learning-course-short/3/index.html
 
 ### Prerequisite
 
-- Create new project with [create-react-app](https://drag13.io/react-learning-course-short/1/index.html)
+- Create new project using <a href="https://drag13.io/react-learning-course-short/1/index.html">example</a>
 
 ### Home task: 
 
@@ -143,9 +144,11 @@ Presentation - https://drag13.io/react-learning-course-short/5/index.html
 - Preprocessors
 - CSS in JS
 
+Presentation - https://drag13.io/react-learning-course-short/6/index.html
+
 ### Home task: 
 
-- TBD
+Not specified
 
 ## 7 Workshop: Forms with React, Formik and Yup
 

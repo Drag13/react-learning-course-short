@@ -2,7 +2,7 @@
 
 # React For Beginners - free course by Itera
 
-✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ⏳ ⏳ ⏳ ⏳ ⏳ ⏳ ⏳ 
+✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ⏳ ⏳ ⏳ ⏳ ⏳ ⏳ 
 
 ## About
 
@@ -75,6 +75,8 @@ Presentation: https://drag13.io/react-learning-course-short/4/index.html
 Presentation: https://drag13.io/react-learning-course-short/5/index.html
 
 ### 6 Lecture: Styling in React - from plain CSS to CSS in JS
+
+Presentation: https://drag13.io/react-learning-course-short/6/index.html
 
 ### 7 Workshop: Forms with React, Formik and Yup
 

@@ -58,3 +58,8 @@
 - Lecture re-ordering. Instead of Form, the CSS lecture will be held. The reason is to give a break for students.
 - Changed CSS lecture structure for the better clarity
 - Start working with the new lecture [Styling in React - from plain CSS to CSS in JS](https://drag13.io/react-learning-course-short/6/index.html). Should be simple one 😂
+
+## 12/04/2022
+
+- Finally switched to the auto generated layout. It's now possible to run `npm run scaffold` and get all layout in sync - title, prerequisite, links, etc
+- Added rest part of the lecture [Styling in React - from plain CSS to CSS in JS](https://drag13.io/react-learning-course-short/6/index.html)
