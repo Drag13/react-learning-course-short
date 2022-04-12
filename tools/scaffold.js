@@ -41,9 +41,6 @@ function scaffold(layout, body, lesson, i) {
   if (lesson) {
     scaffold(layout, body, lesson, lessonNumber);
   } else {
-    throw new Error(
-      "Massive update not working right now - it will broke prev presentations"
-    );
     course.lessons.forEach((lesson, index) =>
       scaffold(layout, body, lesson, index)
     );
