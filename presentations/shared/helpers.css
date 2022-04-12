@@ -1,28 +1,36 @@
 .left {
-    text-align: left;
+  text-align: left;
 }
 
-pre>code.pre-code-l {
-    max-height: 500px;
+pre > code.pre-code-l {
+  max-height: 500px;
 }
 
-.reveal .green{
-    color: #17ff2e;
+.reveal .green {
+  color: #17ff2e;
 }
 
 .scrollable-slide {
-    height: 100%;
-    overflow-y: auto !important;
+  height: 100%;
+  overflow-y: auto !important;
 }
 ::-webkit-scrollbar {
-    width: 6px;
+  width: 6px;
 }
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 ::-webkit-scrollbar-thumb {
   background-color: #333;
 }
 ::-webkit-scrollbar-corner {
   background-color: #333;
-}   
+}
+
+.ukraine {
+  color: #fff;
+  line-height: 1em;
+  overflow-wrap: anywhere;
+  background: linear-gradient(to bottom, #015bbb 50%, #fed500 50%);
+  padding: 1.5rem 0.5rem;
+}
