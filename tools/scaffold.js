@@ -39,10 +39,14 @@ function scaffold(layout, body, lesson, i) {
   const body = readFile(BODY);
   const lesson = course.lessons[lessonNumber];
   if (lesson) {
+    process.stdout.write(`Scaffolding lesson #${lessonNumber}...`);
     scaffold(layout, body, lesson, lessonNumber);
+    console.log("DONE");
   } else {
+    process.stdout.write(`Syncing ALL lectures...`);
     course.lessons.forEach((lesson, index) =>
       scaffold(layout, body, lesson, index)
     );
+    console.log("DONE");
   }
 })(process.argv.splice(2));
