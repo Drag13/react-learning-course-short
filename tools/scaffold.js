@@ -12,7 +12,7 @@ const BODY = "./templates/_body.html";
 function scaffold(layout, body, lesson, i) {
   const folder = join(cwd(), ROOT, i.toString());
   const pathToBody = join(folder, "body.html");
-  const pathToFile = join(folder, "index.html");
+  const pathToLayout = join(folder, "index.html");
 
   lesson.i = i;
 
@@ -25,7 +25,7 @@ function scaffold(layout, body, lesson, i) {
 
   // always regenerate index.html for consistency
   const indexHtml = render(layout, lesson);
-  writeFile(pathToFile, indexHtml);
+  writeFile(pathToLayout, indexHtml);
 
   // don't regenerate body if it already in place
   if (!bodyExists) {
