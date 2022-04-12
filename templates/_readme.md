@@ -2,6 +2,8 @@
 
 # {{title}}
 
+## Progress {{progressPercentage}}
+
 {{#progress}}{{.}}{{/progress}}
 
 ## About
