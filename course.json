@@ -70,9 +70,22 @@
       "keyPoints": [
         "What is the component",
         "Why to use the components",
+        "Component types",
         "How to pass data into the component",
         "How to get data from the component",
         "Why TypeScript"
+      ],
+      "links": [
+        ["What is JSX", "https://reactjs.org/docs/introducing-jsx.html"],
+        [
+          "JSX under the hood",
+          "https://www.telerik.com/blogs/how-jsx-react-works-under-hood"
+        ],
+        [
+          "Smart VS Dumb components",
+          "https://medium.com/@thejasonfile/dumb-components-and-smart-components-e7b33a698d43"
+        ],
+        ["TypeScript", "https://www.typescriptlang.org/"]
       ],
       "presentation": "https://drag13.io/react-learning-course-short/2/index.html"
     },
