@@ -2,6 +2,7 @@
   "title": "React For Beginners - free course by Itera",
   "lessons": [
     {
+      "name": "react-intro",
       "title": "What is React",
       "type": "Lecture",
       "shortSummary": "Introduction to React.JS, the idea and JSX",
@@ -10,7 +11,7 @@
         "React - advantages and disadvantages",
         "Why to learn React nowadays"
       ],
-      "presentation": "https://drag13.io/react-learning-course-short/0/index.html",
+      "published": true,
       "links": [
         ["Documentation", "https://reactjs.org/docs/getting-started.html"],
         ["React - source code", "https://github.com/facebook/react"],
@@ -26,6 +27,7 @@
     },
     {
       "title": "Starting new project with create-react-app",
+      "name": "react-cra",
       "type": "Workshop",
       "keyPoints": [
         "Starting new React project from scratch using create-react-app",
@@ -38,7 +40,7 @@
         "Install <a href=\"https://nodejs.org/en/\">Node.JS</a>",
         "Install <a href=\"https://code.visualstudio.com/\">VsCode</a>"
       ],
-      "presentation": "https://drag13.io/react-learning-course-short/1/index.html",
+      "published": true,
       "hometask": [
         "Create new repository at <a href=\"https://github.io\">GitHub</a> and name it react-for-beginners-itera",
         "Select .gitignore from VisualStudio",
@@ -66,6 +68,7 @@
     },
     {
       "title": "Components in React",
+      "name": "react-components",
       "type": "Lecture",
       "keyPoints": [
         "What is the component",
@@ -87,10 +90,11 @@
         ],
         ["TypeScript", "https://www.typescriptlang.org/"]
       ],
-      "presentation": "https://drag13.io/react-learning-course-short/2/index.html"
+      "published": true
     },
     {
       "title": "Building your own component",
+      "name": "react-new-component",
       "type": "Workshop",
       "links": [
         [
@@ -120,7 +124,7 @@
       "prerequisite": [
         "Create new project using <a href=\"https://drag13.io/react-learning-course-short/1/index.html\">example</a>"
       ],
-      "presentation": "https://drag13.io/react-learning-course-short/3/index.html",
+      "published": true,
       "hometask": [
         "Add footer to your application",
         "Split the application you've built previously into components",
@@ -135,6 +139,7 @@
     },
     {
       "title": "Detecting changes",
+      "name": "react-change-detection",
       "type": "Lecture",
       "keyPoints": [
         "What is change detection",
@@ -151,10 +156,11 @@
           "https://morioh.com/p/caccd1b76c5c"
         ]
       ],
-      "presentation": "https://drag13.io/react-learning-course-short/4/index.html"
+      "published": true
     },
     {
       "title": "Managing state in React",
+      "name": "react-state-management",
       "type": "Workshop",
       "keyPoints": [
         "Problems with setState and useState",
@@ -188,10 +194,11 @@
         "Install MobX",
         "Implement same functionality with MobX"
       ],
-      "presentation": "https://drag13.io/react-learning-course-short/5/index.html"
+      "published": true
     },
     {
       "title": "Styling in React - from plain CSS to CSS in JS",
+      "name": "react-styling",
       "type": "Lecture",
       "keyPoints": [
         "Default way",
@@ -199,7 +206,7 @@
         "Preprocessors",
         "CSS in JS"
       ],
-      "presentation": "https://drag13.io/react-learning-course-short/6/index.html",
+      "published": true,
       "links": [
         ["Css Modules", "https://css-tricks.com/css-modules-part-1-need/"],
         ["Sass - css with superpowers", "https://sass-lang.com/"],
@@ -219,6 +226,7 @@
     },
     {
       "title": "Forms with React, Formik and Yup",
+      "name": "react-forms",
       "type": "Workshop",
       "keyPoints": [
         "Building your first form with [Formik](https://formik.org/docs/overview)",
@@ -230,6 +238,7 @@
     },
     {
       "title": "Single Page Application",
+      "name": "spa",
       "type": "Lecture",
       "keyPoints": [
         "Server side routing",
@@ -240,12 +249,17 @@
     },
     {
       "title": "React Router",
+      "name": "react-router",
       "type": "Lecture",
       "keyPoints": [
         "Install react router",
         "Basic setup",
         "Data Binding",
         "Router guard"
+      ],
+      "links": [
+        "React Router",
+        "https://reactrouter.com/docs/en/v6/getting-started/overview"
       ],
       "hometask": [
         "Add header for your application",
@@ -258,17 +272,20 @@
     },
     {
       "title": "Network, Fetch and Axios",
+      "name": "react-network",
       "type": "Lecture",
       "keyPoints": ["Default way with fetch", "Setup axios"]
     },
 
     {
       "title": "UI libraries",
+      "name": "react-ui-lib",
       "type": "Lecture",
       "keyPoints": ["Purpose", "How to choose", "Material UI"]
     },
     {
       "title": "Tests",
+      "name": "react-tests",
       "type": "Lecture",
       "keyPoints": [
         "Why test",

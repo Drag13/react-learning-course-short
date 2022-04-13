@@ -16,13 +16,18 @@ function renderReadme(data) {
 (function cli() {
   const data = require("../course.json");
   const finishedLectures = data.lessons.reduce(
-    (acc, v) => (v.presentation ? acc + 1 : acc),
+    (acc, v) => (v.published ? acc + 1 : acc),
     0
   );
   const fixedPercentage = (finishedLectures / data.lessons.length) * 100;
   data.lessons = data.lessons.map((l, i) => ({ ...l, i }));
-  data.progress = data.lessons.map((ls) => (ls.presentation ? `✔️ ` : `⏳ `));
+  data.progress = data.lessons.map((ls) => (ls.published ? `✔️ ` : `⏳ `));
   data.progressPercentage = `${fixedPercentage.toFixed(0)}%`;
+  data.lessons.forEach(
+    (l) =>
+      l.published &&
+      (l.presentation = `https://drag13.io/react-learning-course-short/${l.name}`)
+  );
   renderProgram(data);
   renderReadme(data);
 })(process.argv.splice(2));

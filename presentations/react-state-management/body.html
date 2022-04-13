@@ -1,0 +1,324 @@
+<section>
+    <section>
+        <h2>The problem with <i>setState</i> and <i>useState</i></h2>
+    </section>
+
+    <section>
+        <pre><code data-line-numbers>// Component to show user details
+const L3: FC&lt;UserInputProps&gt; = ({ nationality }) =&gt; (
+    &lt;strong&gt;{nationality}&lt;/strong&gt;
+);
+
+// Some component #2
+const L2: FC&lt;UserInputProps&gt; = ({ nationality }) =&gt; (
+    &lt;L3 nationality={nationality} /&gt;
+);
+
+// Some component #1
+const L1: FC&lt;UserInputProps&gt; = ({ nationality }) =&gt; (
+    &lt;L2 nationality={nationality} /&gt;
+);</code></pre>
+    </section>
+
+    <section>
+        <pre><code>
+            L1
+            ⬇️
+            nationality 
+            |-> L2
+                ⬇️
+                ...
+                    ⬇️
+                    nationality
+                    |-> LN 
+        </code></pre>
+
+    </section>
+
+    <section>
+        <h4>Imagine, we need to change something</h4>
+        <ul>
+            <li class="fragment fade-up">
+                A lot of useless work - need to update each component in hierarchy
+            </li>
+            <li class="fragment fade-up">
+                Risk of mistake - one typo and everything failed
+            </li>
+
+            <li class="fragment fade-up">
+                Performance reasons - the whole tree will be rerendered
+            </li>
+        </ul>
+    </section>
+</section>
+
+<section>
+
+    <section>
+        <h2>React context</h2>
+
+        <p class="left">
+            Context provides a way to pass data through the component tree without having to pass props down manually at
+            every level
+        </p>
+    </section>
+    <section>
+        <h4>Working with context</h4>
+    </section>
+
+    <section>
+        <h4>Create context with default value</h4>
+        <pre><code data-line-numbers>import { createContext } from "react";
+const Context = createContext({
+    nationality: "unknown",
+    setNationality: (_: string) =&gt; {},
+});
+    </code></pre>
+    </section>
+
+    <section>
+        <h4>Create a state with similar properties </h4>
+        <pre><code data-line-numbers>class App extends Component {
+state = {
+    nationality: "Unknown",
+    setNationality: (v: string) =&gt;
+    this.setState({ ...this.state, nationality: v }),
+    };
+}</code></pre>
+    </section>
+
+    <section>
+        <h4>Pass context into the render tree</h4>
+
+        <pre><code data-line-numbers>render() {
+    return (
+        &lt;Context.Provider value={this.state}&gt;
+            &lt;h1&gt;My App&lt;/h1&gt;
+            &lt;L1 /&gt;
+            &lt;SomeContainer /&gt;
+        &lt;/Context.Provider&gt;
+    );
+}</code></pre>
+    </section>
+
+    <section>
+        <h4>Use context from anywhere</h4>
+
+        <pre><code data-line-numbers>import { useContext } from "react";
+const L3: FC = () =&gt; {
+    const { nationality } = useContext(Context);
+    return &lt;strong&gt;{nationality}&lt;/strong&gt;;
+};
+            </code></pre>
+    </section>
+
+    <section>
+        <h4>Typical mistakes with Context</h4>
+    </section>
+
+    <section>
+        <h4>💔Using instead of local state</h4>
+        <p class="left">Use context for commonly used data only</p>
+    </section>
+
+    <section>
+        <h4>💔Mutating context directly</h4>
+
+        <pre><code data-line-numbers="1-8|5">const SomeContainer: FC&lt;SomeContainerProps&gt; = () =&gt; {
+    const ctx = useContext(context);
+    const btnHandler = () =&gt; {
+        const { nationality } = fetchUser();
+        ctx.nationality = nationality;
+    };
+    return &lt;MyBtn text="Fetch user" onClick={btnHandler} /&gt;;
+};</code></pre>
+    </section>
+</section>
+
+<section>
+
+    <section>
+        <h2>Problems with context</h2>
+
+    </section>
+
+    <section>
+        <h4>It's not state management tool</h4>
+        <p>
+            Context was designed for sharing, not for updating
+        </p>
+    </section>
+
+    <section>
+        <h4>Performance issues</h4>
+
+        <p class="left">
+            Changing context forces to rerender all context consumers. If your application is big and highly depends on
+            the context - this might heart the performance.
+        </p>
+    </section>
+
+    <section>
+        <h4>Developer Experience issues</h4>
+
+        <p class="left">
+            Context doesn't have it's own update mechanism. It's relies on the component state to track changes. You
+            will need to create special components which will handle state just to avoid a mess.
+        </p>
+    </section>
+
+    <section>
+        <h4>Solution - use State Management Tools</h4>
+    </section>
+</section>
+
+
+<section>
+
+    <section>
+        <h2> <a href="https://github.com/reduxjs/redux">Redux</a> - the most popular management tool</h2>
+
+        <ul>
+            <li>7 500 000 downloading in a week</li>
+            <li>57.8 ⭐ in GitHub</li>
+        </ul>
+    </section>
+
+    <section>
+        <h4>The idea of the Redux is simple</h4>
+
+        <div class="fragment fade-up" data-fragment-index="0">Any event</div>
+        <div class="fragment fade-up" data-fragment-index="1">⬇️</div>
+        <div class="fragment fade-up" data-fragment-index="1">
+            <a href="https://www.tutorialspoint.com/redux/redux_actions.htm">Actions</a>
+        </div>
+        <div class="fragment fade-up" data-fragment-index="2">⬇️</div>
+        <div class="fragment fade-up" data-fragment-index="2">
+            <a href="https://redux.js.org/tutorials/fundamentals/part-3-state-actions-reducers">Reducer</a>
+        </div>
+        <div class="fragment fade-up" data-fragment-index="3">⬇️</div>
+        <div class="fragment fade-up" data-fragment-index="3">Store</div>
+        <div class="fragment fade-up" data-fragment-index="4">⬇️</div>
+        <div class="fragment fade-up" data-fragment-index="4">UI</div>
+    </section>
+
+    <section>
+        <h4>In practice Redux is not that simple</h4>
+
+        <ul>
+            <li>High learning curve</li>
+            <li class="fade-up fragment">Lot's of boilerplate</li>
+            <li class="fade-up fragment">Needs extra tools to be good</li>
+        </ul>
+    </section>
+
+    <section>
+        <h4>Dan Abramov, father of the Redux</h4>
+        <p>I would like to amend this: don't use Redux until you have problems with vanilla React.</p>
+    </section>
+</section>
+
+<section>
+    <section>
+        <h2> <a href="https://github.com/mobxjs/mobx"> MobX</a> - another state management tool</h2>
+
+        <ul>
+            <li>880 000 downloading in a week</li>
+            <li>25 000 ⭐ in GitHub</li>
+        </ul>
+    </section>
+
+    <section>
+        <h4>The idea of the MobX is not that simple</h4>
+
+        <p class="left">MobX based on observables and patching your components</p>
+        <p class="left">A lot of people dislike MobX because it works like a "magic"</p>
+    </section>
+
+    <section>
+        <h4>MobX has several advantages</h4>
+
+        <ul>
+            <li>It's much easy to use</li>
+            <li class="fragment fade-up">It's has performance improvements out of the box</li>
+            <li class="fragment fade-up">It's not connected to the React at all</li>
+        </ul>
+    </section>
+</section>
+
+<section>
+    <section>
+        <h2>Practice with MobX</h2>
+    </section>
+
+    <section>
+        <h4>Create a simple class</h4>
+        <pre><code data-line-numbers>class UserDetailsStore {
+    nationality = "unknown";
+    constructor() {
+        makeAutoObservable(this); // !important
+    }
+
+    setNationality(v: string) {
+        this.nationality = v;
+    }
+}</code></pre>
+    </section>
+
+    <section>
+        <h4>Create an instance of the store</h4>
+        <pre><code data-line-numbers>const userDetailsStore = new UserDetailsStore();</code></pre>
+    </section>
+
+    <section>
+        <h4>Mark component as an <i>observer</i> and use it</h4>
+
+        <pre><code data-line-numbers="1-4|1|2|3">const L3: FC = observer(() =&gt; {
+    const nationality = userDetailsStore.nationality;
+    return &lt;strong&gt;{nationality}&lt;/strong&gt;;
+});
+          </code></pre>
+    </section>
+
+    <section>
+        <h4>Update is also simple</h4>
+
+        <pre><code data-line-numbers="1-8|5">type SomeContainerProps = {};
+const SomeContainer: FC&lt;SomeContainerProps&gt; = () =&gt; {
+        const btnHandler = () =&gt; {
+        const { nationality } = fetchUser();
+        userDetailsStore.setNationality(nationality);
+    };
+    return &lt;MyBtn text="Fetch user" onClick={btnHandler} /&gt;;
+};</code></pre>
+    </section>
+
+    <section>
+        <h4>MobX has auto linting</h4>
+
+        <pre><code data-line-numbers="">import { configure } from "mobx";
+
+configure({
+    enforceActions: "always",
+    computedRequiresReaction: true,
+    reactionRequiresObservable: true,
+    observableRequiresReaction: true,
+    disableErrorBoundaries: true
+});</code></pre>
+    </section>
+</section>
+
+<section>
+
+    <section>
+        <h2>What to use?</h2>
+    </section>
+
+    <section>
+        <ul>
+            <li>Context - the simplest solution</li>
+            <li>MobX - easy to use</li>
+            <li>Redux - most popular and feature rich</li>
+        </ul>
+    </section>
+</section>

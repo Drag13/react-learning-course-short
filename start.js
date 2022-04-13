@@ -1,8 +1,20 @@
 const { exec } = require("child_process");
 const { join } = require("path");
+const course = require("./course.json");
 
 (function cli(params) {
   const [lessonNumber] = params;
-  const path = join(__dirname, "presentations", lessonNumber, "index.html");
+  const lesson = course.lessons[+lessonNumber];
+
+  if (!lesson) {
+    console.log(`Lesson with number #${lessonNumber} doesn't exist, aborting`);
+    return;
+  }
+
+  const sub = lesson.name;
+
+  console.log(`Starting ${sub} presentation`);
+
+  const path = join(__dirname, "presentations", sub, "index.html");
   exec(`npx parcel ${path}`);
 })(process.argv.splice(2));

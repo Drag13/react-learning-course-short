@@ -10,7 +10,15 @@ const LAYOUT = "./templates/_layout.html";
 const BODY = "./templates/_body.html";
 
 function scaffold(layout, body, lesson, i) {
-  const folder = join(cwd(), ROOT, i.toString());
+  const { name, title } = lesson;
+  if (!name) {
+    console.error(
+      `\r\nLesson with title ${title} has no name. Scaffolding canceled`
+    );
+    return;
+  }
+
+  const folder = join(cwd(), ROOT, name);
   const pathToBody = join(folder, "body.html");
   const pathToLayout = join(folder, "index.html");
 
@@ -26,7 +34,6 @@ function scaffold(layout, body, lesson, i) {
   // always regenerate index.html for consistency
   const indexHtml = render(layout, lesson);
   writeFile(pathToLayout, indexHtml);
-
   // don't regenerate body if it already in place
   if (!bodyExists) {
     const bodyHtml = render(body, lesson);
@@ -39,7 +46,7 @@ function scaffold(layout, body, lesson, i) {
   const body = readFile(BODY);
   const lesson = course.lessons[lessonNumber];
   if (lesson) {
-    process.stdout.write(`Scaffolding lesson #${lessonNumber}...`);
+    process.stdout.write(`Scaffolding lesson ${lesson.name}... `);
     scaffold(layout, body, lesson, lessonNumber);
     console.log("DONE");
   } else {

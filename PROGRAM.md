@@ -8,7 +8,7 @@
 - React - advantages and disadvantages
 - Why to learn React nowadays
 
-Presentation - https://drag13.io/react-learning-course-short/0/index.html
+Presentation - https://drag13.io/react-learning-course-short/react-intro
 
 ### Home task: 
 
@@ -24,7 +24,7 @@ Not specified
 - Predefined commands
 - Code examples
 
-Presentation - https://drag13.io/react-learning-course-short/1/index.html
+Presentation - https://drag13.io/react-learning-course-short/react-cra
 
 ### Prerequisite
 
@@ -56,7 +56,7 @@ Presentation - https://drag13.io/react-learning-course-short/1/index.html
 - How to get data from the component
 - Why TypeScript
 
-Presentation - https://drag13.io/react-learning-course-short/2/index.html
+Presentation - https://drag13.io/react-learning-course-short/react-components
 
 ### Home task: 
 
@@ -72,7 +72,7 @@ Not specified
 - What and when to use
 - Components - best practices
 
-Presentation - https://drag13.io/react-learning-course-short/3/index.html
+Presentation - https://drag13.io/react-learning-course-short/react-new-component
 
 ### Prerequisite
 
@@ -100,7 +100,7 @@ Presentation - https://drag13.io/react-learning-course-short/3/index.html
 - How it works in React (simplified)
 - Typical mistakes
 
-Presentation - https://drag13.io/react-learning-course-short/4/index.html
+Presentation - https://drag13.io/react-learning-course-short/react-change-detection
 
 ### Home task: 
 
@@ -115,7 +115,7 @@ Not specified
 - Redux
 - MobX
 
-Presentation - https://drag13.io/react-learning-course-short/5/index.html
+Presentation - https://drag13.io/react-learning-course-short/react-state-management
 
 ### Prerequisite
 
@@ -144,7 +144,7 @@ Presentation - https://drag13.io/react-learning-course-short/5/index.html
 - Preprocessors
 - CSS in JS
 
-Presentation - https://drag13.io/react-learning-course-short/6/index.html
+Presentation - https://drag13.io/react-learning-course-short/react-styling
 
 ### Home task: 
 

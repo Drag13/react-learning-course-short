@@ -54,31 +54,31 @@ Workshop timing - about 1 hour
 
 ### 0 Lecture: What is React
 
-Presentation: https://drag13.io/react-learning-course-short/0/index.html
+Presentation: https://drag13.io/react-learning-course-short/react-intro
 
 ### 1 Workshop: Starting new project with create-react-app
 
-Presentation: https://drag13.io/react-learning-course-short/1/index.html
+Presentation: https://drag13.io/react-learning-course-short/react-cra
 
 ### 2 Lecture: Components in React
 
-Presentation: https://drag13.io/react-learning-course-short/2/index.html
+Presentation: https://drag13.io/react-learning-course-short/react-components
 
 ### 3 Workshop: Building your own component
 
-Presentation: https://drag13.io/react-learning-course-short/3/index.html
+Presentation: https://drag13.io/react-learning-course-short/react-new-component
 
 ### 4 Lecture: Detecting changes
 
-Presentation: https://drag13.io/react-learning-course-short/4/index.html
+Presentation: https://drag13.io/react-learning-course-short/react-change-detection
 
 ### 5 Workshop: Managing state in React
 
-Presentation: https://drag13.io/react-learning-course-short/5/index.html
+Presentation: https://drag13.io/react-learning-course-short/react-state-management
 
 ### 6 Lecture: Styling in React - from plain CSS to CSS in JS
 
-Presentation: https://drag13.io/react-learning-course-short/6/index.html
+Presentation: https://drag13.io/react-learning-course-short/react-styling
 
 ### 7 Workshop: Forms with React, Formik and Yup
 
