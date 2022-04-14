@@ -119,7 +119,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-state-managem
 
 ### Prerequisite
 
-- Copy the <a href="https://raw.githubusercontent.com/Drag13/react-learning-course-short/master/presentations/5/code/index_general.tsx">code</a> to your project
+- Copy the <a href="https://raw.githubusercontent.com/Drag13/react-learning-course-short/master/presentations/react-state-management/code/index_general.tsx">code</a> to your project
 - Install MobX - <i>npm i mobx mobx-react-lite</i>
 
 ### Home task: 
@@ -186,6 +186,8 @@ Not specified
 - Basic setup
 - Data Binding
 - Router guard
+
+Presentation - https://drag13.io/react-learning-course-short/react-router
 
 ### Home task: 
 

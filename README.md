@@ -2,9 +2,9 @@
 
 # React For Beginners - free course by Itera
 
-## Progress 54%
+## Progress 62%
 
-✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ⏳ ⏳ ⏳ ⏳ ⏳ ⏳ 
+✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ⏳ ⏳ ✔️ ⏳ ⏳ ⏳ 
 
 ## About
 
@@ -85,6 +85,8 @@ Presentation: https://drag13.io/react-learning-course-short/react-styling
 ### 8 Lecture: Single Page Application
 
 ### 9 Lecture: React Router
+
+Presentation: https://drag13.io/react-learning-course-short/react-router
 
 ### 10 Lecture: Network, Fetch and Axios
 

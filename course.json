@@ -169,7 +169,7 @@
         "MobX"
       ],
       "prerequisite": [
-        "Copy the <a href=\"https://raw.githubusercontent.com/Drag13/react-learning-course-short/master/presentations/5/code/index_general.tsx\">code</a> to your project",
+        "Copy the <a href=\"https://raw.githubusercontent.com/Drag13/react-learning-course-short/master/presentations/react-state-management/code/index_general.tsx\">code</a> to your project",
         "Install MobX - <i>npm i mobx mobx-react-lite</i>"
       ],
       "links": [
@@ -258,8 +258,10 @@
         "Router guard"
       ],
       "links": [
-        "React Router",
-        "https://reactrouter.com/docs/en/v6/getting-started/overview"
+        [
+          "React Router",
+          "https://reactrouter.com/docs/en/v6/getting-started/overview"
+        ]
       ],
       "hometask": [
         "Add header for your application",
@@ -268,7 +270,8 @@
         "Add new query parameter named `ln` to your link like this: `https://8080?ln=ua`",
         "If `ln` equals `ua` all texts should be in Ukrainian language",
         "If `ln` equals `en` all text should be in English (feel free to use google translate if needed)"
-      ]
+      ],
+      "published": true
     },
     {
       "title": "Network, Fetch and Axios",
