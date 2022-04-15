@@ -225,15 +225,19 @@
       "published": true
     },
     {
-      "title": "Dealing with Forms - Formik + Yup",
+      "title": "Dealing with Forms - Default way and React-Hook-Forms",
       "name": "react-forms",
       "type": "Workshop",
       "keyPoints": [
-        "Building your first form with [Formik](https://formik.org/docs/overview)",
-        "Validation with [Yup](https://github.com/jquense/yup)"
+        "React Forms - default way",
+        "Building your first form with  <a href=\"https://react-hook-form.com/get-started\">React Hook Form</a>"
       ],
       "prerequisite": [
-        "Install [Formik](https://www.npmjs.com/package/formik) and [Yup](https://www.npmjs.com/package/yup) before the workshop"
+        "Install <a href=\"https://react-hook-form.com/get-started\">React Hook Form</a> before the workshop"
+      ],
+      "links": [
+        ["React forms - default way", "https://reactjs.org/docs/forms.html"],
+        ["React Hook Form", "https://react-hook-form.com/get-started"]
       ]
     },
     {
