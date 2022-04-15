@@ -1,3 +1,64 @@
+<section>
+    <section>
+        <h2>React Forms - default way</h2>
+    </section>
+
+    <section>
+        <h3>Controlled Forms</h3>
+
+        <p>The kind of a form where values for the fields originated from the state</p>
+    </section>
+
+    <section>
+        <h3>Create a component with empty form and state</h3>
+        <pre><code data-line-numbers>class MyForm extends PureComponent {
+state = {name: 'EMPTY'}
+render() {
+    return (
+    &lt;form&gt;
+        &lt;h1&gt;My form&lt;/h1&gt;
+    &lt;/form&gt;
+    );
+}
+}
+          </code></pre>
+    </section>
+
+    <section>
+        <h3>Add an input inside the form</h3>
+        <pre><code data-line-numbers>&lt;input
+type="text"
+name="name"
+id="name"
+value={this.state.name}
+onChange={this._handleChange}
+/&gt;</code></pre>
+    </section>
+
+    <section>
+        <h3>Add handler for the input which will update the state</h3>
+
+        <pre><code data-line-numbers>private _handleChange = (e: ChangeEvent&lt;HTMLInputElement&gt;) =&gt;
+    this.setState({ name: e.target.value });</code></pre>
+    </section>
+
+    <section>
+        <h3>Add handler to show formData on submit</h3>
+
+        <pre><code data-line-numbers>private _handleSubmit = (e: FormEvent&lt;HTMLFormElement&gt;) =&gt; {
+    e.preventDefault();
+    console.log(`Form state`, this.state);
+};</code></pre>
+    </section>
+
+    <section>
+        <h3>Work is done, full example <a href="">here</a></h3>
+    </section>
+
+    <section>
+        <h3>This approach doesn't scale well and might become very repetitive</h3>
+    </section>
+</section>
 
 <section>
     <section>
@@ -10,4 +71,3 @@
         <h2>Validation with [Yup](https://github.com/jquense/yup)</h2>
     </section>
 </section>
-
