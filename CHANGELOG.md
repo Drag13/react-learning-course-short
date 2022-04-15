@@ -69,3 +69,10 @@
 - Moved from numbers to named links in a name of easier reordering
 - Start working on the lecture [React Router](https://drag13.io/react-learning-course-short/react-router/index.html)
 - Fixed links in the [CHANGELOG](CHANGELOG.md) I love recursion.
+
+## 15/04/2022
+
+- Program re-ordering - "Styling in React - from plain CSS to CSS in JS" moved right after the "Building React Component"
+- Planned lecture - SPA - removed from the course
+- Planned package for working with forms - Formik, changed to the React-Hook-Forms, due to the [developers inactivity](https://twitter.com/drag137/status/1514968995883061248)
+- Added some slides for the new lecture [Dealing with Forms - Default way and React-Hook-Forms]((https://drag13.io/react-learning-course-short/react-forms/index.html)
