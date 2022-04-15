@@ -67,7 +67,7 @@
       ]
     },
     {
-      "title": "Components in React",
+      "title": "What is React Component",
       "name": "react-components",
       "type": "Lecture",
       "keyPoints": [
@@ -93,7 +93,7 @@
       "published": true
     },
     {
-      "title": "Building your own component",
+      "title": "Building React Component",
       "name": "react-new-component",
       "type": "Workshop",
       "links": [
@@ -138,7 +138,35 @@
       ]
     },
     {
-      "title": "Detecting changes",
+      "title": "Styling in React - from plain CSS to CSS in JS",
+      "name": "react-styling",
+      "type": "Lecture",
+      "keyPoints": [
+        "Default way",
+        "Using CSS modules",
+        "Preprocessors",
+        "CSS in JS"
+      ],
+      "published": true,
+      "links": [
+        ["Css Modules", "https://css-tricks.com/css-modules-part-1-need/"],
+        ["Sass - css with superpowers", "https://sass-lang.com/"],
+        [
+          "How to add SASS to React",
+          "https://create-react-app.dev/docs/adding-a-sass-stylesheet/"
+        ],
+        [
+          "Styled Components",
+          "https://styled-components.com/docs/basics#getting-started"
+        ],
+        [
+          "Styled Components extension",
+          "https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components"
+        ]
+      ]
+    },
+    {
+      "title": "Tracking Changes",
       "name": "react-change-detection",
       "type": "Lecture",
       "keyPoints": [
@@ -197,35 +225,7 @@
       "published": true
     },
     {
-      "title": "Styling in React - from plain CSS to CSS in JS",
-      "name": "react-styling",
-      "type": "Lecture",
-      "keyPoints": [
-        "Default way",
-        "Using CSS modules",
-        "Preprocessors",
-        "CSS in JS"
-      ],
-      "published": true,
-      "links": [
-        ["Css Modules", "https://css-tricks.com/css-modules-part-1-need/"],
-        ["Sass - css with superpowers", "https://sass-lang.com/"],
-        [
-          "How to add SASS to React",
-          "https://create-react-app.dev/docs/adding-a-sass-stylesheet/"
-        ],
-        [
-          "Styled Components",
-          "https://styled-components.com/docs/basics#getting-started"
-        ],
-        [
-          "Styled Components extension",
-          "https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components"
-        ]
-      ]
-    },
-    {
-      "title": "Forms with React, Formik and Yup",
+      "title": "Dealing with Forms - Formik + Yup",
       "name": "react-forms",
       "type": "Workshop",
       "keyPoints": [
@@ -238,6 +238,7 @@
     },
     {
       "title": "Single Page Application",
+      "hidden": true,
       "name": "spa",
       "type": "Lecture",
       "keyPoints": [
@@ -248,7 +249,7 @@
       ]
     },
     {
-      "title": "React Router",
+      "title": "Routing in React",
       "name": "react-router",
       "type": "Lecture",
       "keyPoints": [
@@ -274,7 +275,7 @@
       "published": true
     },
     {
-      "title": "Network, Fetch and Axios",
+      "title": "React and network",
       "name": "react-network",
       "type": "Lecture",
       "keyPoints": ["Default way with fetch", "Setup axios"]
