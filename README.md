@@ -2,9 +2,9 @@
 
 # React For Beginners - free course by Itera
 
-## Progress 62%
+## Progress 67%
 
-✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ⏳ ⏳ ✔️ ⏳ ⏳ ⏳ 
+✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ⏳ ✔️ ⏳ ⏳ ⏳ 
 
 ## About
 
@@ -60,39 +60,37 @@ Presentation: https://drag13.io/react-learning-course-short/react-intro
 
 Presentation: https://drag13.io/react-learning-course-short/react-cra
 
-### 2 Lecture: Components in React
+### 2 Lecture: What is React Component
 
 Presentation: https://drag13.io/react-learning-course-short/react-components
 
-### 3 Workshop: Building your own component
+### 3 Workshop: Building React Component
 
 Presentation: https://drag13.io/react-learning-course-short/react-new-component
 
-### 4 Lecture: Detecting changes
-
-Presentation: https://drag13.io/react-learning-course-short/react-change-detection
-
-### 5 Workshop: Managing state in React
-
-Presentation: https://drag13.io/react-learning-course-short/react-state-management
-
-### 6 Lecture: Styling in React - from plain CSS to CSS in JS
+### 4 Lecture: Styling in React - from plain CSS to CSS in JS
 
 Presentation: https://drag13.io/react-learning-course-short/react-styling
 
-### 7 Workshop: Forms with React, Formik and Yup
+### 5 Lecture: Tracking Changes
 
-### 8 Lecture: Single Page Application
+Presentation: https://drag13.io/react-learning-course-short/react-change-detection
 
-### 9 Lecture: React Router
+### 6 Workshop: Managing state in React
+
+Presentation: https://drag13.io/react-learning-course-short/react-state-management
+
+### 7 Workshop: Dealing with Forms - Formik + Yup
+
+### 8 Lecture: Routing in React
 
 Presentation: https://drag13.io/react-learning-course-short/react-router
 
-### 10 Lecture: Network, Fetch and Axios
+### 9 Lecture: React and network
 
-### 11 Lecture: UI libraries
+### 10 Lecture: UI libraries
 
-### 12 Lecture: Tests
+### 11 Lecture: Tests
 
 ## Donations
 

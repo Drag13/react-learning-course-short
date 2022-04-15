@@ -45,7 +45,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-cra
 - Use React to display data from the JSON on the page
 - Commit and push the results with <i>git add .</i>, <i>git commit -m "Initial commit"</i>, <i>git push</i>
 
-## 2 Lecture: Components in React
+## 2 Lecture: What is React Component
 
 ### Key points: 
 
@@ -62,7 +62,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-components
 
 Not specified
 
-## 3 Workshop: Building your own component
+## 3 Workshop: Building React Component
 
 ### Key points: 
 
@@ -90,7 +90,22 @@ Presentation - https://drag13.io/react-learning-course-short/react-new-component
 - Put the new component into the footer
 - When clicked, it should log into the console next text: `redirecting user to the next {link}` where `{link}` should be a's href
 
-## 4 Lecture: Detecting changes
+## 4 Lecture: Styling in React - from plain CSS to CSS in JS
+
+### Key points: 
+
+- Default way
+- Using CSS modules
+- Preprocessors
+- CSS in JS
+
+Presentation - https://drag13.io/react-learning-course-short/react-styling
+
+### Home task: 
+
+Not specified
+
+## 5 Lecture: Tracking Changes
 
 ### Key points: 
 
@@ -106,7 +121,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-change-detect
 
 Not specified
 
-## 5 Workshop: Managing state in React
+## 6 Workshop: Managing state in React
 
 ### Key points: 
 
@@ -135,22 +150,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-state-managem
 - Install MobX
 - Implement same functionality with MobX
 
-## 6 Lecture: Styling in React - from plain CSS to CSS in JS
-
-### Key points: 
-
-- Default way
-- Using CSS modules
-- Preprocessors
-- CSS in JS
-
-Presentation - https://drag13.io/react-learning-course-short/react-styling
-
-### Home task: 
-
-Not specified
-
-## 7 Workshop: Forms with React, Formik and Yup
+## 7 Workshop: Dealing with Forms - Formik + Yup
 
 ### Key points: 
 
@@ -165,20 +165,7 @@ Not specified
 
 Not specified
 
-## 8 Lecture: Single Page Application
-
-### Key points: 
-
-- Server side routing
-- Client side routing
-- Benefits
-- React router
-
-### Home task: 
-
-Not specified
-
-## 9 Lecture: React Router
+## 8 Lecture: Routing in React
 
 ### Key points: 
 
@@ -198,7 +185,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-router
 - If `ln` equals `ua` all texts should be in Ukrainian language
 - If `ln` equals `en` all text should be in English (feel free to use google translate if needed)
 
-## 10 Lecture: Network, Fetch and Axios
+## 9 Lecture: React and network
 
 ### Key points: 
 
@@ -209,7 +196,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-router
 
 Not specified
 
-## 11 Lecture: UI libraries
+## 10 Lecture: UI libraries
 
 ### Key points: 
 
@@ -221,7 +208,7 @@ Not specified
 
 Not specified
 
-## 12 Lecture: Tests
+## 11 Lecture: Tests
 
 ### Key points: 
 
