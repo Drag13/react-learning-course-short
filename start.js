@@ -4,7 +4,9 @@ const course = require("./course.json");
 
 (function cli(params) {
   const [lessonNumber] = params;
-  const lesson = course.lessons[+lessonNumber];
+  const lesson =
+    course.lessons[+lessonNumber] ??
+    course.lessons.find((x) => x.name === lessonNumber);
 
   if (!lesson) {
     console.log(`Lesson with number #${lessonNumber} doesn't exist, aborting`);

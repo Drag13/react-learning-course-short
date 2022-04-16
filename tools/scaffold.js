@@ -44,7 +44,9 @@ function scaffold(layout, body, lesson, i) {
 (function cli([lessonNumber = -1]) {
   const layout = readFile(LAYOUT);
   const body = readFile(BODY);
-  const lesson = course.lessons[lessonNumber];
+  const lesson =
+    course.lessons[lessonNumber] ??
+    course.lessons.find((x) => x.name === lessonNumber);
   if (lesson) {
     process.stdout.write(`Scaffolding lesson ${lesson.name}... `);
     scaffold(layout, body, lesson, lessonNumber);
