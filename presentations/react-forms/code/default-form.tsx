@@ -2,7 +2,7 @@ import React, { ChangeEvent, Component, FormEvent, PureComponent } from "react";
 import { createRoot } from "react-dom/client";
 
 class MyForm extends PureComponent {
-  state = { name: "test" };
+  state = { email: "test" };
   render() {
     return (
       <form onSubmit={this._handleSubmit}>
@@ -11,7 +11,7 @@ class MyForm extends PureComponent {
           type="text"
           name="name"
           id="name"
-          value={this.state.name}
+          value={this.state.email}
           onChange={this._handleChange}
         />
         <button>Submit</button>
