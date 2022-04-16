@@ -2,9 +2,9 @@
 
 # React For Beginners - free course by Itera
 
-## Progress 67%
+## Progress 75%
 
-✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ⏳ ✔️ ⏳ ⏳ ⏳ 
+✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ⏳ ⏳ ⏳ 
 
 ## About
 
@@ -80,7 +80,9 @@ Presentation: https://drag13.io/react-learning-course-short/react-change-detecti
 
 Presentation: https://drag13.io/react-learning-course-short/react-state-management
 
-### 7 Workshop: Dealing with Forms - Formik + Yup
+### 7 Workshop: Dealing with Forms - Default way and React-Hook-Forms
+
+Presentation: https://drag13.io/react-learning-course-short/react-forms
 
 ### 8 Lecture: Routing in React
 

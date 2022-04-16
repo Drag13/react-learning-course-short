@@ -75,4 +75,9 @@
 - Program re-ordering - "Styling in React - from plain CSS to CSS in JS" moved right after the "Building React Component"
 - Planned lecture - SPA - removed from the course
 - Planned package for working with forms - Formik, changed to the React-Hook-Forms, due to the [developers inactivity](https://twitter.com/drag137/status/1514968995883061248)
-- Added some slides for the new lecture [Dealing with Forms - Default way and React-Hook-Forms]((https://drag13.io/react-learning-course-short/react-forms/index.html)
+- Added some slides for the new lecture [Dealing with Forms - Default way and React-Hook-Forms](https://drag13.io/react-learning-course-short/react-forms/index.html)
+
+## 16/04/2022
+
+- Finished lecture about the ["Forms, React-Hook-Forms and Yup"](https://drag13.io/react-learning-course-short/react-forms/index.html)
+- Added support for start and scaffold by lecture name
