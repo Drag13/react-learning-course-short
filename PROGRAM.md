@@ -150,16 +150,19 @@ Presentation - https://drag13.io/react-learning-course-short/react-state-managem
 - Install MobX
 - Implement same functionality with MobX
 
-## 7 Workshop: Dealing with Forms - Formik + Yup
+## 7 Workshop: Dealing with Forms - Default way and React-Hook-Forms
 
 ### Key points: 
 
-- Building your first form with [Formik](https://formik.org/docs/overview)
-- Validation with [Yup](https://github.com/jquense/yup)
+- React Forms - default way
+- Building your first form with  <a href="https://react-hook-form.com/get-started">React Hook Form</a>
+- Validation with Yup
+
+Presentation - https://drag13.io/react-learning-course-short/react-forms
 
 ### Prerequisite
 
-- Install [Formik](https://www.npmjs.com/package/formik) and [Yup](https://www.npmjs.com/package/yup) before the workshop
+- Install <a href="https://react-hook-form.com/get-started">React Hook Form</a> before the workshop
 
 ### Home task: 
 
