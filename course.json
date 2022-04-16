@@ -226,6 +226,7 @@
     },
     {
       "title": "Dealing with Forms - Default way and React-Hook-Forms",
+      "published": true,
       "name": "react-forms",
       "type": "Workshop",
       "keyPoints": [
