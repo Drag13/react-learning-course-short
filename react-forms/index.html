@@ -1,21 +1,50 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>React For Beginners - Dealing with Forms - Default way and React-Hook-Forms</title><meta name="description" content="Free learning course - React: Dealing with Forms - Default way and React-Hook-Forms"><meta name="keywords" content="react free learning course beginners"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="React For Beginners - Dealing with Forms - Default way and React-Hook-Forms"><meta name="twitter:site" content="https://github.com/Drag13/react-learning-course-short"><meta name="twitter:creator" content="@drag137"><meta name="twitter:image" content="https://drag13.io/react-learning-course-short/shared/imgs/title.png"><meta property="og:image" content="https://drag13.io/react-learning-course-short/shared/imgs/title.png"><meta property="og:title" content="React For Beginners - Dealing with Forms - Default way and React-Hook-Forms"><meta name="author" content="drag13"><meta name="robots" content="index follow"><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/0/index.1568b79b.css"><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/0/index.698ea738.css"><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/0/index.22ba7868.css"><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/0/index.6dd06d8a.css"></head><body> <div class="reveal"> <div class="slides"> <section> <h1 class="ukraine"> Free React Course <br> For Beginners </h1> </section> <section> <h1> L7 - Dealing with Forms - Default way and React-Hook-Forms </h1> <h4> <u> React For Beginners by Itera </u> </h4> </section> <section> <h2>Prerequisite</h2> <ul> <li>Install <a href="https://react-hook-form.com/get-started">React Hook Form</a> before the workshop</li> </ul> </section> <section> <section> <h2>React Forms - default way</h2> </section> <section> <h3>Controlled Forms</h3> <p>The kind of a form where values for the fields originated from the state</p> </section> <section> <h3>Create a component with empty form and state</h3> <pre><code data-line-numbers="">class MyForm extends PureComponent {
-state = {name: 'EMPTY'}
-render() {
-    return (
-    &lt;form&gt;
-        &lt;h1&gt;My form&lt;/h1&gt;
-    &lt;/form&gt;
-    );
-}
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>React For Beginners - Dealing with Forms - Default way and React-Hook-Forms</title><meta name="description" content="Free learning course - React: Dealing with Forms - Default way and React-Hook-Forms"><meta name="keywords" content="react free learning course beginners"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="React For Beginners - Dealing with Forms - Default way and React-Hook-Forms"><meta name="twitter:site" content="https://github.com/Drag13/react-learning-course-short"><meta name="twitter:creator" content="@drag137"><meta name="twitter:image" content="https://drag13.io/react-learning-course-short/shared/imgs/title.png"><meta property="og:image" content="https://drag13.io/react-learning-course-short/shared/imgs/title.png"><meta property="og:title" content="React For Beginners - Dealing with Forms - Default way and React-Hook-Forms"><meta name="author" content="drag13"><meta name="robots" content="index follow"><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/0/index.1568b79b.css"><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/0/index.698ea738.css"><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/0/index.22ba7868.css"><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/0/index.6dd06d8a.css"></head><body> <div class="reveal"> <div class="slides"> <section> <h1 class="ukraine"> Free React Course <br> For Beginners </h1> </section> <section> <h1> L7 - Dealing with Forms - Default way and React-Hook-Forms </h1> <h4> <u> React For Beginners by Itera </u> </h4> </section> <section> <h2>Prerequisite</h2> <ul> <li>Install <a href="https://react-hook-form.com/get-started">React Hook Form</a> before the workshop</li> </ul> </section> <section> <section> <h2>React Forms - default way</h2> </section> <section> <h3>Controlled Forms</h3> <p>The kind of a form where values for the fields controlled by the state</p> </section> <section> <h3>Create a component with empty form and state</h3> <pre><code data-line-numbers="">class MyForm extends PureComponent {
+state = {email: ''}
+    render() {
+        return (
+        &lt;form&gt;
+            &lt;h1&gt;My form&lt;/h1&gt;
+        &lt;/form&gt;
+        );
+    }
 }
           </code></pre> </section> <section> <h3>Add an input inside the form</h3> <pre><code data-line-numbers="">&lt;input
-type="text"
-name="name"
-id="name"
-value={this.state.name}
-onChange={this._handleChange}
+    type="email"
+    name="name"
+    id="name"
+    value={this.state.email}
+    onChange={this._handleChange}
 /&gt;</code></pre> </section> <section> <h3>Add handler for the input which will update the state</h3> <pre><code data-line-numbers="">private _handleChange = (e: ChangeEvent&lt;HTMLInputElement&gt;) =&gt;
-    this.setState({ name: e.target.value });</code></pre> </section> <section> <h3>Add handler to show formData on submit</h3> <pre><code data-line-numbers="">private _handleSubmit = (e: FormEvent&lt;HTMLFormElement&gt;) =&gt; {
+    this.setState({ email: e.target.value });</code></pre> </section> <section> <h3>Add handler to show formData on submit</h3> <pre><code data-line-numbers="">private _handleSubmit = (e: FormEvent&lt;HTMLFormElement&gt;) =&gt; {
     e.preventDefault();
     console.log(`Form state`, this.state);
-};</code></pre> </section> <section> <h3>Work is done, full example <a href="">here</a></h3> </section> <section> <h3>This approach doesn't scale well and might become very repetitive</h3> </section> </section> <section> <section> <h2>Building your first form with [Formik](https://formik.org/docs/overview)</h2> </section> </section> <section> <section> <h2>Validation with [Yup](https://github.com/jquense/yup)</h2> </section> </section> <section> <h2>Useful links</h2> <ul> <li> <a target="_blank" rel="noopener noreferrer" href="https://reactjs.org/docs/forms.html">React forms - default way</a> </li> <li> <a target="_blank" rel="noopener noreferrer" href="https://react-hook-form.com/get-started">React Hook Form</a> </li> </ul> </section> </div> </div> <script src="https://drag13.io/react-learning-course-short/0/index.9b139d60.js" type="module"></script> </body></html>
+};</code></pre> </section> <section> <h3>Work is done, full example <a href="">here</a></h3> </section> <section> <h3>This approach doesn't scale well and might become very repetitive</h3> </section> </section> <section> <section> <h2>Building your first form with React-Form-Hook </h2></section> <section> <h3>React-Form-Hook@7.29.0</h3> <ul> <li>⭐ 27_000 </li> <li class="fade-up fragment">Downloads: 1,663,244</li> <li class="fade-up fragment">Size: 24kB</li> </ul> </section> <section> <h3>Install <i>react-hook-form</i></h3> <pre><code>npm i react-hook-form</code></pre> </section> <section> <h3>Convert class to function</h3> <pre><code data-line-numbers="">const MyForm: FC = () =&gt; {
+    return (
+        &lt;form&gt;
+            &lt;h1&gt;My form&lt;/h1&gt;
+            &lt;input type="email" name="email" /&gt;
+            <p> &lt;button&gt;Submit&lt;/button&gt;</p> 
+        &lt;/form&gt;
+    );
+};
+          </code></pre> </section> <section> <h3>Use <i>useForm</i> from the package</h3> <pre><code data-line-numbers="">const { register, handleSubmit } = useForm&lt;{ name: string }&gt;();</code></pre> </section> <section> <h3>Register field in the form</h3> <pre><code data-line-numbers="">&lt;input type="text" {...register("email")} /&gt;</code></pre> </section> <section> <h3>Result</h3> <pre class="language-tsx"><code data-line-numbers="">const MyForm = () =&gt; {
+    const { register, handleSubmit } = useForm&lt;FormData&gt;();
+    const submit = (d) => console.log(d);
+    return (
+        &lt;form onSubmit={handleSubmit(submit)} name="myform"&gt;
+            &lt;h1&gt;My form&lt;/h1&gt;
+            &lt;input type="text" {...register("email")} /&gt;
+            &lt;p&gt; &lt;button&gt;Submit&lt;/button&gt; &lt;/p&gt;
+        &lt;/form&gt;
+    );
+};</code></pre> </section> <section> <h3>This doesn't seem much better, yeah?</h3> </section> <section> <h3>Validations</h3> <p>React-Form-Hooks make validation easy and customizable</p> </section> <section> <h3>Define validation rules</h3> <pre><code data-line-numbers="">const pwd = { 
+    required: { value: true, message: "password required" } 
+    minLength: { value: 6, message: "Too short!" }
+};        </code></pre> </section> <section> <h3>Pass validations into the registrants</h3> <pre><code data-line-numbers="">&lt;input type="text" {...register("pwd", pwd)} /&gt;</code></pre> </section> <section> <h3>Show an error if something went wrong</h3> <pre><code data-line-numbers="">{errors.pwd && <div>{errors.pwd.message}</div>}</code></pre> </section> <section> <h3>React-form-hook is very configurable</h3> <ul> <li>Supports custom validation with <i>validate</i> method</li> <li class="fade-up fragment">Supports async validation </li> <li class="fade-up fragment">Support nested data objects</li> </ul> </section> <section> <h3>Warning</h3> <p class="left">React-Form-Hook works only with Functional Components</p> <p class="fade-up fragment left">Consider using <i>React.memo</i> when performance is crucial</p> </section> </section> <section> <section> <h2>Validation with <a href="https://github.com/jquense/yup">Yup</a> </h2> </section> <section> <h3> To make validations even easier, you can use Yup </h3> <p>Yup - platform agnostic javascript library for the declarative validation</p> </section> <section> <h3>Yup - 0.32.11</h3> <ul> <li>16_700 ⭐</li> <li>2,861,507 downloads</li> <li>60kB size</li> </ul> </section> <section> <h3>Define validation schema</h3> <pre><code class="language-typescript" data-line-numbers="">import { BaseSchema, InferType, object, string } from "yup";
+const validationSchema = object({
+    email: string().required().email(),
+    password: string().required().min(6).max(12),
+});</code></pre> </section> <section> <h3>Connect schema to the form using some hook magic</h3> <pre><code data-line-numbers="">const validations = useYup(validationSchema);
+const { register, handleSubmit, formState } = useForm&lt;FormData&gt;({
+    resolver: validations,
+});</code></pre> </section> <section> <h3>You a good to <a href="">go</a></h3> </section> <section> <h3>The main advantage - validation logic moved out of the form and can be reused</h3> </section> <section> <h3>Disadvantages</h3> <ul> <li>Learning curve with TS</li> <li>Size - 60kB for validation is pretty much, however version 1 should be around 40kB </li> </ul> </section> <section> <h3>When to use</h3> <ul> <li>For a complex validations</li> <li>When need to share the validation logic</li> </ul> </section> </section> <section> <h2>Useful links</h2> <ul> <li> <a target="_blank" rel="noopener noreferrer" href="https://reactjs.org/docs/forms.html">React forms - default way</a> </li> <li> <a target="_blank" rel="noopener noreferrer" href="https://react-hook-form.com/get-started">React Hook Form</a> </li> <li> <a target="_blank" rel="noopener noreferrer" href="https://github.com/jquense/yup">Yup</a> </li> </ul> </section> </div> </div> <script src="https://drag13.io/react-learning-course-short/0/index.9b139d60.js" type="module"></script> </body></html>
