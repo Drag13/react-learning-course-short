@@ -285,7 +285,7 @@
       "title": "React and network",
       "name": "react-network",
       "type": "Lecture",
-      "keyPoints": ["Default way with fetch", "Setup axios"],
+      "keyPoints": ["Fetch", "Axios"],
       "links": [
         ["Fetch", "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"],
         ["Axios", "https://github.com/axios/axios"],
