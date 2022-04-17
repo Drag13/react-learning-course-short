@@ -41,21 +41,30 @@ function scaffold(layout, body, lesson, i) {
   }
 }
 
-(function cli([lessonNumber = -1]) {
+(function cli([lessonNumber]) {
   const layout = readFile(LAYOUT);
   const body = readFile(BODY);
-  const lesson =
-    course.lessons[lessonNumber] ??
-    course.lessons.find((x) => x.name === lessonNumber);
-  if (lesson) {
-    process.stdout.write(`Scaffolding lesson ${lesson.name}... `);
-    scaffold(layout, body, lesson, lessonNumber);
-    console.log("DONE");
-  } else {
+
+  if (lessonNumber == null) {
     process.stdout.write(`Syncing ALL lectures...`);
     course.lessons.forEach((lesson, index) =>
       scaffold(layout, body, lesson, index)
     );
+
     console.log("DONE");
+
+    return;
   }
+
+  const lesson = course.lessons.find((x) => x.name === lessonNumber);
+
+  if (!lesson) {
+    console.log(`Lesson ${lessonNumber} doesn't exist, ABORTING...`);
+    return;
+  }
+
+  process.stdout.write(`Scaffolding lesson ${lesson.name}... `);
+  scaffold(layout, body, lesson, lessonNumber);
+
+  console.log("DONE");
 })(process.argv.splice(2));
