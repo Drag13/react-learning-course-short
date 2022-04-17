@@ -81,3 +81,9 @@
 
 - Finished lecture about the ["Forms, React-Hook-Forms and Yup"](https://drag13.io/react-learning-course-short/react-forms/index.html)
 - Added support for start and scaffold by lecture name
+
+## 17/04/2022
+
+- Fixed issues with scaffolding
+- Added draft version of the new lecture - "React Network"
+- Extra slides for the first lecture - Three pillars of React
