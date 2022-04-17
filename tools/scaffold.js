@@ -41,11 +41,11 @@ function scaffold(layout, body, lesson, i) {
   }
 }
 
-(function cli([lessonNumber]) {
+(function cli([lessonName]) {
   const layout = readFile(LAYOUT);
   const body = readFile(BODY);
 
-  if (lessonNumber == null) {
+  if (lessonName == null) {
     process.stdout.write(`Syncing ALL lectures...`);
     course.lessons.forEach((lesson, index) =>
       scaffold(layout, body, lesson, index)
@@ -56,10 +56,11 @@ function scaffold(layout, body, lesson, i) {
     return;
   }
 
-  const lesson = course.lessons.find((x) => x.name === lessonNumber);
+  const lessonNumber = course.lessons.findIndex((x) => x.name === lessonName);
+  const lesson = course.lessons[lessonNumber];
 
   if (!lesson) {
-    console.log(`Lesson ${lessonNumber} doesn't exist, ABORTING...`);
+    console.log(`Lesson ${lessonName} doesn't exist, ABORTING...`);
     return;
   }
 
