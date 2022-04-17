@@ -5,8 +5,8 @@
         <li class="fragment fade-up">Head of Front-End department in <a target="_blank"
                 href="https://www.itera.com/">Itera</a>
         </li>
-        <li class="fragment fade-up">Member of the program committee <a target="_blank"
-                rel="noopener noreferrer" href="https://jsfest.com">JsFest Ukraine
+        <li class="fragment fade-up">Member of the program committee <a target="_blank" rel="noopener noreferrer"
+                href="https://jsfest.com">JsFest Ukraine
             </a>
         </li>
         <li class="fragment fade-up">Love #webperf and #websec</li>
@@ -57,6 +57,12 @@ function App() {
     </section>
 
     <section>
+        <h3>This is not an HTML - JSX</h3>
+
+        <pre><code data-line-numbers="">&lt;h2 className="green"&gt;Hello - {data.name}&lt;/h2&gt</code></pre>
+    </section>
+
+    <section>
         <h2>JSX - just a syntax sugar</h2>
 
         <pre><code data-line-numbers>function a() {
@@ -84,6 +90,86 @@ function App() {
         <p>React - open-source, JavaScript library that transforms your data into the markup and track the
             changes
         </p>
+    </section>
+</section>
+
+<section>
+
+
+    <section>
+        <h2>Three pillars of React</h2>
+    </section>
+
+
+    <section>
+        <h3>1 - View is derivative of your data</h3>
+        <pre>
+            <code data-line-numbers="1|2|3">const data = {name: 'Vitalii'};
+function App() {
+    return &lt;h2 className="green"&gt;Hello - {data.name}&lt;/h2&gt
+}
+            </code>
+        </pre>
+
+        <div class="fragment fade-up">⬇️</div>
+        <h2 class="fragment fade-up green">
+            Hello - Vitalii
+        </h2>
+    </section>
+
+    <section>
+        <h3>If you want to change the view - change the data</h3>
+    </section>
+
+    <section>
+        <h3>2 - Declarative over Imperative</h3>
+
+        <p class="left">
+            You write what you want to get, but not how you want to get
+        </p>
+    </section>
+
+    <section>
+        <h3>Declarative</h3>
+
+        <pre><code data-line-numbers=""><form action="/submit">
+    <h1>Submit my email</h1>
+    <label for="email">Email</label> 
+    <input type="email" name="email" id="email"> 
+    <button>Submit</button> 
+</form></code></pre>
+    </section>
+
+    <section>
+        <h3>Imperative</h3>
+
+        <pre><code data-line-numbers="">const form = document.createElement('form');
+form.action = "/submit";
+const header = document.createElemen('h1');
+header.innerText = 'Submit my email';
+...
+        </code></pre>
+    </section>
+
+    <section>
+        <h3>Within imperative approach you defines a way to get the result</h3>
+    </section>
+
+    <section>
+        <h3>Built from small pieces</h3>
+
+        <p class="left">All modern frameworks are based on components. But the most easy way to create a component - use
+            React</p>
+    </section>
+
+    <section>
+        <h3>In a nutshell - component is a function that returns JSX</h3>
+
+        <pre><code data-line-numbers="">const MyComponent = () => <h1>Yes, I am a component</h1></code></pre>
+    </section>
+
+    <section>
+        <h3>Creating component is vert, very simple</h3>
     </section>
 </section>
 
@@ -152,8 +238,7 @@ function App() {
     <section>
         <h3>Rich ecosystem - efficient development</h3>
         <ul>
-            <li>Frameworks: - <a target="_blank" rel="noopener noreferrer"
-                    href="https://nextjs.org/">Next.JS</a>,
+            <li>Frameworks: - <a target="_blank" rel="noopener noreferrer" href="https://nextjs.org/">Next.JS</a>,
                 <a target="_blank" rel="noopener noreferrer" href="https://nestjs.com/">Nest.JS</a>
             </li>
 
@@ -162,15 +247,13 @@ function App() {
                     UI</a>,
                 <a target="_blank" rel="noopener noreferrer" href="https://react-bootstrap.github.io/">React
                     Bootstrap</a>,
-                <a target="_blank" rel="noopener noreferrer"
-                    href="https://ant.design/docs/react/introduce">Ant Design of React</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://ant.design/docs/react/introduce">Ant Design
+                    of React</a>
             </li>
 
             <li>
-                State Management - <a target="_blank" rel="noopener noreferrer"
-                    href="https://redux.js.org/">Redux</a>,
-                <a target="_blank" rel="noopener noreferrer"
-                    href="https://mobx.js.org/react-integration.html">MobX</a>,
+                State Management - <a target="_blank" rel="noopener noreferrer" href="https://redux.js.org/">Redux</a>,
+                <a target="_blank" rel="noopener noreferrer" href="https://mobx.js.org/react-integration.html">MobX</a>,
                 <a target="_blank" rel="noopener noreferrer" href="https://recoiljs.org/">Recoil</a>
             </li>
 
@@ -186,4 +269,3 @@ function App() {
         </ul>
     </section>
 </section>
-
