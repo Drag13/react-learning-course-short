@@ -225,7 +225,7 @@
       "published": true
     },
     {
-      "title": "Dealing with Forms - Default way and React-Hook-Forms",
+      "title": "Forms - Default way and React-Hook-Forms",
       "published": true,
       "name": "react-forms",
       "type": "Workshop",
@@ -285,7 +285,12 @@
       "title": "React and network",
       "name": "react-network",
       "type": "Lecture",
-      "keyPoints": ["Default way with fetch", "Setup axios"]
+      "keyPoints": ["Default way with fetch", "Setup axios"],
+      "links": [
+        ["Fetch", "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"],
+        ["Axios", "https://github.com/axios/axios"],
+        ["Public API", "https://github.com/public-apis/public-apis"]
+      ]
     },
 
     {
