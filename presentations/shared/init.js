@@ -23,6 +23,12 @@ import Highlight from "reveal.js/plugin/highlight/highlight.esm.js";
   });
 
   reveal.addEventListener("slidechanged", function (event) {
+    const isFirstSlide = event.indexh === 0 && event.indexv === 0;
+    const display = isFirstSlide ? "flex" : "none";
+    const footer = document.querySelector(".footer");
+    footer && (footer.style.display = display);
+    console.log(display);
+
     if (event.previousSlide) {
       resetSlideScrolling(event.previousSlide);
     }
