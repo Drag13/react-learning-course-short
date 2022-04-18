@@ -150,7 +150,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-state-managem
 - Install MobX
 - Implement same functionality with MobX
 
-## 7 Workshop: Dealing with Forms - Default way and React-Hook-Forms
+## 7 Workshop: Forms - Default way and React-Hook-Forms
 
 ### Key points: 
 
@@ -192,8 +192,10 @@ Presentation - https://drag13.io/react-learning-course-short/react-router
 
 ### Key points: 
 
-- Default way with fetch
-- Setup axios
+- Fetch
+- Axios
+
+Presentation - https://drag13.io/react-learning-course-short/react-network
 
 ### Home task: 
 
