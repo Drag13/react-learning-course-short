@@ -87,3 +87,7 @@
 - Fixed issues with scaffolding
 - Added draft version of the new lecture - "React Network"
 - Extra slides for the first lecture - Three pillars of React
+
+## 18/04/2022
+
+- Added main part for the new lecture - [React Network]("https://drag13.io/react-learning-course-short/react-network/index.html")
