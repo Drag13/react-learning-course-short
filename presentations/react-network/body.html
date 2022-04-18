@@ -8,7 +8,70 @@
     </section>
 
     <section>
+        <h3>Schema</h3>
+
+        <ul>
+            <li>Use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"></a> fetch api to issue an network request</li>
+            <li>Update state on success</li>
+            <li>Handle error if any</li>
+        </ul>
+    </section>
+
+    <section>
         <h3>Class based component example</h3>
+    </section>
+
+    <section>
+        <h3>Define a class with an initial state</h3>
+
+        <pre><code data-line-numbers>class FreeApi extends PureComponent {
+    state = { errored: false, apis: [] };
+}
+            </code></pre>
+
+    </section>
+
+    <section>
+        <h3>On ComponentDidMount implement fetching</h3>
+
+        <pre><code data-line-numbers>async componentDidMount() {
+    try {
+        const rawData = await fetch(FREE_API_URL);
+        const { entries } = await rawData.json();
+        this.setState({ errored:false, apis: entries });
+    } catch (e) {
+        this.setState({ errored: true, apis: [] });
+    }
+}</code></pre>
+    </section>
+
+    <section>
+        <h3>Render the result</h3>
+
+        <pre><code data-line-numbers>render() {
+    const { apis, errored } = this.state;
+    return errored ? (&lt;div&gt;Something went wrong&lt;/div&gt;) 
+    : &lt;ul&gt;{apis.map(({ API, Link }) =&gt; (
+            &lt;li key={Link}&gt;
+            {API}::{Link}
+            &lt;/li&gt;
+        ))}
+      &lt;/ul&gt;
+    ;
+}</code></pre>
+    </section>
+
+    <section>
+        <h3>Don't forget to use <i>key</i> when rendering the list</h3>
+    </section>
+
+    <section>
+        <h3>Full <a href="">example</a></h3>
+    </section>
+
+    <section>
+        <h3>ALWAYS HANDLE ERRORS</h3>
+        <p>Network - the most unreliable part of your app</p>
     </section>
 
     <section>
@@ -16,9 +79,65 @@
     </section>
 
     <section>
+        <h3>Create custom hook with default state</h3>
+        <pre><code data-line-numbers>import { PureComponent, useEffect, useState } from "react";
+
+const useFreeApi = () =&gt; {
+  const [data, setApi] = useState({ errored: false, apis: [] });
+  return data;
+};
+            </code></pre>
+    </section>
+
+    <section>
+        <h3>Add useEffect hook with fetch inside</h3>
+
+        <pre><code class="language-javascript" data-line-numbers>useEffect(() =&gt; {
+    async function updateApi() {
+        try {
+          const rawData = await fetch(FREE_API_URL);
+            const { entries } = await rawData.json();
+            setApi({ errored: false, apis: entries });
+        } catch (error) {
+            setApi({ errored: true, apis: [] });
+        }
+    }
+    updateApi();
+}, []);</code></pre>
+    </section>
+
+    <section>
+        <h3>Pay attention to useEffect</h3>
+        <p class="left">If you will call fetch directly - the request will be issued every re-render</p>
+    </section>
+
+    <section>
         <h3>Pay attention to useEffect</h3>
 
-        <p class="left">If you will call fetch directly - the request will be issued every re-render</p>
+        <p class="left">
+            Don't forget to set an empty array of dependencies to fire useEffect only once
+        </p>
+    </section>
+
+    <section>
+        <h3>Use the new hook as usual</h3>
+        <pre><code data-line-numbers>const FreeApi = () =&gt; {
+    const { errored, apis } = useFreeApi();
+    return errored ? (&lt;div&gt;Something went wrong&lt;/div&gt;) : (
+        &lt;ul&gt;
+        {apis.map(({ API, Link }) =&gt; (
+            &lt;li key={Link}&gt;
+            {API}::{Link}
+            &lt;/li&gt;
+        ))}
+        &lt;/ul&gt;
+    );
+};</code></pre>
+    </section>
+
+
+    <section>
+        <h3>Full <a href="">example</a></h3>
     </section>
 
     <section>
@@ -28,27 +147,36 @@
     <section>
         <h3>Internet Explorer</h3>
 
-        <p class="left">Despite it's being deprecated even by the author, it's still popular in a big companies</p>
+        <p class="left">Despite Internet Explorer being deprecated even by the author, it's still popular in a big
+            companies</p>
 
-        <p class="left">Fetch doesn't work in IE</p>
+        <p class="left fragment fade-up"><strong>
+                Fetch doesn't work in IE
+            </strong> </p>
     </section>
 
     <section>
         <h3>Canceling request</h3>
 
-        <p class="left">You are not able to cancel request issued by fetch. (experimental support is on the way)</p>
+        <p class="left">Sometimes you will need to cancel a request</p>
+
+        <p class="left fragment fade-up"><strong>
+                Fetch doesn't cancel
+            </strong>
+        </p>
+
+        <p class="left fragment fade-up">The work on canceling is ongoing</p>
     </section>
 
     <section>
         <h3>No progress tracking, no timeout</h3>
 
-        <p class="left">This features also missing right now</p>
-    </section>
 
-    <section>
-        <h3>Fetch is poorly supported in the ServerSide</h3>
-
-        <p class="left"> To work with fetch from Node.JS you need at least 17.5 version </p>
+        <p class="left">
+            <strong>
+                Little fetch is a bit limited
+            </strong>
+        </p>
     </section>
 </section>
 
@@ -72,9 +200,81 @@
 
         <ul>
             <li>Works with IE 💔</li>
-            <li>Supports aborting request</li>
-            <li>Interception support</li>
-            <li>Works on Client and Server side</li>
+            <li class="fragment fade-up">Supports aborting request</li>
+            <li class="fragment fade-up">Support progress</li>
+            <li class="fragment fade-up">Support interceptors</li>
         </ul>
     </section>
+
+    <section>
+        <h3>Example</h3>
+        <pre><code class="language-javascript" data-line-numbers>const axios = Axios.create();
+...
+useEffect(() =&gt; {
+    async function updateApi() {
+        try {
+            const { data } = await axios.get(FREE_API_URL);
+            const { entries } = data;
+            setApi({ errored: false, apis: entries });
+        } catch (error) {
+            setApi({ errored: true, apis: [] });
+        }
+    }
+    updateApi();
+}, []);
+            </code></pre>
+    </section>
+
+
+    <section>
+        <h3>Differences</h3>
+
+        <ul>
+            <li>Need to create an instance before using</li>
+            <li class="fragment">Don't need to use <i>.toJson()</i> to get an object</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Global config</h3>
+
+        <pre><code data-line-numbers="">const axios = Axios.create({
+    baseURL: 'https://some-domain.com/api/',
+    timeout: 1000,
+    headers: {'X-Custom-Header': 'foobar'}
+});
+        </code></pre>
+    </section>
+
+    <section>
+        <h3>Why to use - Easy to cancel</h3>
+
+
+        <pre><code data-line-numbers="">const abort = new AbortController();
+useEffect(){
+    try {
+        const { data } = await axios.get(FREE_API_URL, {signal: abort.signal});
+    }
+    ...
+    return ()=> abort.abort()
+}
+
+<p class="left">You can use AbortController or legacy CancelToken</p>
+        </code></pre>
+    </section>
+
+    <section>
+        <h3>Why to use - Interceptors</h3>
+        <pre><code data-line-numbers>const axios = Axios.create();
+axios.interceptors.response.use((response) =&gt; {
+    console.log(response.request.responseURL);
+    return response;
+});</code></pre>
+            </code></pre>
+    </section>
+
+    <section>
+        <h3>Full <a href="">example</a></h3>
+    </section>
+
 </section>
