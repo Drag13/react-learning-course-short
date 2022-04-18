@@ -14,7 +14,7 @@ All requests to "remove politics" will be removed completely without any comment
 This repo dedicated to the course "React for Beginners". The course was created to support Ukraine 🇺🇦 and Ukrainians in the war against russia. It's completely free and open-sourced. Feel free to contribute or make any relevant suggestions.
 
 - Full program is [here](PROGRAM.md)
-- Presentations can be found here - [https://drag13.io/react-learning-course-short/0](https://drag13.io/react-learning-course-short/0/) where the number equals the number of the lesson
+- Presentations can be found here - [https://drag13.io/react-learning-course-short/react-intro](https://drag13.io/react-learning-course-short/react-intro) where the number equals the number of the lesson
 - Changelog is [here](CHANGELOG.md)
 - Video - pending. I will record the lessons and publish them afterwards
 - Technical details are [here](devlog.md)
