@@ -36,5 +36,8 @@
     "parcel": "^2.4.0",
     "posthtml-doctype": "^1.1.1",
     "posthtml-include": "^1.7.3"
+  },
+  "optionalDependencies": {
+    "prettier": "^2.6.2"
   }
 }
