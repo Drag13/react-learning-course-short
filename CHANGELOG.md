@@ -91,3 +91,8 @@
 ## 18/04/2022
 
 - Added main part for the new lecture - [React Network]("https://drag13.io/react-learning-course-short/react-network/index.html")
+
+## 19/04/2022
+
+- Found that layout is pretty broken. Installed [Prettier](https://prettier.io/), updated layout, regenerated the first lecture
+- Worked hard on the new lecture - React Testing. Almost done...
