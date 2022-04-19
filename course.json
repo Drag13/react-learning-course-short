@@ -15,10 +15,7 @@
       "links": [
         ["Documentation", "https://reactjs.org/docs/getting-started.html"],
         ["React - source code", "https://github.com/facebook/react"],
-        [
-          "React changelog",
-          "https://github.com/facebook/react/blob/main/CHANGELOG.md"
-        ],
+        ["React changelog", "https://github.com/facebook/react/blob/main/CHANGELOG.md"],
         [
           "Why React is a bad idea",
           "https://blog.devgenius.io/react-costs-companies-a-lot-of-money-6bfa3e5cc6f4"
@@ -56,10 +53,7 @@
       ],
       "links": [
         ["Create-React-App documentation", "https://create-react-app.dev/"],
-        [
-          "Create a new react app",
-          "https://reactjs.org/docs/create-a-new-react-app.html"
-        ],
+        ["Create a new react app", "https://reactjs.org/docs/create-a-new-react-app.html"],
         [
           "Package.json - documentation",
           "https://docs.npmjs.com/cli/v7/configuring-npm/package-json"
@@ -80,10 +74,7 @@
       ],
       "links": [
         ["What is JSX", "https://reactjs.org/docs/introducing-jsx.html"],
-        [
-          "JSX under the hood",
-          "https://www.telerik.com/blogs/how-jsx-react-works-under-hood"
-        ],
+        ["JSX under the hood", "https://www.telerik.com/blogs/how-jsx-react-works-under-hood"],
         [
           "Smart VS Dumb components",
           "https://medium.com/@thejasonfile/dumb-components-and-smart-components-e7b33a698d43"
@@ -141,24 +132,13 @@
       "title": "Styling in React - from plain CSS to CSS in JS",
       "name": "react-styling",
       "type": "Lecture",
-      "keyPoints": [
-        "Default way",
-        "Using CSS modules",
-        "Preprocessors",
-        "CSS in JS"
-      ],
+      "keyPoints": ["Default way", "Using CSS modules", "Preprocessors", "CSS in JS"],
       "published": true,
       "links": [
         ["Css Modules", "https://css-tricks.com/css-modules-part-1-need/"],
         ["Sass - css with superpowers", "https://sass-lang.com/"],
-        [
-          "How to add SASS to React",
-          "https://create-react-app.dev/docs/adding-a-sass-stylesheet/"
-        ],
-        [
-          "Styled Components",
-          "https://styled-components.com/docs/basics#getting-started"
-        ],
+        ["How to add SASS to React", "https://create-react-app.dev/docs/adding-a-sass-stylesheet/"],
+        ["Styled Components", "https://styled-components.com/docs/basics#getting-started"],
         [
           "Styled Components extension",
           "https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components"
@@ -179,10 +159,7 @@
       "links": [
         ["State in React", "https://reactjs.org/docs/faq-state.html"],
         ["Using the State Hook", "https://reactjs.org/docs/hooks-state.html"],
-        [
-          "Angular vs React - Change detection",
-          "https://morioh.com/p/caccd1b76c5c"
-        ]
+        ["Angular vs React - Change detection", "https://morioh.com/p/caccd1b76c5c"]
       ],
       "published": true
     },
@@ -190,12 +167,7 @@
       "title": "Managing state in React",
       "name": "react-state-management",
       "type": "Workshop",
-      "keyPoints": [
-        "Problems with setState and useState",
-        "Context",
-        "Redux",
-        "MobX"
-      ],
+      "keyPoints": ["Problems with setState and useState", "Context", "Redux", "MobX"],
       "prerequisite": [
         "Copy the <a href=\"https://raw.githubusercontent.com/Drag13/react-learning-course-short/master/presentations/react-state-management/code/index_general.tsx\">code</a> to your project",
         "Install MobX - <i>npm i mobx mobx-react-lite</i>"
@@ -248,29 +220,14 @@
       "hidden": true,
       "name": "spa",
       "type": "Lecture",
-      "keyPoints": [
-        "Server side routing",
-        "Client side routing",
-        "Benefits",
-        "React router"
-      ]
+      "keyPoints": ["Server side routing", "Client side routing", "Benefits", "React router"]
     },
     {
       "title": "Routing in React",
       "name": "react-router",
       "type": "Lecture",
-      "keyPoints": [
-        "Install react router",
-        "Basic setup",
-        "Data Binding",
-        "Router guard"
-      ],
-      "links": [
-        [
-          "React Router",
-          "https://reactrouter.com/docs/en/v6/getting-started/overview"
-        ]
-      ],
+      "keyPoints": ["Install react router", "Basic setup", "Data Binding", "Router guard"],
+      "links": [["React Router", "https://reactrouter.com/docs/en/v6/getting-started/overview"]],
       "hometask": [
         "Add header for your application",
         "Create new page named `about`",
@@ -302,12 +259,14 @@
     },
     {
       "title": "Tests",
-      "name": "react-tests",
+      "name": "react-testing",
       "type": "Lecture",
-      "keyPoints": [
-        "Why test",
-        "Unit tests VS integration tests vs e2e",
-        "Jest"
+      "keyPoints": ["Why test", "Testing pyramid", "What should be tested", "Testing with Jest"],
+      "links": [
+        ["Testing Recipes", "https://reactjs.org/docs/testing-recipes.html"],
+        ["Create-React-App - testing", "https://create-react-app.dev/docs/running-tests/"],
+        ["Jest", "https://jestjs.io/"],
+        ["React Testing Library", "https://testing-library.com/docs/react-testing-library/intro/"]
       ]
     }
   ]
