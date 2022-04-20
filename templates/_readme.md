@@ -53,12 +53,8 @@ Workshop timing - about 1 hour
 ## Program summary
 
 {{#lessons}}
-### {{i}} {{type}}: {{title}}
+### {{i}} {{type}}: {{#presentation}}[{{title}}]({{{.}}}){{/presentation}}{{^presentation}}{{title}}{{/presentation}}
 
-{{#presentation}}
-Presentation: {{{.}}}
-
-{{/presentation}}
 {{/lessons}}
 ## Donations
 

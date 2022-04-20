@@ -218,8 +218,9 @@ Not specified
 ### Key points: 
 
 - Why test
-- Unit tests VS integration tests vs e2e
-- Jest
+- Testing pyramid
+- What should be tested
+- Testing with Jest
 
 ### Home task: 
 

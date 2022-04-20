@@ -14,7 +14,7 @@ All requests to "remove politics" will be removed completely without any comment
 This repo dedicated to the course "React for Beginners". The course was created to support Ukraine 🇺🇦 and Ukrainians in the war against russia. It's completely free and open-sourced. Feel free to contribute or make any relevant suggestions.
 
 - Full program is [here](PROGRAM.md)
-- Presentations can be found here - [https://drag13.io/react-learning-course-short/react-intro](https://drag13.io/react-learning-course-short/react-intro) where the number equals the number of the lesson
+- Presentations can be found here - [https://drag13.io/react-learning-course-short/react-intro](https://drag13.io/react-learning-course-short/react-intro) where is the name of the lesson
 - Changelog is [here](CHANGELOG.md)
 - Video - pending. I will record the lessons and publish them afterwards
 - Technical details are [here](devlog.md)
@@ -52,45 +52,25 @@ Workshop timing - about 1 hour
 
 ## Program summary
 
-### 0 Lecture: What is React
+### 0 Lecture: [What is React](https://drag13.io/react-learning-course-short/react-intro)
 
-Presentation: https://drag13.io/react-learning-course-short/react-intro
+### 1 Workshop: [Starting new project with create-react-app](https://drag13.io/react-learning-course-short/react-cra)
 
-### 1 Workshop: Starting new project with create-react-app
+### 2 Lecture: [What is React Component](https://drag13.io/react-learning-course-short/react-components)
 
-Presentation: https://drag13.io/react-learning-course-short/react-cra
+### 3 Workshop: [Building React Component](https://drag13.io/react-learning-course-short/react-new-component)
 
-### 2 Lecture: What is React Component
+### 4 Lecture: [Styling in React - from plain CSS to CSS in JS](https://drag13.io/react-learning-course-short/react-styling)
 
-Presentation: https://drag13.io/react-learning-course-short/react-components
+### 5 Lecture: [Tracking Changes](https://drag13.io/react-learning-course-short/react-change-detection)
 
-### 3 Workshop: Building React Component
+### 6 Workshop: [Managing state in React](https://drag13.io/react-learning-course-short/react-state-management)
 
-Presentation: https://drag13.io/react-learning-course-short/react-new-component
+### 7 Workshop: [Forms - Default way and React-Hook-Forms](https://drag13.io/react-learning-course-short/react-forms)
 
-### 4 Lecture: Styling in React - from plain CSS to CSS in JS
+### 8 Lecture: [Routing in React](https://drag13.io/react-learning-course-short/react-router)
 
-Presentation: https://drag13.io/react-learning-course-short/react-styling
-
-### 5 Lecture: Tracking Changes
-
-Presentation: https://drag13.io/react-learning-course-short/react-change-detection
-
-### 6 Workshop: Managing state in React
-
-Presentation: https://drag13.io/react-learning-course-short/react-state-management
-
-### 7 Workshop: Forms - Default way and React-Hook-Forms
-
-Presentation: https://drag13.io/react-learning-course-short/react-forms
-
-### 8 Lecture: Routing in React
-
-Presentation: https://drag13.io/react-learning-course-short/react-router
-
-### 9 Lecture: React and network
-
-Presentation: https://drag13.io/react-learning-course-short/react-network
+### 9 Lecture: [React and network](https://drag13.io/react-learning-course-short/react-network)
 
 ### 10 Lecture: UI libraries
 
