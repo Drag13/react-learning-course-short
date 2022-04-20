@@ -222,6 +222,8 @@ Not specified
 - What should be tested
 - Testing with Jest
 
+Presentation - https://drag13.io/react-learning-course-short/react-testing
+
 ### Home task: 
 
 Not specified
