@@ -17,7 +17,7 @@ npm ci
 If you want to start particular presentation - execute the next command where number should be equal to the lesson number
 
 ```cmd
-node start 1
+npm start react-intro
 ```
 
 ## How to update documentation
@@ -41,4 +41,4 @@ Deployment is automated, appears after the push to the master branch and done wi
 
 ## Encoding
 
-Spotted that parcel or reveal doesn't like a lot of `<` `>` symbols - the code is completely messed. `.replaceAll('>','&gt;')` can fix this. Check `encode.js` file for details.
+Spotted that parcel or reveal doesn't like a lot of `<` `>` symbols - the code is completely messed. `.replaceAll('>','&gt;')` can fix this. Check `encode.js` file for details. Use it with `npm encode`.
