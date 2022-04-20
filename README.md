@@ -2,9 +2,9 @@
 
 # React For Beginners - free course by Itera
 
-## Progress 83%
+## Progress 92%
 
-✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ⏳ ⏳ 
+✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ⏳ ✔️ 
 
 ## About
 
@@ -74,7 +74,7 @@ Workshop timing - about 1 hour
 
 ### 10 Lecture: UI libraries
 
-### 11 Lecture: Tests
+### 11 Lecture: [Tests](https://drag13.io/react-learning-course-short/react-testing)
 
 ## Donations
 
