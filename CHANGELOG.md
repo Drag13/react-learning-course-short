@@ -96,3 +96,9 @@
 
 - Found that layout is pretty broken. Installed [Prettier](https://prettier.io/), updated layout, regenerated the first lecture
 - Worked hard on the new lecture - React Testing. Almost done...
+
+## 20/04/2022
+
+- Published the new lecture - [React Testing](https://drag13.io/react-learning-course-short/react-testing)
+- Create an account on [OpenCollective](https://opencollective.com/farstar). It's not yet approved, but hope this will be resolved soon
+- Simplified readme
