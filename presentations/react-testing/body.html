@@ -128,8 +128,12 @@ const fullPrice = calculateFullPrice(1000_000, percentage);    </code></pre>
     <h3>End to End tests - most complex and time consuming testing </h3>
 
     <p class="left">
-      E2e tests testing the whole business scenario. From page load to desired action. Backend, DataBase might be
+      E2e tests testing the whole business scenario. From page load to desired action. Backend, DataBase are
       included
+    </p>
+
+    <p class="left">
+      E2E tests that the whole application works as expected
     </p>
   </section>
 
@@ -172,6 +176,20 @@ const fullPrice = calculateFullPrice(1000_000, percentage);    </code></pre>
     <h3>100% Code coverage is a myth</h3>
   </section>
 
+  <section>
+    <h3>Because...</h3>
+    <pre><code data-line-numbers="">const add = (a,b)=> a+b;</code></pre>
+    <pre><code>expect(add(1+1)).toBe(2)</code></pre>
+  </section>
+
+  <section>
+    <h3>You missed</h3>
+    <ul>
+      <li>null/undefined/NaN</li>
+      <li class="fragment fade-up">Non numbers e.g. string, objects, arrays</li>
+      <li class="fragment fade-up">MAX_SAFE_INTEGER</li>
+    </ul>
+  </section>
 </section>
 
 <section>
@@ -289,6 +307,10 @@ it("when btn clicked, callback should be called", () =&gt; {
 
   <section>
     <h3>Hot to test classes, layout, elements?</h3>
+  </section>
+
+  <section>
+    <h3>Snapshot testing</h3>
 
     <pre><code data-line-numbers="">npm i react-test-renderer @types/react-test-renderer -D</code></pre>
     <pre><code data-line-numbers>import { Btn } from "./Btn";
@@ -301,11 +323,6 @@ it("snapshot", () =&gt; {
   expect(tree).toMatchSnapshot();
 });
       </code></pre>
-
-  </section>
-
-  <section>
-    <h3>Snapshot testing</h3>
   </section>
 
   <section>
@@ -325,7 +342,62 @@ it("snapshot", () =&gt; {
     <h3>Automated visual regression</h3>
 
     <p class="left">Comparing pixel to pixel with master snapshot</p>
-
-    <p class="left">No examples here :)</p>
   </section>
+
+  <section>
+    <h2>The End</h2>
+  </section>
+
+  <section>
+    <h3>Wait, what if my component depends on other module?</h3>
+
+    <ul>
+      <li>Use inversion of control</li>
+      <li class="fragment fade-up">Mock the module</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Example</h3>
+
+    <pre><code data-line-numbers>import { greeting } from "./greeter";
+
+type Props = { name: string };
+export const AppGreetings = ({ name }: Props) =&gt; (
+  &lt;&gt;{`${greeting()}${name}`}&lt;/&gt;
+);
+</code></pre>
+
+    <pre><code data-line-numbers>export const greeting = () =&gt; `hello: `;
+      </code></pre>
+  </section>
+
+
+  <section>
+    <h3>Inversion of control - most preferable way</h3>
+    <pre><code data-line-numbers>type Props = { name: string; greeter: () =&gt; void };
+export const AppGreetings = ({ name, greeter }: Props) =&gt; (
+  &lt;&gt;{`${greeter()}${name}`}&lt;/&gt;
+);
+      </code></pre>
+  </section>
+
+  <section>
+    <h3>Use stub/mock</h3>
+
+    <pre><code data-line-numbers>jest.mock("./greeter", () =&gt; ({
+  __esModule: true,
+  greeting: () =&gt; "mocked",
+}));
+
+it("greetings should work", () =&gt; {
+  act(() =&gt; {
+    render(&lt;AppGreetings name="testName" /&gt;);
+  });
+  
+  expect(screen.getByText("mockedtestName"))
+  .toBeInTheDocument();
+});</code></pre>
+  </section>
+
 </section>

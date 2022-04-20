@@ -262,6 +262,7 @@
       "name": "react-testing",
       "type": "Lecture",
       "keyPoints": ["Why test", "Testing pyramid", "What should be tested", "Testing with Jest"],
+      "published": true,
       "links": [
         ["Testing Recipes", "https://reactjs.org/docs/testing-recipes.html"],
         ["Create-React-App - testing", "https://create-react-app.dev/docs/running-tests/"],
