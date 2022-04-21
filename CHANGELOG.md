@@ -102,3 +102,8 @@
 - Published the new lecture - [React Testing](https://drag13.io/react-learning-course-short/react-testing)
 - Create an account on [OpenCollective](https://opencollective.com/farstar). It's not yet approved, but hope this will be resolved soon
 - Simplified readme
+
+## 21/04/2022
+
+- Added the [GNU General Public License v3.0](LICENSE) for the project. I simply forgot to hit the checkbox when created the repo 😿
+- Added some initial slides for the new talk - React UI Libraries
