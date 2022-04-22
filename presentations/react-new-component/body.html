@@ -268,6 +268,40 @@
 
 <section>
     <section>
+        <h2>How to</h2>
+
+        <ul>
+            <li>Create a list?</li>
+            <li>Show an image?</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Using map to create a list</h3>
+
+        <pre><code data-line-numbers>const users = ['Maria', 'Andriy', 'Ihor'];
+const UserList = () =&gt; (
+    &lt;ul&gt;
+    {users.map((user) =&gt; (
+        &lt;li key={user}&gt;{user}&lt;/li&gt;
+    ))}
+    &lt;/ul&gt;
+);
+            </code></pre>
+    </section>
+
+    <section>
+        <h3>Showing an image</h3>
+
+        <pre><code data-line-numbers>import img from './my-image.png';
+
+const Avatar = () =&gt; &lt;img src={img} alt="MyPhoto" /&gt;;
+            </code></pre>
+    </section>
+</section>
+
+<section>
+    <section>
         <h2>Components - best practices</h2>
     </section>
     <section>
