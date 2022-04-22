@@ -76,7 +76,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-new-component
 
 ### Prerequisite
 
-- Create new project using <a href="https://drag13.io/react-learning-course-short/1/index.html">example</a>
+- Create new project using <a target="_blank" href="https://drag13.io/react-learning-course-short/react-components/index.html">example</a>
 
 ### Home task: 
 
