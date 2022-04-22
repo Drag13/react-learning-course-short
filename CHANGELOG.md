@@ -107,3 +107,10 @@
 
 - Added the [GNU General Public License v3.0](LICENSE) for the project. I simply forgot to hit the checkbox when created the repo 😿
 - Added some initial slides for the new talk - React UI Libraries
+
+## 22/04/2022
+
+- Added information support part
+- Welcome [BeerJS from Zhytomyr](https://www.facebook.com/groups/beerJSZhytomyr/)
+- Welcome [Node Recipes](https://t.me/node_recipes)
+- Welcome [Toi Samyi Babich](https://t.me/toisamyibabich)
