@@ -90,19 +90,19 @@
       "links": [
         [
           "Class-based MessageBlock example",
-          "https://github.com/Drag13/react-learning-course-short/blob/master/presentations/3/code/mb-class.tsx"
+          "https://github.com/Drag13/react-learning-course-short/blob/master/presentations/react-new-component/code/mb-class.tsx"
         ],
         [
           "Functional MessageBlock example",
-          "https://github.com/Drag13/react-learning-course-short/blob/master/presentations/3/code/mb-functional.tsx"
+          "https://github.com/Drag13/react-learning-course-short/blob/master/presentations/react-new-component/code/mb-functional.tsx"
         ],
         [
           "Functional Counter example",
-          "https://github.com/Drag13/react-learning-course-short/blob/master/presentations/3/code/counter-functional.tsx"
+          "https://github.com/Drag13/react-learning-course-short/blob/master/presentations/react-new-component/code/counter-functional.tsx"
         ],
         [
           "Class-based Counter example",
-          "https://github.com/Drag13/react-learning-course-short/blob/master/presentations/3/code/counter-cb.tsx"
+          "https://github.com/Drag13/react-learning-course-short/blob/master/presentations/react-new-component/code/counter-cb.tsx"
         ]
       ],
       "keyPoints": [
@@ -113,7 +113,7 @@
         "Components - best practices"
       ],
       "prerequisite": [
-        "Create new project using <a href=\"https://drag13.io/react-learning-course-short/1/index.html\">example</a>"
+        "Create new project using <a target=\"_blank\" href=\"https://drag13.io/react-learning-course-short/react-components/index.html\">example</a>"
       ],
       "published": true,
       "hometask": [
