@@ -89,3 +89,4 @@ Feel free to contact me directly if any question
 ## Information support
 
 [![beerjs](./presentations/shared/imgs/39900370_1138320566319759_9157901823137284096_n.jpg)](https://t.me/beerJSZhytomyr)
+[![node.recipes](./presentations/shared/imgs/njsr.png)](http://node.recipes/)
