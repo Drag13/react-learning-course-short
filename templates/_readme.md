@@ -63,6 +63,9 @@ All donations are highly welcomed. You can donate any amount to the [National Ba
 Feel free to contact me directly if any question
 
 ## Sponsors
-[
-![](/presentations/shared/imgs/Itera-logo-white-fuchsia.jpg)
-](itera.com)
+
+[![](/presentations/shared/imgs/Itera-logo-white-fuchsia.jpg)](itera.com)
+
+## Information support
+
+[![beerjs](./presentations/shared/imgs/39900370_1138320566319759_9157901823137284096_n.jpg)](https://t.me/beerJSZhytomyr)
