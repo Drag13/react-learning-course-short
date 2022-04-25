@@ -47,18 +47,27 @@
           </h4>
         </section>
 
-        {{#prerequisite.length}}
         <section>
-          <h2>Prerequisite</h2>
+          <h2>Key Points</h2>
           <ul>
-            {{#prerequisite}}
+            {{#keyPoints}}
             <li>{{{.}}}</li>
-            {{/prerequisite}}
+            {{/keyPoints}}
           </ul>
         </section>
-        {{/prerequisite.length}}
 
         <include src="./{{name}}/body.html"></include>
+
+        {{#takeaways.length}}
+        <section>
+          <h2>Home task</h2>
+          <ul>
+            {{#takeaways}}
+            <li>{{{.}}}</li>
+            {{/takeaways}}
+          </ul>
+        </section>
+        {{/takeaways.length}} 
 
         {{#hometask.length}}
         <section>
@@ -69,7 +78,9 @@
             {{/hometask}}
           </ul>
         </section>
-        {{/hometask.length}} {{#links.length}}
+        {{/hometask.length}} 
+        
+        {{#links.length}}
         <section>
           <h2>Useful links</h2>
           <ul>
