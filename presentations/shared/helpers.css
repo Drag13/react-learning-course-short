@@ -14,6 +14,10 @@ pre > code.pre-code-l {
   color: #17ff2e;
 }
 
+.reveal .red {
+  color: red;
+}
+
 .scrollable-slide {
   height: 100%;
   overflow-y: auto !important;

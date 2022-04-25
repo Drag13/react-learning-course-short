@@ -26,6 +26,11 @@
         "React - advantages and disadvantages",
         "Why to learn React nowadays"
       ],
+      "takeaways": [
+        "React - JavaScript library for building user interfaces",
+        "React uses JSX - HTMLish syntax to describe UI",
+        "Data is the single source of truth"
+      ],
       "published": true,
       "links": [
         ["Documentation", "https://reactjs.org/docs/getting-started.html"],

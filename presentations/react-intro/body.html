@@ -43,9 +43,9 @@
 
     <section>
         <pre>
-            <code data-line-numbers="1|2|3">const data = {name: 'Vitalii'};
+            <code data-line-numbers="1|2|3">const user = {name: 'Vitalii'};
 function App() {
-    return &lt;h2 className="green"&gt;Hello - {data.name}&lt;/h2&gt
+    return &lt;h2 className="green"&gt;Hello - {user.name}&lt;/h2&gt
 }
             </code>
         </pre>
@@ -102,23 +102,25 @@ function App() {
 
 
     <section>
-        <h3>1 - View is derivative of your data</h3>
-        <pre>
-            <code data-line-numbers="">const data = {name: 'Vitalii'};
-function App() {
-    return &lt;h2 className="green"&gt;Hello - {data.name}&lt;/h2&gt
-}
-            </code>
-        </pre>
+        <h3>View is derivative of your data</h3>
 
-        <div class="fragment fade-up">⬇️</div>
-        <h2 class="fragment fade-up green">
-            Hello - Vitalii
-        </h2>
+        <pre><code data-line-numbers="">function increment(v) { 
+    return v + 1; 
+}</code></pre>
+    </section>
+
+
+    <section>
+        <h3>The same with React</h3>
+
+        <pre>
+            <code data-line-numbers="">function App(props) {
+    return &lt;h2 className="green"&gt;Hello - {props.user.name}&lt;/h2&gt
+}</code></pre>
     </section>
 
     <section>
-        <h3>If you want to change the view - change the data</h3>
+        <h3>To change the view - change the data</h3>
         <pre><code data-line-numbers="" class="fragment strike">document.querySelect('.green').innerText = 'Olga'</code></pre>
     </section>
 
@@ -127,11 +129,30 @@ function App() {
     </section>
 
     <section>
-        <h3>2 - Declarative over Imperative</h3>
+        <h3>Separating view and data is super important!</h3>
+    </section>
+
+    <section>
+        <h3>Declarative over Imperative</h3>
 
         <p class="left">
             You write what you want to get, but not how you want to get
         </p>
+    </section>
+
+    <section>
+        <h3>Imperative</h3>
+
+        <pre><code data-line-numbers="">const form = document.createElement('form');
+form.action = "/submit";
+const header = document.createElement('h1');
+header.innerText = 'Submit my email';
+form.insertAdjacentElement('afterbegin', header);
+...        </code></pre>
+    </section>
+
+    <section>
+        <h3>Within imperative approach you defines a way to get the result</h3>
     </section>
 
     <section>
@@ -146,22 +167,13 @@ function App() {
     </section>
 
     <section>
-        <h3>Imperative</h3>
+        <h3>Within imperative approach you simply describe the result</h3>
 
-        <pre><code data-line-numbers="">const form = document.createElement('form');
-form.action = "/submit";
-const header = document.createElemen('h1');
-header.innerText = 'Submit my email';
-...
-        </code></pre>
+        <p class="left">Declarative approach is much more readable</p>
     </section>
 
     <section>
-        <h3>Within imperative approach you defines a way to get the result</h3>
-    </section>
-
-    <section>
-        <h3>Built from small pieces</h3>
+        <h3>Based on components</h3>
 
         <p class="left">All modern frameworks are based on components. But the most easy way to create a component - use
             React</p>
@@ -184,9 +196,10 @@ export class MyComponent {}</code></pre>
     </section>
 
     <section>
-        <h3>In a nutshell - component is a function that returns JSX</h3>
+        <h3>Creating a new component is very simple</h3>
 
-        <p> Creating a component is very, very simple </p>
+        <p>You should not be afraid of creating as much components as needed</p>
+
     </section>
 </section>
 
