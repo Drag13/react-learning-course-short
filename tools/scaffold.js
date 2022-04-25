@@ -45,6 +45,8 @@ function scaffold(layout, body, lesson, i) {
   const layout = readFile(LAYOUT);
   const body = readFile(BODY);
 
+  course.lessons = course.lessons.filter(x=>!x.hidden);
+
   if (lessonName == null) {
     process.stdout.write(`Syncing ALL lectures...`);
     course.lessons.forEach((lesson, index) =>
