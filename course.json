@@ -2,6 +2,20 @@
   "title": "React For Beginners - free course by Itera",
   "lessons": [
     {
+      "name": "about",
+      "title": "About the course",
+      "type": "Lecture",
+      "published": true,
+      "links": [
+        ["YouTube", "https://www.youtube.com/channel/UCg-txtmOEQ8BniR8008O1mA"],
+        ["Telegram", "https://t.me/reactbeginners"],
+        ["GitHub", "https://github.com/Drag13/react-learning-course-short"],
+        ["LinkedIn", "https://www.linkedin.com/in/vitalii-ruban/"],
+        ["Twitter", "https://twitter.com/drag137"]
+      ],
+      "hidden": true
+    },
+    {
       "name": "react-intro",
       "title": "What is React",
       "type": "Lecture",
