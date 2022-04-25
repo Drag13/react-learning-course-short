@@ -5,6 +5,7 @@
 ### Key points: 
 
 - What is the React
+- Three pillars of React
 - React - advantages and disadvantages
 - Why to learn React nowadays
 

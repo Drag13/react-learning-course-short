@@ -104,7 +104,7 @@ function App() {
     <section>
         <h3>1 - View is derivative of your data</h3>
         <pre>
-            <code data-line-numbers="1|2|3">const data = {name: 'Vitalii'};
+            <code data-line-numbers="">const data = {name: 'Vitalii'};
 function App() {
     return &lt;h2 className="green"&gt;Hello - {data.name}&lt;/h2&gt
 }
@@ -119,6 +119,11 @@ function App() {
 
     <section>
         <h3>If you want to change the view - change the data</h3>
+        <pre><code data-line-numbers="" class="fragment strike">document.querySelect('.green').innerText = 'Olga'</code></pre>
+    </section>
+
+    <section>
+        <h3>Data is the single source of truth</h3>
     </section>
 
     <section>
@@ -163,13 +168,25 @@ header.innerText = 'Submit my email';
     </section>
 
     <section>
-        <h3>In a nutshell - component is a function that returns JSX</h3>
+        <h3>Angular way</h3>
+
+        <pre><code data-line-numbers>@Component({
+  selector: 'my-component',
+  template: `&lt;h1&gt;Yes, I am a component&lt;/h1&gt;`
+})
+export class MyComponent {}</code></pre>
+    </section>
+
+    <section>
+        <h3>React way</h3>
 
         <pre><code data-line-numbers="">const MyComponent = () => <h1>Yes, I am a component</h1></code></pre>
     </section>
 
     <section>
-        <h3>Creating component is vert, very simple</h3>
+        <h3>In a nutshell - component is a function that returns JSX</h3>
+
+        <p> Creating a component is very, very simple </p>
     </section>
 </section>
 
@@ -186,9 +203,9 @@ header.innerText = 'Submit my email';
         <ul>
             <li class="fragment fade-up">Declarative</li>
             <li class="fragment fade-up">Track changes automatically</li>
-            <li class="fragment fade-up">Not a framework</li>
             <li class="fragment fade-up">Rich Ecosystem</li>
             <li class="fragment fade-up">Support client-side, server side rendering, mobile development</li>
+            <li class="fragment fade-up">Not a framework</li>
             <li class="fragment fade-up">Fast</li>
         </ul>
     </section>
@@ -238,9 +255,7 @@ header.innerText = 'Submit my email';
     <section>
         <h3>Rich ecosystem - efficient development</h3>
         <ul>
-            <li>Frameworks: - <a target="_blank" rel="noopener noreferrer" href="https://nextjs.org/">Next.JS</a>,
-                <a target="_blank" rel="noopener noreferrer" href="https://nestjs.com/">Nest.JS</a>
-            </li>
+            <li>Frameworks: - <a target="_blank" rel="noopener noreferrer" href="https://nextjs.org/">Next.JS</a> </li>
 
             <li>
                 UI libraries - <a target="_blank" rel="noopener noreferrer" href="https://mui.com/">Material
