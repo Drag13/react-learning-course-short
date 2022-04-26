@@ -1,6 +1,6 @@
 const { exec } = require("child_process");
 const { join } = require("path");
-const course = require("./course.json");
+const course = require("../course.json");
 
 (function cli(params) {
   const [lessonNumber] = params;

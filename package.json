@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "start": "node start",
+    "start": "node ./tools/start",
     "build": "parcel build ./presentations/**/index.html --public-url https://drag13.io/react-learning-course-short",
     "readme": "node tools/docs.js",
     "scaffold": "node tools/scaffold.js",
