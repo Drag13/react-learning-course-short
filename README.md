@@ -54,7 +54,7 @@ Workshop timing - about 1 hour
 
 ### 0 Lecture: [What is React](https://drag13.io/react-learning-course-short/react-intro)
 
-### 1 Workshop: [Starting new project with create-react-app](https://drag13.io/react-learning-course-short/react-cra)
+### 1 Workshop: [A new project with create-react-app](https://drag13.io/react-learning-course-short/react-cra)
 
 ### 2 Lecture: [What is React Component](https://drag13.io/react-learning-course-short/react-components)
 

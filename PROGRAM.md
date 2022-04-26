@@ -15,7 +15,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-intro
 
 Not specified
 
-## 1 Workshop: Starting new project with create-react-app
+## 1 Workshop: A new project with create-react-app
 
 ### Key points: 
 
@@ -24,6 +24,7 @@ Not specified
 - Files you need to know
 - Predefined commands
 - Code examples
+- Alternatives
 
 Presentation - https://drag13.io/react-learning-course-short/react-cra
 
@@ -31,6 +32,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-cra
 
 - Install <a href="https://nodejs.org/en/">Node.JS</a>
 - Install <a href="https://code.visualstudio.com/">VsCode</a>
+- Execute 'npx create-react-app my-test-app --template typescript'
 
 ### Home task: 
 
