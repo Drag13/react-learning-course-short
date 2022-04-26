@@ -4,15 +4,20 @@
     </section>
 
     <section>
+
+        <h3>Open VsCode's console with CTRL+`</h3>
         <pre>
-            <code>
-npx create-react-app myproj --template typescript
+            <code data-line-numbers="">npx create-react-app myproj --template typescript
             </code>
         </pre>
     </section>
 
     <section>
-        <h4>Let's read it</h4>
+        <h3>Let's read it</h3>
+
+        <pre>
+            <code>npx create-react-app myproj --template typescript</code>
+        </pre>
         <ul>
             <li class="fragment fade-up">
                 <i>npx</i> - the npm tool that allow you to download npm package and execute it
@@ -52,16 +57,16 @@ npx create-react-app myproj --template typescript
     <section>
         <pre>
             <code class="pre-code-l" data-line-numbers="1-3|4-11|12-15">/public
-index.html          // root file to load
-manifest.json       // web app metadata
+    index.html          // root file to load
+    manifest.json       // web app metadata
 /src
-App.css             // styles related to the App component
-App.test.tsx        // tests related to the App component
-App.tsx             // App component
-index.css           // Global styles
-react-app-env.d.ts  // extra types
-reportWebVitals.ts  // performance metrics report
-setupTests.ts       // test configuration
+    App.css             // styles related to the App component
+    App.test.tsx        // tests related to the App component
+    App.tsx             // App component
+    index.css           // Global styles
+    react-app-env.d.ts  // extra types
+    reportWebVitals.ts  // performance metrics report
+    setupTests.ts       // test configuration
 .gitignore              // git ignore configuration
 package-lock.json       // all project dependencies
 package.json            // project configuration file
@@ -78,30 +83,30 @@ tsconfig.json           // typescript configuration file
     </section>
 
     <section>
-        <h4>Index.html</h4>
+        <h3>Index.html</h3>
 
         <img src="./img/index-html.png" alt="react - index.html">
     </section>
 
     <section>
-        <h4>index.tsx</h4>
+        <h3>index.tsx</h3>
 
         <img src="./img/index-tsx.png" alt="react - index.tsx">
     </section>
 
     <section>
-        <h4>App.tsx</h4>
+        <h3>App.tsx</h3>
 
         <img src="./img/app-tsx.png" alt="react - app.tsx">
     </section>
 
     <section>
-        <h4>App.test.tsx</h4>
+        <h3>App.test.tsx</h3>
         <img src="./img/test-tsx.png" alt="react - app.text.tsx">
     </section>
 
     <section>
-        <h4>package.json</h4>
+        <h3>package.json</h3>
         <img src="./img/package-json.png" alt="react - package.json">
     </section>
 </section>
@@ -161,7 +166,7 @@ tsconfig.json           // typescript configuration file
 function App() {
     return (
         &lt;div className="App"&gt;
-            &lt;header className="App-header"&gt;hello world&lt;/header&gt;
+            hello world
         &lt;/div&gt;;
     );
 }
@@ -172,14 +177,14 @@ export default App;
 
     </section>
     <section>
-        <h4>Line by line</h4>
+        <h3>Line by line</h3>
         <pre>
             <code data-line-numbers="1-11|1|3-9|11">import "./App.css";
 
 function App() {
     return (
         &lt;div className="App"&gt;
-            &lt;header className="App-header"&gt;hello world&lt;/header&gt;
+            hello world
         &lt;/div&gt;;
     );
 }
@@ -206,20 +211,45 @@ export default App;
         React is able to render the data as well
 
         <pre>
-            <code data-line-numbers="3|8">import "./App.css";
+            <code data-line-numbers="3|6">import "./App.css";
 
 const data = { greetings: "Hello World!" };
 
 function App() {
-    return (<div className="App">
-        <header className="App-header">
-            {data.greetings}
-        </header> 
-    </div>);
+    return (<div className="App">{data.greetings}</div>);
 }
 
 export default App;
             </code>
         </pre>
+    </section>
+</section>
+
+<section>
+
+    <section>
+        <h2>Alternatives</h2>
+    </section>
+
+    <section>
+        <h3>Vite</h3>
+
+        <pre><code>npm init vite</code></pre>
+    </section>
+
+    <section>
+        <h3>Vite benefits</h3>
+        <ul>
+            <li>Very fast HMR</li>
+            <li>Less dependencies</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Vite cons</h3>
+        <ul>
+            <li>Needs more tuning - like linters</li>
+            <li>It's not a webpack</li>
+        </ul>
     </section>
 </section>
