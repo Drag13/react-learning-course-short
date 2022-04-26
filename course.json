@@ -43,7 +43,7 @@
       ]
     },
     {
-      "title": "Starting new project with create-react-app",
+      "title": "A new project with create-react-app",
       "name": "react-cra",
       "type": "Workshop",
       "keyPoints": [
@@ -51,11 +51,13 @@
         "Project structure",
         "Files you need to know",
         "Predefined commands",
-        "Code examples"
+        "Code examples",
+        "Alternatives"
       ],
       "prerequisite": [
         "Install <a href=\"https://nodejs.org/en/\">Node.JS</a>",
-        "Install <a href=\"https://code.visualstudio.com/\">VsCode</a>"
+        "Install <a href=\"https://code.visualstudio.com/\">VsCode</a>",
+        "Execute 'npx create-react-app my-test-app --template typescript'"
       ],
       "published": true,
       "hometask": [
@@ -78,6 +80,10 @@
           "Package.json - documentation",
           "https://docs.npmjs.com/cli/v7/configuring-npm/package-json"
         ]
+      ],
+      "takeaways":[
+        "Creating new React project is very simple",
+        "Use npm start to start the an app locally or npm run build to build it for release"
       ]
     },
     {
