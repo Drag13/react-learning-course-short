@@ -114,3 +114,22 @@
 - Welcome [BeerJS from Zhytomyr](https://www.facebook.com/groups/beerJSZhytomyr/)
 - Welcome [Node Recipes](https://t.me/node_recipes)
 - Welcome [Toi Samyi Babich](https://t.me/toisamyibabich)
+
+## 23/04/2022
+
+- 🎉DAY OFF🎉
+
+## 24/04/2022
+
+- 🎉DAY OFF
+
+## 25/04/2022
+
+- Polishing the talk about what is React
+
+## 26/04/2022
+
+- Added more examples to the talk "React and UI Libraries"
+- Switched theme to the "Visual Studio 2015 dark style" from Nicolas LLOBERA
+- Added new section about alternatives to the CRA talk - thanks Babich for the hint
+- Added [schedule for the first day](./schedules/day1.md)
