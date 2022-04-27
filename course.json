@@ -21,6 +21,7 @@
       "type": "Lecture",
       "shortSummary": "Introduction to React.JS, the idea and JSX",
       "keyPoints": [
+        "The problem",
         "What is the React",
         "Three pillars of React",
         "React - advantages and disadvantages",
