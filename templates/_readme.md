@@ -39,17 +39,6 @@ Existing account at [https://github.com](https://github.com)
 Installed [Node.JS](https://nodejs.org/en/) with NPM
 Installed [VsCode](https://code.visualstudio.com/)
 
-## Lessons structure, preliminary timing
-
-- 00:00 - 00:10 - Looking through random home task
-- 00:10 - 00:50 - First part of the lecture
-- 00:50 - 01:00 - Break and questions
-- 01:00 - 01:40 - Second part of the lecture
-- 01:40 - 01:45 - New Home Task
-- 01:45 - 02:00 - Questions
-
-Workshop timing - about 1 hour
-
 ## Program summary
 
 {{#lessons}}

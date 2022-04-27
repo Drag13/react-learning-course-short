@@ -81,7 +81,7 @@
           "https://docs.npmjs.com/cli/v7/configuring-npm/package-json"
         ]
       ],
-      "takeaways":[
+      "takeaways": [
         "Creating new React project is very simple",
         "Use npm start to start the an app locally or npm run build to build it for release"
       ]
@@ -280,6 +280,13 @@
     {
       "title": "UI libraries",
       "name": "react-ui-lib",
+      "published": true,
+      "links": [
+        ["Material", "https://github.com/mui/material-ui"],
+        ["Ant Design", "https://github.com/ant-design/ant-design/"],
+        ["React Bootstrap", "https://github.com/react-bootstrap/react-bootstrap"],
+        ["Bundlephobia", "https://bundlephobia.com/"]
+      ],
       "type": "Lecture",
       "keyPoints": ["Purpose", "How to choose", "Material UI"]
     },

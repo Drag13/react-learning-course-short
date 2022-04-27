@@ -2,9 +2,9 @@
 
 # React For Beginners - free course by Itera
 
-## Progress 92%
+## Progress 100%
 
-✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ⏳ ✔️ 
+✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ 
 
 ## About
 
@@ -61,7 +61,7 @@ Installed [VsCode](https://code.visualstudio.com/)
 
 ### 9 Lecture: [React and network](https://drag13.io/react-learning-course-short/react-network)
 
-### 10 Lecture: UI libraries
+### 10 Lecture: [UI libraries](https://drag13.io/react-learning-course-short/react-ui-lib)
 
 ### 11 Lecture: [Tests](https://drag13.io/react-learning-course-short/react-testing)
 
