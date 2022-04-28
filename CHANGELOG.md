@@ -1,5 +1,10 @@
 # Changelog
 
+## 27/04/2022
+
+* Finally added last slides for the last talk about the [React and React UI libraries](https://drag13.io/react-learning-course-short/react-ui-lib/)
+* Added the new section about the problem we are trying to solve with React
+
 ## 26/04/2022
 
 - Added more examples to the talk "React and UI Libraries"
