@@ -34,8 +34,15 @@
     </section>
 
     <section>
-        <h3>When one field depends on another... 🔥</h3>
+        <h3>When one field depends on another... 🤯</h3>
+        <p class="fragment fade-up">And the async calls comes...</p>
     </section>
+
+    <section>
+        <h3>And DOM modification is not fast</h3>
+        <p>We have only 16.6 ms to render the screen</p>
+    </section>
+
 </section>
 
 <section>
@@ -55,23 +62,30 @@
             <li class="fragment fade-up">
                 Redraw the markup when the data changed
             </li>
+
+            <li class="fragment fade-up">
+                Do this fast (enough)
+            </li>
         </ul>
     </section>
 
     <section>
-        <div>Data</div>
+        <div>State</div>
         <div class="fragment fade-up" data-fragment-index="1">⬇️</div>
-        <div class="fragment fade-up" data-fragment-index="1">React</div>
+        <div class="fragment fade-up" data-fragment-index="1"> React App</div>
         <div class="fragment fade-up" data-fragment-index="2">⬇️</div>
-        <div class="fragment fade-up" data-fragment-index="2">Fancy Web Site</div>
+        <div class="fragment fade-up" data-fragment-index="2"> React</div>
+        <div class="fragment fade-up" data-fragment-index="3">⬇️</div>
+        <div class="fragment fade-up" data-fragment-index="3">Fancy Web Site</div>
     </section>
 
     <section>
         <pre>
-            <code data-line-numbers="1|2|3">const user = {name: 'Vitalii'};
-function App() {
-    return &lt;h2 className="green"&gt;Hello - {user.name}&lt;/h2&gt
+            <code data-line-numbers="1|2|3|5">const user = { name: 'Vitalii' };
+function App(props) {
+    return &lt;h2 className="green"&gt;Hello - {props.user.name}&lt;/h2&gt;
 }
+&lt;App user={user}/&gt;
             </code>
         </pre>
 
@@ -84,7 +98,7 @@ function App() {
     <section>
         <h3>This is not an HTML - JSX</h3>
 
-        <pre><code data-line-numbers="">&lt;h2 className="green"&gt;Hello - {data.name}&lt;/h2&gt</code></pre>
+        <pre><code data-line-numbers="">&lt;h2 className="green"&gt;Hello - {props.user.name}&lt;/h2&gt</code></pre>
     </section>
 
     <section>
@@ -129,24 +143,16 @@ function App() {
     <section>
         <h3>View is derivative of your data</h3>
 
-        <pre><code data-line-numbers="">function increment(v) { 
-    return v + 1; 
-}</code></pre>
-    </section>
-
-
-    <section>
-        <h3>The same with React</h3>
-
         <pre>
             <code data-line-numbers="">function App(props) {
-    return &lt;h2 className="green"&gt;Hello - {props.user.name}&lt;/h2&gt
+    return &lt;h2 className="green"&gt;Hello - {props.userName}&lt;/h2&gt
 }</code></pre>
     </section>
 
     <section>
         <h3>To change the view - change the data</h3>
-        <pre><code data-line-numbers="" class="fragment strike">document.querySelect('.green').innerText = 'Olga'</code></pre>
+        <pre><code data-line-numbers="" class="fragment strike">document.querySelect('.green').innerText = 'Anna'</code></pre>
+        <pre><code data-line-numbers="" class="fragment fade-up">setState({userName: 'Anna'})</code></pre>
     </section>
 
     <section>
@@ -198,6 +204,10 @@ form.insertAdjacentElement('afterbegin', header);
     </section>
 
     <section>
+        <h3>JSX/TSX is an example of declarative approach</h3>
+    </section>
+
+    <section>
         <h3>Based on components</h3>
 
         <p class="left">All modern frameworks are based on components. But the most easy way to create a component - use
@@ -240,7 +250,7 @@ export class MyComponent {}</code></pre>
 
         <ul>
             <li class="fragment fade-up">Declarative</li>
-            <li class="fragment fade-up">Track changes automatically</li>
+            <li class="fragment fade-up">React on changes automatically</li>
             <li class="fragment fade-up">Rich Ecosystem</li>
             <li class="fragment fade-up">Support client-side, server side rendering, mobile development</li>
             <li class="fragment fade-up">Not a framework</li>
