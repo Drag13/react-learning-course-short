@@ -1,9 +1,19 @@
 # Changelog
 
+## 29/04/2022
+
+- Added link to the YouTube translation for the first talk [About React](https://www.youtube.com/watch?v=fQ_UNyQBiqg)
+- Added link to the YouTube translation for the second talk [A new project with create-react-app](https://www.youtube.com/watch?v=2r1TW9yPhlQ)
+- Updated templates to show published YouTube Talks
+
+## 28/04/2022 
+
+- First two talks went live!
+
 ## 27/04/2022
 
-* Finally added last slides for the last talk about the [React and React UI libraries](https://drag13.io/react-learning-course-short/react-ui-lib/)
-* Added the new section about the problem we are trying to solve with React
+- Finally added last slides for the last talk about the [React and React UI libraries](https://drag13.io/react-learning-course-short/react-ui-lib/)
+- Added the new section about the problem we are trying to solve with React
 
 ## 26/04/2022
 
