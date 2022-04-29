@@ -9,6 +9,10 @@
 - {{{.}}}
 {{/keyPoints}}
 
+{{#youtube}}
+Talk: {{{.}}}
+{{/youtube}}
+
 {{#presentation}}
 Presentation - {{{.}}}
 

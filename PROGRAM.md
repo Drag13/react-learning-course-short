@@ -4,10 +4,13 @@
 
 ### Key points: 
 
+- The problem
 - What is the React
 - Three pillars of React
 - React - advantages and disadvantages
 - Why to learn React nowadays
+
+Talk: https://www.youtube.com/watch?v=fQ_UNyQBiqg
 
 Presentation - https://drag13.io/react-learning-course-short/react-intro
 
@@ -25,6 +28,8 @@ Not specified
 - Predefined commands
 - Code examples
 - Alternatives
+
+Talk: https://www.youtube.com/watch?v=2r1TW9yPhlQ
 
 Presentation - https://drag13.io/react-learning-course-short/react-cra
 
@@ -59,6 +64,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-cra
 - How to get data from the component
 - Why TypeScript
 
+
 Presentation - https://drag13.io/react-learning-course-short/react-components
 
 ### Home task: 
@@ -74,6 +80,7 @@ Not specified
 - Building "smart" component - functional and class-based
 - What and when to use
 - Components - best practices
+
 
 Presentation - https://drag13.io/react-learning-course-short/react-new-component
 
@@ -102,6 +109,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-new-component
 - Preprocessors
 - CSS in JS
 
+
 Presentation - https://drag13.io/react-learning-course-short/react-styling
 
 ### Home task: 
@@ -118,6 +126,7 @@ Not specified
 - How it works in React (simplified)
 - Typical mistakes
 
+
 Presentation - https://drag13.io/react-learning-course-short/react-change-detection
 
 ### Home task: 
@@ -132,6 +141,7 @@ Not specified
 - Context
 - Redux
 - MobX
+
 
 Presentation - https://drag13.io/react-learning-course-short/react-state-management
 
@@ -161,6 +171,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-state-managem
 - Building your first form with  <a href="https://react-hook-form.com/get-started">React Hook Form</a>
 - Validation with Yup
 
+
 Presentation - https://drag13.io/react-learning-course-short/react-forms
 
 ### Prerequisite
@@ -180,6 +191,7 @@ Not specified
 - Data Binding
 - Router guard
 
+
 Presentation - https://drag13.io/react-learning-course-short/react-router
 
 ### Home task: 
@@ -198,6 +210,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-router
 - Fetch
 - Axios
 
+
 Presentation - https://drag13.io/react-learning-course-short/react-network
 
 ### Home task: 
@@ -211,6 +224,7 @@ Not specified
 - Purpose
 - How to choose
 - Material UI
+
 
 Presentation - https://drag13.io/react-learning-course-short/react-ui-lib
 
@@ -226,6 +240,7 @@ Not specified
 - Testing pyramid
 - What should be tested
 - Testing with Jest
+
 
 Presentation - https://drag13.io/react-learning-course-short/react-testing
 

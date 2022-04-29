@@ -16,7 +16,7 @@ This repo dedicated to the course "React for Beginners". The course was created 
 - Full program is [here](PROGRAM.md)
 - Presentations can be found here - [https://drag13.io/react-learning-course-short/react-intro](https://drag13.io/react-learning-course-short/react-intro) where is the name of the lesson
 - Changelog is [here](CHANGELOG.md)
-- Video - pending. I will record the lessons and publish them afterwards
+- Video - published [here](https://www.youtube.com/channel/UCg-txtmOEQ8BniR8008O1mA)
 - Technical details are [here](devlog.md)
 
 ## PreRequisites
@@ -42,7 +42,7 @@ Installed [VsCode](https://code.visualstudio.com/)
 ## Program summary
 
 {{#lessons}}
-### {{i}} {{type}}: {{#presentation}}[{{title}}]({{{.}}}){{/presentation}}{{^presentation}}{{title}}{{/presentation}}
+### {{i}} {{type}}: {{#link}}[{{title}}]({{{.}}}){{/link}}{{^link}}{{title}}{{/link}}
 
 {{/lessons}}
 ## Donations
