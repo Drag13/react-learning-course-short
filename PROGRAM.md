@@ -62,14 +62,16 @@ Presentation - https://drag13.io/react-learning-course-short/react-cra
 - Component types
 - How to pass data into the component
 - How to get data from the component
-- Why TypeScript
+- Component lifecycle
 
 
 Presentation - https://drag13.io/react-learning-course-short/react-components
 
 ### Home task: 
 
-Not specified
+- Split your APP into the logical components
+- Mix Class Based and Functional approach to get more practice in both
+- Use props only to pass the data to your components
 
 ## 3 Workshop: Building React Component
 
