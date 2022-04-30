@@ -1,76 +1,121 @@
-<!DOCTYPE html><html lang="en"><head><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/2/index.f84d4caf.css"><meta charset="utf-8"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>React For Beginners - What is React Component</title><meta name="description" content="Free learning course - React: What is React Component"><meta name="keywords" content="react free learning course beginners"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="React For Beginners - What is React Component"><meta name="twitter:site" content="https://github.com/Drag13/react-learning-course-short/react-components/index.html"><meta name="twitter:creator" content="@drag137"><meta name="twitter:image" content="https://drag13.io/react-learning-course-short/shared/imgs/title.png"><meta property="og:image" content="https://drag13.io/react-learning-course-short/shared/imgs/title.png"><meta property="og:title" content="React For Beginners - What is React Component"><meta name="og:site_name" content="React For Beginners - What is React Component"><meta property="og:url" content="https://drag13.io/react-learning-course-short/react-components/index.htnl"><meta property="og:type" content="website"><meta name="application-name" content="React For Beginners - What is React Component"><meta name="author" content="drag13"><meta name="robots" content="index follow"><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/2/index.1568b79b.css"><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/2/index.698ea738.css"><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/react-change-detection/index.8e0c3b31.css"></head><body> <div class="reveal"> <div class="slides"> <section> <h1 class="ukraine"> Free React Course <br> For Beginners </h1> </section> <section> <h1>L2 - What is React Component</h1> <h4> <u> React For Beginners by Itera </u> </h4> </section> <section> <h2>Key Points</h2> <ul> <li>What is the component</li> <li>Why to use the components</li> <li>Component types</li> <li>How to pass data into the component</li> <li>How to get data from the component</li> <li>Why TypeScript</li> </ul> </section> <section> <section> <h2>What is the component</h2> </section> <section class="left"> <p>Component - unit of code that encapsulate single, logical functionality</p> <p>Components might be combined together to create a new component</p> </section> <section> <p>From React prospective - component is a <i class="fragment highlight-current-green">function</i> or <i class="fragment highlight-current-green">class</i> that accepts <i class="fragment highlight-current-green">props (input)</i> and returns <i class="fragment highlight-current-green">JSX</i> </p> </section> <section> <h4>JSX - JavaScript XML</h4> <p>XML like syntax that is parsed and transformed to the regular JavaScript code</p> </section> <section> <pre><code data-line-numbers="">function App({ name }) {
-    return &lt;h2 className="green"&gt; Hello - {name} &lt;/h2&gt;;
-}
-        </code>
-
-    </pre> <div class="fade-up fragment" data-fragment-index="1">⬇️</div> <pre class="fade-up fragment" data-fragment-index="1"><code data-line-numbers="">function l(e) {
-    var n = e.name;
-    return (0, r.jsxs)("h2", {
-    className: "green",
-    children: [" Hello - ", n, " "]});
-}
-                            </code>
-    </pre> </section> <section> <h4>Component as a function</h4> <pre><code data-line-numbers="">function AppHeader(props) {
-    return &lt;h2&gt;  My first Application - {props.title} &lt;/h2&gt;;
-}
-            </code></pre> </section> <section> <h4>Component as a class</h4> <pre><code data-line-numbers="1-10|1|2|4-6">class AppHeader extends React.PureComponent {
-    render() {
-        return (
-            <h2>
-                My first Application - {this.props.title}
-            </h2>
-        );
-    }
-}
-            </code></pre> </section> </section> <section> <section> <h2>Why to use the components</h2> </section> <section> <h3>Reusing</h3> <p> Components are very useful for re-using logic or styles. Create one component and use it across all over the application. </p> </section> <section> <h4>Great candidates for components:</h4> <ul> <li>Buttons</li> <li>Inputs</li> <li>Cards</li> <li>Different headers h1, h2, h3</li> </ul> </section> <section> <h4>Encapsulation</h4> <p> Components are great to hide the logic inside. Define simple contract (props) and than use component without digging inside </p> </section> <section> <h4>Testing</h4> <p> Components are great for testing which increase maintainability. </p> </section> </section> <section> <section> <h2>Component types</h2> </section> <section> <ul> <li>"Dumb" - the component cares only about the view. No state inside</li> <li class="fade-up fragment">Smart - the component maintains state and contains some logic</li> </ul> </section> <section> <h4>"Dumb" component example</h4> <pre>
-            <code data-line-numbers="">const AppHeader = (props) => <h1>{props.text}</h1></code>
-        </pre> </section> <section> <h4>Examples</h4> <ul> <li>Headers, labels, cards</li> <li>Simple buttons and inputs</li> </ul> </section> <section> <h4>Smart component example</h4> <pre>
-            <pre><code data-line-numbers="">import { FC, useState } from "react";
-
-const Expand: FC = ({ children }) =&gt; {
-    const [isOpened, setExpanded] = useState(true);
-    const txt = isOpened ? "Hide" : "Show";
-    const style = { display: isOpened ? "block" : "none" };
-    return (
-    &lt;div&gt;
-        &lt;button onClick={() =&gt; setExpanded(!isOpened)}&gt;{txt}&lt;/button&gt;
-        &lt;div style={style}&gt; {children} &lt;/div&gt;
-    &lt;/div&gt;
-    );
+<!DOCTYPE html><html lang="en"><head><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/2/index.49374549.css"><meta charset="utf-8"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>React For Beginners - What is React Component</title><meta name="description" content="Free learning course - React: What is React Component"><meta name="keywords" content="react free learning course beginners"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="React For Beginners - What is React Component"><meta name="twitter:site" content="https://github.com/Drag13/react-learning-course-short/react-components/index.html"><meta name="twitter:creator" content="@drag137"><meta name="twitter:image" content="https://drag13.io/react-learning-course-short/shared/imgs/title.png"><meta property="og:image" content="https://drag13.io/react-learning-course-short/shared/imgs/title.png"><meta property="og:title" content="React For Beginners - What is React Component"><meta name="og:site_name" content="React For Beginners - What is React Component"><meta property="og:url" content="https://drag13.io/react-learning-course-short/react-components/index.htnl"><meta property="og:type" content="website"><meta name="application-name" content="React For Beginners - What is React Component"><meta name="author" content="drag13"><meta name="robots" content="index follow"><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/2/index.1568b79b.css"><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/2/index.698ea738.css"><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/react-change-detection/index.8e0c3b31.css"></head><body> <div class="reveal"> <div class="slides"> <section> <h1 class="ukraine"> Free React Course <br> For Beginners </h1> </section> <section> <h1>L2 - What is React Component</h1> <h4> <u> React For Beginners by Itera </u> </h4> </section> <section> <h2>Key Points</h2> <ul> <li class="fade-up fragment">What is the component</li> <li class="fade-up fragment">Why to use the components</li> <li class="fade-up fragment">Component types</li> <li class="fade-up fragment">How to pass data into the component</li> <li class="fade-up fragment">How to get data from the component</li> <li class="fade-up fragment">Component lifecycle</li> </ul> </section> <section> <section> <h2>What is the component</h2> </section> <section> <h3>Component</h3> <p class="left">An independent unit of code that encapsulate single, logical functionality</p> </section> <section> <h3>From React prospective component </h3> <p class="left"> is a <i class="fragment highlight-current-green">function</i> or <i class="fragment highlight-current-green">class</i> that accepts <i class="fragment highlight-current-green">props (input)</i> and returns <i class="fragment highlight-current-green">JSX</i> </p> </section> <section> <h3>JSX/TSX - JavaScript XML</h3> <p class="left">HTML like syntax that is parsed and transformed to the regular JavaScript code</p> </section> </section> <section> <section> <h2>Why to use the components</h2> </section> <section> <h3>Reusing</h3> <p class="left"> Components are very useful for re-using logic or styles. Create one component and use it across all over the application. </p> </section> <section> <h3>Example:</h3> <pre><code data-line-numbers="" class="language-tsx"><h2 class="header header2">What is the component</h2>
+...
+<h2 class="header header2">Why to use component</h2>
+    </code></pre> <h3 class="fade-up fragment">VS</h3> <pre class="fade-up fragment"><code data-line-numbers="" class="language-tsx">&lt;AppH2&gt;What is the component&lt;/AppH2&gt;
+...
+&lt;AppH2&gt;Why to use component&lt;/AppH2&gt;</code></pre> </section> <section> <h3>Reusing gives you</h3> <ul> <li class="fade-up fragment">Less mistakes</li> <li class="fade-up fragment">Speed up the coding</li> <li class="fade-up fragment">Better maintainability</li> </ul> </section> <section> <h3>Encapsulation</h3> <p class="left">Components hides complexity and the realization to make you deal with them as easy as possible</p> </section> <section> <h3>Example</h3> <pre><code class="language-tsx" data-line-numbers="">const handleChange = (v: number) =&gt; console.log(v);
+const App = () =&gt; {
+  return (
+    &lt;ComplexCounter initialValue={0} onChange={handleChange}/&gt;
+  );
 };
+      </code></pre> </section> <section> <h3>Encapsulation gives you </h3> <ul> <li class="fragment">Much more easier maintenance</li> <li class="fade-up fragment">Better Developer experience</li> </ul> </section> <section> <h3>Readability</h3> <pre><code class="language-tsx" data-line-numbers="">const App = () =&gt; {
+  return (
+    &lt;&gt;
+      &lt;AppNav /&gt;
+      &lt;WeolcomeHeader /&gt;
+      &lt;Avatar /&gt;
+      &lt;Bio /&gt;
+      &lt;Contacts /&gt;
+      &lt;Footer /&gt;
+    &lt;/&gt;
+  );
+};</code></pre> </section> <section> <h3>Testing</h3> <p class="left"> It's much more easier to test a single, small component which has one or few responsibilities that the whole App Components are great for testing which increase maintainability. </p> <p class="left">Easier tests = less bugs and fragility</p> </section> </section> <section> <section> <h2>Component types</h2> </section> <section> <h3>Functional components</h3> <pre><code class="language-tsx" data-line-numbers="">const App = () =&gt; {
+  return &lt;h1&gt;Hello World&lt;/h1&gt;;
+};
+    </code></pre> <pre class="fade-up fragment"><code class="language-tsx" data-line-numbers="">function App() {
+  return &lt;h1&gt;Hello world&lt;/h1&gt;;
+}
+    </code></pre> </section> <section> <h3> Class Based components </h3> <pre><code class="language-tsx" data-line-numbers="">import { PureComponent } from 'React';
 
-export default () =&gt; &lt;Expand&gt;VERY BIG TEXT &lt;/Expand&gt;;
-                </code></pre>
-        
-        </pre> </section> <section data-visibility="hidden"> <h4>Warning - it's not production code</h4> </section> <section> <h4>Examples</h4> <ul> <li>ExpandCollapse, carousels</li> <li>Inputs with logic inside</li> <li>Button with loaders</li> </ul> </section> </section> <section> <section> <h2>How to pass data into the component</h2> </section> <section> <ul> <li>From <i>props</i> - should be preferred</li> <li class="fade-up fragment">From <i>context</i></li> <li class="fade-up fragment">Directly from the code</li> </ul> </section> <section> <h4>Using props - the most correct</h4> <pre>
-            <code data-line-numbers="1-11|3|5|6|9">import { FC } from "react";
+class App extends PureComponent {
+  render() {
+    return &lt;h1&gt;Hello world&lt;/h1&gt;;
+  }
+}
+</code></pre> <pre class="fade-up fragment"><code class="language-tsx" data-line-numbers="">import { Component } from 'React';
+
+class App extends Component {
+  render() {
+    return &lt;h1&gt;Hello world&lt;/h1&gt;;
+  }
+}
+  </code></pre> </section> <section> <h3>The difference between FC and ClassBased Component</h3> <ul> <li>Nature - function VS class </li> <li class="fade-up fragment">The way we access state - this.setState() VS useState()</li> <li class="fade-up fragment">LifeCycle hooks - some of them are not accessible for the FC</li> </ul> </section> <section> <h3>Dumb Components eg. presentational</h3> <p class="left">Dumb components - has no state inside, they made only for being nice</p> <pre><code class="language-tsx" data-line-numbers="">export const AppGreetings = () =&gt; {
+  return &lt;h1 className="header header1"&gt;I am a nice header&lt;/h1&gt;;
+};
+</code></pre> </section> <section> <h3>Smart components - contains the state inside</h3> <pre><code data-line-numbers="1-14|1|4|8|9">import { useState } from "react";
+
+const Expand = () =&gt; {
+  const [isOpened, setExpanded] = useState(true);
+  const style = { display: isOpened ? "block" : "none" };
+  return (
+    &lt;div&gt;
+      &lt;button onClick={() =&gt; setExpanded(!isOpened)}&gt;
+        {isOpened ? "Hide" : "Show}
+      &lt;/button&gt;
+      &lt;div style={style}&gt; VERY BIG TEXT &lt;/div&gt;
+    &lt;/div&gt;
+  );
+};
+                      </code></pre> </section> </section> <section> <section> <h2>How to pass data into the component</h2> </section> <section> <ul> <li>From <i>props</i> - should be preferred</li> <li class="fade-up fragment">From <i>context</i></li> <li class="fade-up fragment">Directly from the code</li> </ul> </section> <section> <h3>Using props - the most correct</h3> <pre>
+        <code data-line-numbers="1-11|3|5|6|9">import { FC } from "react";
 
 type H1Props = { userName: string };
 
 const AppH1: FC &lt;H1Props&gt; = (props) => (
-    <h1>Hello {props.userName}</h1>
+  <h1>Hello {props.userName}</h1>
 );
 
 export default () => &lt;AppH1 userName="Hello world" /&gt;
-            </code>
-        </pre> </section> <section> <h4>Types???</h4> <p> Instead of JavaScript, we are using <a href="https://www.typescriptlang.org/">TypeScript</a> - the superset of the JavaScript that makes code more maintainable </p> </section> <section> <h4>Props allows to pass an component as well</h4> <pre><code data-line-numbers="">const StyledCard: FC = ({ children }) =&gt; (
-    &lt;div className="app-styledcard-root"&gt;{children}&lt;/div&gt;
-);
+        </code>
+    </pre> </section> <section> <h3>Passing another Component is also possible</h3> <pre><code class="language-tsx" data-line-numbers="1-9|1|3|6|9">import { FC, PropsWithChildren } from "react";
 
-const App = () =&gt; (
-    &lt;StyledCard&gt;
-        &lt;p&gt;This will be put inside styled card&lt;/p&gt;
-    &lt;/StyledCard&gt;
-);
-</code></pre> </section> </section> <section> <section> <h2>How to get data from the component</h2> </section> <section> <h4>Callback - the best option to get data from the component</h4> <pre>
-        <code data-line-numbers="1-10|3|5|8">import { FC } from "react";
+type Props = PropsWithChildren&lt;{}&gt;;
+
+export const AppH1: FC&lt;Props&gt; = (props) =&gt; {
+  return &lt;h1 className="header header1"&gt;{props.children}&lt;/h1&gt;;
+};
+
+const App = () =&gt; &lt;AppH1&gt;&lt;TranslatedText text="hello"/&gt;&lt;/AppH1&gt;</code></pre> </section> <section> <h3>Same way it works with class based component</h3> <pre><code class="language-tsx" data-line-numbers="1-8|6">import { PureComponent } from "react";
+
+type Props = { text: string };
+class AppH1 extends PureComponent&lt;Props&gt; {
+  render() {
+    return &lt;h1&gt;{this.props.text}&lt;/h1&gt;;
+  }
+}
+</code></pre> </section> <section> <h3>About the context we will talk a bit later</h3> </section> </section> <section> <section> <h2>How to get data from the component</h2> </section> <section> <h4>Callback - the best option to get data from the component</h4> <pre>
+    <code data-line-numbers="1-10|3|5|6|9">import { FC } from "react";
 
 type BtnProps = { onClick: (val: string) => void };
 
 const Btn: FC&lt;BtnProps&gt; = (props) => (
-    &lt;button onClick={() => props.onClick("hello!")} /&gt;
+  &lt;button onClick={() => props.onClick("hello!")} /&gt;
 );
 
-export default () => &lt;Btn onClick={(v) => alert(v)} /&gt;;
-        </code>
-</pre> </section> <section class="left"> <strong>⚠️Important: </strong> Using anonymous functions as a callback might heart the performance </section> </section> <section> <section> <h2>Why TypeScript</h2> </section> <section> <h4>Maintainability</h4> <p>Much easier to check a type than read the whole code</p> </section> <section> <h4> Developer Experience </h4> <p> IDE will provide you with much better hints and autocomplete </p> </section> <section> <h4> Less bugs </h4> <p> Types will be checked at the build time and highlight some developers mistakes </p> </section> <section class="left"> <p> <strong>⚠️Important:</strong> - TypeScript not exists in runtime </p> <p> <strong>⚠️Important:</strong> - TypeScript will not catch all - tests are important </p> </section> </section> <section> <h2>Useful links</h2> <ul> <li><a target="_blank" rel="noopener noreferrer" href="https://reactjs.org/docs/introducing-jsx.html">What is JSX</a></li> <li><a target="_blank" rel="noopener noreferrer" href="https://www.telerik.com/blogs/how-jsx-react-works-under-hood">JSX under the hood</a></li> <li><a target="_blank" rel="noopener noreferrer" href="https://medium.com/@thejasonfile/dumb-components-and-smart-components-e7b33a698d43">Smart VS Dumb components</a></li> <li><a target="_blank" rel="noopener noreferrer" href="https://www.typescriptlang.org/">TypeScript</a></li> </ul> </section> </div> </div> <script src="https://drag13.io/react-learning-course-short/2/index.764e4403.js" type="module"></script> <footer class="footer"> <a href="https://itera.com"> <img src="https://drag13.io/react-learning-course-short/Itera-logo-white-fuchsia.b04eab97.jpg" alt="https://itera.com"> </a> </footer> </body></html>
+&lt;Btn onClick={(v) => alert(v)} /&gt;
+    </code>
+</pre> </section> <section class="left"> <strong>⚠️Important: </strong> Using anonymous functions as a callback might heart the performance </section> </section> <section> <section> <h2>Component lifecycle</h2> </section> <section> <div class="two-column"> <div> <h3>Class Based</h3> <ul> <li class="fragment" data-fragment-index="1">Initialization</li> <li class="fragment" data-fragment-index="3">Render</li> <li class="fragment" data-fragment-index="5">ComponentDidMount</li> <li class="fragment" data-fragment-index="7">ShouldComponentUpdate</li> <li class="fragment" data-fragment-index="9">Render</li> <li class="fragment" data-fragment-index="11">ComponentDidUpdate</li> <li class="fragment" data-fragment-index="13">ComponentDidCatch</li> <li class="fragment" data-fragment-index="15">ComponentWillUnmount</li> </ul> </div> <div> <h3>Functional</h3> <ul> <li class="fragment" data-fragment-index="2"> - </li> <li class="fragment" data-fragment-index="4">function()</li> <li class="fragment" data-fragment-index="6">useEffect(, [])</li> <li class="fragment" data-fragment-index="8"> - </li> <li class="fragment" data-fragment-index="10">function() </li> <li class="fragment" data-fragment-index="12">useEffect()</li> <li class="fragment" data-fragment-index="14"> - </li> <li class="fragment" data-fragment-index="16">useEffect</li> </ul> </div> </div> </section> <section> <h3>What about others???</h3> <p class="left">Other hooks are either deprecated like componentWillMount either beyond this course for beginners like useLayoutEffect</p> </section> <section> <h3>Most useful are </h3> <ul> <li>ComponentDidMount for one time actions like fetching the server</li> <li class="fade-up fragment">ComponentDidUpdate for side effect</li> <li class="fade-up fragment">ComponentDidUnmount for cleanup</li> </ul> </section> <section> <h3>Functional example</h3> <pre><code class="language-tsx" data-line-numbers="">export default function App() {
+  useEffect(() =&gt; {
+    console.log("fires each and every update");
+  });
+
+  useEffect(() =&gt; {
+    console.log("fires once, upon did mount");
+  }, []);
+
+  useEffect(() =&gt; {
+    return () =&gt; console.log("fires on component did unmount");
+  });
+  return &lt;&gt;Test&lt;/&gt;;
+}
+    </code></pre> </section> <section> <h3>Class Based example</h3> <pre><code class="language-tsx" data-line-numbers="">export default class App extends Component {
+  constructor(p: {}) { super(p); }
+  render(){ return &lt;&gt;Test&lt;/&gt; }
+  componentDidMount() {}
+  shouldComponentUpdate(){ return true; }
+  componentDidUpdate() {}
+  componentDidCatch() {}
+  componentWillUnmount() {}
+}
+    </code></pre> </section> <section> <h3>The importance of knowing component lifecycle</h3> <p class="left"> Imagine you known nothing about the lifecycle and put fetch call inside the render. Each time your component will be re-rendered, each time you will fire request to the sever. Which will change the state, which will invoke one more re-render. Despair </p> </section> </section> <section> <h2>Home task</h2> <ul> <li>Split your APP into the logical components</li> <li>Mix Class Based and Functional approach to get more practice in both</li> <li>Use props only to pass the data to your components</li> </ul> </section> <section> <h2>Useful links</h2> <ul> <li><a target="_blank" rel="noopener noreferrer" href="https://reactjs.org/docs/react-component.html">Documentation</a></li> <li><a target="_blank" rel="noopener noreferrer" href="https://medium.com/@thejasonfile/dumb-components-and-smart-components-e7b33a698d43">Smart VS Dumb components</a></li> <li><a target="_blank" rel="noopener noreferrer" href="https://www.freecodecamp.org/news/how-to-understand-a-components-lifecycle-methods-in-reactjs-e1a609840630">Component LifeCycle</a></li> </ul> </section> </div> </div> <script src="https://drag13.io/react-learning-course-short/2/index.764e4403.js" type="module"></script> <footer class="footer"> <a href="https://itera.com"> <img src="https://drag13.io/react-learning-course-short/Itera-logo-white-fuchsia.b04eab97.jpg" alt="https://itera.com"> </a> </footer> </body></html>
