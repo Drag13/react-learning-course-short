@@ -56,3 +56,9 @@ pre > code.pre-code-l {
   background: linear-gradient(to bottom, #015bbb 50%, #fed500 50%);
   padding: 1.5rem 0.5rem;
 }
+
+.two-column {
+  display: flex;
+  text-align: left;
+  flex-direction: row;
+}
