@@ -6,6 +6,6 @@ const { join } = require("path");
   const fullPath = join(__dirname, filePath);
   const file = readFile(fullPath);
   const text = file.replaceAll("<", "&lt;").replaceAll(">", "&gt;");
-  const result = `<pre><code data-line-numbers>${text}</code></pre>`;
+  const result = `<pre><code class="language-tsx" data-line-numbers>${text}</code></pre>`;
   writeFile("test.txt", result);
 })(process.argv.splice(2));
