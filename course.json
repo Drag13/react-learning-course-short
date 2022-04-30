@@ -118,6 +118,28 @@
         "Split your APP into the logical components",
         "Mix Class Based and Functional approach to get more practice in both",
         "Use props only to pass the data to your components"
+      ],
+      "takeaways": [
+        "Component - an independent unit of code that encapsulate single, logical functionality",
+        "Components might be class based or functional",
+        "Components divided into \"smart\" and \"dumb\"",
+        "Components have lifecycle you can hook into"
+      ]
+    },
+    {
+      "title": "React with Hooks",
+      "name": "react-hooks",
+      "type": "Lecture",
+      "hidden": true,
+      "keyPoints": ["What is a hook", "Hook rules", "Most useful hooks", "Custom hooks"],
+      "links": [
+        ["Useful React Hooks", "https://www.smashingmagazine.com/2021/11/useful-react-hooks/"],
+        ["Hooks FAQ", "https://reactjs.org/docs/hooks-faq.html"]
+      ],
+      "takeaways": [
+        "Hook - a modern to API to functional components",
+        "Most useful are useState, useEffect",
+        "You can write your own hooks"
       ]
     },
     {
@@ -142,6 +164,7 @@
           "https://github.com/Drag13/react-learning-course-short/blob/master/presentations/react-new-component/code/counter-cb.tsx"
         ]
       ],
+
       "keyPoints": [
         "What is component - quick recap",
         "Building \"dumb\" components - functional and class-based",
