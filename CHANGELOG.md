@@ -1,5 +1,10 @@
 # Changelog
 
+## 30/04/2022
+
+- Massive rework of the 3rd presentation about the React component. Nobody said it would be easy.
+- Replace progress section with RoadMap
+
 ## 29/04/2022
 
 - Added link to the YouTube translation for the first talk [About React](https://www.youtube.com/watch?v=fQ_UNyQBiqg)
