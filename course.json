@@ -99,18 +99,26 @@
         "Component types",
         "How to pass data into the component",
         "How to get data from the component",
-        "Why TypeScript"
+        "Component lifecycle"
       ],
       "links": [
-        ["What is JSX", "https://reactjs.org/docs/introducing-jsx.html"],
-        ["JSX under the hood", "https://www.telerik.com/blogs/how-jsx-react-works-under-hood"],
+        ["Documentation", "https://reactjs.org/docs/react-component.html"],
+
         [
           "Smart VS Dumb components",
           "https://medium.com/@thejasonfile/dumb-components-and-smart-components-e7b33a698d43"
         ],
-        ["TypeScript", "https://www.typescriptlang.org/"]
+        [
+          "Component LifeCycle",
+          "https://www.freecodecamp.org/news/how-to-understand-a-components-lifecycle-methods-in-reactjs-e1a609840630"
+        ]
       ],
-      "published": true
+      "published": true,
+      "hometask": [
+        "Split your APP into the logical components",
+        "Mix Class Based and Functional approach to get more practice in both",
+        "Use props only to pass the data to your components"
+      ]
     },
     {
       "title": "Building React Component",
