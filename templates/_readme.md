@@ -2,7 +2,7 @@
 
 # {{title}}
 
-[Watch on YouTube](https://www.youtube.com/channel/UCg-txtmOEQ8BniR8008O1mA)
+## [Watch on YouTube](https://www.youtube.com/channel/UCg-txtmOEQ8BniR8008O1mA)
 
 ## About
 
@@ -16,6 +16,15 @@ This repo dedicated to the course "React for Beginners". The course was created 
 - Changelog is [here](CHANGELOG.md)
 - Video - published [here](https://www.youtube.com/channel/UCg-txtmOEQ8BniR8008O1mA)
 - Technical details are [here](devlog.md)
+
+## Roadmap
+
+* Course program                  - done ✅
+* Repository setup                - done ✅
+* Prepare materials               - work in progress ✅
+* On-line                         - in progress 🔨
+* Retrospective                   - planned ⏲️
+* Updates                         - planed ⏲️
 
 ## PreRequisites
 
