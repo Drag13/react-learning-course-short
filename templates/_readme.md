@@ -2,9 +2,7 @@
 
 # {{title}}
 
-## Progress {{progressPercentage}}
-
-{{#progress}}{{.}}{{/progress}}
+[Watch on YouTube](https://www.youtube.com/channel/UCg-txtmOEQ8BniR8008O1mA)
 
 ## About
 

@@ -2,9 +2,7 @@
 
 # React For Beginners - free course by Itera
 
-## Progress 100%
-
-✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ ✔️ 
+[Watch on YouTube](https://www.youtube.com/channel/UCg-txtmOEQ8BniR8008O1mA)
 
 ## About
 
