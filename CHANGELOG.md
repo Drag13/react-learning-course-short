@@ -1,5 +1,10 @@
 # Changelog
 
+## 01/05/2022
+
+- Added new talk about the [React Hooks](https://drag13.io/react-learning-course-short/react-hooks)
+- Made it 4th
+
 ## 30/04/2022
 
 - Massive rework of the 3rd presentation about the React component. Nobody said it would be easy.
@@ -11,7 +16,7 @@
 - Added link to the YouTube translation for the second talk [A new project with create-react-app](https://www.youtube.com/watch?v=2r1TW9yPhlQ)
 - Updated templates to show published YouTube Talks
 
-## 28/04/2022 
+## 28/04/2022
 
 - First two talks went live!
 
