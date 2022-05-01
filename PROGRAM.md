@@ -73,7 +73,25 @@ Presentation - https://drag13.io/react-learning-course-short/react-components
 - Mix Class Based and Functional approach to get more practice in both
 - Use props only to pass the data to your components
 
-## 3 Workshop: Building React Component
+## 3 Lecture: React with Hooks
+
+### Key points: 
+
+- What is a hook
+- Hook rules
+- UseState
+- Use Effect
+- UseContext
+- Custom hooks
+
+
+Presentation - https://drag13.io/react-learning-course-short/react-hooks
+
+### Home task: 
+
+Not specified
+
+## 4 Workshop: Building React Component
 
 ### Key points: 
 
@@ -102,7 +120,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-new-component
 - Put the new component into the footer
 - When clicked, it should log into the console next text: `redirecting user to the next {link}` where `{link}` should be a's href
 
-## 4 Lecture: Styling in React - from plain CSS to CSS in JS
+## 5 Lecture: Styling in React - from plain CSS to CSS in JS
 
 ### Key points: 
 
@@ -118,7 +136,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-styling
 
 Not specified
 
-## 5 Lecture: Tracking Changes
+## 6 Lecture: Tracking Changes
 
 ### Key points: 
 
@@ -135,7 +153,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-change-detect
 
 Not specified
 
-## 6 Workshop: Managing state in React
+## 7 Workshop: Managing state in React
 
 ### Key points: 
 
@@ -165,7 +183,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-state-managem
 - Install MobX
 - Implement same functionality with MobX
 
-## 7 Workshop: Forms - Default way and React-Hook-Forms
+## 8 Workshop: Forms - Default way and React-Hook-Forms
 
 ### Key points: 
 
@@ -184,7 +202,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-forms
 
 Not specified
 
-## 8 Lecture: Routing in React
+## 9 Lecture: Routing in React
 
 ### Key points: 
 
@@ -205,7 +223,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-router
 - If `ln` equals `ua` all texts should be in Ukrainian language
 - If `ln` equals `en` all text should be in English (feel free to use google translate if needed)
 
-## 9 Lecture: React and network
+## 10 Lecture: React and network
 
 ### Key points: 
 
@@ -219,7 +237,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-network
 
 Not specified
 
-## 10 Lecture: UI libraries
+## 11 Lecture: UI libraries
 
 ### Key points: 
 
@@ -234,7 +252,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-ui-lib
 
 Not specified
 
-## 11 Lecture: Tests
+## 12 Lecture: Tests
 
 ### Key points: 
 

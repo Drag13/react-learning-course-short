@@ -130,8 +130,14 @@
       "title": "React with Hooks",
       "name": "react-hooks",
       "type": "Lecture",
-      "hidden": true,
-      "keyPoints": ["What is a hook", "Hook rules", "Most useful hooks", "Custom hooks"],
+      "keyPoints": [
+        "What is a hook",
+        "Hook rules",
+        "UseState",
+        "Use Effect",
+        "UseContext",
+        "Custom hooks"
+      ],
       "links": [
         ["Useful React Hooks", "https://www.smashingmagazine.com/2021/11/useful-react-hooks/"],
         ["Hooks FAQ", "https://reactjs.org/docs/hooks-faq.html"]
@@ -140,7 +146,8 @@
         "Hook - a modern to API to functional components",
         "Most useful are useState, useEffect",
         "You can write your own hooks"
-      ]
+      ],
+      "published": true
     },
     {
       "title": "Building React Component",

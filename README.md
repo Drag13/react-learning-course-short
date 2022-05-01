@@ -54,23 +54,25 @@ Installed [VsCode](https://code.visualstudio.com/)
 
 ### 2 Lecture: [What is React Component](https://drag13.io/react-learning-course-short/react-components)
 
-### 3 Workshop: [Building React Component](https://drag13.io/react-learning-course-short/react-new-component)
+### 3 Lecture: [React with Hooks](https://drag13.io/react-learning-course-short/react-hooks)
 
-### 4 Lecture: [Styling in React - from plain CSS to CSS in JS](https://drag13.io/react-learning-course-short/react-styling)
+### 4 Workshop: [Building React Component](https://drag13.io/react-learning-course-short/react-new-component)
 
-### 5 Lecture: [Tracking Changes](https://drag13.io/react-learning-course-short/react-change-detection)
+### 5 Lecture: [Styling in React - from plain CSS to CSS in JS](https://drag13.io/react-learning-course-short/react-styling)
 
-### 6 Workshop: [Managing state in React](https://drag13.io/react-learning-course-short/react-state-management)
+### 6 Lecture: [Tracking Changes](https://drag13.io/react-learning-course-short/react-change-detection)
 
-### 7 Workshop: [Forms - Default way and React-Hook-Forms](https://drag13.io/react-learning-course-short/react-forms)
+### 7 Workshop: [Managing state in React](https://drag13.io/react-learning-course-short/react-state-management)
 
-### 8 Lecture: [Routing in React](https://drag13.io/react-learning-course-short/react-router)
+### 8 Workshop: [Forms - Default way and React-Hook-Forms](https://drag13.io/react-learning-course-short/react-forms)
 
-### 9 Lecture: [React and network](https://drag13.io/react-learning-course-short/react-network)
+### 9 Lecture: [Routing in React](https://drag13.io/react-learning-course-short/react-router)
 
-### 10 Lecture: [UI libraries](https://drag13.io/react-learning-course-short/react-ui-lib)
+### 10 Lecture: [React and network](https://drag13.io/react-learning-course-short/react-network)
 
-### 11 Lecture: [Tests](https://drag13.io/react-learning-course-short/react-testing)
+### 11 Lecture: [UI libraries](https://drag13.io/react-learning-course-short/react-ui-lib)
+
+### 12 Lecture: [Tests](https://drag13.io/react-learning-course-short/react-testing)
 
 ## Donations
 

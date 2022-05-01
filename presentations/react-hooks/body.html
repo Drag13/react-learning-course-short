@@ -1,0 +1,308 @@
+<section>
+  <section>
+    <h2>What is a hook</h2>
+  </section>
+
+  <section>
+    <h3>Hook - an extension to functional components</h3>
+
+    <p class="left">
+      Hooks allows you to have state, hook into lifecycle, share functionality
+    </p>
+  </section>
+
+  <section>
+    <h3>Appeared since React 16.8</h3>
+
+    <p>Started from very arguable, now almost the standard</p>
+  </section>
+
+  <section>
+    <h3>Pros</h3>
+    <ul>
+      <li>Extends functional components functionality</li>
+      <li>Very nice way to share common logic</li>
+    </ul>
+  </section>
+
+
+  <section>
+    <h3>Cons</h3>
+    <ul>
+      <li>Might become extremely messy</li>
+    </ul>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Hook rules</h2>
+  </section>
+
+  <section>
+    <h3>Use only inside functional component</h3>
+  </section>
+
+  <section>
+    <h3>Name hook with use</h3>
+
+    <ul>
+      <li class="fragment fade-up">
+        useState()
+      </li>
+      <li class="fragment fade-up">
+        useCallback()
+      </li>
+
+      <li class="fragment fade-up">
+        useWhatEverYouWant()
+      </li>
+    </ul>
+
+  </section>
+  <section>
+    <h3>Don't use conditionally or in loops</h3>
+    <p class="left">React relays on the order of hook invocations</p>
+  </section>
+
+  <section>
+    <h3>Use as much hooks (even the same) as you need</h3>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Most useful hooks</h2>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>UseState</h2>
+  </section>
+
+  <section>
+    <h3>useState allows you to have smart functional components</h3>
+
+    <pre><code class="language-tsx" data-line-numbers="1-8|2|4">const App = () =&gt; {
+  const [state, setCounter] = useState(0);
+  return (
+    &lt;button onClick={() =&gt; setCounter(state + 1)}&gt;
+      Increment: {state}
+    &lt;/button&gt;
+  );
+};
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>Important! Don't mutate the state!</h3>
+
+    <pre><code class="language-tsx" data-line-numbers="1-10|5">const WrongApp = () =&gt; {
+  const [state, setState] = useState({ isAdmin: false });
+
+  const assignAdmin = () =&gt; {
+    state.isAdmin = true; // WRONG
+    setState(state);
+  };
+
+  return &lt;button onClick={assignAdmin}&gt;Assign admin&lt;/button&gt;;
+};</code></pre>
+  </section>
+
+  <section>
+    <h3>You need to create new instance instead</h3>
+
+    <pre><code class="language-tsx" data-line-numbers="1-9|4-6|5">const WrongApp = () =&gt; {
+  const [state, setState] = useState({ isAdmin: false });
+
+  const assignAdmin = () =&gt; {
+    setState({ ...state, isAdmin: true }); // CORRECT
+  };
+
+  return &lt;button onClick={assignAdmin}&gt;Assign admin&lt;/button&gt;;
+};</code></pre>
+  </section>
+
+
+  <section>
+    <h3>For more advanced cases you might want to look into useReducer <a about="_blank" href="./code/"></a> hook</h3>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>UseEffect</h2>
+  </section>
+
+  <section>
+    <h3>useEffect allows you to hook into lifecycle</h3>
+  </section>
+
+  <section>
+    <h3>Component did update</h3>
+
+    <p>Debugging, logging or measuring</p>
+
+    <pre><code>
+       useEffect(() => console.log("component invoked"));
+    </code></pre>
+
+  </section>
+
+  <section>
+    <h3>Component did mount</h3>
+    <p class="">Calls to the server, initialization</p>
+
+    <pre><code>
+      //note second argument
+      useEffect(()=> {console.log('one time action')}, []);
+    </code></pre>
+
+  </section>
+
+  <section>
+    <h3>Component did update and dependency changed</h3>
+
+    <p>Recall when the value changed</p>
+    <pre><code class="language-tsx"> 
+  useEffect(() => console.log("component invoked"), [dependency]);
+    </code></pre>
+
+  </section>
+
+  <section>
+    <h3>Component will unmount</h3>
+    <p>
+      Cleanup the resources like timers or pending requests
+    </p>
+
+    <pre><code class="language-tsx">
+      useEffect(() => {
+        ... // logic
+        return ()=> console.log('cleaning ...');
+      });
+    </code></pre>
+
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>UseContext</h2>
+  </section>
+
+  <section>
+    <h3>useContext allows you easily access the context</h3>
+  </section>
+
+  <section>
+    <h3>Create context first</h3>
+
+    <pre><code class="language-tsx" data-line-numbers>import { createContext } from "react";
+
+const defaultValue = { name: "Vitalii", isAdmin: true };
+const UserCtx = createContext(defaultValue);</code></pre>
+  </section>
+
+  <section>
+    <h3>Provide context into the React application</h3>
+    <pre><code class="language-tsx" data-line-numbers>const App = () =&gt; {
+  return (
+    &lt;UserCtx.Provider value={defaultValue}&gt;
+      &lt;h1&gt;This is my app&lt;/h1&gt;
+      &lt;AboutUser /&gt;
+    &lt;/UserCtx.Provider&gt;
+  );
+};</code></pre>
+  </section>
+
+  <section>
+    <h3>UseContext from any functional component </h3>
+
+    <pre><code class="language-tsx" data-line-numbers>const AboutUser = () =&gt; {
+  const { name, isAdmin } = useContext(UserCtx);
+  return (
+    &lt;div&gt;
+      UserName: {name}, isAdmin: {isAdmin}
+    &lt;/div&gt;
+  );
+};
+    </code></pre>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>UseCallback</h2>
+  </section>
+
+  <section>
+    <h3>useCallback - returns the same function unless dependencies changed</h3>
+  </section>
+
+  <section>
+    <h3>Use case</h3>
+
+    <pre><code class="language-tsx" data-line-numbers>type WithCallback = { callback: () =&gt; void };
+
+class ExpensiveComponent extends PureComponent&lt;WithCallback&gt; {
+  render() { return &lt;div&gt;Expensive&lt;/div&gt;; }
+  componentDidUpdate() { console.log("updated"); }
+}
+      </code></pre>
+  </section>
+
+  <section>
+    <h3>The issue</h3>
+
+    <pre><code class="language-tsx" data-line-numbers="1-12|7">const App = () =&gt; {
+  const [state, setState] = useState(0);
+  const callback = ()=&gt; {};
+  return (
+    &lt;&gt;
+      &lt;ExpensiveComponent callback={callback} /&gt;
+      &lt;button onClick={() =&gt; setState(state + 1)}&gt;
+        Increment: {state}
+      &lt;/button&gt;
+    &lt;/&gt;
+  );
+};
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>The solution</h3>
+
+    <pre><code class="language-tsx" data-line-numbers>const callback = useCallback(() =&gt; {}, []);
+    </code></pre>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Custom hooks</h2>
+  </section>
+
+  <section>
+    <h3>Simplify interface and hide the logic inside the hook</h3>
+
+    <pre><code class="language-tsx" data-line-numbers>const useCounter = (defaultValue: number) =&gt; {
+  const [state, setState] = useState(defaultValue);
+  const increment = useCallback(
+    () =&gt; setState(state + 1), 
+    [state]);
+  return { state, increment };
+};</code></pre>
+  </section>
+
+  <section>
+    <h3>Usage is the same- but easier</h3>
+    <pre><code class="language-tsx" data-line-numbers>const App = () =&gt; {
+  const { state, increment } = useCounter(0);
+  return (
+      &lt;button onClick={increment}&gt;Increment: {state}&lt;/button&gt;
+  );
+};</code></pre>
+  </section>
+</section>
