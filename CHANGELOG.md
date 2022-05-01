@@ -4,6 +4,7 @@
 
 - Added new talk about the [React Hooks](https://drag13.io/react-learning-course-short/react-hooks)
 - Made it 4th
+- Added [DONATIONS](DONATIONS.md)
 
 ## 30/04/2022
 
