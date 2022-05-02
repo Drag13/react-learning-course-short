@@ -44,7 +44,6 @@ Presentation - https://drag13.io/react-learning-course-short/react-cra
 - Create new repository at <a href="https://github.io">GitHub</a> and name it react-for-beginners-itera
 - Select .gitignore from VisualStudio
 - Clone repo locally using <i>git clone</i>
-- Initialize new project with <i>npm init -y</i>
 - Initialize new react application using <i>npx create-react-app my-page --template typescript</i>
 - Create a new <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON#example_json">JSON</a> with next information:
 - First Name
