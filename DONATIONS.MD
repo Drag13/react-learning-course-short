@@ -2,6 +2,7 @@
 
 | Type | Amount | Target        |
 | ---- | ------ | ------------- |
+| -    | 400    | ComeBackAlive |
 | +    | 200    |               |
 | +    | 200    |               |
 | -    | 750    | ComeBackAlive |
