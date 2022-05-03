@@ -20,8 +20,21 @@
   </section>
 
   <section>
-    <h3>JSX/TSX - JavaScript XML</h3>
-    <p class="left">HTML like syntax that is parsed and transformed to the regular JavaScript code</p>
+    <h3>First good candidates are</h3>
+
+    <ul>
+      <li>Buttons, inputs, links</li>
+      <li>Cards, grids, decorations </li>
+      <li>Complex stuff you want to hide from yourself</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>How small a component should be</h3>
+
+    <p>It's always much easier to merge components rather than split. Feel free to make them as small as you feel
+      comfortable
+    </p>
   </section>
 
 </section>
@@ -88,7 +101,7 @@ const App = () =&gt; {
     <h3>Encapsulation gives you </h3>
     <ul>
       <li class="fragment">Much more easier maintenance</li>
-      <li class="fragment fade-up">Better Developer experience</li>
+      <li class="fragment fade-up">Better developer experience</li>
     </ul>
   </section>
 
@@ -99,7 +112,7 @@ const App = () =&gt; {
   return (
     &lt;&gt;
       &lt;AppNav /&gt;
-      &lt;WeolcomeHeader /&gt;
+      &lt;WelcomeHeader /&gt;
       &lt;Avatar /&gt;
       &lt;Bio /&gt;
       &lt;Contacts /&gt;
@@ -110,14 +123,14 @@ const App = () =&gt; {
   </section>
 
   <section>
-    <h3>Testing</h3>
+    <h3>And testing</h3>
 
     <p class="left">
       It's much more easier to test a single, small component which has one or few responsibilities that the whole App
       Components are great for testing which increase maintainability.
     </p>
 
-    <p class="left">Easier tests = less bugs and fragility</p>
+    <p class="fragment fade-up left">Easier tests = less bugs and fragility</p>
   </section>
 
 </section>
@@ -135,10 +148,32 @@ const App = () =&gt; {
 };
     </code></pre>
 
+
+    <pre class="fragment fade-up"><code class="language-tsx" data-line-numbers>const App = () =&gt; (&lt;h1&gt;Hello World&lt;/h1&gt;);
+        </code></pre>
+
     <pre class="fragment fade-up"><code class="language-tsx" data-line-numbers>function App() {
   return &lt;h1&gt;Hello world&lt;/h1&gt;;
 }
     </code></pre>
+  </section>
+
+  <section data-visibility="hidden">
+    <h3>With TypeScript</h3>
+    <pre><code class="language-tsx" data-line-numbers>import { FC } from 'React';
+
+type AppLabelProps = { text: string; for: string };
+
+const AppLabel: FC&lt;AppLabelProps&gt; = (props) =&gt; {
+  return (
+    &lt;label htmlFor={props.for}&gt;
+      {props.text}
+    &lt;/label&gt;)
+};
+</code></pre>
+
+    <pre class="fragment fade-up"><code class="language-tsx" data-line-numbers="">// usage
+&lt;AppLabel for="email" text="Your email" /&gt;</code></pre>
   </section>
 
   <section>
@@ -171,44 +206,98 @@ class App extends Component {
 
     <ul>
       <li>Nature - function VS class </li>
-      <li class="fragment fade-up">The way we access state - this.setState() VS useState()</li>
+      <li class="fragment fade-up">The way we access state - useState() VS this.setState() </li>
       <li class="fragment fade-up">LifeCycle hooks - some of them are not accessible for the FC</li>
     </ul>
   </section>
 
   <section>
-    <h3>Dumb Components eg. presentational</h3>
-
-    <p class="left">Dumb components - has no state inside, they made only for being nice</p>
-
-    <pre><code class="language-tsx" data-line-numbers>export const AppGreetings = () =&gt; {
-  return &lt;h1 className="header header1"&gt;I am a nice header&lt;/h1&gt;;
-};
-</code></pre>
-
+    <h3>Another differentiation - "dumb" and "smart" </h3>
   </section>
 
   <section>
-    <h3>Smart components - contains the state inside</h3>
+    <h3>Dumb Components eg. presentational</h3>
 
-    <pre><code data-line-numbers="1-14|1|4|8|9">import { useState } from "react";
 
-const Expand = () =&gt; {
-  const [isOpened, setExpanded] = useState(true);
-  const style = { display: isOpened ? "block" : "none" };
-  return (
-    &lt;div&gt;
-      &lt;button onClick={() =&gt; setExpanded(!isOpened)}&gt;
-        {isOpened ? "Hide" : "Show}
-      &lt;/button&gt;
-      &lt;div style={style}&gt; VERY BIG TEXT &lt;/div&gt;
-    &lt;/div&gt;
-  );
-};
-                      </code></pre>
+    <pre><code class="language-tsx" data-line-numbers>export const AppGreetings = () =&gt; (
+  &lt;h1 className="header header1"&gt;I am a nice header&lt;/h1&gt;
+);
+    </code></pre>
+
+    <p class="fragment fade-up left">Dumb components: no state inside, made only for being nice</p>
   </section>
+
+  <section>
+    <h3>Smart components - contains the state, contains logic</h3>
+
+    <p class="left">Previously, before React 16.8 it was possible only with class based components </p>
+  </section>
+
+  <section>
+    <h3>Class Based Smart Component</h3>
+
+    <pre><code class="language-tsx" data-line-numbers="1-15|1|3|4|5-6|8-13|10-12">import { PureComponent } from 'react';
+
+class BtnWithCounter extends PureComponent {
+  state = { counter: 0 };
+  private _increment = () =&gt; 
+    this.setState({ counter: this.state.counter + 1 });
+  
+  render() {
+    return (
+      &lt;button onClick={this._increment}&gt;
+        Clicked: {this.state.counter} times
+      &lt;/button&gt;
+    );
+  }
+}</code></pre>
+  </section>
+
+  <section>
+    <h3>Typical Mistake</h3>
+    <pre><code data-line-numbers="3-5">class BtnWithCounter extends PureComponent {
+
+private _increment(){ 
+    this.setState({ counter: this.state.counter + 1 });
+}
+...
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>With hooks now we can have state as well</h3>
+
+    <pre><code data-line-numbers="1-14|1|3-10|4|7">import { useState } from "react";
+
+const BtnWithCounter = () =&gt; {
+  const [counter, setCounter] = useState(0);
+  return (
+      &lt;button onClick={() =&gt; setCounter(counter+1)}&gt;
+        Clicked: {counter} times
+      &lt;/button&gt;
+  );
+};</code></pre>
+  </section>
+
+  <section>
+    <h3>What does [counter, setCounter] means?</h3>
+    <pre><code data-line-numbers="">const [counter, setCounter] = useState(0);//destruction</code></pre>
+    <pre class="fragment fade-up language-javascript"><code data-line-numbers="">const array = useState(0);
+const counter = array[0];
+const setCounter = array[1];
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>Why should I care about this types?</h3>
+
+    <p class="left">Unless you don't want to work alone - you need to understand some obvious terminology</p>
+  </section>
+
 </section>
+
 <section>
+
   <section>
     <h2>How to pass data into the component</h2>
   </section>
@@ -228,7 +317,7 @@ const Expand = () =&gt; {
 
 type H1Props = { userName: string };
 
-const AppH1: FC &lt;H1Props&gt; = (props) => (
+const AppH1: FC&lt;H1Props&gt; = (props) => (
   <h1>Hello {props.userName}</h1>
 );
 
@@ -237,19 +326,8 @@ export default () => &lt;AppH1 userName="Hello world" /&gt;
     </pre>
   </section>
 
-  <section>
-    <h3>Passing another Component is also possible</h3>
 
-    <pre><code class="language-tsx" data-line-numbers="1-9|1|3|6|9">import { FC, PropsWithChildren } from "react";
 
-type Props = PropsWithChildren&lt;{}&gt;;
-
-export const AppH1: FC&lt;Props&gt; = (props) =&gt; {
-  return &lt;h1 className="header header1"&gt;{props.children}&lt;/h1&gt;;
-};
-
-const App = () =&gt; &lt;AppH1&gt;&lt;TranslatedText text="hello"/&gt;&lt;/AppH1&gt;</code></pre>
-  </section>
 
   <section>
     <h3>Same way it works with class based component</h3>
@@ -265,6 +343,34 @@ class AppH1 extends PureComponent&lt;Props&gt; {
 </code></pre>
   </section>
 
+
+  <section>
+    <h3>You can pass to props anything</h3>
+
+    <pre><code class="language-typescript" data-line-numbers="1-9|2|3|4|5|6|7|8">type Props = {
+    userName: string;             // string
+    userAge: number;              //number
+    isAdmin: boolean;             // boolean
+    badges: string[];             // array
+    contacts: { email: string };  // object
+    callback: ()=> void           // function
+    icon: JSX.Element;            // Even another element
+};
+</code></pre>
+  </section>
+  <section>
+    <h3>Simpler way to pass single component</h3>
+
+    <pre><code class="language-tsx" data-line-numbers="1-9|1|3|6|9">import { FC, PropsWithChildren } from "react";
+
+type Props = PropsWithChildren&lt;{}&gt;;
+
+export const AppH1: FC&lt;Props&gt; = (props) =&gt; {
+  return &lt;h1 className="header header1"&gt;{props.children}&lt;/h1&gt;;
+};
+
+const App = () =&gt; &lt;AppH1&gt;&lt;TranslatedText text="hello"/&gt;&lt;/AppH1&gt;</code></pre>
+  </section>
   <section>
     <h3>About the context we will talk a bit later</h3>
   </section>
@@ -277,12 +383,14 @@ class AppH1 extends PureComponent&lt;Props&gt; {
   </section>
 
   <section>
-    <h4>Callback - the best option to get data from the component</h4>
+    <h3>Callback - the best option to get data from the component</h3>
 
     <pre>
-    <code data-line-numbers="1-10|3|5|6|9">import { FC } from "react";
+    <code data-line-numbers="1-11|3-5|7-9|11">import { FC } from "react";
 
-type BtnProps = { onClick: (val: string) => void };
+type BtnProps = { 
+  onClick: (val: string) => void 
+};
 
 const Btn: FC&lt;BtnProps&gt; = (props) => (
   &lt;button onClick={() => props.onClick("hello!")} /&gt;
@@ -291,6 +399,18 @@ const Btn: FC&lt;BtnProps&gt; = (props) => (
 &lt;Btn onClick={(v) => alert(v)} /&gt;
     </code>
 </pre>
+  </section>
+
+  <section>
+    <h3>Don't do common mistake: </h3>
+
+    <pre>
+      <code data-line-numbers="1-5|4">import { FC } from "react";
+  
+const Btn: FC&lt;BtnProps&gt; = (props) => (
+  &lt;button onClick={props.onClick("hello!")} /&gt;
+);
+      </code>
   </section>
 
   <section class="left">
@@ -390,7 +510,8 @@ const Btn: FC&lt;BtnProps&gt; = (props) => (
     <h3>The importance of knowing component lifecycle</h3>
 
     <p class="left">
-      Imagine you known nothing about the lifecycle and put fetch call inside the render. Each time your component will
+      Imagine you known nothing about the lifecycle and put fetch call inside the render. Each time your component
+      will
       be re-rendered, each time you will fire request to the sever. Which will change the state, which will invoke one
       more re-render. Despair
     </p>
