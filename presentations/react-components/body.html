@@ -425,26 +425,26 @@ const Btn: FC&lt;BtnProps&gt; = (props) => (
     <h3>Create presentation component AppButton</h3>
 
     <pre><code class="language-tsx" data-line-numbers>type BtnProps = { text: string; onClick: () =&gt; void };
-      const AppBtn: FC&lt;BtnProps&gt; = ({ text, onClick }) =&gt; (
-        &lt;button className="btn btn-prime" type="button" onClick={onClick}&gt;
-          {text}
-        &lt;/button&gt;
-      );
-      </code></pre>
+
+const AppBtn: FC&lt;BtnProps&gt; = ({ text, onClick }) =&gt; (
+  &lt;button className="btn btn-prime" type="button" onClick={onClick}&gt;
+    {text}
+  &lt;/button&gt;
+);      </code></pre>
   </section>
 
   <section>
-    <h3>Create smart component App</h3>
+    <h3>Create a smart component App</h3>
 
     <pre><code class="language-tsx" data-line-numbers>const App = () =&gt; {
-      const [counter, setCounter] = useState(0);
-      return (
-        &lt;&gt;
-          &lt;h1&gt;Counter: {counter} times&lt;/h1&gt;
-          &lt;AppBtn onClick={() =&gt; setCounter(counter + 1)} text="Click me" /&gt;
-        &lt;/&gt;
-      );
-    };</code></pre>
+  const [counter, setCounter] = useState(0);
+  return (
+    &lt;&gt;
+      &lt;h1&gt;Counter: {counter} times&lt;/h1&gt;
+      &lt;AppBtn onClick={() =&gt; setCounter(counter + 1)} text="Click me" /&gt;
+    &lt;/&gt;
+  );
+};</code></pre>
   </section>
 
   <section>
