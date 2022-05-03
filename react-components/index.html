@@ -144,20 +144,20 @@ const Btn: FC&lt;BtnProps&gt; = (props) => (
 );
       </code>
   </pre></section> <section class="left"> <strong>⚠️Important: </strong> Using anonymous functions as a callback might heart the performance </section> </section> <section> <section><h3>Let's combine it all together</h3></section> <section> <h3>Create presentation component AppButton</h3> <pre><code class="language-tsx" data-line-numbers="">type BtnProps = { text: string; onClick: () =&gt; void };
-      const AppBtn: FC&lt;BtnProps&gt; = ({ text, onClick }) =&gt; (
-        &lt;button className="btn btn-prime" type="button" onClick={onClick}&gt;
-          {text}
-        &lt;/button&gt;
-      );
-      </code></pre> </section> <section> <h3>Create smart component App</h3> <pre><code class="language-tsx" data-line-numbers="">const App = () =&gt; {
-      const [counter, setCounter] = useState(0);
-      return (
-        &lt;&gt;
-          &lt;h1&gt;Counter: {counter} times&lt;/h1&gt;
-          &lt;AppBtn onClick={() =&gt; setCounter(counter + 1)} text="Click me" /&gt;
-        &lt;/&gt;
-      );
-    };</code></pre> </section> <section> <h3>Note</h3> <ul> <li>AppBtn can be used all over the project</li> <li>App doesn't care about the way click will be emitted</li> </ul> </section> </section> <section> <section> <h2>Component lifecycle</h2> </section> <section> <div class="two-column"> <div> <h3>Class Based</h3> <ul> <li class="fragment" data-fragment-index="1">Initialization</li> <li class="fragment" data-fragment-index="3">Render</li> <li class="fragment" data-fragment-index="5">ComponentDidMount</li> <li class="fragment" data-fragment-index="7">ShouldComponentUpdate</li> <li class="fragment" data-fragment-index="9">Render</li> <li class="fragment" data-fragment-index="11">ComponentDidUpdate</li> <li class="fragment" data-fragment-index="13">ComponentDidCatch</li> <li class="fragment" data-fragment-index="15">ComponentWillUnmount</li> </ul> </div> <div> <h3>Functional</h3> <ul> <li class="fragment" data-fragment-index="2"> - </li> <li class="fragment" data-fragment-index="4">function()</li> <li class="fragment" data-fragment-index="6">useEffect(, [])</li> <li class="fragment" data-fragment-index="8"> - </li> <li class="fragment" data-fragment-index="10">function() </li> <li class="fragment" data-fragment-index="12">useEffect()</li> <li class="fragment" data-fragment-index="14"> - </li> <li class="fragment" data-fragment-index="16">useEffect</li> </ul> </div> </div> </section> <section> <h3>What about others?</h3> <p class="left">Other lifecycle events are either deprecated like componentWillMount either beyond this course for beginners like useLayoutEffect or getSnapshotBeforeUpdate</p> </section> <section> <h3>Most useful are </h3> <ul> <li>ComponentDidMount for one time actions like fetching the server</li> <li class="fade-up fragment">ComponentDidUpdate for side effect</li> <li class="fade-up fragment">ComponentDidUnmount for cleanup</li> </ul> </section> <section> <h3>Functional example</h3> <pre><code class="language-tsx" data-line-numbers="">export default function App() {
+
+const AppBtn: FC&lt;BtnProps&gt; = ({ text, onClick }) =&gt; (
+  &lt;button className="btn btn-prime" type="button" onClick={onClick}&gt;
+    {text}
+  &lt;/button&gt;
+);      </code></pre> </section> <section> <h3>Create a smart component App</h3> <pre><code class="language-tsx" data-line-numbers="">const App = () =&gt; {
+  const [counter, setCounter] = useState(0);
+  return (
+    &lt;&gt;
+      &lt;h1&gt;Counter: {counter} times&lt;/h1&gt;
+      &lt;AppBtn onClick={() =&gt; setCounter(counter + 1)} text="Click me" /&gt;
+    &lt;/&gt;
+  );
+};</code></pre> </section> <section> <h3>Note</h3> <ul> <li>AppBtn can be used all over the project</li> <li>App doesn't care about the way click will be emitted</li> </ul> </section> </section> <section> <section> <h2>Component lifecycle</h2> </section> <section> <div class="two-column"> <div> <h3>Class Based</h3> <ul> <li class="fragment" data-fragment-index="1">Initialization</li> <li class="fragment" data-fragment-index="3">Render</li> <li class="fragment" data-fragment-index="5">ComponentDidMount</li> <li class="fragment" data-fragment-index="7">ShouldComponentUpdate</li> <li class="fragment" data-fragment-index="9">Render</li> <li class="fragment" data-fragment-index="11">ComponentDidUpdate</li> <li class="fragment" data-fragment-index="13">ComponentDidCatch</li> <li class="fragment" data-fragment-index="15">ComponentWillUnmount</li> </ul> </div> <div> <h3>Functional</h3> <ul> <li class="fragment" data-fragment-index="2"> - </li> <li class="fragment" data-fragment-index="4">function()</li> <li class="fragment" data-fragment-index="6">useEffect(, [])</li> <li class="fragment" data-fragment-index="8"> - </li> <li class="fragment" data-fragment-index="10">function() </li> <li class="fragment" data-fragment-index="12">useEffect()</li> <li class="fragment" data-fragment-index="14"> - </li> <li class="fragment" data-fragment-index="16">useEffect</li> </ul> </div> </div> </section> <section> <h3>What about others?</h3> <p class="left">Other lifecycle events are either deprecated like componentWillMount either beyond this course for beginners like useLayoutEffect or getSnapshotBeforeUpdate</p> </section> <section> <h3>Most useful are </h3> <ul> <li>ComponentDidMount for one time actions like fetching the server</li> <li class="fade-up fragment">ComponentDidUpdate for side effect</li> <li class="fade-up fragment">ComponentDidUnmount for cleanup</li> </ul> </section> <section> <h3>Functional example</h3> <pre><code class="language-tsx" data-line-numbers="">export default function App() {
   useEffect(() =&gt; {
     console.log("fires each and every update");
   });
