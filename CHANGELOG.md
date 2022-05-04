@@ -1,9 +1,14 @@
 # Changelog
 
-## 03/05/2022 
+## 04/05/2022
 
-* Massive update for the talk about React and components
-* Did a live [talk about](https://youtu.be/BPIeZqomYQw) React and Components (I am not happy with the results, good candidate for re-recording)
+- Added link to the new [talk about the react hooks](https://youtu.be/6AHDZGumKZg)
+
+
+## 03/05/2022
+
+- Massive update for the talk about React and components
+- Did a live [talk about](https://youtu.be/BPIeZqomYQw) React and Components (I am not happy with the results, good candidate for re-recording)
 
 ## 01/05/2022
 
