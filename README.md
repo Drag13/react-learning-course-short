@@ -54,7 +54,7 @@ Installed [VsCode](https://code.visualstudio.com/)
 
 ### 2 Lecture: [What is React Component](https://youtu.be/BPIeZqomYQw)
 
-### 3 Lecture: [React with Hooks](https://drag13.io/react-learning-course-short/react-hooks)
+### 3 Lecture: [React with Hooks](https://youtu.be/6AHDZGumKZg)
 
 ### 4 Workshop: [Building React Component](https://drag13.io/react-learning-course-short/react-new-component)
 

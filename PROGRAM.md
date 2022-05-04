@@ -84,6 +84,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-components
 - UseContext
 - Custom hooks
 
+Talk: https://youtu.be/6AHDZGumKZg
 
 Presentation - https://drag13.io/react-learning-course-short/react-hooks
 
