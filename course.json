@@ -140,7 +140,8 @@
       ],
       "links": [
         ["Useful React Hooks", "https://www.smashingmagazine.com/2021/11/useful-react-hooks/"],
-        ["Hooks FAQ", "https://reactjs.org/docs/hooks-faq.html"]
+        ["Hooks FAQ", "https://reactjs.org/docs/hooks-faq.html"],
+        ["Code samples", "https://github.com/Drag13/react-hooks-examples/tree/master/src"]
       ],
       "takeaways": [
         "Hook - a modern to API to functional components",
