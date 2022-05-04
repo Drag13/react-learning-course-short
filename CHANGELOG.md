@@ -1,5 +1,10 @@
 # Changelog
 
+## 03/05/2022 
+
+* Massive update for the talk about React and components
+* Did a live [talk about](https://youtu.be/BPIeZqomYQw) React and Components (I am not happy with the results, good candidate for re-recording)
+
 ## 01/05/2022
 
 - Added new talk about the [React Hooks](https://drag13.io/react-learning-course-short/react-hooks)
