@@ -123,7 +123,8 @@
         "Components might be class based or functional",
         "Components divided into \"smart\" and \"dumb\"",
         "Components have lifecycle you can hook into"
-      ]
+      ],
+      "youtube": "https://youtu.be/BPIeZqomYQw"
     },
     {
       "title": "React with Hooks",

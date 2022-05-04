@@ -63,6 +63,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-cra
 - How to get data from the component
 - Component lifecycle
 
+Talk: https://youtu.be/BPIeZqomYQw
 
 Presentation - https://drag13.io/react-learning-course-short/react-components
 
