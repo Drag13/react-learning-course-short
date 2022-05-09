@@ -4,14 +4,14 @@
     </section>
 
     <section>
-        <h4>Just a CSS</h4>
+        <H3>Just a CSS</h3>
         <pre><code data-line-numbers>import "./index.css";
 const App = () =&gt; &lt;div className="App"&gt;My app&lt;/div&gt;</code>
         </pre>
     </section>
 
     <section>
-        <h4>Pros</h4>
+        <h3>Pros</h3>
 
         <ul>
             <li class="fragment fade-up">Simple to read - just regular CSS</li>
@@ -21,30 +21,28 @@ const App = () =&gt; &lt;div className="App"&gt;My app&lt;/div&gt;</code>
     </section>
 
     <section>
-        <h4>Cons - Conflicts</h4>
-        <pre><code data-line-numbers="">// App.css
-.root {padding-top: 1em;}</code></pre>
-        <pre><code data-line-numbers="">// Card.css
-.root {padding-top: 2em;}</code></pre>
-
+        <h3>Cons - Conflicts</h3>
+        <pre class="fragment fade-up"><code data-line-numbers="">// App.css
+.root { padding-top: 1em; }</code></pre>
+        <pre class="fragment fade-up"><code data-line-numbers="">// Card.css
+.root { padding-top: 2em; }</code></pre>
+        <pre class="fragment fade-up"><code class="" data-line-numbers="">// Result
+.root { padding-top: ??; }</code></pre>
     </section>
 
     <section>
-        <h4>Cons - hard to reuse</h4>
-        <pre class="language-css"><code data-line-numbers="">.input {
-    padding: 1em;
-    border-radius: 10%;
+        <h3>Cons - hard to reuse</h3>
+        <pre class="language-css"><code data-line-numbers="">.input:focus {
+    outline: 1px solid brown;
 }
 
-.select {
-    padding: 1em;
-    border-radius: 10%;
+.select:focus {
+    outline: 1px solid brown;
 }</code></pre>
-
     </section>
 
     <section>
-        <h4>Cons - hard to track not used code</h4>
+        <h3>Cons - hard to track not used code</h3>
         <pre><code data-line-numbers="">.app {font-size: 2rem;}
 .missing-class {color: red}
         </code></pre>
@@ -53,7 +51,7 @@ const App = () =&gt; &lt;div className="app"&gt;My app&lt;/div&gt;</code></pre>
     </section>
 
     <section>
-        <h4>And others</h4>
+        <h3>And others</h3>
     </section>
 </section>
 
@@ -63,14 +61,14 @@ const App = () =&gt; &lt;div className="app"&gt;My app&lt;/div&gt;</code></pre>
     </section>
 
     <section>
-        <h4>Almost the same as CSS</h4>
+        <h3>Almost the same as CSS</h3>
         <pre><code data-line-numbers="1-2|1|2">import styles "./app.module.css";
 const App = () =&gt; &lt;div className={styles.root}&gt;My app&lt;/div&gt;</code>
         </pre>
     </section>
 
     <section>
-        <h4>But scoped to the component</h4>
+        <h3>But scoped to the component</h3>
         <p>[filename]\_[classname]\_\_[hash]</p>
 
         <pre class="fragment fade-up" data-fragment-index="1"><code data-line-numbers>import "./index.css";
@@ -82,9 +80,9 @@ const App = () =&gt; &lt;div className="app"&gt;My app&lt;/div&gt;</code> </pre>
     </section>
 
     <section>
-        <h4>
+        <h3>
             Result:
-        </h4>
+        </h3>
 
         <ul>
             <li>No more conflicts with same naming</li>
@@ -92,34 +90,41 @@ const App = () =&gt; &lt;div className="app"&gt;My app&lt;/div&gt;</code> </pre>
             <li class="fragment fade-up">No more !important </li>
             <li class="fragment fade-up">Easy to track not used class</li>
         </ul>
-
     </section>
 
     <section>
-        <h4>What about other cons?</h4>
+        <h3>With css variables - it's almost perfect solution</h3>
+
+        <pre><code data-line-numbers="0-2|1|2"> :root { --main-color: black; }
+ body { var(--main-color, white) }</code></pre>
+    </section>
+
+    <section>
+        <h3>But if you need to support IE...</h3>
+        <p>This will not work</p>
     </section>
 </section>
 
 <section>
     <section>
-        <h2>Preprocessors</h2>
+        <h2>Preprocessor</h2>
 
         <p>CSS with superpowers</p>
     </section>
 
     <section>
-        <h4>SCSS - Pros</h4>
+        <h3>SCSS - Pros</h3>
 
         <ul>
-            <li>Variables</li>
-            <li>Convenient nesting</li>
-            <li>Mixins</li>
-            <li>Math</li>
+            <li class="fragment fade-up">Variables</li>
+            <li class="fragment fade-up">Convenient nesting</li>
+            <li class="fragment fade-up">Mixins</li>
+            <li class="fragment fade-up">Math</li>
         </ul>
     </section>
 
     <section>
-        <h4>Pros - variables</h4>
+        <h3>Pros - variables working in IE</h3>
 
         <pre><code data-line-numbers="">$default-padding: 1em;
 .app{
@@ -131,19 +136,22 @@ const App = () =&gt; &lt;div className="app"&gt;My app&lt;/div&gt;</code> </pre>
     </section>
 
     <section>
-        <h4>Pros - convenient nesting</h4>
+        <h3>Pros - convenient nesting</h3>
+
+        <pre><code data-line-numbers="">.radio:disabled { opacity: 0.33; }
+.radio:focus { outline: 1px solid red; }</code></pre>
 
         <pre><code data-line-numbers="">.radio {
-    &:disabled{ opacity: 0.33; }
+    &:disabled { opacity: 0.33; }
     &:focus { outline: 1px solid red; }
 }</code></pre>
     </section>
 
     <section>
-        <h4>Pros - mixins</h4>
+        <h3>Pros - mixins</h3>
         <pre><code data-line-numbers="">@mixin theme($theme: white, $txt: black) {
     background: $theme;
-     color:$txt;
+    color:$txt;
  }
  
  .card {
@@ -153,7 +161,7 @@ const App = () =&gt; &lt;div className="app"&gt;My app&lt;/div&gt;</code> </pre>
     </section>
 
     <section>
-        <h4>Pros - math</h4>
+        <h3>Pros - math</h3>
 
         <pre><code>@use "sass:math";
 article[role="main"] {
@@ -162,7 +170,7 @@ article[role="main"] {
     </section>
 
     <section>
-        <h4>Cons</h4>
+        <h3>Cons</h3>
 
         <ul>
             <li>Extra setup needed</li>
@@ -179,11 +187,11 @@ article[role="main"] {
     </section>
 
     <section>
-        <h4>CSS in JS - modern and popular way to manage CSS in React</h4>
+        <h3>CSS in JS - modern and popular way to manage CSS in React</h3>
     </section>
 
     <section>
-        <h4>Example from styled components</h4>
+        <h3>Example from styled components</h3>
 
         <pre><code data-line-numbers>const Title = styled.h1`
     color: palevioletred;
@@ -195,20 +203,20 @@ article[role="main"] {
     </section>
 
     <section>
-        <h4>Absolute control</h4>
+        <h3>Absolute control</h3>
 
         <p class="left">In CSS in JS approach - css is a part of your code. Thus you have full control on it. You can
             use variables, math, any kind of transformation. You can use props to control any css property</p>
     </section>
 
     <section>
-        <h4>Naming</h4>
+        <h3>Naming</h3>
         <p class="left">Within CSS in JS you will not spot naming issues. Class names are unique or not exists at all
         </p>
     </section>
 
     <section>
-        <h4>Maintenance</h4>
+        <h3>Maintenance</h3>
 
         <p class="left">As far as CSS turned into the code - it's much easier to track, rename or delete CSS without
             worrying that
@@ -216,10 +224,8 @@ article[role="main"] {
 
     </section>
 
-
-
     <section>
-        <h4>CSS in JS - cons</h4>
+        <h3>CSS in JS - cons</h3>
 
         <ul>
             <li> One more weird syntax </li>
@@ -229,16 +235,17 @@ article[role="main"] {
     </section>
 
     <section>
-        <h4>Libraries</h4>
+        <h3>Libraries</h3>
 
         <ul>
             <li>
                 <a href="https://github.com/styled-components/styled-components" target="_blank"
-                    rel="noreferrer noopener">Styled Components</a> - 36_000 ⭐
+                    rel="noreferrer noopener">Styled Components@5.3.5</a> - 36_000 ⭐, 3.5M downloads, 33.5kB
             </li>
             <li>
-                <a href="https://github.com/emotion-js/emotion" target="_blank" rel="noreferrer noopener">Emotion</a> -
-                15_000 ⭐
+                <a href="https://github.com/emotion-js/emotion" target="_blank"
+                    rel="noreferrer noopener">emotion/react@11.9.0</a> -
+                15_000 ⭐, 3M downloads, 21.2kB size
             </li>
         </ul>
     </section>
@@ -251,7 +258,7 @@ article[role="main"] {
     </section>
 
     <section>
-        <h4>Simple</h4>
+        <h3>Simple</h3>
 
         <pre><code data-line-numbers="">const AppH1 = styled.h1`
     color: red;
@@ -259,7 +266,7 @@ article[role="main"] {
     </section>
 
     <section>
-        <h4>With props</h4>
+        <h3>With props</h3>
 
         <pre><code data-line-numbers="">const AppH1 = styled.h1<{ type: "regular" | "danger" }>`
     color: ${({ type }) => (type === "regular" ? "black" : "red")};
@@ -267,7 +274,7 @@ article[role="main"] {
     </section>
 
     <section>
-        <h4>Restyling existed components</h4>
+        <h3>Restyling existed components</h3>
         <pre><code data-line-numbers>const AppHeader = styled.h1&lt;{ type: "regular" | "danger" }&gt;`
     color: ${({ type }) =&gt; (type === "regular" ? "black" : "red")};
 `;
@@ -277,7 +284,9 @@ const FixSizeHeader = styled(AppHeader)`
 `;    </code></pre>
     </section>
 
-
+    <section>
+        <h3>Of course there are much more</h3>
+    </section>
 </section>
 
 <section>
@@ -289,11 +298,15 @@ const FixSizeHeader = styled(AppHeader)`
         </li>
 
         <li class="fragment fade-up">
-            CSS Modules + SCSS - default option
+            CSS Modules - default ❤️
         </li>
 
         <li class="fragment fade-up">
-            Styled Components - in case of complex UI
+            CSS Modules + SCSS - for advanced ❤️ ❤️
+        </li>
+
+        <li class="fragment fade-up">
+            Styled Components - in case of very complex UI when you need to control everything programmatically
         </li>
     </ul>
 </section>
