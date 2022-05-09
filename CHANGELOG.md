@@ -1,9 +1,13 @@
 # Changelog
 
+## 09/05/2022
+
+- Some minor polishing for the talk about CSS
+- Program changes - generic talk about the State in React removed from the program
+
 ## 04/05/2022
 
 - Added link to the new [talk about the react hooks](https://youtu.be/6AHDZGumKZg)
-
 
 ## 03/05/2022
 
