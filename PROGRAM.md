@@ -137,24 +137,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-styling
 
 Not specified
 
-## 6 Lecture: Tracking Changes
-
-### Key points: 
-
-- What is change detection
-- Implicit change detection with Angular
-- Explicit change detection with React
-- How it works in React (simplified)
-- Typical mistakes
-
-
-Presentation - https://drag13.io/react-learning-course-short/react-change-detection
-
-### Home task: 
-
-Not specified
-
-## 7 Workshop: Managing state in React
+## 6 Workshop: Managing state in React
 
 ### Key points: 
 
@@ -184,7 +167,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-state-managem
 - Install MobX
 - Implement same functionality with MobX
 
-## 8 Workshop: Forms - Default way and React-Hook-Forms
+## 7 Workshop: Forms - Default way and React-Hook-Forms
 
 ### Key points: 
 
@@ -203,7 +186,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-forms
 
 Not specified
 
-## 9 Lecture: Routing in React
+## 8 Lecture: Routing in React
 
 ### Key points: 
 
@@ -224,7 +207,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-router
 - If `ln` equals `ua` all texts should be in Ukrainian language
 - If `ln` equals `en` all text should be in English (feel free to use google translate if needed)
 
-## 10 Lecture: React and network
+## 9 Lecture: React and network
 
 ### Key points: 
 
@@ -238,7 +221,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-network
 
 Not specified
 
-## 11 Lecture: UI libraries
+## 10 Lecture: UI libraries
 
 ### Key points: 
 
@@ -253,7 +236,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-ui-lib
 
 Not specified
 
-## 12 Lecture: Tests
+## 11 Lecture: Tests
 
 ### Key points: 
 

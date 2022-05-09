@@ -138,7 +138,7 @@
         "UseContext",
         "Custom hooks"
       ],
-      "youtube":"https://youtu.be/6AHDZGumKZg",
+      "youtube": "https://youtu.be/6AHDZGumKZg",
       "links": [
         ["Useful React Hooks", "https://www.smashingmagazine.com/2021/11/useful-react-hooks/"],
         ["Hooks FAQ", "https://reactjs.org/docs/hooks-faq.html"],
@@ -230,7 +230,8 @@
         ["Using the State Hook", "https://reactjs.org/docs/hooks-state.html"],
         ["Angular vs React - Change detection", "https://morioh.com/p/caccd1b76c5c"]
       ],
-      "published": true
+      "published": true,
+      "hidden": true
     },
     {
       "title": "Managing state in React",
