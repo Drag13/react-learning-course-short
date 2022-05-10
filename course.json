@@ -212,7 +212,8 @@
           "Styled Components extension",
           "https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components"
         ]
-      ]
+      ],
+      "hometask": ["Use CSS modules to style previously created application"]
     },
     {
       "title": "Tracking Changes",

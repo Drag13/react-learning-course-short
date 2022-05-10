@@ -135,7 +135,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-styling
 
 ### Home task: 
 
-Not specified
+- Use CSS modules to style previously created application
 
 ## 6 Workshop: Managing state in React
 
