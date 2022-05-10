@@ -198,7 +198,7 @@
       ]
     },
     {
-      "title": "Styling in React - from plain CSS to CSS in JS",
+      "title": "React - from plain CSS to CSSinJS",
       "name": "react-styling",
       "type": "Lecture",
       "keyPoints": ["Default way", "Using CSS modules", "Preprocessors", "CSS in JS"],

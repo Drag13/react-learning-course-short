@@ -121,7 +121,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-new-component
 - Put the new component into the footer
 - When clicked, it should log into the console next text: `redirecting user to the next {link}` where `{link}` should be a's href
 
-## 5 Lecture: Styling in React - from plain CSS to CSS in JS
+## 5 Lecture: React - from plain CSS to CSSinJS
 
 ### Key points: 
 

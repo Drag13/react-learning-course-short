@@ -6,7 +6,9 @@
     <section>
         <H3>Just a CSS</h3>
         <pre><code data-line-numbers>import "./index.css";
-const App = () =&gt; &lt;div className="App"&gt;My app&lt;/div&gt;</code>
+const App = () =&gt; (
+    &lt;div className="App"&gt;My app&lt;/div&gt;
+)</code>
         </pre>
     </section>
 
@@ -47,7 +49,9 @@ const App = () =&gt; &lt;div className="App"&gt;My app&lt;/div&gt;</code>
 .missing-class {color: red}
         </code></pre>
         <pre><code data-line-numbers>import "./index.css";
-const App = () =&gt; &lt;div className="app"&gt;My app&lt;/div&gt;</code></pre>
+const App = () =&gt; &lt;div className="app"&gt;
+    My app
+&lt;/div&gt;</code></pre>
     </section>
 
     <section>
@@ -269,14 +273,16 @@ article[role="main"] {
         <h3>With props</h3>
 
         <pre><code data-line-numbers="">const AppH1 = styled.h1<{ type: "regular" | "danger" }>`
-    color: ${({ type }) => (type === "regular" ? "black" : "red")};
+    color: ${({ type }) ==&gt; 
+        (type === "regular" ? "black" : "red")};
 `;    </code></pre>
     </section>
 
     <section>
         <h3>Restyling existed components</h3>
         <pre><code data-line-numbers>const AppHeader = styled.h1&lt;{ type: "regular" | "danger" }&gt;`
-    color: ${({ type }) =&gt; (type === "regular" ? "black" : "red")};
+    color: ${({ type }) =&gt; 
+        (type === "regular" ? "black" : "red")};
 `;
     
 const FixSizeHeader = styled(AppHeader)`
@@ -309,4 +315,25 @@ const FixSizeHeader = styled(AppHeader)`
             Styled Components - in case of very complex UI when you need to control everything programmatically
         </li>
     </ul>
+</section>
+
+<section>
+
+    <section>
+        <h2>Typical mistakes with CSS Modules</h2>
+    </section>
+
+    <section>
+        <h3>CSS Modules - not importing a module 💔</h3>
+        <pre><code class="fragment strike" data-line-numbers="">import styles from './app.css';</code></pre>
+
+        <pre><code class="fragment" data-line-numbers="">import styles from './app.module.css';</code></pre>
+    </section>
+
+
+    <section>
+        <h3>CSS Modules - using regular class 💔</h3>
+        <pre><code class="fragment strike language-tsx" data-line-numbers>const App = ()=&gt; &lt;div className="main"&gt;&lt;/div&gt;</code></pre>
+        <pre><code class="fragment language-tsx" data-line-numbers>const App = ()=&gt; &lt;div className={styles.main}&gt;&lt;/div&gt;</code></pre>
+    </section>
 </section>
