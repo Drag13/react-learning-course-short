@@ -36,7 +36,7 @@ const L1: FC&lt;UserInputProps&gt; = ({ nationality }) =&gt; (
     </section>
 
     <section>
-        <h4>Imagine, we need to change something</h4>
+        <h3>Imagine, we need to change something</h3>
         <ul>
             <li class="fragment fade-up">
                 A lot of useless work - need to update each component in hierarchy
@@ -46,7 +46,7 @@ const L1: FC&lt;UserInputProps&gt; = ({ nationality }) =&gt; (
             </li>
 
             <li class="fragment fade-up">
-                Performance reasons - the whole tree will be rerendered
+                Performance reasons - all consumers will be rerendered
             </li>
         </ul>
     </section>
@@ -63,11 +63,11 @@ const L1: FC&lt;UserInputProps&gt; = ({ nationality }) =&gt; (
         </p>
     </section>
     <section>
-        <h4>Working with context</h4>
+        <h3>Working with context</h3>
     </section>
 
     <section>
-        <h4>Create context with default value</h4>
+        <h3>Create context with default value</h3>
         <pre><code data-line-numbers>import { createContext } from "react";
 const Context = createContext({
     nationality: "unknown",
@@ -77,7 +77,7 @@ const Context = createContext({
     </section>
 
     <section>
-        <h4>Create a state with similar properties </h4>
+        <h3>Create a state with similar properties </h3>
         <pre><code data-line-numbers>class App extends Component {
 state = {
     nationality: "Unknown",
@@ -88,7 +88,7 @@ state = {
     </section>
 
     <section>
-        <h4>Pass context into the render tree</h4>
+        <h3>Pass context into the render tree</h3>
 
         <pre><code data-line-numbers>render() {
     return (
@@ -102,7 +102,7 @@ state = {
     </section>
 
     <section>
-        <h4>Use context from anywhere</h4>
+        <h3>Use context from anywhere</h3>
 
         <pre><code data-line-numbers>import { useContext } from "react";
 const L3: FC = () =&gt; {
@@ -113,16 +113,16 @@ const L3: FC = () =&gt; {
     </section>
 
     <section>
-        <h4>Typical mistakes with Context</h4>
+        <h3>Typical mistakes with Context</h3>
     </section>
 
     <section>
-        <h4>💔Using instead of local state</h4>
+        <h3>💔Using instead of local state</h3>
         <p class="left">Use context for commonly used data only</p>
     </section>
 
     <section>
-        <h4>💔Mutating context directly</h4>
+        <h3>💔Mutating context directly</h3>
 
         <pre><code data-line-numbers="1-8|5">const SomeContainer: FC&lt;SomeContainerProps&gt; = () =&gt; {
     const ctx = useContext(context);
@@ -143,14 +143,14 @@ const L3: FC = () =&gt; {
     </section>
 
     <section>
-        <h4>It's not state management tool</h4>
+        <h3>It's not state management tool</h3>
         <p>
             Context was designed for sharing, not for updating
         </p>
     </section>
 
     <section>
-        <h4>Performance issues</h4>
+        <h3>Performance issues</h3>
 
         <p class="left">
             Changing context forces to rerender all context consumers. If your application is big and highly depends on
@@ -159,7 +159,7 @@ const L3: FC = () =&gt; {
     </section>
 
     <section>
-        <h4>Developer Experience issues</h4>
+        <h3>Developer Experience issues</h3>
 
         <p class="left">
             Context doesn't have it's own update mechanism. It's relies on the component state to track changes. You
@@ -168,7 +168,7 @@ const L3: FC = () =&gt; {
     </section>
 
     <section>
-        <h4>Solution - use State Management Tools</h4>
+        <h3>Solution - use State Management Tools</h3>
     </section>
 </section>
 
@@ -179,13 +179,13 @@ const L3: FC = () =&gt; {
         <h2> <a href="https://github.com/reduxjs/redux">Redux</a> - the most popular management tool</h2>
 
         <ul>
-            <li>7 500 000 downloading in a week</li>
-            <li>57.8 ⭐ in GitHub</li>
+            <li>7.5M downloading in a week</li>
+            <li>57.8K ⭐ in GitHub</li>
         </ul>
     </section>
 
     <section>
-        <h4>The idea of the Redux is simple</h4>
+        <h3>The idea of the Redux is simple</h3>
 
         <div class="fragment fade-up" data-fragment-index="0">Any event</div>
         <div class="fragment fade-up" data-fragment-index="1">⬇️</div>
@@ -203,7 +203,7 @@ const L3: FC = () =&gt; {
     </section>
 
     <section>
-        <h4>In practice Redux is not that simple</h4>
+        <h3>In practice Redux is not that simple</h3>
 
         <ul>
             <li>High learning curve</li>
@@ -213,7 +213,7 @@ const L3: FC = () =&gt; {
     </section>
 
     <section>
-        <h4>Dan Abramov, father of the Redux</h4>
+        <h3>Dan Abramov, father of the Redux</h3>
         <p>I would like to amend this: don't use Redux until you have problems with vanilla React.</p>
     </section>
 </section>
@@ -223,20 +223,20 @@ const L3: FC = () =&gt; {
         <h2> <a href="https://github.com/mobxjs/mobx"> MobX</a> - another state management tool</h2>
 
         <ul>
-            <li>880 000 downloading in a week</li>
-            <li>25 000 ⭐ in GitHub</li>
+            <li>880K downloading in a week</li>
+            <li>25K ⭐ in GitHub</li>
         </ul>
     </section>
 
     <section>
-        <h4>The idea of the MobX is not that simple</h4>
+        <h3>The idea of the MobX is not that simple</h3>
 
         <p class="left">MobX based on observables and patching your components</p>
         <p class="left">A lot of people dislike MobX because it works like a "magic"</p>
     </section>
 
     <section>
-        <h4>MobX has several advantages</h4>
+        <h3>MobX has several advantages</h3>
 
         <ul>
             <li>It's much easy to use</li>
@@ -252,7 +252,7 @@ const L3: FC = () =&gt; {
     </section>
 
     <section>
-        <h4>Create a simple class</h4>
+        <h3>Create a simple class</h3>
         <pre><code data-line-numbers>class UserDetailsStore {
     nationality = "unknown";
     constructor() {
@@ -266,12 +266,12 @@ const L3: FC = () =&gt; {
     </section>
 
     <section>
-        <h4>Create an instance of the store</h4>
+        <h3>Create an instance of the store</h3>
         <pre><code data-line-numbers>const userDetailsStore = new UserDetailsStore();</code></pre>
     </section>
 
     <section>
-        <h4>Mark component as an <i>observer</i> and use it</h4>
+        <h3>Mark component as an <i>observer</i> and use it</h3>
 
         <pre><code data-line-numbers="1-4|1|2|3">const L3: FC = observer(() =&gt; {
     const nationality = userDetailsStore.nationality;
@@ -281,7 +281,7 @@ const L3: FC = () =&gt; {
     </section>
 
     <section>
-        <h4>Update is also simple</h4>
+        <h3>Update is also simple</h3>
 
         <pre><code data-line-numbers="1-8|5">type SomeContainerProps = {};
 const SomeContainer: FC&lt;SomeContainerProps&gt; = () =&gt; {
@@ -294,7 +294,7 @@ const SomeContainer: FC&lt;SomeContainerProps&gt; = () =&gt; {
     </section>
 
     <section>
-        <h4>MobX has auto linting</h4>
+        <h3>MobX has auto linting</h3>
 
         <pre><code data-line-numbers="">import { configure } from "mobx";
 
