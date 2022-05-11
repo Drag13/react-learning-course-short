@@ -213,6 +213,7 @@
           "https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components"
         ]
       ],
+      "youtube":"https://www.youtube.com/watch?v=8al4xMhWWCE",
       "hometask": ["Use CSS modules to style previously created application"]
     },
     {

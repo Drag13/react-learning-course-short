@@ -58,7 +58,7 @@ Installed [VsCode](https://code.visualstudio.com/)
 
 ### 4 Workshop: [Building React Component](https://drag13.io/react-learning-course-short/react-new-component)
 
-### 5 Lecture: [React - from plain CSS to CSSinJS](https://drag13.io/react-learning-course-short/react-styling)
+### 5 Lecture: [React - from plain CSS to CSSinJS](https://www.youtube.com/watch?v=8al4xMhWWCE)
 
 ### 6 Workshop: [Managing state in React](https://drag13.io/react-learning-course-short/react-state-management)
 

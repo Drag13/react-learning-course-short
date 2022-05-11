@@ -130,6 +130,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-new-component
 - Preprocessors
 - CSS in JS
 
+Talk: https://www.youtube.com/watch?v=8al4xMhWWCE
 
 Presentation - https://drag13.io/react-learning-course-short/react-styling
 
