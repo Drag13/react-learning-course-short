@@ -1,5 +1,9 @@
 # Changelog
 
+## 10/05/2022
+
+- More polishing for the talk about CSS
+
 ## 09/05/2022
 
 - Some minor polishing for the talk about CSS
