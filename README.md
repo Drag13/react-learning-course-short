@@ -60,7 +60,7 @@ Installed [VsCode](https://code.visualstudio.com/)
 
 ### 5 Lecture: [React - from plain CSS to CSSinJS](https://www.youtube.com/watch?v=8al4xMhWWCE)
 
-### 6 Workshop: [Managing state in React](https://drag13.io/react-learning-course-short/react-state-management)
+### 6 Workshop: [Managing state in React](https://youtu.be/2KTqbf31cLw)
 
 ### 7 Workshop: [Forms - Default way and React-Hook-Forms](https://drag13.io/react-learning-course-short/react-forms)
 

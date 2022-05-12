@@ -147,6 +147,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-styling
 - Redux
 - MobX
 
+Talk: https://youtu.be/2KTqbf31cLw
 
 Presentation - https://drag13.io/react-learning-course-short/react-state-management
 
