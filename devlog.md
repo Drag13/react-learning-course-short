@@ -22,7 +22,7 @@ npm start react-intro
 
 ## How to update documentation
 
-All course related data should be stored in the `course.json` file. To update documentation please execute the next command
+All course related data should be stored in the `course.json` file. Updates should be done in the pre push phase **automatically**, with the help of Husky. To update documentation **manually** please execute the next command
 
 ```cmd
 npm run readme

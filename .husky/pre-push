@@ -7,5 +7,5 @@ git add README.md PROGRAM.md
 if [ -n "$(git diff --cached --exit-code)" ]; then
     git commit -m "Documentation updated"
 else
-  echo "no changes";
+  echo "No changes to the documentation needed";
 fi
