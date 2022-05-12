@@ -213,7 +213,7 @@
           "https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components"
         ]
       ],
-      "youtube":"https://www.youtube.com/watch?v=8al4xMhWWCE",
+      "youtube": "https://www.youtube.com/watch?v=8al4xMhWWCE",
       "hometask": ["Use CSS modules to style previously created application"]
     },
     {
@@ -266,7 +266,8 @@
         "Install MobX",
         "Implement same functionality with MobX"
       ],
-      "published": true
+      "published": true,
+      "youtube": "https://youtu.be/2KTqbf31cLw"
     },
     {
       "title": "Forms - Default way and React-Hook-Forms",

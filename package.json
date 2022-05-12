@@ -8,7 +8,8 @@
     "build": "parcel build ./presentations/**/index.html --public-url https://drag13.io/react-learning-course-short",
     "readme": "node tools/docs.js",
     "scaffold": "node tools/scaffold.js",
-    "encode": "node tools/encode.js"
+    "encode": "node tools/encode.js",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,7 @@
     "posthtml-include": "^1.7.3"
   },
   "optionalDependencies": {
+    "husky": "^8.0.1",
     "prettier": "^2.6.2"
   }
 }

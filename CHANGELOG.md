@@ -1,5 +1,14 @@
 # Changelog
 
+## 12/05/2022
+
+- Added husky to automate document generation on push
+- Published link to the [YouTube with tala bout state management in React](https://youtu.be/2KTqbf31cLw)
+
+## 11/05/2022
+
+- Some polish for the workshop about the [state management](https://drag13.io/react-learning-course-short/react-state-management)
+
 ## 10/05/2022
 
 - More polishing for the talk about CSS

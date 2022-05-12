@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npm run readme
+git add README.md PROGRAM.md
+
+if [ -n "$(git diff --cached --exit-code)" ]; then
+    git commit -m "Documentation updated"
+else
+  echo "No changes to the documentation needed";
+fi
