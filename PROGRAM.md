@@ -253,3 +253,18 @@ Presentation - https://drag13.io/react-learning-course-short/react-testing
 ### Home task: 
 
 Not specified
+
+## 12 Lecture: TypeScript for beginners
+
+### Key points: 
+
+- Primitives
+- Functions
+- CustomTypes
+- Generics
+- TypeAssertions
+
+
+### Home task: 
+
+Not specified
