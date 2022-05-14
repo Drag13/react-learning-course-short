@@ -1,5 +1,9 @@
 # Changelog
 
+## 14/05/2022
+
+- Started working on talk about the TypeScript for beginners. Added first drafts.
+
 ## 12/05/2022
 
 - Added husky to automate document generation on push
