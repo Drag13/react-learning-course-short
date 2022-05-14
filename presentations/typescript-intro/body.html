@@ -1,0 +1,242 @@
+<section>
+  <h3>TypeScript is JavaScript with syntax for types.</h3>
+
+  <p>TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any
+    scale.</p>
+</section>
+
+<section>
+  <h3>Dealing with TypeScript</h3>
+
+  <ul>
+    <li>npm i typescript -D</li>
+    <li>npm i ts-node -D</li>
+    <li>npx ts-node src/index.ts</li>
+  </ul>
+</section>
+
+<section>
+  <section>
+    <h3>Primitives</h3>
+    <p class="">You can explicitly state the type of the any variable </p>
+  </section>
+
+  <section>
+    <h3>Primitives - example</h3>
+
+    <pre><code data-line-numbers>const userName:string = 'Olena';
+const userAge:number = 25;
+const isUserAdmin:boolean = true;  </code></pre>
+  </section>
+
+  <section>
+    <h3>Defining types for primitives mostly unneeded due to inference</h3>
+    <!-- <img src="" alt=""> -->
+  </section>
+</section>
+
+<section>
+
+  <section>
+    <h3>Working with functions</h3>
+    <p>Functions require parameters type stated explicitly</p>
+  </section>
+
+  <section>
+    <h3>Types in functions</h3>
+    <pre>
+      <code data-line-numbers="" class="language-typescript" >const sum = (x: number, y: number): number => x + y;
+
+sum('4', 5); 
+// Argument of type 'string' is not assignable 
+// to parameter of type 'number'
+      </code>
+    </pre>
+  </section>
+
+  <section>
+    <h3>Typing a function - very and very common approach</h3>
+    <p class="left">Don't forget to user "infer parameters from usage"</p>
+  </section>
+</section>
+
+<section>
+
+  <section>
+    <h3>Custom types</h3>
+
+    <p class="">Create custom types by your own</p>
+  </section>
+
+  <section>
+    <h3>Using keyword type</h3>
+
+    <pre><code class="language-typescript">
+type User = { name: string, isAdmin: boolean; }
+const user: User = { name: 'Vitalii', isAdmin: false }
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>Using keyword interface</h3>
+
+    <pre><code class="language-typescript">
+interface User { name: string, isAdmin: boolean; }
+const user: User = {name: 'Pavlo', isAdmin: true}
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>Arrays</h3>
+    <pre><code class="language-typescript" data-line-numbers="">const users: User[] = [{name: 'Pavlo', isAdmin: true}]
+</code></pre>
+  </section>
+
+  <section>
+    <h3>Functions</h3>
+    <pre><code class="language-typescript" data-line-numbers="">type ListUsers = (users: User[]) => void;
+interface IListUsers { (users: User[]) => void }
+
+const listUsers: ListUsers = (users) => 
+      users.forEach(console.log)
+    </code></pre>
+  </section>
+</section>
+
+<section>
+
+  <section>
+    <h3>Generics</h3>
+
+    <p>
+      Generics - way to have a type that will defined somewhere later
+    </p>
+  </section>
+  <section>
+    <h3>Generic types</h3>
+    <pre><code class="language-tsx" data-line-numbers>type Action&lt;T&gt; = { type: string; payload: T };
+const incrementAction: Action&lt;number&gt; = { 
+  type: 'INCREMENT', 
+  payload: 5 
+};</code></pre>
+  </section>
+
+  <section>
+    <h3>Generics - functions</h3>
+    <pre><code class="language-tsx" data-line-numbers>const reducer = &lt;T&gt;(action: Action&lt;T&gt;) =&gt; {
+  console.log(action.type);
+};
+    </code></pre>
+  </section>
+</section>
+
+<section>
+
+  <section>
+    <h3>Operations with types</h3>
+
+    <p class="left">TypeScript allows you to operate with types as a regular variables</p>
+  </section>
+
+  <section>
+    <h3>Unions</h3>
+    <p>Union - a way to accept one type or another</p>
+  </section>
+
+  <section>
+    <h3>Union example</h3>
+
+    <pre><code class="language-typescript" data-line-numbers="">type StringOrNumber = string | number;
+const stringValue: StringOrNumber = 'test';
+const numericValue: StringOrNumber = 42;    </code></pre>
+  </section>
+
+  <section>
+    <h3>Union works with any type event primitives</h3>
+
+    <pre><code class="language-typescript" data-line-numbers="">type UserRole = 'admin' | 'user' |;
+const userRole: UserRole = 'user';
+const wrongUserRole: UserRole = 'superAdmin'; // FAILS
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>Unions can be used in functions</h3>
+
+    <pre><code class="language-typescript" data-line-numbers="">const displayValue = (x: number | string) => `value:${x}`;
+    </code></pre>
+  </section>
+</section>
+
+<section>
+
+  <section>
+    <h3>Utility types</h3>
+    <p class="left">TypeScript has bunch of utility types that helps you with development</p>
+  </section>
+
+  <section>
+    <h3>Type - Record</h3>
+
+    <pre><code class="language-typescript">
+const x: {} = { test: 44 };
+x["test"]; // fails - element has an any type
+    </code></pre>
+  </section>
+
+  <section>
+
+    <h3>Solution</h3>
+    <pre><code class="language-tsx" data-line-numbers>const x: Record&lt;string, number&gt; = { test: 44 }
+const numeric = x["test"] // works, numeric has type number
+      </code></pre>
+  </section>
+
+</section>
+
+<section>
+
+  <section>
+    <h3>TypeAssertions</h3>
+
+    <p>Sometimes TypeScript needs some help</p>
+  </section>
+
+  <section>
+    <h3>When the data is under your full control - use <i>as</i></h3>
+
+    <pre><code class="language-tsx" data-line-numbers>const ammoType = ['7.62', '5.45'];
+const ammoMap = ammoType.reduce((acc, cv) =&gt; {
+  acc[cv] = 0;
+  return acc;
+}, {} as Record&lt;string, number&gt;); </code></pre>
+  </section>
+
+  <section>
+
+    <h3>When data comes from untrusted source - use type guard</h3>
+    <pre><code class="language-typescript">
+    const maybeUser = JSON.parse({ 'userName': 1 });
+    
+    const isUser = (value: any): value is { userName: string } => 
+    typeof value === 'object' && typeof value.userName === 'string'
+    
+    if (isUser(maybeUser)) {
+      console.log(maybeUser.userName)
+    } else { 
+      throw new Error(`Don't fool me!`);
+    }
+  </code></pre>
+  </section>
+
+  <section>
+    <h3>Don't use <i>as</i> when data comes from 3rd party</h3>
+  </section>
+</section>
+
+<section>
+  <h3>Important notice</h3>
+
+  <p>TypeScript doesn't exists in runtime, it's converted to pure JS</p>
+  <p>However, enums and TypeGuard will work</p>
+</section>

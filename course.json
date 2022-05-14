@@ -349,6 +349,21 @@
         ["Jest", "https://jestjs.io/"],
         ["React Testing Library", "https://testing-library.com/docs/react-testing-library/intro/"]
       ]
+    },
+    {
+      "title": "TypeScript for beginners",
+      "name": "typescript-intro",
+      "type": "Lecture",
+      "keyPoints": ["Primitives", "Functions", "CustomTypes", "Generics", "TypeAssertions"],
+      "links": [
+        ["TS Playground", "https://www.typescriptlang.org/play"],
+        ["TS Handbook", "https://www.typescriptlang.org/docs/handbook/intro.html"],
+        ["TS Roadmap", "https://github.com/microsoft/TypeScript/wiki/Roadmap"]
+      ],
+      "takeaways": [
+        "TypeScript - almost the same JavaScript but with built time type checking",
+        "In a nutshell, TypeScript is pretty easy"
+      ]
     }
   ]
 }
