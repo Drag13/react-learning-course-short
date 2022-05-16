@@ -265,6 +265,8 @@ Not specified
 - TypeAssertions
 
 
+Presentation - https://drag13.io/react-learning-course-short/typescript-intro
+
 ### Home task: 
 
 Not specified
