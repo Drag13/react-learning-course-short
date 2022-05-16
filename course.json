@@ -358,12 +358,17 @@
       "links": [
         ["TS Playground", "https://www.typescriptlang.org/play"],
         ["TS Handbook", "https://www.typescriptlang.org/docs/handbook/intro.html"],
-        ["TS Roadmap", "https://github.com/microsoft/TypeScript/wiki/Roadmap"]
+        ["TS Roadmap", "https://github.com/microsoft/TypeScript/wiki/Roadmap"],
+        [
+          "tsconfig - documentation",
+          "https://www.typescriptlang.org/docs/handbook/tsconfig-json.html"
+        ]
       ],
       "takeaways": [
         "TypeScript - almost the same JavaScript but with built time type checking",
         "In a nutshell, TypeScript is pretty easy"
-      ]
+      ],
+      "published": true
     }
   ]
 }
