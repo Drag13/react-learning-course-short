@@ -1,5 +1,16 @@
 # Changelog
 
+## 17/05/2022
+
+- Some polishing for the talk [TypeScript for beginners](https://drag13.io/react-learning-course-short/typescript-intro/)
+- Added contacts to the layout
+- Regenerated all presentations with the new layout
+
+## 16/05/2022
+
+- Added main part of the talk - [TypeScript for beginners](https://drag13.io/react-learning-course-short/typescript-intro/)
+- Moved "TypeScript for beginners" to published state
+
 ## 14/05/2022
 
 - Started working on talk about the TypeScript for beginners. Added first drafts.
