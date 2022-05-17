@@ -43,11 +43,11 @@ const numericValue: StringOrNumber = 42;    </code></pre> </section> <section> <
 const userRole: UserRole = 'user';
 const wrongUserRole: UserRole = 'superAdmin'; // FAILS
     </code></pre> </section> <section> <h3>Unions can be used in functions</h3> <pre><code class="language-typescript" data-line-numbers="">const displayValue = (x: number | string) => `value:${x}`;
-    </code></pre> </section> <section> <h3>Apart from unions we have</h3> <ul> <li>Intersections</li> <li class="fade-up fragment">Projection</li> </ul> </section> </section> <section> <section> <h3>TypeAssertions</h3> <p>Sometimes TypeScript needs some help</p> </section> <section> <h3>When the data is under your full control - use <i>as</i></h3> <pre><code class="language-tsx" data-line-numbers="">const ammoType = ['7.62', '5.45'];
+    </code></pre> </section> <section> <h3>Apart from unions we have</h3> <ul> <li>Intersections</li> <li class="fade-up fragment">Projection</li> </ul> </section> </section> <section> <section> <h3>TypeAssertions</h3> <p>Sometimes TypeScript needs some help</p> </section> <section> <h3>When the data is under your full control - use <i>as</i></h3> <pre><code class="language-tsx" data-line-numbers="1-5|1|2-4|5">const ammoType = ['7.62', '5.45'];
 const ammoMap = ammoType.reduce((acc, cv) =&gt; {
   acc[cv] = 0;
   return acc;
-}, {} as Record&lt;string, number&gt;); </code></pre> </section> <section> <h3>When data comes from untrusted source - use type guard</h3> <pre><code class="language-typescript" data-line-numbers="">const maybeUser = JSON.parse({ 'userName': 1 });
+}, {} as Record&lt;string, number&gt;); </code></pre> </section> <section> <h3>When data comes from untrusted source - use type guard</h3> <pre><code class="language-typescript" data-line-numbers="1-11|1|3-5|7-8|9-11">const maybeUser = JSON.parse({ 'userName': 1 });
     
 const isUser = (value: any): value is { userName: string } => 
   typeof value === 'object' && 
