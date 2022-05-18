@@ -286,7 +286,8 @@
         ["React forms - default way", "https://reactjs.org/docs/forms.html"],
         ["React Hook Form", "https://react-hook-form.com/get-started"],
         ["Yup", "https://github.com/jquense/yup"]
-      ]
+      ],
+      "youtube": "https://youtu.be/gwrMDwYLIWs"
     },
     {
       "title": "Single Page Application",
@@ -369,7 +370,7 @@
         "In a nutshell, TypeScript is pretty easy"
       ],
       "published": true,
-      "youtube":"https://youtu.be/ND-XaEQ4VSk"
+      "youtube": "https://youtu.be/ND-XaEQ4VSk"
     }
   ]
 }
