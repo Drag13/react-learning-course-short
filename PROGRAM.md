@@ -177,6 +177,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-state-managem
 - Building your first form with  <a href="https://react-hook-form.com/get-started">React Hook Form</a>
 - Validation with Yup
 
+Talk: https://youtu.be/gwrMDwYLIWs
 
 Presentation - https://drag13.io/react-learning-course-short/react-forms
 

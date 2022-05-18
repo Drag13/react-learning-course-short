@@ -62,7 +62,7 @@ Installed [VsCode](https://code.visualstudio.com/)
 
 ### 6 Workshop: [Managing state in React](https://youtu.be/2KTqbf31cLw)
 
-### 7 Workshop: [Forms - Default way and React-Hook-Forms](https://drag13.io/react-learning-course-short/react-forms)
+### 7 Workshop: [Forms - Default way and React-Hook-Forms](https://youtu.be/gwrMDwYLIWs)
 
 ### 8 Lecture: [Routing in React](https://drag13.io/react-learning-course-short/react-router)
 
