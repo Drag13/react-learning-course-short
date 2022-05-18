@@ -11,8 +11,8 @@
 
     <section>
         <h3>Create a component with empty form and state</h3>
-        <pre><code data-line-numbers>class MyForm extends PureComponent {
-    state = { email: "" };
+        <pre><code data-line-numbers="" class="language-tsx">class MyForm extends PureComponent {
+    state = { pwd: "" };
     render() {
         return (
             <form>
@@ -26,11 +26,11 @@
 
     <section>
         <h3>Add an input inside the form</h3>
-        <pre><code data-line-numbers>&lt;input
-    type="email"
-    name="name"
-    id="name"
-    value={this.state.email}
+        <pre><code data-line-numbers="1-6|5|6" class="language-tsx">&lt;input
+    type="password"
+    name="pwd"
+    id="pwd"
+    value={this.state.pwd}
     onChange={this._handleChange}
 /&gt;</code></pre>
     </section>
@@ -38,14 +38,14 @@
     <section>
         <h3>Add handler for the input which will update the state</h3>
 
-        <pre><code data-line-numbers>private _handleChange = (e: ChangeEvent&lt;HTMLInputElement&gt;) =&gt;
-    this.setState({ email: e.target.value });</code></pre>
+        <pre><code data-line-numbers class="language-tsx">private _handleChange = (e: ChangeEvent&lt;HTMLInputElement&gt;) =&gt;
+    this.setState({ pwd: e.target.value });</code></pre>
     </section>
 
     <section>
         <h3>Add handler to show formData on submit</h3>
 
-        <pre><code data-line-numbers>private _handleSubmit = (e: FormEvent&lt;HTMLFormElement&gt;) =&gt; {
+        <pre><code data-line-numbers class="language-tsx">private _handleSubmit = (e: FormEvent&lt;HTMLFormElement&gt;) =&gt; {
     e.preventDefault();
     console.log(`Form state`, this.state);
 };</code></pre>
@@ -55,6 +55,11 @@
         <h3>Work is done, full example <a
                 href="https://raw.githubusercontent.com/Drag13/react-learning-course-short/master/presentations/react-forms/code/default-form.tsx">here</a>
         </h3>
+    </section>
+
+    <section>
+        <h3>Apart from controlled forms, there are uncontrolled forms</h3>
+        <p>However, they are way less used</p>
     </section>
 
     <section>
@@ -86,11 +91,11 @@
     <section>
         <h3>Convert class to function</h3>
 
-        <pre><code data-line-numbers>const MyForm: FC = () =&gt; {
+        <pre><code data-line-numbers class="language-tsx">const MyForm: FC = () =&gt; {
     return (
         &lt;form&gt;
             &lt;h1&gt;My form&lt;/h1&gt;
-            &lt;input type="email" name="email" /&gt;
+            &lt;input type="password" /&gt;
             <p> &lt;button&gt;Submit&lt;/button&gt;</p> 
         &lt;/form&gt;
     );
@@ -101,13 +106,13 @@
     <section>
         <h3>Use <i>useForm</i> from the package</h3>
 
-        <pre><code data-line-numbers>const { register, handleSubmit } = useForm&lt;{ name: string }&gt;();</code></pre>
+        <pre><code data-line-numbers class="language-typescript">const { register, handleSubmit } = useForm&lt;{ pwd: string }&gt;();</code></pre>
     </section>
 
     <section>
         <h3>Register field in the form</h3>
 
-        <pre><code data-line-numbers>&lt;input type="text" {...register("email")} /&gt;</code></pre>
+        <pre><code data-line-numbers class="language-tsx">&lt;input type="password" {...register("pwd")} /&gt;</code></pre>
     </section>
 
     <section>
@@ -118,7 +123,7 @@
     return (
         &lt;form onSubmit={handleSubmit(submit)} name="myform"&gt;
             &lt;h1&gt;My form&lt;/h1&gt;
-            &lt;input type="text" {...register("email")} /&gt;
+            &lt;input type="password" {...register("pwd")} /&gt;
             &lt;p&gt; &lt;button&gt;Submit&lt;/button&gt; &lt;/p&gt;
         &lt;/form&gt;
     );
@@ -139,7 +144,7 @@
 
         <h3>Define validation rules</h3>
 
-        <pre><code data-line-numbers>const pwd = { 
+        <pre><code data-line-numbers class="language-typescript">const pwd = { 
     required: { value: true, message: "password required" } 
     minLength: { value: 6, message: "Too short!" }
 };        </code></pre>
@@ -153,7 +158,7 @@
 
     <section>
         <h3>Show an error if something went wrong</h3>
-        <pre><code data-line-numbers="">{errors.pwd && <div>{errors.pwd.message}</div>}</code></pre>
+        <pre><code class="language-tsx" data-line-numbers>&lt;div&gt;{formState.errors?.pwd?.message}&lt;/div&gt;</code></pre>
     </section>
 
     <section>
@@ -211,9 +216,8 @@ const validationSchema = object({
         <h3>Connect schema to the form using some hook magic</h3>
 
         <pre><code data-line-numbers>const validations = useYup(validationSchema);
-const { register, handleSubmit, formState } = useForm&lt;FormData&gt;({
-    resolver: validations,
-});</code></pre>
+const { register, handleSubmit, formState } = 
+    useForm&lt;FormData&gt;({resolver: validations});</code></pre>
     </section>
 
     <section>

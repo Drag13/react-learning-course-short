@@ -1,8 +1,8 @@
-import React, { memo, PureComponent, useCallback } from "react";
-import { createRoot } from "react-dom/client";
-import { useForm } from "react-hook-form";
+import React, { memo, PureComponent, useCallback } from 'react';
+import { createRoot } from 'react-dom/client';
+import { useForm } from 'react-hook-form';
 
-import { BaseSchema, InferType, object, string } from "yup";
+import { BaseSchema, InferType, object, string } from 'yup';
 
 const validationSchema = object({
   email: string().required().email(),
@@ -18,10 +18,13 @@ const useYup = <T extends {}>(schema: BaseSchema<T>) => {
         const values = await schema.validate(data, { abortEarly: false });
         return { values, errors: {} };
       } catch (yupErrors: any) {
-        const errors = yupErrors.inner.reduce((acc: any, v: any) => {
-          acc[v.path] = { type: v.type ?? "validation", message: v.message };
-          return acc;
-        }, {});
+        const errors = yupErrors.inner.reduce(
+          (acc, v: { message: string; path: string; type: string }) => {
+            acc[v.path] = { type: v.type ?? 'validation', message: v.message };
+            return acc;
+          },
+          {} as Record<string, {}>
+        );
         return { values: {}, errors };
       }
     },
@@ -40,7 +43,7 @@ const MyForm = memo(() => {
   return (
     <form onSubmit={handleSubmit((d) => console.log(d))} name="myform">
       <h1>My form</h1>
-      <input type="text" {...register("email")} />
+      <input type="text" {...register('email')} />
       {errors?.email && errors?.email?.message}
       <p>
         <button>Submit</button>
@@ -59,7 +62,7 @@ class App extends PureComponent {
   }
 }
 
-const container = document.getElementById("root");
+const container = document.getElementById('root');
 createRoot(container!).render(
   <React.StrictMode>
     <App />
