@@ -264,6 +264,7 @@ Not specified
 - Generics
 - TypeAssertions
 
+Talk: https://youtu.be/ND-XaEQ4VSk
 
 Presentation - https://drag13.io/react-learning-course-short/typescript-intro
 

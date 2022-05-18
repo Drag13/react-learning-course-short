@@ -72,7 +72,7 @@ Installed [VsCode](https://code.visualstudio.com/)
 
 ### 11 Lecture: [Tests](https://drag13.io/react-learning-course-short/react-testing)
 
-### 12 Lecture: [TypeScript for beginners](https://drag13.io/react-learning-course-short/typescript-intro)
+### 12 Lecture: [TypeScript for beginners](https://youtu.be/ND-XaEQ4VSk)
 
 ## Donations
 
