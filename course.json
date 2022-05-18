@@ -368,7 +368,8 @@
         "TypeScript - almost the same JavaScript but with built time type checking",
         "In a nutshell, TypeScript is pretty easy"
       ],
-      "published": true
+      "published": true,
+      "youtube":"https://youtu.be/ND-XaEQ4VSk"
     }
   ]
 }
