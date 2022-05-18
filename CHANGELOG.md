@@ -1,5 +1,10 @@
 # Changelog
 
+## 18/05/2022
+
+- Published link to the YouTube with talk about [TypeScript](https://youtu.be/ND-XaEQ4VSk)
+- Minor polishing for the talk about Forms
+
 ## 17/05/2022
 
 - Some polishing for the talk [TypeScript for beginners](https://drag13.io/react-learning-course-short/typescript-intro/)
