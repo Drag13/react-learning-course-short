@@ -290,17 +290,16 @@
       "youtube": "https://youtu.be/gwrMDwYLIWs"
     },
     {
-      "title": "Single Page Application",
-      "hidden": true,
-      "name": "spa",
-      "type": "Lecture",
-      "keyPoints": ["Server side routing", "Client side routing", "Benefits", "React router"]
-    },
-    {
       "title": "Routing in React",
       "name": "react-router",
       "type": "Lecture",
-      "keyPoints": ["Install react router", "Basic setup", "Data Binding", "Router guard"],
+      "keyPoints": [
+        "A cup of theory",
+        "Install react router",
+        "Basic setup",
+        "Data Binding",
+        "Router guard"
+      ],
       "links": [["React Router", "https://reactrouter.com/docs/en/v6/getting-started/overview"]],
       "hometask": [
         "Add header for your application",
@@ -310,7 +309,12 @@
         "If `ln` equals `ua` all texts should be in Ukrainian language",
         "If `ln` equals `en` all text should be in English (feel free to use google translate if needed)"
       ],
-      "published": true
+      "published": true,
+      "takeaways": [
+        "SPA - is a web application or website that interacts with the user by dynamically rewriting the current web page with new data",
+        "In React we are using React Router to build SPA",
+        "React router supports a lot of handy options - params, nested view, default routes"
+      ]
     },
     {
       "title": "React and network",

@@ -1,24 +1,61 @@
 <section>
 
     <section>
-        <h2>Quick recap</h2>
-    </section>
-    <section>
-        <h4> Router - mechanism to sync URL and view without reloading the page </h4>
-    </section>
-    <section>
-        <h4>Router - key mechanism for SPA</h4>
+        <h2>A cup of theory</h2>
     </section>
 
     <section>
-        <h4>SPA</h4>
+        <h3>Default way</h3>
+
+        <p class="left">
+            One route - one physical page served from server
+        </p>
+
+        <p class="left">
+            Changing the route leads to unload for the current page, and full load for the new page
+        </p>
+    </section>
+
+    <section>
+        <h3>Pros</h3>
+
+        <ul>
+            <li>Simplicity</li>
+            <li class="fragment fade-up">Excellent control</li>
+            <li class="fragment fade-up">Cache per page</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Cons - User Experience</h3>
+
+        <ul>
+            <li>User loosing all data (or we need somehow to restore)</li>
+            <li class="fragment fade-up">Reload take some time (even with cache)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>The solution - use client routing</h3>
+
+        <p>When URL changed - we are staying on the same physical page but the content refreshed by JS</p>
+    </section>
+
+    <section>
+        <h3>This called - Single Page Application approach</h3>
+
         <p class="left">
             A single-page application (SPA) is a web application or website that interacts with the user by dynamically
-            rewriting the current web page with new data from the web server, instead of the default method of a web
+            rewriting the current web page, instead of the default method of a web
             browser loading entire new pages. The goal is faster transitions that make the website feel more like a
             native app - <a href="https://en.wikipedia.org/wiki/Single-page_application" target="_blank">wikipedia</a>
         </p>
     </section>
+
+    <section>
+        <h3>Router - key mechanism for SPA</h3>
+    </section>
+
 </section>
 
 <section>
@@ -27,7 +64,7 @@
     </section>
 
     <section>
-        <h4>Current router version - 6</h4>
+        <h3>Current router version - 6</h3>
 
         <pre><code data-line-number>npm i react-router-dom</code></pre>
     </section>
@@ -39,7 +76,7 @@
     </section>
 
     <section data-visibility="hidden">
-        <h4>Features</h4>
+        <h3>Features</h3>
 
         <ul>
             <li>Binding parameters</li>
@@ -50,7 +87,7 @@
     </section>
 
     <section>
-        <h4>Add BrowserRouter</h4>
+        <h3>Add BrowserRouter</h3>
 
         <pre><code data-line-numbers>&lt;BrowserRouter&gt;&lt;/BrowserRouter&gt;;</code></pre>
 
@@ -59,7 +96,7 @@
 
 
     <section>
-        <h4>Add Routes </h4>
+        <h3>Add Routes </h3>
 
         <pre><code data-line-numbers>&lt;BrowserRouter&gt;
     &lt;Routes&gt;
@@ -71,9 +108,9 @@
     </section>
 
     <section>
-        <h4>
+        <h3>
             Add list of routes
-        </h4>
+        </h3>
 
         <pre><code data-line-numbers>&lt;BrowserRouter&gt;
     &lt;Routes&gt;
@@ -88,13 +125,13 @@
     </section>
 
     <section>
-        <h4>Declarative navigation</h4>
+        <h3>Declarative navigation</h3>
 
         <pre><code data-line-numbers>&lt;Link to="/user"&gt;Go to user page&lt;/Link&gt;</code></pre>
     </section>
 
     <section>
-        <h4>Programmatic navigation</h4>
+        <h3>Programmatic navigation</h3>
         <pre class="language-tsx"><code data-line-numbers>const Forbidden = () =&gt; {
     const navigate = useNavigate();
 
@@ -109,9 +146,20 @@
 
 
     <section>
-        <h4>OR a bit easier</h4>
+        <h3>OR a bit easier</h3>
         <pre
             class="language-tsx"><code data-line-numbers>const Forbidden = () =&gt; &lt;Navigate to="/" /&gt;</code></pre>
+    </section>
+
+    <section>
+        <h3>BrowserRouter requires some backend setup as well</h3>
+
+        <p class="left">If this is not an option - use HashRouter, then your URL will be using hash to avoid querying
+            backend
+            <span class="fragment green">
+                http://localhost:3000/#/user/3
+            </span>
+        </p>
     </section>
 </section>
 
@@ -121,11 +169,11 @@
     </section>
 
     <section>
-        <h4>Data binding allows storing data which defines the page in the transferable manner, within the link</h4>
+        <h3>Data binding allows storing data which defines the page in the transferable manner, within the link</h3>
     </section>
 
     <section>
-        <h4>Real life example</h4>
+        <h3>Real life example</h3>
 
         <p>
             https://twitter.com/<span class="fragment highlight-green">drag137</span>
@@ -133,11 +181,11 @@
     </section>
 
     <section>
-        <h4>Define</h4>
+        <h3>Define</h3>
         <pre><code data-line-numbers>&lt;Route path="/:userName" element={&lt;UserPage /&gt;} /&gt;</code></pre>
     </section>
     <section>
-        <h4>Use</h4>
+        <h3>Use</h3>
         <pre><code data-line-numbers>const UserPage = () =&gt; {
     const { userName } = useParams();
     return &lt;div&gt;Hello user: {userName}&lt;/div&gt;;
@@ -149,7 +197,7 @@
     </section>
 
     <section>
-        <h4>❗❗❗Important❗❗❗</h4>
+        <h3>❗❗❗Important❗❗❗</h3>
 
         <p>
             Getting params inside the class-based component is not possible in react-router >=6
@@ -165,7 +213,7 @@
     </section>
 
     <section>
-        <h4>Example</h4>
+        <h3>Example</h3>
 
         <p class="left">Imagine that you created a personal cabinet for the user. User have to login before visiting
             personal cabinet.
@@ -181,9 +229,9 @@
     </section>
 
     <section>
-        <h4>Create the guard</h4>
+        <h3>Create the guard</h3>
 
-        <pre><code data-line-numbers>type UserData = { user?: { authenticated: boolean } };
+        <pre><code data-line-numbers class="language-tsx">type UserData = { user?: { authenticated: boolean } };
 
 const UserPageGuard: FC&lt;UserData&gt; = ({ user }) =&gt;
     user && user.authenticated ? 
@@ -193,7 +241,7 @@ const UserPageGuard: FC&lt;UserData&gt; = ({ user }) =&gt;
 
     <section>
 
-        <h4>Update routes</h4>
+        <h3>Update routes</h3>
         <pre><code data-line-numbers>&lt;Routes&gt;
     &lt;Route path="/login" element={"Please login"} /&gt;
     &lt;Route
@@ -205,7 +253,7 @@ const UserPageGuard: FC&lt;UserData&gt; = ({ user }) =&gt;
 
 
     <section>
-        <h4>Try to use</h4>
+        <h3>Try to use</h3>
         <p class="left">Now, if user is not authenticated, or no data is present, he will be automatically navigate to
             the login page
         </p>
@@ -219,7 +267,7 @@ const UserPageGuard: FC&lt;UserData&gt; = ({ user }) =&gt;
     </section>
 
     <section>
-        <h4>Why?</h4>
+        <h3>Why?</h3>
 
         <p class="left">Imagine you created personal page for user: <i class="fragment highlight-green">/user</i></p>
 
@@ -237,7 +285,7 @@ const UserPageGuard: FC&lt;UserData&gt; = ({ user }) =&gt;
     </section>
 
     <section>
-        <h4>Add an outlet to the UserPage</h4>
+        <h3>Add an outlet to the UserPage</h3>
 
         <pre><code data-line-numbers="1-11|7">const UserPage = () =&gt; {
     const { userName } = useParams();
@@ -253,13 +301,13 @@ const UserPageGuard: FC&lt;UserData&gt; = ({ user }) =&gt;
     </section>
 
     <section>
-        <h4>Outlet</h4>
+        <h3>Outlet</h3>
 
         <p>Outlet - the "portal" where your sub-route will be rendered</p>
     </section>
 
     <section>
-        <h4>Add Links to the default and post view</h4>
+        <h3>Add Links to the default and post view</h3>
 
         <pre><code data-line-numbers="1-6|2|5">&lt;div&gt;
     &lt;Link to=""&gt;Default view&lt;/Link&gt;
@@ -270,16 +318,16 @@ const UserPageGuard: FC&lt;UserData&gt; = ({ user }) =&gt;
     </section>
 
     <section>
-        <h4>Update routing</h4>
+        <h3>Update routing</h3>
 
-        <pre><code data-line-numbers="1-4|1|2|3">&lt;Route path="/:userName" element={&lt;UserPage/&gt;}&gt;
+        <pre><code data-line-numbers="1-4|1|2|3" class="language-tsx">&lt;Route path="/:userName" element={&lt;UserPage/&gt;}&gt;
     &lt;Route index element={"Default View"} /&gt;
     &lt;Route path="posts" element={"Showing all posts"} /&gt;
 &lt;/Route&gt;</code></pre>
     </section>
 
     <section>
-        <h4>http://localhost:3000/drag13</h4>
+        <h3>http://localhost:3000/drag13</h3>
 
         <pre>
             Hello user: drag13
@@ -287,9 +335,9 @@ const UserPageGuard: FC&lt;UserData&gt; = ({ user }) =&gt;
         </pre>
     </section>
 
-    
+
     <section>
-        <h4>http://localhost:3000/drag13/posts</h4>
+        <h3>http://localhost:3000/drag13/posts</h3>
 
         <pre>
             Hello user: drag13
@@ -298,6 +346,55 @@ const UserPageGuard: FC&lt;UserData&gt; = ({ user }) =&gt;
     </section>
 
     <section>
-        <h4>Full example is <a href="https://raw.githubusercontent.com/Drag13/react-learning-course-short/master/presentations/react-router/code/react-routing.tsx">here</a></h4>
+        <h3>Full example is <a
+                href="https://raw.githubusercontent.com/Drag13/react-learning-course-short/master/presentations/react-router/code/react-routing.tsx">here</a>
+        </h3>
     </section>
+</section>
+
+<section>
+
+    <section>
+        <h2>Another handy cases</h2>
+        <ul>
+            <li>Not found page</li>
+            <li>Optional parameters</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h3>
+            Not found page
+        </h3>
+
+        <pre><code class="language-tsx" data-line-numbers="1-10|5">const AppApp = () =&gt; {
+    return (
+        &lt;BrowserRouter&gt;
+        &lt;Routes&gt;
+            &lt;Route path="/" element={&lt;HomePage /&gt;} /&gt;
+            &lt;Route path="*" element={&lt;NotFoundPage /&gt;} /&gt;
+        &lt;/Routes&gt;
+        &lt;/BrowserRouter&gt;
+    );
+};
+          </code></pre>
+    </section>
+
+    <section>
+        <h3>Optional parameters</h3>
+
+        <pre><code class="language-tsx" data-line-numbers>const AppApp = () =&gt; {
+  return (
+    &lt;BrowserRouter&gt;
+      &lt;Routes&gt;
+        &lt;Route path="/user/:id" element={'userpage'} /&gt;
+        &lt;Route path="/user/" element={'userpage without id'} /&gt;
+      &lt;/Routes&gt;
+    &lt;/BrowserRouter&gt;
+  );
+};
+          </code></pre>
+    </section>
+
 </section>
