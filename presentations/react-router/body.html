@@ -397,4 +397,22 @@ const UserPageGuard: FC&lt;UserData&gt; = ({ user }) =&gt;
           </code></pre>
     </section>
 
+    <section>
+        <h3>Lazy loading</h3>
+
+        <pre><code class="language-tsx" data-line-numbers="1-12|1|8">const LazyPage = lazy(() =&gt; import('./LazyPage'));
+
+const AppApp = () =&gt; {
+    return (
+        &lt;HashRouter&gt;
+            &lt;Routes&gt;
+            &lt;Route path="/" element={'DEFAULT'} /&gt;
+            &lt;Route path="/lazy" element={&lt;LazyPage /&gt;} /&gt;
+            &lt;/Routes&gt;
+        &lt;/HashRouter&gt;
+    );
+};
+            </code></pre>
+    </section>
+
 </section>
