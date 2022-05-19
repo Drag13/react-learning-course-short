@@ -193,6 +193,7 @@ Not specified
 
 ### Key points: 
 
+- A cup of theory
 - Install react router
 - Basic setup
 - Data Binding
