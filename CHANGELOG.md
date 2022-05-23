@@ -1,5 +1,14 @@
 # Changelog
 
+## 23/05/2022
+
+- Big update for the talk about the [React and network](https://drag13.io/react-learning-course-short/react-network/)
+
+## 19/05/2022
+
+- Some minor updates for the talk about React Router
+- Published link to the [YouTube](https://youtu.be/D0Fkm63FoSY) for the talk about React router
+
 ## 18/05/2022
 
 - Published link to the YouTube with talk about [TypeScript](https://youtu.be/ND-XaEQ4VSk)
