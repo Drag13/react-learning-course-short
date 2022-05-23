@@ -217,6 +217,8 @@ Presentation - https://drag13.io/react-learning-course-short/react-router
 
 - Fetch
 - Axios
+- Network and store
+- Typical mistakes
 
 
 Presentation - https://drag13.io/react-learning-course-short/react-network
