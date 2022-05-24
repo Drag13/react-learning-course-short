@@ -36,7 +36,7 @@
     <section>
         <h3>On ComponentDidMount implement fetching</h3>
 
-        <pre><code data-line-numbers="" class="language-tsx">async componentDidMount() {
+        <pre><code data-line-numbers="1-9|3|4|5|7" class="language-tsx">async componentDidMount() {
     try {
         const rawData = await fetch(FREE_API_URL);
         const { entries } = await rawData.json();
@@ -50,22 +50,17 @@
     <section>
         <h3>Render the result</h3>
 
-        <pre><code data-line-numbers="" class="language-tsx">render() {
+        <pre><code data-line-numbers="1-11|2|3|4|5-9" class="language-tsx">render() {
     const { apis, errored } = this.state;
     return errored 
-    ? (&lt;div&gt;Something went wrong&lt;/div&gt;) 
-    : &lt;ul&gt;{apis.map(({ API, Link }) =&gt; (
-            &lt;li key={Link}&gt;
-            {API}::{Link}
-            &lt;/li&gt;
-        ))}
-      &lt;/ul&gt;
-    ;
+        ? (&lt;div&gt;Something went wrong&lt;/div&gt;) 
+        : &lt;ul&gt;{apis.map(({ API, Link }) =&gt; (
+                &lt;li key={Link}&gt;
+                {API}::{Link}
+                &lt;/li&gt;
+            ))}
+        &lt;/ul&gt;;
 }</code></pre>
-    </section>
-
-    <section>
-        <h3>Don't forget to use <i>key</i> when rendering the list</h3>
     </section>
 
     <section>
@@ -74,11 +69,6 @@
             <a
                 href="https://raw.githubusercontent.com/Drag13/react-learning-course-short/master/presentations/react-network/code/fetch-cb.tsx">example</a>
         </h3>
-    </section>
-
-    <section>
-        <h3>ALWAYS HANDLE ERRORS</h3>
-        <p>Network - the most unreliable part of your app</p>
     </section>
 
     <section>
@@ -99,7 +89,7 @@ const useFreeApi = () =&gt; {
     <section>
         <h3>Add useEffect hook with fetch inside</h3>
 
-        <pre><code class="language-tsx" data-line-numbers="">useEffect(() =&gt; {
+        <pre><code class="language-tsx" data-line-numbers="1-12|2|4-6|8">useEffect(() =&gt; {
     async function updateApi() {
         try {
             const rawData = await fetch(FREE_API_URL);
@@ -210,7 +200,7 @@ const useFreeApi = () =&gt; {
 
     <section>
         <h3>Example</h3>
-        <pre><code class="language-javascript" data-line-numbers>const axios = Axios.create();
+        <pre><code class="language-typescript" data-line-numbers="1-14|1|6|7">const axios = Axios.create();
 ...
 useEffect(() =&gt; {
     async function updateApi() {
@@ -250,7 +240,7 @@ useEffect(() =&gt; {
     <section>
         <h3>Why to use - easy to cancel</h3>
 
-        <pre><code data-line-numbers="" class="language-tsx">const abort = new AbortController();
+        <pre><code data-line-numbers="1-9|1|4-5|8" class="language-tsx">const abort = new AbortController();
 useEffect(()=>{
     try {
       const { data } = await axios.get(FREE_API_URL, 
@@ -266,7 +256,7 @@ useEffect(()=>{
 
     <section>
         <h3>Why to use - interceptors</h3>
-        <pre><code data-line-numbers>const axios = Axios.create();
+        <pre><code data-line-numbers="1-5|2-4|3|4" class="language-typescript">const axios = Axios.create();
 axios.interceptors.response.use((response) =&gt; {
     console.log(response.request.responseURL);
     return response;
@@ -301,8 +291,9 @@ axios.interceptors.response.use((response) =&gt; {
     <section>
         <h3>Create a store</h3>
 
-        <pre><code data-line-numbers="" class="language-typescript">type ApiData = { 
-    status: "pending" | "failed" | "success"; entries: [] 
+        <pre><code data-line-numbers="1-8|1-4|6-9" class="language-typescript">type ApiData = { 
+    status: "pending" | "failed" | "success"; 
+    entries: [] 
 };
 
 class Store {
@@ -315,9 +306,9 @@ class Store {
     <section>
         <h3>Create a method that will fetch API</h3>
 
-        <pre><code data-line-numbers="" class="language-typescript">fetchApi() {
+        <pre><code data-line-numbers="1-15|1|2|3|4-8|9-12|14" class="language-typescript">fetchApi() {
   const abort = new AbortController();
-  axios(FREE_API_URL, { signal: abort.signal })
+  axios.get(FREE_API_URL, { signal: abort.signal })
     .then(({ data }) => {
       runInAction(() => (
         this.data = { status: 'success', entries: data.entries })
@@ -336,7 +327,7 @@ class Store {
     <section>
         <h3>Use from anywhere you need</h3>
 
-        <pre><code class="language-tsx" data-line-numbers>const AppApp = observer(() =&gt; {
+        <pre><code class="language-tsx" data-line-numbers="1-12|1|2-5|7|9-11">const AppApp = observer(() =&gt; {
     useEffect(() =&gt; {
         const request = apiStore.fetchApi();
         return () =&gt; request.abort();
@@ -371,11 +362,21 @@ class Store {
     <section>
         <h3>Ignoring errors 💔</h3>
 
-        <p class="fragment fade-uo left">
+        <p class="fragment fade-up left">
             If something might fail - it will fail in the most inconvenient time
         </p>
-        <p class="fragment fade-uo left">Start designing your component from failed point</p>
+        <p class="fragment fade-up left">Start designing your component from failed point</p>
     </section>
+
+    <section>
+        <h3>Ignoring pending indications 💔</h3>
+
+        <p class="fragment fade-up left">
+            Your backend is not something super stable - it might be slow because of many reasons
+        </p>
+        <p class="fragment fade-up left">Showing some kind of indication that response is awaited - might be a good idea</p>
+    </section>
+
 
     <section>
         <h3>Ignoring unsubscribe 💔</h3>
