@@ -108,8 +108,11 @@
     <pre><code data-line-numbers="">import { calculatePercentage } from './percentage-calculator';
 import { calculateFullPrice } from './price-calculator';
 
-const percentage = calculatePercentage(5000, 25);
-const fullPrice = calculateFullPrice(1000_000, percentage);    </code></pre>
+export function SomeComplexCalculations() {
+	const percentage = calculatePercentage(5000, 25);
+  return calculateFullPrice(1000_000, percentage); 
+}
+  </code></pre>
   </section>
 
   <section>
@@ -121,6 +124,10 @@ const fullPrice = calculateFullPrice(1000_000, percentage);    </code></pre>
 
     <p class="left">
       UI tests - usually tests some workflow, but in isolation from the real data.
+    </p>
+
+    <p class="left">
+      Cypress, Playwright are good tools to help you with
     </p>
   </section>
 
@@ -135,6 +142,10 @@ const fullPrice = calculateFullPrice(1000_000, percentage);    </code></pre>
     <p class="left">
       E2E tests that the whole application works as expected
     </p>
+  </section>
+
+  <section>
+    <h3>End to end tests are most expensive and most useful</h3>
   </section>
 
 </section>
@@ -222,13 +233,13 @@ export default App;
 
   <section>
     <h3>Update App.test.tsx with the next code</h3>
-    <pre><code data-line-numbers>import { render, screen } from "@testing-library/react";
+    <pre><code data-line-numbers="1-9|5-9|6|7|8">import { render, screen } from "@testing-library/react";
 import { act } from "react-dom/test-utils";
 import App from "./App";
 
 test("renders greeting", () =&gt; {
   act(()=> render(&lt;App /&gt;)); // act
-  const greeting = screen.getByText(/hello word/i); // assert
+  const greeting = screen.getByText(/hello word/i); // arrange
   expect(greeting).toBeInTheDocument(); // assert
 });
       </code></pre>
@@ -270,15 +281,15 @@ export const Money = ({ amount }: MoneyFormatterProps) =&gt; (
 
   <section>
     <h3>Test</h3>
-    <pre><code data-line-numbers>import { render, screen } from "@testing-library/react";
+    <pre><code data-line-numbers="1-10|5-10" class="language-tsx">import { render, screen } from "@testing-library/react";
 import { act } from "react-dom/test-utils";
 import { Money } from "./money.formatter";
       
-test("Money should format 50 with two decimals - 50.00", () =&gt; {
+test("Money should format 50 with two decimals - 50.00",()=&gt; {
   const amount = 50; //arrange
   act(()=>{ render(&lt;Money amount={amount} /&gt;);}); //act
-  const formatted = screen.getByText("50.00"); //assert
-  expect(formatted).toBeInTheDocument();
+  const formatted = screen.getByText("50.00"); 
+  expect(formatted).toBeInTheDocument(); //assert
 });
 </code></pre>
   </section>
@@ -286,13 +297,13 @@ test("Money should format 50 with two decimals - 50.00", () =&gt; {
   <section>
     <h3>What if we pass 0?</h3>
     <p class="left">Is 0.00 desired behavior?</p>
-    <p class="left">This is how tests works - giving you hints! </p>
+    <p class="left fragment fade-up">This is how tests works - giving you hints! </p>
   </section>
 
   <section>
     <h3>How to test that callback was called</h3>
 
-    <pre><code data-line-numbers>import { render, screen } from "@testing-library/react";
+    <pre><code data-line-numbers="1-10|5-10|6|7|8|9" class="language-tsx">import { render, screen } from "@testing-library/react";
 import { act } from "react-dom/test-utils";
 import { Btn } from "./Btn";
 
@@ -312,8 +323,9 @@ it("when btn clicked, callback should be called", () =&gt; {
   <section>
     <h3>Snapshot testing</h3>
 
-    <pre><code data-line-numbers="">npm i react-test-renderer @types/react-test-renderer -D</code></pre>
-    <pre><code data-line-numbers>import { Btn } from "./Btn";
+    <pre
+      class="fragment fade-up"><code data-line-numbers="">npm i react-test-renderer @types/react-test-renderer -D</code></pre>
+    <pre class="fragment fade-up"><code data-line-numbers>import { Btn } from "./Btn";
 import renderer from "react-test-renderer";
       
 it("snapshot", () =&gt; {
@@ -360,16 +372,15 @@ it("snapshot", () =&gt; {
   <section>
     <h3>Example</h3>
 
-    <pre><code data-line-numbers>import { greeting } from "./greeter";
-
+    <pre><code data-line-numbers>export const greeting = () =&gt; `hello: `;</code></pre>
+    <pre class="fragment fade-up"><code data-line-numbers>import { greeting } from "./greeter";
 type Props = { name: string };
 export const AppGreetings = ({ name }: Props) =&gt; (
   &lt;&gt;{`${greeting()}${name}`}&lt;/&gt;
 );
-</code></pre>
+    </code></pre>
 
-    <pre><code data-line-numbers>export const greeting = () =&gt; `hello: `;
-      </code></pre>
+
   </section>
 
 
@@ -383,9 +394,9 @@ export const AppGreetings = ({ name, greeter }: Props) =&gt; (
   </section>
 
   <section>
-    <h3>Use stub/mock</h3>
+    <h3>Use mock</h3>
 
-    <pre><code data-line-numbers>jest.mock("./greeter", () =&gt; ({
+    <pre><code data-line-numbers="1-13|1-4|7-12">jest.mock("./greeter", () =&gt; ({
   __esModule: true,
   greeting: () =&gt; "mocked",
 }));
@@ -400,4 +411,112 @@ it("greetings should work", () =&gt; {
 });</code></pre>
   </section>
 
+</section>
+
+<section>
+
+  <section>
+    <h3>If tests are so cool, why nobody* wrights test? </h3>
+  </section>
+
+  <section>
+    <h3>Tests slowdown new development</h3>
+
+    <p class="left">Obviously, to write a test, you need some time. And in this moment, the new feature you just wrote,
+      is waiting </p>
+    <p class="left">Usual business don't want to wait till you write a test</p>
+  </section>
+
+
+  <section>
+    <h3>Test requires extra time for maintenance</h3>
+
+    <p class="left">
+      Code is subject to change which means that tests are subject to update. Updating tests costs your time, and money
+      for business
+    </p>
+  </section>
+
+  <section>
+    <h3>Tests are hard to write</h3>
+    <p class="left">
+      You need to cover a lot of edge cases, you need to cover different combinations, you need to split components into
+      the smallest parts. Laziness is also a reason.
+    </p>
+  </section>
+
+  <section>
+    <h3>Does this means that we are OK to skip tests? </h3>
+
+    <p class="left">It depends. If you are writing one-time script or a tiny obvious app - feel free to skip
+      testing</p>
+
+  </section>
+
+  <section>
+    <p class="">If the app is subject to grow and requires maintenance, or it touches sensitive things like money or
+      health - please test </p>
+  </section>
+
+</section>
+
+<section>
+  <section>
+    <h3>Typical mistakes</h3>
+  </section>
+
+  <section>
+    <h3>Writing only happy cases </h3>
+
+    <p class="left">You should always consider, what if something went wrong - network, user input, etc</p>
+  </section>
+
+  <section>
+    <h3>Writing fragile tests</h3>
+
+    <p class="left">
+      Don't test the implementation - test only results that are important to the business
+    </p>
+  </section>
+
+  <section>
+    <h3>Multiple assertions</h3>
+
+    <p class="left">
+      Ideally you should have a one assert in the test. It's not something a must but having massive assertions will
+      lead to harder maintenance
+    </p>
+  </section>
+
+</section>
+
+<section>
+
+  <section>
+    <h3>TDD - test driven development</h3>
+  </section>
+
+  <section>
+    <h3>TDD - extreme programming paradigm when you write a test first</h3>
+
+    <ul>
+      <li>Write a test which eventually will fail - no code yet</li>
+      <li class="fragment fade-up">Write a code that will pass the test</li>
+      <li class="fragment fade-up">Refactor the code</li>
+      <li class="fragment fade-up">Go to p.1</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Pros</h3>
+
+    <ul>
+      <li>TDD ensures that each and every part of the code is tested</li>
+      <li>TDD allows you to refactor safely</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>The cons - TDD is very slow</h3>
+  </section>
 </section>
