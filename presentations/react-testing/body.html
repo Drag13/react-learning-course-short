@@ -85,7 +85,7 @@
   <section>
     <h3>Code for a unit test</h3>
 
-    <pre><code data-line-numbers>const calcPercentage = (income, percentage)=> {...} </code></pre>
+    <pre><code data-line-numbers="" class="language-typescript">const calculate = (income, percentage) => income * percentage </code></pre>
   </section>
 
   <section>
@@ -108,7 +108,7 @@
     <pre><code data-line-numbers="">import { calculatePercentage } from './percentage-calculator';
 import { calculateFullPrice } from './price-calculator';
 
-export function SomeComplexCalculations() {
+export function someComplexCalculations() {
 	const percentage = calculatePercentage(5000, 25);
   return calculateFullPrice(1000_000, percentage); 
 }
@@ -189,8 +189,9 @@ export function SomeComplexCalculations() {
 
   <section>
     <h3>Because...</h3>
-    <pre><code data-line-numbers="">const add = (a,b)=> a+b;</code></pre>
-    <pre><code>expect(add(1+1)).toBe(2)</code></pre>
+    <pre><code data-line-numbers="" class="language-typescript">const add = (a,b)=> a+b;</code></pre>
+    <pre><code data-line-numbers="" class="language-typescript fragment fade-up">const sum = add(1,1);
+expect(sum).toBe(2)</code></pre>
   </section>
 
   <section>
@@ -226,7 +227,7 @@ export function SomeComplexCalculations() {
   </section>
   <section>
     <h3>Update App.tsx with the next code</h3>
-    <pre><code data-line-numbers>const App = () =&gt; &lt;div&gt;Hello world&lt;/div&gt;;
+    <pre><code data-line-numbers>const App = () =&gt; &lt;div&gt;Hello word&lt;/div&gt;;
 export default App;
   </code></pre>
   </section>
@@ -237,9 +238,9 @@ export default App;
 import { act } from "react-dom/test-utils";
 import App from "./App";
 
-test("renders greeting", () =&gt; {
-  act(()=> render(&lt;App /&gt;)); // act
-  const greeting = screen.getByText(/hello word/i); // arrange
+test("hello world should be rendered", () =&gt; {
+  act(()=> { render(&lt;App /&gt;); }); // act
+  const greeting = screen.getByText(/hello world/i); // assert
   expect(greeting).toBeInTheDocument(); // assert
 });
       </code></pre>
@@ -252,9 +253,9 @@ test("renders greeting", () =&gt; {
   </section>
 
   <section>
-    <h3>Start tests with <i>npm test</i> and observe console</h3>
+    <h3>Start tests with <i>npm test</i></h3>
 
-    <img src="./imgs/failed-example.png" alt="Tests failed">
+    <img src="./imgs/failed-example.png" alt="Failed test example">
 
   </section>
 
