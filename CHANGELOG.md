@@ -1,5 +1,9 @@
 # Changelog
 
+## 25/05/2022
+
+- Updates for the talk about testing - added section about typical mistakes, added tiny section about TDD
+
 ## 23/05/2022
 
 - Big update for the talk about the [React and network](https://drag13.io/react-learning-course-short/react-network/)
