@@ -314,7 +314,8 @@
         "SPA - is a web application or website that interacts with the user by dynamically rewriting the current web page with new data",
         "In React we are using React Router to build SPA",
         "React router supports a lot of handy options - params, nested view, default routes"
-      ]
+      ],
+      "youtube": "https://youtu.be/D0Fkm63FoSY"
     },
     {
       "title": "React and network",
