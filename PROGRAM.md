@@ -199,6 +199,7 @@ Not specified
 - Data Binding
 - Router guard
 
+Talk: https://youtu.be/D0Fkm63FoSY
 
 Presentation - https://drag13.io/react-learning-course-short/react-router
 
