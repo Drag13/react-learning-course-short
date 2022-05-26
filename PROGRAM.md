@@ -220,6 +220,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-router
 - Network and store
 - Typical mistakes
 
+Talk: https://youtu.be/Tm6l612v2v0
 
 Presentation - https://drag13.io/react-learning-course-short/react-network
 
@@ -251,6 +252,7 @@ Not specified
 - What should be tested
 - Testing with Jest
 
+Talk: https://youtu.be/ASI73nQ9zP8
 
 Presentation - https://drag13.io/react-learning-course-short/react-testing
 

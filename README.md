@@ -22,8 +22,8 @@ This repo dedicated to the course "React for Beginners". The course was created 
 * Course program                  - done ✅
 * Repository setup                - done ✅
 * Prepare materials               - done ✅
-* On-line                         - in progress 🔨
-* Retrospective                   - planned ⏲️
+* On-line                         - done ✅
+* Retrospective                   - in progress 🔨
 * Updates                         - planed ⏲️
 
 ## PreRequisites
@@ -66,11 +66,11 @@ Installed [VsCode](https://code.visualstudio.com/)
 
 ### 8 Lecture: [Routing in React](https://drag13.io/react-learning-course-short/react-router)
 
-### 9 Lecture: [React and network](https://drag13.io/react-learning-course-short/react-network)
+### 9 Lecture: [React and network](https://youtu.be/Tm6l612v2v0)
 
 ### 10 Lecture: [UI libraries](https://drag13.io/react-learning-course-short/react-ui-lib)
 
-### 11 Lecture: [Tests](https://drag13.io/react-learning-course-short/react-testing)
+### 11 Lecture: [Tests](https://youtu.be/ASI73nQ9zP8)
 
 ### 12 Lecture: [TypeScript for beginners](https://youtu.be/ND-XaEQ4VSk)
 
