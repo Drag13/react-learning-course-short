@@ -331,7 +331,8 @@
         "Use fetch for a simple project and axios for middle/large",
         "Move logic out of component",
         "Don't ignore errors"
-      ]
+      ],
+      "youtube": "https://youtu.be/Tm6l612v2v0"
     },
 
     {
@@ -358,7 +359,8 @@
         ["Create-React-App - testing", "https://create-react-app.dev/docs/running-tests/"],
         ["Jest", "https://jestjs.io/"],
         ["React Testing Library", "https://testing-library.com/docs/react-testing-library/intro/"]
-      ]
+      ],
+      "youtube": "https://youtu.be/ASI73nQ9zP8"
     },
     {
       "title": "TypeScript for beginners",
