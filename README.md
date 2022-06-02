@@ -48,9 +48,9 @@ Installed [VsCode](https://code.visualstudio.com/)
 
 ## Program summary
 
-### 0 Lecture: [What is React](https://www.youtube.com/watch?v=fQ_UNyQBiqg)
+### 0 Lecture: [What is React](https://youtu.be/fQ_UNyQBiqg)
 
-### 1 Workshop: [A new project with create-react-app](https://www.youtube.com/watch?v=2r1TW9yPhlQ)
+### 1 Workshop: [A new project with create-react-app](https://youtu.be/2r1TW9yPhlQ)
 
 ### 2 Lecture: [What is React Component](https://youtu.be/BPIeZqomYQw)
 

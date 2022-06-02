@@ -10,7 +10,7 @@
 - React - advantages and disadvantages
 - Why to learn React nowadays
 
-Talk: https://www.youtube.com/watch?v=fQ_UNyQBiqg
+Talk: https://youtu.be/fQ_UNyQBiqg
 
 Presentation - https://drag13.io/react-learning-course-short/react-intro
 
@@ -29,7 +29,7 @@ Not specified
 - Code examples
 - Alternatives
 
-Talk: https://www.youtube.com/watch?v=2r1TW9yPhlQ
+Talk: https://youtu.be/2r1TW9yPhlQ
 
 Presentation - https://drag13.io/react-learning-course-short/react-cra
 
