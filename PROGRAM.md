@@ -278,3 +278,13 @@ Presentation - https://drag13.io/react-learning-course-short/typescript-intro
 ### Home task: 
 
 Not specified
+
+## 13 Lecture: Good front-end needs to know
+
+### Key points: 
+
+
+
+### Home task: 
+
+Not specified
