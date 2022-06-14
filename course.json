@@ -383,6 +383,11 @@
       ],
       "published": true,
       "youtube": "https://youtu.be/ND-XaEQ4VSk"
+    },
+    {
+      "name": "front-end-need-to-know",
+      "title": "Good front-end needs to know",
+      "type": "Lecture"
     }
   ]
 }
