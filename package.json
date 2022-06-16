@@ -1,8 +1,8 @@
 {
   "name": "react-learning-course-short",
   "version": "1.0.0",
-  "description": "",
-  "private": true,
+  "description": "This repo dedicated to the course \"React for Beginners\". The course was created to support Ukraine 🇺🇦 and Ukrainians in the war against russia. It's completely free and open-sourced.",
+  "private": false,
   "scripts": {
     "start": "node ./tools/start",
     "build": "parcel build ./presentations/**/index.html --public-url https://drag13.io/react-learning-course-short",
@@ -23,7 +23,7 @@
     "react-router"
   ],
   "author": "drag13",
-  "license": "ISC",
+  "license": "GNU",
   "bugs": {
     "url": "https://github.com/Drag13/react-learning-course-short/issues"
   },
