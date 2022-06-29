@@ -1,5 +1,9 @@
 # Changelog
 
+## 29/06/2022
+
+- Updates for the talk about React UI Libraries. Preparations for the next LIVE
+
 ## 25/05/2022
 
 - Updates for the talk about testing - added section about typical mistakes, added tiny section about TDD
