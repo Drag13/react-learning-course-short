@@ -1,0 +1,8 @@
+{
+  "Animated left-aligned paragraph": {
+    "scope": "html",
+    "prefix": "pl",
+    "body": ["<p class=\"left fragment fade-up\">$1</p>", "$2"],
+    "description": "Paragraph witn animation and left alignment"
+  }
+}
