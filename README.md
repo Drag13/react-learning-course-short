@@ -4,15 +4,14 @@
 
 ## [Watch on YouTube](https://www.youtube.com/channel/UCg-txtmOEQ8BniR8008O1mA)
 
-## [Full Program](PROGRAM.md)
-
-## Disclamer
-All requests to "remove politics" will be removed completely without any comments. If you have another opinion - just skip this course.
-
 ## About
+
+**DISCLAIMER:**
+All requests to "remove politics" will be removed completely without any comments. If you have another opinion - just skip this course.
 
 This repo dedicated to the course "React for Beginners". The course was created to support Ukraine 🇺🇦 and Ukrainians in the war against russia. It's completely free and open-sourced. Feel free to contribute or make any relevant suggestions.
 
+- Full program is [here](PROGRAM.md)
 - Presentations can be found here - [https://drag13.io/react-learning-course-short/react-intro](https://drag13.io/react-learning-course-short/react-intro) where is the name of the lesson
 - Changelog is [here](CHANGELOG.md)
 - Video - published [here](https://www.youtube.com/channel/UCg-txtmOEQ8BniR8008O1mA)
