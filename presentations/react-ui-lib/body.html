@@ -19,7 +19,6 @@
     </p>
   </section>
 
-
   <section>
     <h3>
       Downsides of using UI lib
@@ -27,8 +26,18 @@
   </section>
 
   <section>
+    <h3>Discontinuation</h3>
+
+    <p class="left fragment fade-up">Any project is a subject to be abandoned</p>
+    <p class="left fragment fade-up">Abandoned project means security risks, not fixed bugs, no support for the next
+      versions</p>
+    <p class="left fragment fade-up"><u>The solution</u>: find that lib that will abandoned after ending your own
+      project</p>
+  </section>
+
+  <section>
     <h3>
-      Hard to fix bugs
+      Harder to fix bugs
     </h3>
 
     <p class="left fragment fade-up">Bugs are everywhere, even in React</p>
@@ -59,17 +68,6 @@
 
   </section>
 
-
-  <section>
-    <h3>Discontinuation</h3>
-
-    <p class="left fragment fade-up">Any project is a subject to be abandoned</p>
-    <p class="left fragment fade-up">Abandoned project means security risks, not fixed bugs, no support for the next
-      versions</p>
-    <p class="left fragment fade-up"><u>The solution</u>: find that lib that will abandoned after ending your own
-      project</p>
-  </section>
-
   <section>
     <h3>Size</h3>
 
@@ -77,76 +75,7 @@
     <p class="left fragment fade-up">The recommended size for today is around 350kB</p>
     <p class="left fragment fade-up"><u>The solution</u>: Select carefully and don't forget about <a
         rel="noreferrer noopener" href="https://webpack.js.org/guides/tree-shaking/">tree-shaking</a> </p>
-
   </section>
-
-  <section>
-    <h3>So much cons...</h3>
-
-    <p>It's not possible to write everything by your own, but the option you pick should be measured</p>
-  </section>
-
-</section>
-
-<section>
-  <section>
-    <h2>How to choose</h2>
-  </section>
-
-  <section>
-    <h3>Gather crucial requirements</h3>
-
-    <p class="left fragment fade-up">No reason to use Material UI if your styles not "materials"</p>
-    <p class="left fragment fade-up">No reason to use UI library if you need responsiveness and lib doesn't support it
-    </p>
-  </section>
-
-  <section>
-    <h3>Collect options</h3>
-
-    <p>Collect 2-3 libraries that fits your requirements</p>
-  </section>
-
-  <section>
-    <h3>Most important aspects</h3>
-
-    <ul>
-      <li>It should be alive - eg some commits done during the previous month</li>
-      <li class="fragment fade-up">It should be well-known - at least 1000 stars, more is betters</li>
-    </ul>
-  </section>
-
-  <section>
-    <h3>Nice to have aspects</h3>
-
-    <ul>
-      <li>Small size or tree shaking</li>
-      <li class="fragment fade-up">Small amount of opened issues</li>
-    </ul>
-  </section>
-
-  <section>
-    <h3>Bundlephobia</h3>
-
-    <p class="left"><a rel="noreferrer noopener" href="https://bundlephobia.com/">Bundlephobia</a> - great tool to check
-      how much your package will affect the final bundle</p>
-  </section>
-
-  <section>
-    <h3>Pick the best one and do simple PoC</h3>
-
-    <p class="left">
-      Don't waste much time with PoC - check only critical requirements and the points you are unsure with
-    </p>
-
-  </section>
-
-  <section>
-    <h3>Last but not least - developer experience</h3>
-
-    <p class="left">It should be comfortable to work with the code</p>
-  </section>
-
 
 </section>
 
@@ -179,11 +108,75 @@
 </section>
 
 <section>
+  <section>
+    <h2>How to choose</h2>
+  </section>
+
+  <section>
+    <h3>Gather crucial requirements</h3>
+
+    <p class="left fragment fade-up">No reason to use Material UI if your styles not "materials"</p>
+    <p class="left fragment fade-up">No reason to use UI library if you need responsiveness and lib doesn't support it
+    </p>
+  </section>
+
+
+
+  <section>
+    <h3>Most important aspects</h3>
+
+    <ul>
+      <li>It should be alive - eg some commits done during the previous month</li>
+      <li class="fragment fade-up">It should be well-known - at least 1000 stars, more is betters</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Nice to have aspects</h3>
+
+    <ul>
+      <li>Small size or tree shaking</li>
+      <li class="fragment fade-up">Small amount of opened issues</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Bundlephobia</h3>
+
+    <p class="left"><a rel="noreferrer noopener" href="https://bundlephobia.com/">Bundlephobia</a> - great tool to check
+      how much your package will affect the final bundle</p>
+  </section>
+
+  <section>
+    <h3>Last but not least - developer experience</h3>
+
+    <p class="left">It should be comfortable to work with the code</p>
+  </section>
+
+  <section>
+    <h3>Collect options</h3>
+
+    <p>Collect 2-3 libraries that fits your requirements</p>
+  </section>
+
+  <section>
+    <h3>Pick the best one and do simple PoC</h3>
+
+    <p class="left">
+      Don't waste much time with PoC - check only critical requirements and the points you are unsure with
+    </p>
+
+  </section>
+
+</section>
+
+
+<section>
   <h2>Examples</h2>
 
   <ul>
     <li><a rel="noreferrer noopener" href="https://github.com/mui/material-ui">Material UI</a> ⭐77.6k, downloads -
-      994k , size - 458.2kB,
+      994k , size - 478kB,
       tree-shakeable </li>
     <li class="fragment fade-up"><a rel="noreferrer noopener" href="https://github.com/ant-design/ant-design/">Ant
         design </a> ⭐79.6k, downloads
@@ -192,6 +185,12 @@
         href="https://github.com/react-bootstrap/react-bootstrap">React Bootstrap </a>
       ⭐20k, 861k downloads, 112kb tree-shakeable</li>
   </ul>
+</section>
+
+<section>
+  <h2>
+    A library is always a some kind of trade-off. You need to know what you will get and how much you will pay
+  </h2>
 </section>
 
 <section>
@@ -277,8 +276,3 @@
   </section>
 </section>
 
-<section>
-  <h2>
-    A library is always a some kind of trade-off. You need to know what you will get and how much you will pay
-  </h2>
-</section>

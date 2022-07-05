@@ -347,7 +347,7 @@
         ["Bundlephobia", "https://bundlephobia.com/"]
       ],
       "type": "Lecture",
-      "keyPoints": ["Purpose", "How to choose", "Material UI"]
+      "keyPoints": ["Purpose", "Cons", "How to choose", "Material UI"]
     },
     {
       "title": "Tests",
