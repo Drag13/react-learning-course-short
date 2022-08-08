@@ -74,7 +74,7 @@ Installed [VsCode](https://code.visualstudio.com/)
 
 ### 12 Lecture: [TypeScript For Beginners](https://youtu.be/ND-XaEQ4VSk)
 
-### 13 Workshop: Pet project - How to
+### 13 Workshop: How to: Pet Project
 
 ## Donations
 

@@ -281,7 +281,7 @@ Presentation - https://drag13.io/react-learning-course-short/typescript-intro
 
 Not specified
 
-## 13 Workshop: Pet project - How to
+## 13 Workshop: How to: Pet Project
 
 ### Key points: 
 
