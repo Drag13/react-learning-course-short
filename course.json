@@ -1,5 +1,5 @@
 {
-  "title": "React For Beginners - free course by Itera",
+  "title": "React For Beginners - Free Course by Itera",
   "lessons": [
     {
       "name": "about",
@@ -45,7 +45,7 @@
       "youtube": "https://youtu.be/fQ_UNyQBiqg"
     },
     {
-      "title": "A new project with create-react-app",
+      "title": "A New Project With Create-React-App",
       "name": "react-cra",
       "type": "Workshop",
       "keyPoints": [
@@ -127,7 +127,7 @@
       "youtube": "https://youtu.be/BPIeZqomYQw"
     },
     {
-      "title": "React with Hooks",
+      "title": "React and Hooks",
       "name": "react-hooks",
       "type": "Lecture",
       "keyPoints": [
@@ -198,7 +198,7 @@
       ]
     },
     {
-      "title": "React - from plain CSS to CSSinJS",
+      "title": "React - From CSS to CSSinJS",
       "name": "react-styling",
       "type": "Lecture",
       "keyPoints": ["Default way", "Using CSS modules", "Preprocessors", "CSS in JS"],
@@ -236,7 +236,7 @@
       "hidden": true
     },
     {
-      "title": "Managing state in React",
+      "title": "Managing State in React",
       "name": "react-state-management",
       "type": "Workshop",
       "keyPoints": ["Problems with setState and useState", "Context", "Redux", "MobX"],
@@ -270,7 +270,7 @@
       "youtube": "https://youtu.be/2KTqbf31cLw"
     },
     {
-      "title": "Forms - Default way and React-Hook-Forms",
+      "title": "Forms - Default Way and React-Hook-Forms",
       "published": true,
       "name": "react-forms",
       "type": "Workshop",
@@ -318,7 +318,7 @@
       "youtube": "https://youtu.be/D0Fkm63FoSY"
     },
     {
-      "title": "React and network",
+      "title": "React and Network",
       "name": "react-network",
       "type": "Lecture",
       "keyPoints": ["Fetch", "Axios", "Network and store", "Typical mistakes"],
@@ -337,7 +337,7 @@
     },
 
     {
-      "title": "UI libraries",
+      "title": "UI Libraries",
       "name": "react-ui-lib",
       "published": true,
       "links": [
@@ -351,7 +351,7 @@
       "youtube": "https://youtu.be/4Dsgzk-GuX8"
     },
     {
-      "title": "Tests",
+      "title": "Testing Your Code",
       "name": "react-testing",
       "type": "Lecture",
       "keyPoints": ["Why test", "Testing pyramid", "What should be tested", "Testing with Jest"],
@@ -365,7 +365,7 @@
       "youtube": "https://youtu.be/ASI73nQ9zP8"
     },
     {
-      "title": "TypeScript for beginners",
+      "title": "TypeScript For Beginners",
       "name": "typescript-intro",
       "type": "Lecture",
       "keyPoints": ["Primitives", "Functions", "CustomTypes", "Generics", "TypeAssertions"],
