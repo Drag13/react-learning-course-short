@@ -384,6 +384,21 @@
       ],
       "published": true,
       "youtube": "https://youtu.be/ND-XaEQ4VSk"
+    },
+    {
+      "title": "Pet project - How to",
+      "hidden": false,
+      "name": "pet-project",
+      "published": false,
+      "type": "Workshop",
+      "keyPoints": ["What is a Pet Project", "Hot to pick a theme", "Planing", "Pitfalls"],
+      "takeaways": [
+        "Pet project = release",
+        "For the first project - not more than 16 hours of work",
+        "For the first release - only must have features",
+        "Plan to work day by day",
+        "Know you serlf"
+      ]
     }
   ]
 }
