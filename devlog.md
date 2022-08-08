@@ -14,11 +14,13 @@ npm ci
 
 ## Start the presentation locally
 
-If you want to start particular presentation - execute the next command where number should be equal to the lesson number
+If you want to start particular presentation - execute the next command where `<presentation-name>` should be equal to the lesson name
 
 ```cmd
-npm start react-intro
+npm start <presentation-name>
 ```
+
+Then open [http://localhost:1234/](http://localhost:1234/)
 
 ## How to update documentation
 
