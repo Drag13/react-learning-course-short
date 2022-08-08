@@ -1,6 +1,6 @@
 [![StandsWithUkraine](https://raw.githubusercontent.com/Drag13/drag13.github.io/development/swu.PNG)](https://savelife.in.ua/en/donate/)
 
-# React For Beginners - free course by Itera
+# React For Beginners - Free Course by Itera
 
 ## [Watch on YouTube](https://www.youtube.com/channel/UCg-txtmOEQ8BniR8008O1mA)
 
@@ -50,29 +50,29 @@ Installed [VsCode](https://code.visualstudio.com/)
 
 ### 0 Lecture: [What is React](https://youtu.be/fQ_UNyQBiqg)
 
-### 1 Workshop: [A new project with create-react-app](https://youtu.be/2r1TW9yPhlQ)
+### 1 Workshop: [A New Project With Create-React-App](https://youtu.be/2r1TW9yPhlQ)
 
 ### 2 Lecture: [What is React Component](https://youtu.be/BPIeZqomYQw)
 
-### 3 Lecture: [React with Hooks](https://youtu.be/6AHDZGumKZg)
+### 3 Lecture: [React and Hooks](https://youtu.be/6AHDZGumKZg)
 
 ### 4 Workshop: [Building React Component](https://drag13.io/react-learning-course-short/react-new-component)
 
-### 5 Lecture: [React - from plain CSS to CSSinJS](https://www.youtube.com/watch?v=8al4xMhWWCE)
+### 5 Lecture: [React - From CSS to CSSinJS](https://www.youtube.com/watch?v=8al4xMhWWCE)
 
-### 6 Workshop: [Managing state in React](https://youtu.be/2KTqbf31cLw)
+### 6 Workshop: [Managing State in React](https://youtu.be/2KTqbf31cLw)
 
-### 7 Workshop: [Forms - Default way and React-Hook-Forms](https://youtu.be/gwrMDwYLIWs)
+### 7 Workshop: [Forms - Default Way and React-Hook-Forms](https://youtu.be/gwrMDwYLIWs)
 
 ### 8 Lecture: [Routing in React](https://youtu.be/D0Fkm63FoSY)
 
-### 9 Lecture: [React and network](https://youtu.be/Tm6l612v2v0)
+### 9 Lecture: [React and Network](https://youtu.be/Tm6l612v2v0)
 
-### 10 Lecture: [UI libraries](https://drag13.io/react-learning-course-short/react-ui-lib)
+### 10 Lecture: [UI Libraries](https://youtu.be/4Dsgzk-GuX8)
 
-### 11 Lecture: [Tests](https://youtu.be/ASI73nQ9zP8)
+### 11 Lecture: [Testing Your Code](https://youtu.be/ASI73nQ9zP8)
 
-### 12 Lecture: [TypeScript for beginners](https://youtu.be/ND-XaEQ4VSk)
+### 12 Lecture: [TypeScript For Beginners](https://youtu.be/ND-XaEQ4VSk)
 
 ## Donations
 

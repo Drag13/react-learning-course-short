@@ -1,4 +1,4 @@
-# React For Beginners - free course by Itera
+# React For Beginners - Free Course by Itera
 
 ## 0 Lecture: What is React
 
@@ -18,7 +18,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-intro
 
 Not specified
 
-## 1 Workshop: A new project with create-react-app
+## 1 Workshop: A New Project With Create-React-App
 
 ### Key points: 
 
@@ -73,7 +73,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-components
 - Mix Class Based and Functional approach to get more practice in both
 - Use props only to pass the data to your components
 
-## 3 Lecture: React with Hooks
+## 3 Lecture: React and Hooks
 
 ### Key points: 
 
@@ -121,7 +121,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-new-component
 - Put the new component into the footer
 - When clicked, it should log into the console next text: `redirecting user to the next {link}` where `{link}` should be a's href
 
-## 5 Lecture: React - from plain CSS to CSSinJS
+## 5 Lecture: React - From CSS to CSSinJS
 
 ### Key points: 
 
@@ -138,7 +138,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-styling
 
 - Use CSS modules to style previously created application
 
-## 6 Workshop: Managing state in React
+## 6 Workshop: Managing State in React
 
 ### Key points: 
 
@@ -169,7 +169,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-state-managem
 - Install MobX
 - Implement same functionality with MobX
 
-## 7 Workshop: Forms - Default way and React-Hook-Forms
+## 7 Workshop: Forms - Default Way and React-Hook-Forms
 
 ### Key points: 
 
@@ -212,7 +212,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-router
 - If `ln` equals `ua` all texts should be in Ukrainian language
 - If `ln` equals `en` all text should be in English (feel free to use google translate if needed)
 
-## 9 Lecture: React and network
+## 9 Lecture: React and Network
 
 ### Key points: 
 
@@ -229,7 +229,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-network
 
 Not specified
 
-## 10 Lecture: UI libraries
+## 10 Lecture: UI Libraries
 
 ### Key points: 
 
@@ -238,6 +238,7 @@ Not specified
 - How to choose
 - Material UI
 
+Talk: https://youtu.be/4Dsgzk-GuX8
 
 Presentation - https://drag13.io/react-learning-course-short/react-ui-lib
 
@@ -245,7 +246,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-ui-lib
 
 Not specified
 
-## 11 Lecture: Tests
+## 11 Lecture: Testing Your Code
 
 ### Key points: 
 
@@ -262,7 +263,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-testing
 
 Not specified
 
-## 12 Lecture: TypeScript for beginners
+## 12 Lecture: TypeScript For Beginners
 
 ### Key points: 
 
