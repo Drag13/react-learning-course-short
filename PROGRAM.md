@@ -280,17 +280,3 @@ Presentation - https://drag13.io/react-learning-course-short/typescript-intro
 ### Home task: 
 
 Not specified
-
-## 13 Workshop: How to: Pet Project
-
-### Key points: 
-
-- What is a Pet Project
-- Hot to pick a theme
-- Planing
-- Pitfalls
-
-
-### Home task: 
-
-Not specified

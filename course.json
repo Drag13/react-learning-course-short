@@ -387,17 +387,23 @@
     },
     {
       "title": "How to: Pet Project",
-      "hidden": false,
+      "hidden": true,
       "name": "pet-project",
       "published": false,
       "type": "Workshop",
-      "keyPoints": ["What is a Pet Project", "Hot to pick a theme", "Planing", "Pitfalls"],
+      "keyPoints": [
+        "What is a Pet Project",
+        "Hot to pick a theme",
+        "Planing",
+        "Time management tips",
+        "Pitfalls"
+      ],
       "takeaways": [
+        "Pet project is a great thing, but it requires efforts from your side",
         "Pet project = release",
         "For the first project - not more than 16 hours of work",
         "For the first release - only must have features",
-        "Plan to work day by day",
-        "Know you serlf"
+        "Plan to work day by day"
       ]
     }
   ]
