@@ -2,6 +2,8 @@
 
 | Type | Amount | Target                             |
 | ---- | ------ | ---------------------------------- |
+| +    | 2883   | Doubling previous                  |
+| +    | 2883   | Pet Project for Fun and Profit (11/08)|
 | -    | 619,19 | [ArmySOS](https://armysos.com.ua/) |
 | +    | 619,19 |                                    |
 | -    | 214    | ComeBackAlive                      |
