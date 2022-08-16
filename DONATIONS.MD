@@ -2,6 +2,8 @@
 
 | Type | Amount | Target                             |
 | ---- | ------ | ---------------------------------- |
+| +    | 1950   | Doubling previous                  |
+| +    | 1950   | Pet Project for Fun and Profit (18/08) |
 | -    | 5766   | [For SSO Boghuns](https://docs.google.com/spreadsheets/u/0/d/1Qt6JVvXZLArcWrDe0L0-rX1QM_SJ4ERNW4CHzttqPc4/htmlview#gid=0)                  |
 | +    | 2883   | Doubling previous                  |
 | +    | 2883   | Pet Project for Fun and Profit (11/08)|
