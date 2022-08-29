@@ -2,7 +2,8 @@
 
 | Type | Amount | Target                             |
 | ---- | ------ | ---------------------------------- |
-| -    | 4000    |   [DOU PD2](https://dou.ua/forums/topic/39602/)                                 |
+| +    | 2494   | Pet Project for Fun and Profit 30/08 |
+| -    | 4000   | [DOU PD2](https://dou.ua/forums/topic/39602/) |
 | +    | 100    |                                    |
 | +    | 1950   | Doubling previous                  |
 | +    | 1950   | Pet Project for Fun and Profit (18/08) |
