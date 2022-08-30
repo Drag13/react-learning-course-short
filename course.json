@@ -410,7 +410,14 @@
       "name": "web-tools",
       "title": "Useful tools for the web developer",
       "keyPoints": ["EsLint", "Prettier", "Code Spell Checker", "Husky", "Code Snippets"],
-      "type": "Lecture"
+      "type": "Lecture",
+      "links": [
+        ["EsLint", "https://eslint.org/docs/latest/rules/"],
+        ["Prettier", "https://prettier.io/"],
+        ["Husky and lint-staged", "https://laurieontech.com/posts/husky/"],
+        ["Emmet", "https://docs.emmet.io/abbreviations/syntax/"],
+        ["Code Snippets", "https://code.visualstudio.com/docs/editor/userdefinedsnippets"]
+      ]
     }
   ]
 }
