@@ -1,8 +1,12 @@
 # Changelog
 
+## 30/08/2022 
+
+- Preparations for the talk about the web tools
+
 ## 29/06/2022
 
-- Updates for the talk about React UI Libraries. Preparations for the next LIVE
+- Updates for the talk about [React UI Libraries](https://www.youtube.com/watch?v=4Dsgzk-GuX8). Preparations for the next LIVE
 
 ## 25/05/2022
 
