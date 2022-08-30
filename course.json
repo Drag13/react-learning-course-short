@@ -405,6 +405,12 @@
         "For the first release - only must have features",
         "Plan to work day by day"
       ]
+    },
+    {
+      "name": "web-tools",
+      "title": "Useful tools for the web developer",
+      "keyPoints": ["EsLint", "Prettier", "Code Spell Checker", "Husky", "Code Snippets"],
+      "type": "Lecture"
     }
   ]
 }
