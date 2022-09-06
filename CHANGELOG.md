@@ -1,5 +1,11 @@
 # Changelog
 
+## 06/09/2022
+
+* Fixed issue with broken link in react-hooks talk
+* Added code snippet to parse and mask names from the CSV file
+* WIP on the talk about the web tools
+
 ## 30/08/2022 
 
 - Preparations for the talk about the web tools
