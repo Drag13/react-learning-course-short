@@ -2,8 +2,8 @@
   <section>
     <h2>EsLint ⭐⭐⭐⭐⭐</h2>
     <p class="left fragment fade-up">
-      ESLint is an open source project that helps you find and fix problems with your
-      [Java][Type]Script code
+      ESLint is an open source project that helps you find and fix problems with your [J][T]Script
+      code
     </p>
   </section>
 
@@ -23,6 +23,12 @@
   </section>
 
   <section>
+    <h3>Fix obvious things automatically</h3>
+
+    <pre><code>npx eslint src --fix</code></pre>
+  </section>
+
+  <section>
     <h3>ESLint is capable to find</h3>
 
     <ul>
@@ -32,12 +38,32 @@
       <li class="fragment fade-up">And you even can write your own rules!</li>
     </ul>
   </section>
+
+  <section>
+    <h3>EsLint is highly customizable</h3>
+
+    <ul>
+      <li>Select pre configured set of rules</li>
+      <li>Tune rules individually `"rules": { "react/react-in-jsx-scope": "off" }`</li>
+      <li>Use or write custom plugins</li>
+    </ul>
+  </section>
+
+  <section>
+    <pre><code>
+      npm i eslint-plugin-react-hooks -D
+    </code></pre>
+
+    <pre><code>
+      "extends": [... , "plugin:react-hooks/recommended"],
+    </code></pre>
+  </section>
 </section>
 
 <section>
   <section>
     <h2>Prettier ⭐⭐⭐⭐⭐</h2>
-    <p class="left fragment fade-up">An opinionated code formatter</p>
+    <p class="fragment fade-up">An opinionated code formatter</p>
   </section>
 
   <section>
@@ -49,8 +75,8 @@
 
     <ul>
       <li>Install package with <i>npm i prettier -D</i></li>
-      <li>Optionally install extension</li>
-      <li>Configure the <i>.prettierrc.json</i> with your settings</li>
+      <li class="fragment fade-up">Optionally install extension</li>
+      <li class="fragment fade-up">Configure the <i>.prettierrc.json</i> with your settings</li>
     </ul>
   </section>
 
@@ -62,6 +88,12 @@
   "semi": true,
   "singleQuote": true
 }  </code></pre>
+  </section>
+
+  <section>
+    <h3>Autoformat on save</h3>
+
+    <p class="">File -> Preferences -> Settings -> Format On Save</p>
   </section>
 
   <section>
@@ -80,13 +112,23 @@
   </section>
 
   <section>
-    <h2>Code Spell Checker Extension ⭐⭐⭐⭐⭐</h2>
+    <h3>Code Spell Checker ⭐⭐⭐⭐⭐</h3>
     <p>Check your spelling in an easy way</p>
   </section>
 
   <section>
-    <h2>Import Cost Extension ⭐⭐⭐⭐</h2>
+    <h3>Import Cost ⭐⭐⭐⭐</h3>
     <p>Control your bundlesize right in your code</p>
+  </section>
+
+  <section>
+    <h2>Other project specific extensions</h2>
+
+    <ul>
+      <li>Angular language service</li>
+      <li>Css in JS</li>
+      <li>Others</li>
+    </ul>
   </section>
 </section>
 
@@ -190,6 +232,26 @@ npx husky install</code></pre>
       <li class="fragment fade-up">Custom attributes and texts</li>
     </ul>
   </section>
+
+  <section>
+    <p>div>span+span</p>
+    <pre class="fragment fade-up"><code><div>
+  <span></span>
+  <span></span>
+</div></code></pre>
+  </section>
+
+  <section>
+    <p>div*3</p>
+    <pre class="fragment fade-up"><code><div></div>
+<div></div>
+<div></div></code></pre>
+  </section>
+
+  <section>
+    <p>div[test-id]</p>
+    <pre class="fragment fade-up"><code><div test-id=""></div></code></pre>
+  </section>
 </section>
 
 <section>
@@ -200,11 +262,29 @@ npx husky install</code></pre>
 
   <section>
     <h3>File > Preferences > Configure User Snippets</h3>
+  </section>
+
+  <section>
+    <h3>Hello world</h3>
+    <pre><code data-line-numbers="" class="language-javascript">"Hello World": {
+      "scope": "typescriptreact,javascriptreact",
+      "prefix": "hw",
+      "body": ["hello world"],
+      "description": "Creates siple hello world text"
+    }  </code></pre>
+  </section>
+
+  <section>
+    <h3>React functional component</h3>
     <pre><code data-line-numbers="" class="language-javascript">"React functional component": {
   "scope": "typescriptreact,javascriptreact",
   "prefix": "rfc",
   "body": ["export const $1 = ($2) =>{\r\n  return ($3)\r\n}"],
   "description": "Creates react function component"
 }  </code></pre>
+  </section>
+
+  <section>
+    <h3>With custom snippets you can type less and get more</h3>
   </section>
 </section>

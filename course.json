@@ -409,7 +409,7 @@
     {
       "name": "web-tools",
       "title": "Useful tools for the web developer",
-      "keyPoints": ["EsLint", "Prettier", "Code Spell Checker", "Husky", "Code Snippets"],
+      "keyPoints": ["EsLint", "Prettier", "Husky", "Code Snippets"],
       "type": "Lecture",
       "links": [
         ["EsLint", "https://eslint.org/docs/latest/rules/"],
