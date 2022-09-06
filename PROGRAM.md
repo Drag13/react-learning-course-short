@@ -287,7 +287,6 @@ Not specified
 
 - EsLint
 - Prettier
-- Code Spell Checker
 - Husky
 - Code Snippets
 
