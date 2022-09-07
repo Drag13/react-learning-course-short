@@ -2,6 +2,7 @@
 
 | Type | Amount | Target                             |
 | ---- | ------ | ---------------------------------- |
+| +    | 2350   | Talk about Web Tools                  |
 | -    | 5288   | [Prytula Foundation](https://prytulafoundation.org/)                  |
 | +    | 2644   | Doubling previous                  |
 | +    | 150    | Pet Project for Fun and Profit 30/08 |
