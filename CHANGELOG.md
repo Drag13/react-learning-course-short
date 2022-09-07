@@ -2,6 +2,11 @@
 
 ## 06/09/2022
 
+* Final changes and publishing for the web tools talk
+* Added code to mask emails and names
+
+## 06/09/2022
+
 * Fixed issue with broken link in react-hooks talk
 * Added code snippet to parse and mask names from the CSV file
 * WIP on the talk about the web tools
