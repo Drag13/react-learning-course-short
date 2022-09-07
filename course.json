@@ -405,6 +405,20 @@
         "For the first release - only must have features",
         "Plan to work day by day"
       ]
+    },
+    {
+      "name": "web-tools",
+      "title": "Useful tools for the web developer",
+      "keyPoints": ["EsLint", "Prettier", "Husky and Lint Staged", "Emmet", "Code Snippets"],
+      "type": "Lecture",
+      "published": true,
+      "links": [
+        ["EsLint", "https://eslint.org/docs/latest/rules/"],
+        ["Prettier", "https://prettier.io/"],
+        ["Husky and lint-staged", "https://laurieontech.com/posts/husky/"],
+        ["Emmet", "https://docs.emmet.io/abbreviations/syntax/"],
+        ["Code Snippets", "https://code.visualstudio.com/docs/editor/userdefinedsnippets"]
+      ]
     }
   ]
 }

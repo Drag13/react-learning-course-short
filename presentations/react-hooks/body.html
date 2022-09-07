@@ -15,9 +15,7 @@
   <section>
     <h3>Hooks extends functional components functionality</h3>
 
-    <p class="left">
-      Hooks allows you to have state, hook into lifecycle, share functionality
-    </p>
+    <p class="left">Hooks allows you to have state, hook into lifecycle, share functionality</p>
   </section>
 
   <section>
@@ -51,16 +49,10 @@
     <h3>Name hook with use</h3>
 
     <ul>
-      <li class="fragment fade-up">
-        useState()
-      </li>
-      <li class="fragment fade-up">
-        useCallback()
-      </li>
+      <li class="fragment fade-up">useState()</li>
+      <li class="fragment fade-up">useCallback()</li>
 
-      <li class="fragment fade-up">
-        useWhatEverYouWant()
-      </li>
+      <li class="fragment fade-up">useWhatEverYouWant()</li>
     </ul>
   </section>
 
@@ -132,9 +124,11 @@
 };</code></pre>
   </section>
 
-
   <section>
-    <h3>For more advanced cases you might want to look into useReducer <a about="_blank" href="./code/"></a> hook</h3>
+    <h3>
+      For more advanced cases you might want to look into useReducer
+      <a about="_blank" href="./code/useReducer.tsx"></a> hook
+    </h3>
   </section>
 </section>
 
@@ -155,7 +149,6 @@
     <pre><code>
        useEffect(() => console.log("component invoked"));
     </code></pre>
-
   </section>
 
   <section>
@@ -166,7 +159,6 @@
       //note second argument
       useEffect(()=> {console.log('one time action')}, []);
     </code></pre>
-
   </section>
 
   <section>
@@ -176,14 +168,11 @@
     <pre><code class="language-tsx"> 
   useEffect(() => console.log("component invoked"), [dependency]);
     </code></pre>
-
   </section>
 
   <section>
     <h3>Component will unmount</h3>
-    <p>
-      Cleanup the resources like timers or pending requests
-    </p>
+    <p>Cleanup the resources like timers or pending requests</p>
 
     <pre><code class="language-tsx">
       useEffect(() => {
@@ -191,7 +180,6 @@
         return ()=> console.log('cleaning ...');
       });
     </code></pre>
-
   </section>
 </section>
 
@@ -226,7 +214,7 @@ const UserCtx = createContext(defaultValue);</code></pre>
   </section>
 
   <section>
-    <h3>UseContext from any functional component </h3>
+    <h3>UseContext from any functional component</h3>
 
     <pre><code class="language-tsx" data-line-numbers>const AboutUser = () =&gt; {
   const { name, isAdmin } = useContext(UserCtx);

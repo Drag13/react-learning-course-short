@@ -1,0 +1,293 @@
+<section>
+  <section>
+    <h2>EsLint ⭐⭐⭐⭐⭐</h2>
+    <p class="left fragment fade-up">
+      Keep same code style (important for beginners and big teams)
+    </p>
+    <p class="left fragment fade-up">Helps you spot issues during the development phase</p>
+    <p class="left fragment fade-up">Works with TypeScript and JavaScript</p>
+  </section>
+
+  <section>
+    <h3>ESLint is capable to find</h3>
+
+    <ul>
+      <li>Missing and unused variables</li>
+      <li class="fragment fade-up">Missing and unused variables imports</li>
+      <li class="fragment fade-up">Dead code</li>
+      <li class="fragment fade-up">Issues with hooks</li>
+      <li class="fragment fade-up">And you even can write your own rules!</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>In case the project already supports EsLint</h3>
+    <p class="fragment fade-up">Simply install the EsLint extension</p>
+  </section>
+
+  <section>
+    <h3>In case you are starting from scratch</h3>
+    <pre><code>npx eslint --init</code></pre>
+  </section>
+
+  <section>
+    <h3>Run the check</h3>
+    <pre><code>npx eslint src</code></pre>
+  </section>
+
+  <section>
+    <h3>Fix obvious things automatically</h3>
+
+    <pre><code>npx eslint src --fix</code></pre>
+  </section>
+
+  <section>
+    <h3>EsLint is easy to use and highly customizable</h3>
+
+    <ul>
+      <li>Select pre configured set of rules</li>
+      <li class="fragment fade-up">
+        Tune rules individually `"rules": { "react/react-in-jsx-scope": "off" }`
+      </li>
+      <li class="fragment fade-up">Use or write custom plugins</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Example - plugin for React hooks</h3>
+    <pre data-line-numbers=""><code>npm i eslint-plugin-react-hooks -D</code></pre>
+
+    <pre
+      data-line-numbers=""
+    ><code> "extends": [... , "plugin:react-hooks/recommended"]    </code></pre>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Prettier ⭐⭐⭐⭐⭐</h2>
+    <p class="fragment fade-up">An opinionated code formatter</p>
+  </section>
+
+  <section>
+    <h3>Stop worrying about the formatting and leave it to the machine</h3>
+  </section>
+
+  <section>
+    <h3>How to use</h3>
+
+    <ul>
+      <li>Install package with <i>npm i prettier -D</i></li>
+      <li class="fragment fade-up">Optionally install extension and setup formatter</li>
+      <li class="fragment fade-up">Configure the <i>.prettierrc.json</i> with your settings</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>.prettierrc.json</h3>
+    <pre><code>{
+  "trailingComma": "es5",
+  "tabWidth": 4,
+  "semi": true,
+  "singleQuote": true
+}  </code></pre>
+  </section>
+
+  <section>
+    <h3>Autoformat on save</h3>
+
+    <p class="">File -> Preferences -> Settings -> Format On Save</p>
+  </section>
+
+  <section>
+    <h3>Prettier and EsLint might conflict</h3>
+
+    <div class="fragment fade-up">
+      <p>The solution:</p>
+      <pre><code>npm i eslint-config-prettier -D </code></pre>
+    </div>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Other useful extensions</h2>
+  </section>
+
+  <section>
+    <h3>Code Spell Checker ⭐⭐⭐⭐⭐</h3>
+    <p>Check your spelling in an easy way</p>
+  </section>
+
+  <section>
+    <h3>Import Cost ⭐⭐⭐⭐</h3>
+    <p>Control your bundlesize right in your code</p>
+  </section>
+
+  <section>
+    <h2>Other project specific extensions</h2>
+
+    <ul>
+      <li>Angular language service</li>
+      <li>Css in JS</li>
+      <li>Others</li>
+    </ul>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Husky ⭐⭐⭐⭐</h2>
+    <p>Automation that makes your life easier</p>
+  </section>
+
+  <section>
+    <h3>Install husky</h3>
+
+    <pre><code data-line-numbers="" class="language-cmd">npm i husky -D
+npm set-script prepare "husky install" 
+npx husky install</code></pre>
+  </section>
+
+  <section>
+    <h3>Create a git hook</h3>
+    <pre><code data-line-numbers="" class="language-cmd">npx husky add .husky/pre-commit "npm run lint"</code></pre>
+  </section>
+
+  <section>
+    <h3>Events to be automated</h3>
+
+    <ul>
+      <li>Pre commit</li>
+      <li class="fragment fade-up">Post commit</li>
+      <li class="fragment fade-up">Pre push</li>
+      <li class="fragment fade-up">Post merge</li>
+      <li class="fragment fade-up">Post checkout</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>
+      Read <a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks">more</a> about git
+      hooks
+    </h3>
+  </section>
+
+  <section>
+    <h3>Tasks might be automated</h3>
+    <ul>
+      <li>Formatting</li>
+      <li class="fragment fade-up">Tests</li>
+      <li class="fragment fade-up">Linting</li>
+      <li class="fragment fade-up">Document generation</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>With lint-staged ⭐⭐⭐⭐</h3>
+  </section>
+
+  <section>
+    <h3>Install</h3>
+    <pre><code>      npm install --save-dev lint-staged    </code></pre>
+  </section>
+
+  <section>
+    <h3>Configure .lintstagedrc</h3>
+
+    <pre><code data-line-numbers="" class="language-javascript">{
+  "*.ts[x]": "eslint"
+}
+  </code></pre>
+  </section>
+
+  <section>
+    <h3>Warning</h3>
+
+    <p>
+      Big amount of tasks might negatively impact developer experience. To avoid this - add task one
+      by one and consult with the team
+    </p>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Emmet</h2>
+    <p>
+      The way to write less HTML but
+      <a href="https://docs.emmet.io/abbreviations/syntax/"> get more</a>
+    </p>
+  </section>
+
+  <section>
+    <h3>Example</h3>
+    <p class="left fragment fade-up">Simply put . and hit tab</p>
+  </section>
+
+  <section>
+    <h3>Options</h3>
+
+    <ul>
+      <li>Classes and Id</li>
+      <li class="fragment fade-up">Sequences</li>
+      <li class="fragment fade-up">Multipliers</li>
+      <li class="fragment fade-up">Custom attributes and texts</li>
+    </ul>
+  </section>
+
+  <section>
+    <p>div>span+span</p>
+    <pre class="fragment fade-up language-html"><code><div>
+  <span></span>
+  <span></span>
+</div></code></pre>
+  </section>
+
+  <section>
+    <p>div*3</p>
+    <pre class="fragment fade-up language-html"><code><div></div>
+<div></div>
+<div></div></code></pre>
+  </section>
+
+  <section>
+    <p>div[test-id]</p>
+    <pre class="fragment fade-up"><code><div test-id=""></div></code></pre>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Code Snippets</h2>
+    <p>Automate your routine as you wish</p>
+  </section>
+
+  <section>
+    <h3>File > Preferences > Configure User Snippets</h3>
+  </section>
+
+  <section>
+    <h3>Hello world</h3>
+    <pre><code data-line-numbers="0-6|1|2|3|4|5" class="language-javascript">"Hello World": {
+      "scope": "typescriptreact,javascriptreact",
+      "prefix": "hw",
+      "body": ["hello world"],
+      "description": "Creates siple hello world text"
+  }  </code></pre>
+  </section>
+
+  <section>
+    <h3>React functional component</h3>
+    <pre><code data-line-numbers="0-6|1|2|3|4|5" class="language-javascript">"React functional component": {
+  "scope": "typescriptreact,javascriptreact",
+  "prefix": "rfc",
+  "body": ["export const $1 = ($2) =>{\r\n  return ($3)\r\n}"],
+  "description": "Creates react function component"
+}  </code></pre>
+  </section>
+
+  <section>
+    <h3>With custom snippets you can type less and get more</h3>
+  </section>
+</section>

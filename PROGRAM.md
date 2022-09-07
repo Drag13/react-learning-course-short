@@ -280,3 +280,20 @@ Presentation - https://drag13.io/react-learning-course-short/typescript-intro
 ### Home task: 
 
 Not specified
+
+## 13 Lecture: Useful tools for the web developer
+
+### Key points: 
+
+- EsLint
+- Prettier
+- Husky and Lint Staged
+- Emmet
+- Code Snippets
+
+
+Presentation - https://drag13.io/react-learning-course-short/web-tools
+
+### Home task: 
+
+Not specified

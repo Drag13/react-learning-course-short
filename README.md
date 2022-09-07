@@ -74,6 +74,8 @@ Installed [VsCode](https://code.visualstudio.com/)
 
 ### 12 Lecture: [TypeScript For Beginners](https://youtu.be/ND-XaEQ4VSk)
 
+### 13 Lecture: [Useful tools for the web developer](https://drag13.io/react-learning-course-short/web-tools)
+
 ## Donations
 
 All donations are highly welcomed. You can donate any amount to the [National Bank of Ukraine directly](https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi) or to the well known [charity fund Come Back Alive](https://www.comebackalive.in.ua/donate).

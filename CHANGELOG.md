@@ -1,8 +1,23 @@
 # Changelog
 
+## 06/09/2022
+
+* Final changes and publishing for the web tools talk
+* Added code to mask emails and names
+
+## 06/09/2022
+
+* Fixed issue with broken link in react-hooks talk
+* Added code snippet to parse and mask names from the CSV file
+* WIP on the talk about the web tools
+
+## 30/08/2022 
+
+- Preparations for the talk about the web tools
+
 ## 29/06/2022
 
-- Updates for the talk about React UI Libraries. Preparations for the next LIVE
+- Updates for the talk about [React UI Libraries](https://www.youtube.com/watch?v=4Dsgzk-GuX8). Preparations for the next LIVE
 
 ## 25/05/2022
 
