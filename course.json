@@ -409,8 +409,9 @@
     {
       "name": "web-tools",
       "title": "Useful tools for the web developer",
-      "keyPoints": ["EsLint", "Prettier", "Husky", "Code Snippets"],
+      "keyPoints": ["EsLint", "Prettier", "Husky and Lint Staged", "Emmet", "Code Snippets"],
       "type": "Lecture",
+      "published": true,
       "links": [
         ["EsLint", "https://eslint.org/docs/latest/rules/"],
         ["Prettier", "https://prettier.io/"],
