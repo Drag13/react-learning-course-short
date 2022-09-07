@@ -2,9 +2,22 @@
   <section>
     <h2>EsLint ⭐⭐⭐⭐⭐</h2>
     <p class="left fragment fade-up">
-      ESLint is an open source project that helps you find and fix problems with your [J][T]Script
-      code
+      Keep same code style (important for beginners and big teams)
     </p>
+    <p class="left fragment fade-up">Helps you spot issues during the development phase</p>
+    <p class="left fragment fade-up">Works with TypeScript and JavaScript</p>
+  </section>
+
+  <section>
+    <h3>ESLint is capable to find</h3>
+
+    <ul>
+      <li>Missing and unused variables</li>
+      <li class="fragment fade-up">Missing and unused variables imports</li>
+      <li class="fragment fade-up">Dead code</li>
+      <li class="fragment fade-up">Issues with hooks</li>
+      <li class="fragment fade-up">And you even can write your own rules!</li>
+    </ul>
   </section>
 
   <section>
@@ -29,34 +42,24 @@
   </section>
 
   <section>
-    <h3>ESLint is capable to find</h3>
-
-    <ul>
-      <li>Unused variables and imports</li>
-      <li class="fragment fade-up">Dead code</li>
-      <li class="fragment fade-up">Issues with hooks</li>
-      <li class="fragment fade-up">And you even can write your own rules!</li>
-    </ul>
-  </section>
-
-  <section>
-    <h3>EsLint is highly customizable</h3>
+    <h3>EsLint is easy to use and highly customizable</h3>
 
     <ul>
       <li>Select pre configured set of rules</li>
-      <li>Tune rules individually `"rules": { "react/react-in-jsx-scope": "off" }`</li>
-      <li>Use or write custom plugins</li>
+      <li class="fragment fade-up">
+        Tune rules individually `"rules": { "react/react-in-jsx-scope": "off" }`
+      </li>
+      <li class="fragment fade-up">Use or write custom plugins</li>
     </ul>
   </section>
 
   <section>
-    <pre><code>
-      npm i eslint-plugin-react-hooks -D
-    </code></pre>
+    <h3>Example - plugin for React hooks</h3>
+    <pre data-line-numbers=""><code>npm i eslint-plugin-react-hooks -D</code></pre>
 
-    <pre><code>
-      "extends": [... , "plugin:react-hooks/recommended"],
-    </code></pre>
+    <pre
+      data-line-numbers=""
+    ><code> "extends": [... , "plugin:react-hooks/recommended"]    </code></pre>
   </section>
 </section>
 
@@ -67,7 +70,7 @@
   </section>
 
   <section>
-    <h3>Main idea - stop worrying about the formatting and leave it to the machine</h3>
+    <h3>Stop worrying about the formatting and leave it to the machine</h3>
   </section>
 
   <section>
@@ -75,7 +78,7 @@
 
     <ul>
       <li>Install package with <i>npm i prettier -D</i></li>
-      <li class="fragment fade-up">Optionally install extension</li>
+      <li class="fragment fade-up">Optionally install extension and setup formatter</li>
       <li class="fragment fade-up">Configure the <i>.prettierrc.json</i> with your settings</li>
     </ul>
   </section>
@@ -235,7 +238,7 @@ npx husky install</code></pre>
 
   <section>
     <p>div>span+span</p>
-    <pre class="fragment fade-up"><code><div>
+    <pre class="fragment fade-up language-html"><code><div>
   <span></span>
   <span></span>
 </div></code></pre>
@@ -243,7 +246,7 @@ npx husky install</code></pre>
 
   <section>
     <p>div*3</p>
-    <pre class="fragment fade-up"><code><div></div>
+    <pre class="fragment fade-up language-html"><code><div></div>
 <div></div>
 <div></div></code></pre>
   </section>
@@ -266,17 +269,17 @@ npx husky install</code></pre>
 
   <section>
     <h3>Hello world</h3>
-    <pre><code data-line-numbers="" class="language-javascript">"Hello World": {
+    <pre><code data-line-numbers="0-6|1|2|3|4|5" class="language-javascript">"Hello World": {
       "scope": "typescriptreact,javascriptreact",
       "prefix": "hw",
       "body": ["hello world"],
       "description": "Creates siple hello world text"
-    }  </code></pre>
+  }  </code></pre>
   </section>
 
   <section>
     <h3>React functional component</h3>
-    <pre><code data-line-numbers="" class="language-javascript">"React functional component": {
+    <pre><code data-line-numbers="0-6|1|2|3|4|5" class="language-javascript">"React functional component": {
   "scope": "typescriptreact,javascriptreact",
   "prefix": "rfc",
   "body": ["export const $1 = ($2) =>{\r\n  return ($3)\r\n}"],
