@@ -287,9 +287,12 @@ Not specified
 
 - EsLint
 - Prettier
-- Husky
+- Husky and Lint Staged
+- Emmet
 - Code Snippets
 
+
+Presentation - https://drag13.io/react-learning-course-short/web-tools
 
 ### Home task: 
 

@@ -74,7 +74,7 @@ Installed [VsCode](https://code.visualstudio.com/)
 
 ### 12 Lecture: [TypeScript For Beginners](https://youtu.be/ND-XaEQ4VSk)
 
-### 13 Lecture: Useful tools for the web developer
+### 13 Lecture: [Useful tools for the web developer](https://drag13.io/react-learning-course-short/web-tools)
 
 ## Donations
 
