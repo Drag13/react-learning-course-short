@@ -2,6 +2,8 @@
 
 | Type | Amount | Target                             |
 | ---- | ------ | ---------------------------------- |
+| -    | 2350   | [WASP](https://www.facebook.com/100001374307947/posts/pfbid02wrqNMRuB4jZtEncD1XaivNfQteUD8b3wjkcQxuMETzwJ46yAiXFcA33oZmxBHCWtl/)                   |
+| +    | 2350   | Doubling previous                    |
 | +    | 2350   | Talk about Web Tools                  |
 | -    | 5288   | [Prytula Foundation](https://prytulafoundation.org/)                  |
 | +    | 2644   | Doubling previous                  |
