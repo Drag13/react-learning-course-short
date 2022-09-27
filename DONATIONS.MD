@@ -2,6 +2,8 @@
 
 | Type | Amount | Target                             |
 | ---- | ------ | ---------------------------------- |
+| -    | 2050   | [Jar for WASP wheels](https://send.monobank.ua/jar/6AVk2esdT2)                        |    
+| +    | 2050   | Initial commit                         |    
 | -    | 2350   | [WASP](https://www.facebook.com/100001374307947/posts/pfbid02wrqNMRuB4jZtEncD1XaivNfQteUD8b3wjkcQxuMETzwJ46yAiXFcA33oZmxBHCWtl/)                   |
 | +    | 2350   | Doubling previous                    |
 | +    | 2350   | Talk about Web Tools                  |
