@@ -1,0 +1,146 @@
+{
+  "title": "React For Beginners - Free Course by Itera",
+  "lessons": [
+    {
+      "title": "History of the Web",
+      "author": "Oleksandr Skachkov",
+      "week": 1,
+      "day": 1,
+      "slot": 1
+    },
+    {
+      "title": "React App from Scratch",
+      "author": "Vitalii Ruban",
+      "week": 1,
+      "day": 1,
+      "slot": 2,
+      "keyPoints": ["Manual and Automatic", "Project structure", "Syntaxys", "onClick", "list"]
+    },
+    {
+      "title": "Why React",
+      "author": "Ihor Tsvietkov",
+      "week": 1,
+      "day": 2,
+      "slot": 1,
+      "keyPoints": ["JSX", "Why?"]
+    },
+    {
+      "title": "React Components",
+      "author": "Ihor Tsvietkov",
+      "week": 1,
+      "day": 2,
+      "slot": 2,
+      "keyPoints": ["Splitting", "LifeCycle", "Real form without behavior"]
+    },
+    {
+      "title": "Interactive Components",
+      "author": "Vitalii Ruban",
+      "week": 2,
+      "day": 1,
+      "slot": 1,
+      "keyPoints": ["LifeCycle recap", "useState", "Form With Behavior"]
+    },
+    {
+      "title": "Components and State - practice",
+      "author": "Vitalii Ruban",
+      "week": 2,
+      "day": 1,
+      "slot": 2,
+      "keyPoints": []
+    },
+    {
+      "title": "Workshop with Ships",
+      "author": "Ihor Tsvietkov",
+      "week": 2,
+      "day": 2,
+      "slot": 1
+    },
+    {
+      "title": "Workshop with Ships",
+      "author": "Ihor Tsvietkov",
+      "week": 2,
+      "day": 2,
+      "slot": 2
+    },
+    {
+      "title": "Advanced Hooks",
+      "author": "Vitalii Ruban",
+      "week": 3,
+      "day": 1,
+      "slot": 1,
+      "keyPoints": ["useRef", "customHooks", "react-hooks"]
+    },
+    {
+      "title": "How to debug",
+      "author": "Ihor Tsvietkov",
+      "week": 3,
+      "day": 1,
+      "slot": 2,
+      "keyPoints": ["Chrome Developer Tools", "React Dev Tools", "Broken APP"]
+    },
+    {
+      "title": "Styling in React",
+      "author": "Vitalii Ruban",
+      "day": 2,
+      "week": 3,
+      "slot": 1,
+      "keyPoints": ["CSS", "CSS Modules", "CSS in JS"]
+    },
+    {
+      "title": "TypeScript in example",
+      "author": "Ihor Tsvietkov",
+      "day": 2,
+      "week": 3,
+      "slot": 2,
+      "keyPoints": ["Rewriting app live coding"]
+    },
+    {
+      "title": "React Context",
+      "author": "Vitalii Ruban",
+      "day": 1,
+      "week": 4,
+      "slot": 1,
+      "keyPoints": ["What context is", "Handmade state management"]
+    },
+    {
+      "title": "Advanced React",
+      "author": "Ihor Tsvietkov",
+      "day": 1,
+      "week": 4,
+      "slot": 2,
+      "keyPoints": ["Portals", "Child", "Children", "Perf", "key", "Example bad code"]
+    },
+    {
+      "title": "BIG PRACTICE",
+      "author": "Unkown",
+      "day": 2,
+      "week": 4,
+      "slot": 1
+    },
+    {
+      "title": "BIG PRACTICE",
+      "author": "Unkown",
+      "day": 2,
+      "week": 4,
+      "slot": 1
+    }
+  ],
+  "hometask": [
+    {
+      "week": 1,
+      "task": "Create an HTML page with next chapters: Short Summary, Education, Hobbies, prepare 3minutes presentation"
+    },
+    {
+      "week": 2,
+      "task": "Tic Tac Toe with AI"
+    },
+    {
+      "week": 3,
+      "task": "Refactor tic tac toe with CSS Modules, Custom Hooks, TypeScript as bonus"
+    },
+    {
+      "week": 4,
+      "task": "Context"
+    }
+  ]
+}
