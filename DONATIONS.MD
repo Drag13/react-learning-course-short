@@ -2,6 +2,7 @@
 
 | Type | Amount | Target                             |
 | ---- | ------ | ---------------------------------- |
+| +    | 2584,30   |  From Open Source Collective                     |    
 | -    | 1000   | [ForPPO](https://dou.ua/forums/topic/41136/)                       |    
 | +    | 1000   |                        |    
 | -    | 1750   | [Jar for WASP wheels](https://send.monobank.ua/jar/6AVk2esdT2)                       |    
