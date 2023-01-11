@@ -50,7 +50,7 @@ Installed [VsCode](https://code.visualstudio.com/)
 ## Program summary
 
 {{#lessons}}
-### {{i}} {{type}}: {{#link}}[{{title}}]({{{.}}}){{/link}}{{^link}}{{title}}{{/link}}
+### {{i}}: {{#link}}[{{title}}]({{{.}}}){{/link}}{{^link}}{{title}}{{/link}}
 
 {{/lessons}}
 ## Donations
