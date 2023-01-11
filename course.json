@@ -89,6 +89,17 @@
       "youtube": "https://youtu.be/2r1TW9yPhlQ"
     },
     {
+      "name": "first-react-app-vite",
+      "published": false,
+      "title": "My first react app with Vite",
+      "youtube": "https://youtu.be/J_826v3GuCE",
+      "keyPoints": [
+        "How to create a new React app from scratch",
+        "Project structure",
+        "Code examples"
+      ]
+    },
+    {
       "title": "What is React Component",
       "name": "react-components",
       "type": "Lecture",
@@ -125,6 +136,17 @@
         "Components have lifecycle you can hook into"
       ],
       "youtube": "https://youtu.be/BPIeZqomYQw"
+    },
+    {
+      "title": "React and Props",
+      "name": "react-props",
+      "published": false,
+      "youtube": "https://youtu.be/1gLLa4fJ1JQ",
+      "takeaways": [
+        "What is props in React",
+        "How to pass data into component",
+        "How to take data from the component"
+      ]
     },
     {
       "title": "React and Hooks",
