@@ -49,37 +49,37 @@ Installed [VsCode](https://code.visualstudio.com/)
 
 ## Program summary
 
-### 0 Lecture: [What is React](https://youtu.be/fQ_UNyQBiqg)
+### 0: [What is React](https://youtu.be/fQ_UNyQBiqg)
 
-### 1 Workshop: [A New Project With Create-React-App](https://youtu.be/2r1TW9yPhlQ)
+### 1: [A New Project With Create-React-App](https://youtu.be/2r1TW9yPhlQ)
 
-### 2 : [My first react app with Vite](https://youtu.be/J_826v3GuCE)
+### 2: [My first react app with Vite](https://youtu.be/J_826v3GuCE)
 
-### 3 Lecture: [What is React Component](https://youtu.be/BPIeZqomYQw)
+### 3: [What is React Component](https://youtu.be/BPIeZqomYQw)
 
-### 4 : [React and Props](https://youtu.be/1gLLa4fJ1JQ)
+### 4: [React and Props](https://youtu.be/1gLLa4fJ1JQ)
 
-### 5 Lecture: [React and Hooks](https://youtu.be/6AHDZGumKZg)
+### 5: [React and Hooks](https://youtu.be/6AHDZGumKZg)
 
-### 6 Workshop: [Building React Component](https://drag13.io/react-learning-course-short/react-new-component)
+### 6: [Building React Component](https://drag13.io/react-learning-course-short/react-new-component)
 
-### 7 Lecture: [React - From CSS to CSSinJS](https://www.youtube.com/watch?v=8al4xMhWWCE)
+### 7: [React - From CSS to CSSinJS](https://www.youtube.com/watch?v=8al4xMhWWCE)
 
-### 8 Workshop: [Managing State in React](https://youtu.be/2KTqbf31cLw)
+### 8: [Managing State in React](https://youtu.be/2KTqbf31cLw)
 
-### 9 Workshop: [Forms - Default Way and React-Hook-Forms](https://youtu.be/gwrMDwYLIWs)
+### 9: [Forms - Default Way and React-Hook-Forms](https://youtu.be/gwrMDwYLIWs)
 
-### 10 Lecture: [Routing in React](https://youtu.be/D0Fkm63FoSY)
+### 10: [Routing in React](https://youtu.be/D0Fkm63FoSY)
 
-### 11 Lecture: [React and Network](https://youtu.be/Tm6l612v2v0)
+### 11: [React and Network](https://youtu.be/Tm6l612v2v0)
 
-### 12 Lecture: [UI Libraries](https://youtu.be/4Dsgzk-GuX8)
+### 12: [UI Libraries](https://youtu.be/4Dsgzk-GuX8)
 
-### 13 Lecture: [Testing Your Code](https://youtu.be/ASI73nQ9zP8)
+### 13: [Testing Your Code](https://youtu.be/ASI73nQ9zP8)
 
-### 14 Lecture: [TypeScript For Beginners](https://youtu.be/ND-XaEQ4VSk)
+### 14: [TypeScript For Beginners](https://youtu.be/ND-XaEQ4VSk)
 
-### 15 Lecture: [Useful tools for the web developer](https://drag13.io/react-learning-course-short/web-tools)
+### 15: [Useful tools for the web developer](https://drag13.io/react-learning-course-short/web-tools)
 
 ## Donations
 
