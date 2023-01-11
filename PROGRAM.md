@@ -52,7 +52,21 @@ Presentation - https://drag13.io/react-learning-course-short/react-cra
 - Use React to display data from the JSON on the page
 - Commit and push the results with <i>git add .</i>, <i>git commit -m "Initial commit"</i>, <i>git push</i>
 
-## 2 Lecture: What is React Component
+## 2 : My first react app with Vite
+
+### Key points: 
+
+- How to create a new React app from scratch
+- Project structure
+- Code examples
+
+Talk: https://youtu.be/J_826v3GuCE
+
+### Home task: 
+
+Not specified
+
+## 3 Lecture: What is React Component
 
 ### Key points: 
 
@@ -73,7 +87,18 @@ Presentation - https://drag13.io/react-learning-course-short/react-components
 - Mix Class Based and Functional approach to get more practice in both
 - Use props only to pass the data to your components
 
-## 3 Lecture: React and Hooks
+## 4 : React and Props
+
+### Key points: 
+
+
+Talk: https://youtu.be/1gLLa4fJ1JQ
+
+### Home task: 
+
+Not specified
+
+## 5 Lecture: React and Hooks
 
 ### Key points: 
 
@@ -92,7 +117,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-hooks
 
 Not specified
 
-## 4 Workshop: Building React Component
+## 6 Workshop: Building React Component
 
 ### Key points: 
 
@@ -121,7 +146,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-new-component
 - Put the new component into the footer
 - When clicked, it should log into the console next text: `redirecting user to the next {link}` where `{link}` should be a's href
 
-## 5 Lecture: React - From CSS to CSSinJS
+## 7 Lecture: React - From CSS to CSSinJS
 
 ### Key points: 
 
@@ -138,7 +163,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-styling
 
 - Use CSS modules to style previously created application
 
-## 6 Workshop: Managing State in React
+## 8 Workshop: Managing State in React
 
 ### Key points: 
 
@@ -169,7 +194,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-state-managem
 - Install MobX
 - Implement same functionality with MobX
 
-## 7 Workshop: Forms - Default Way and React-Hook-Forms
+## 9 Workshop: Forms - Default Way and React-Hook-Forms
 
 ### Key points: 
 
@@ -189,7 +214,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-forms
 
 Not specified
 
-## 8 Lecture: Routing in React
+## 10 Lecture: Routing in React
 
 ### Key points: 
 
@@ -212,7 +237,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-router
 - If `ln` equals `ua` all texts should be in Ukrainian language
 - If `ln` equals `en` all text should be in English (feel free to use google translate if needed)
 
-## 9 Lecture: React and Network
+## 11 Lecture: React and Network
 
 ### Key points: 
 
@@ -229,7 +254,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-network
 
 Not specified
 
-## 10 Lecture: UI Libraries
+## 12 Lecture: UI Libraries
 
 ### Key points: 
 
@@ -246,7 +271,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-ui-lib
 
 Not specified
 
-## 11 Lecture: Testing Your Code
+## 13 Lecture: Testing Your Code
 
 ### Key points: 
 
@@ -263,7 +288,7 @@ Presentation - https://drag13.io/react-learning-course-short/react-testing
 
 Not specified
 
-## 12 Lecture: TypeScript For Beginners
+## 14 Lecture: TypeScript For Beginners
 
 ### Key points: 
 
@@ -281,7 +306,7 @@ Presentation - https://drag13.io/react-learning-course-short/typescript-intro
 
 Not specified
 
-## 13 Lecture: Useful tools for the web developer
+## 15 Lecture: Useful tools for the web developer
 
 ### Key points: 
 
