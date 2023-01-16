@@ -2,6 +2,7 @@
 
 | Type | Amount | Target                             |
 | ---- | ------ | ---------------------------------- |
+| -    | 5000   |  [Oksana Savchenko SSO](https://www.facebook.com/semyz.larisa/posts/pfbid02mBFmpKjL1tJktwbU3Jkm1VP1hVTtL5Zwa23hbWas5cyGnjm9nPTVAA6r4Jk2FpjAl)                  |    
 | +    | 2415,70   |  Own budget                    |    
 | +    | 2584,30   |  From Open Source Collective                     |    
 | -    | 1000   | [ForPPO](https://dou.ua/forums/topic/41136/)                       |    
