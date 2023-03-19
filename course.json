@@ -441,6 +441,25 @@
         ["Emmet", "https://docs.emmet.io/abbreviations/syntax/"],
         ["Code Snippets", "https://code.visualstudio.com/docs/editor/userdefinedsnippets"]
       ]
+    },
+    {
+      "name": "solid",
+      "title": "SOLID & React",
+      "keyPoints": [
+        "Single Responsibility Principle",
+        "Open Closed Principle",
+        "Liskov Substitution Principle",
+        "Interface Segregation Principle",
+        "Dependency inversion Principle"
+      ],
+      "takeaways": [
+        "Keep your code simple",
+        "Don't hardcode",
+        "Don't change to the code unpredictable",
+        "Take only needed",
+        "Don't hardcode (yea, again)"
+      ],
+      "type": "Lecture"
     }
   ]
 }
