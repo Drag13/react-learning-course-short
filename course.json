@@ -456,7 +456,7 @@
         "Keep your code simple",
         "Don't hardcode",
         "Don't change to the code unpredictable",
-        "Take only needed",
+        "Ask only needed",
         "Don't hardcode (yea, again)"
       ],
       "type": "Lecture"
