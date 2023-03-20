@@ -322,3 +322,18 @@ Presentation - https://drag13.io/react-learning-course-short/web-tools
 ### Home task: 
 
 Not specified
+
+## 16 Lecture: SOLID &amp; React
+
+### Key points: 
+
+- Single Responsibility Principle
+- Open Closed Principle
+- Liskov Substitution Principle
+- Interface Segregation Principle
+- Dependency inversion Principle
+
+
+### Home task: 
+
+Not specified

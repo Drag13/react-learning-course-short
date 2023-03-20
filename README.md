@@ -81,6 +81,8 @@ Installed [VsCode](https://code.visualstudio.com/)
 
 ### 15: [Useful tools for the web developer](https://drag13.io/react-learning-course-short/web-tools)
 
+### 16: SOLID &amp; React
+
 ## Donations
 
 All donations are highly welcomed. You can donate any amount to the [National Bank of Ukraine directly](https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi) or to the well known [charity fund Come Back Alive](https://www.comebackalive.in.ua/donate).
