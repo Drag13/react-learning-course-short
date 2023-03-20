@@ -1,7 +1,55 @@
-
 <section>
   <section>
     <h2>Single Responsibility Principle</h2>
+  </section>
+
+  <section><h3>Кожен об'єкт має виконувати лише один обов'язок</h3></section>
+  <section>
+    <h3>Головна ідея - зменшити складність коду</h3>
+  </section>
+  <section>
+    <pre><code data-line-numbers="1-23|4-8|15-19" class="language-tsx">function User() {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/users/1")
+      .then((response) => response.json())
+      .then((data) => setUser(data));
+  }, []);
+
+  if (!user) {
+    return <div>Loading...</div>;
+  }
+
+  return (
+    <div>
+      <h1>{user.name}</h1>
+      <p>{user.email}</p>
+      <p>{user.phone}</p>
+    </div>
+  );
+}
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>Покращено, але цей код також порушує SRP</h3>
+    <pre><code class="language-tsx" data-line-numbers="1-9|5|8">function User({ userId }) {
+  const [user, setUser] = useState(null);
+    
+  useEffect(() =&gt; {
+    fetchUser(userId).then(setUser).catch(console.error);
+  }, [userId]);
+    
+  return user ? &lt;UserDetails user={user} /&gt; : &lt;Spinner /&gt;;
+}</code></pre>
+  </section>
+
+  <section>
+    <p>
+      Головна складність SRP - баланс між наочністю коду і трудовитратами з однієї сторони та
+      складністю не розбитого коду з іншої сторони
+    </p>
   </section>
 </section>
 
@@ -9,11 +57,76 @@
   <section>
     <h2>Open Closed Principle</h2>
   </section>
+
+  <section>
+    Програмні сутності повинні бути відкритими для розширення, але закритими для змін.
+  </section>
+
+  <section>
+    Тобто, має бути спосіб змінювати поведінку програмних модулів без потреби змінювати їхній
+    вихідний код
+  </section>
+
+  <section>Головна ідея - менше коду, простіше підтримка</section>
+
+  <section>
+    <h3>Найпростіший приклад</h3>
+    <pre><code data-line-numbers>[].map((c) => c + 1);
+[].map((c) => c.toString());
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>Приклад з React</h3>
+    <pre><code class="language-tsx" data-line-numbers>function moneyFormatter({ v, currency, formatter }) {
+  return &lt;&gt;`${formatter(v)} ${currency}`&lt;/&gt;
+}
+      </code></pre>
+  </section>
+
+  <section>
+    <p>
+      Головна складність - розуміння того який саме шматок функціоналу має бути доступним для змін і
+      де межа між універсальною функцією та потребі в новій сутності
+    </p>
+  </section>
 </section>
 
 <section>
   <section>
     <h2>Liskov Substitution Principle</h2>
+  </section>
+
+  <section>Об'єкти в програмі можуть бути заміненими їх нащадками без зміни коду програми.</section>
+
+  <section>
+    Простими словами - всі нащадки мають бути написані так, щоб їх можна було використовувати там,
+    де використовується їх батьки
+  </section>
+
+  <section>
+    <h3>Простий приклад</h3>
+    <pre><code class="language-tsx" data-line-numbers>class SomeComponent extends PureComponent {
+  render() {}
+}
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>Трохи хитріше</h3>
+
+    <pre><code class="language-tsx" data-line-numbers>class SomeComponent extends PureComponent {
+  setState = null;
+  render() {
+    return &lt;&gt;He-he-he&lt;/&gt;;
+  }
+}
+    </code></pre>
+  </section>
+
+  <section>
+    Проблема з LSP в тому, що він не завжди очевидний. Але, оскільки React підтримує композицію
+    замість наслідування, це не становить великої проблеми
   </section>
 </section>
 
@@ -21,10 +134,108 @@
   <section>
     <h2>Interface Segregation Principle</h2>
   </section>
+
+  <section>Багато спеціалізованих інтерфейсів краще за один універсальний.</section>
+
+  <section>
+    <pre><code class="language-tsx" data-line-numbers>interface IUser {
+  // auth
+  login(): void;
+  //data
+  name: string;
+}
+    </code></pre>
+  </section>
+
+  <section>
+    <pre><code class="language-tsx" data-line-numbers>interface IAuthenticate {
+  login(): void;
+}
+
+interface IUserData {
+  name: string;
+}
+
+function User(user: IUser) {
+  return &lt;&gt;{user.name}&lt;/&gt;;
+}
+</code></pre>
+  </section>
+
+  <section>
+    <img src="./iuser-big.png" alt="" />
+  </section>
+  <section>
+    <p>
+      Таким чином нам легше тестувати код, а також він буде більш стабільним, оскільки зміни в
+      частині аутентифікації його не не зачеплять
+    </p>
+  </section>
+
+  <section>
+    Для чистого JS цей принцип перетворюється на "не вимагай того, що не використовуєш"
+  </section>
+
+  <section>
+    <pre><code class="language-tsx" data-line-numbers>// ✅ Use this 
+function trim(name) {
+  return name.trim();
+}
+
+// ⛔ Not this
+function trimUserName(user) {
+  return user.name.trim();
+}
+
+    </code></pre>
+  </section>
 </section>
 
 <section>
   <section>
     <h2>Dependency inversion Principle</h2>
   </section>
+
+  <section>
+    Залежності всередині системи будуються на основі абстракцій, що не повинні залежати від деталей;
+    навпаки, деталі мають залежати від абстракцій.
+  </section>
+
+  <section>
+    Тобто, код не має покаладатися на конкретну реалізацію, а лише на інтерфейс або тип.
+  </section>
+
+  <section>
+    <pre><code class="language-tsx" data-line-numbers>class UserApi {
+  getUser(id) {
+    return fetch(`https://.../user/${id}`);
+  }
+}</code></pre>
+  </section>
+
+  <section>
+    <pre><code class="language-tsx" data-line-numbers>class UserApi {
+  constructor(
+    private readonly _transport: (input: RequestInfo | URL, init?: RequestInit) =&gt; Promise&lt;Response&gt;
+  ) {}
+
+  getUser(id) {
+    this._transport(`https://.../user/${id}`);
+  }
+}
+    </code></pre>
+  </section>
+
+  <section>
+    <p>
+      Якщо ви використовуєте JS, достатньо не хардкодити конкретну реалізацію, а отримувати її
+      ззовні.
+    </p>
+  </section>
+</section>
+
+<section>
+  Проблема цієї лекції в тому, що ми намагаємося натягнути принципи OOP на фуннкціональну парадигму,
+  яка панує в React. Тому більш правильніше буде застосовувати SOLID в якості настанов до написання
+  хорошого коду, замість суворих правил.
 </section>
