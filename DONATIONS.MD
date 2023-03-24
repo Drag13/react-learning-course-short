@@ -2,10 +2,14 @@
 
 | Type | Amount | Target                             |
 | ---- | ------ | ---------------------------------- |
+| -    | 279  | [Happy Meal for Orphans (2x)](https://t.me/toisamyibabich/845) | 
+| +    | 210   | Own Budget
+| -    | 14070 | Medcines | 
+| +    | 900  | Own budget |
 | +    | 900  | Own budget |
 | +    | 12941   | External donation (Performance Talk) |
 | +    | 200   | External donation (from tg) |
-| -    | 5000   |  [Oksana Savchenko SSO](https://www.facebook.com/semyz.larisa/posts/pfbid02mBFmpKjL1tJktwbU3Jkm1VP1hVTtL5Zwa23hbWas5cyGnjm9nPTVAA6r4Jk2FpjAl)                  |    
+| -    | 5000   |  [Oksana Savchenko SSO](https://www.facebook.com/semyz.larisa/posts/pfbid02mBFmpKjL1tJktwbU3Jkm1VP1hVTtL5Zwa23hbWas5cyGnjm9nPTVAA6r4Jk2FpjAl)                |    
 | +    | 2415,70   |  Own budget                    |    
 | +    | 2584,30   |  From Open Source Collective                     |    
 | -    | 1000   | [ForPPO](https://dou.ua/forums/topic/41136/)                       |    
