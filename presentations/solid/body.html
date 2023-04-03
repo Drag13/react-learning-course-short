@@ -1,5 +1,9 @@
 <section>
-  <section>SOLID можна запам'ятати за 1 один день. А зрозуміти через 5 п'ять років.</section>
+  <section>
+    <h2>
+      SOLID можна запам'ятати за 1 один день. <br/> А зрозуміти через 5 п'ять років.</section>
+
+    </h2>
   <section>
     <h2>Навіщо взагалі цей SOLID?</h2>
   </section>
@@ -19,15 +23,7 @@
   </section>
 
   <section>
-    <pre><code data-line-numbers="" class="language-tsx"> function getUser() {
-  return fetch('https://jsonplaceholder.com/users/1')
-    .then((response) =&gt; response.json())
-    .then(({ firstName, secondName }) =&gt; ({
-      fullName: `${firstName} ${secondName}`,
-    }));
-}
-    
-export function User() {
+    <pre><code data-line-numbers="" class="language-tsx">export function User() {
   const [user, setUser] = useState&lt;User | null&gt;();
 
   useEffect(() =&gt; {
@@ -39,6 +35,14 @@ export function User() {
   }
 
   return &lt;p&gt;Hello, {user.fullName}&lt;/p&gt;;
+}
+
+function getUser() {
+  return fetch('https://jsonplaceholder.com/users/1')
+    .then((response) =&gt; response.json())
+    .then(({ firstName, secondName }) =&gt; ({
+      fullName: `${firstName} ${secondName}`,
+    }));
 }
     </code></pre>
   </section>
@@ -184,9 +188,6 @@ function App() {
     </code></pre>
   </section>
 
-  <section>
-    <img src="./iuser-big.png" alt="" />
-  </section>
   <section>
     Головна ідея - спрощення використання коду, оскільки споживач "бачить" лише то, що йому
     необхідно. Це також призводить до спрощення тестування, оскільки нам потрібно підміняти лише
