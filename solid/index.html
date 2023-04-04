@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="en"><head><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/about/index.49374549.css"><meta charset="utf-8"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>React For Beginners - SOLID &amp; React</title><meta name="description" content="Free learning course - React: SOLID &amp; React"><meta name="keywords" content="react free learning course beginners"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="React For Beginners - SOLID &amp; React"><meta name="twitter:site" content="https://github.com/Drag13/react-learning-course-short/solid/index.html"><meta name="twitter:creator" content="@drag137"><meta name="twitter:image" content="https://drag13.io/react-learning-course-short/shared/imgs/title.png"><meta property="og:image" content="https://drag13.io/react-learning-course-short/shared/imgs/title.png"><meta property="og:title" content="React For Beginners - SOLID &amp; React"><meta name="og:site_name" content="React For Beginners - SOLID &amp; React"><meta property="og:url" content="https://drag13.io/react-learning-course-short/solid/index.htnl"><meta property="og:type" content="website"><meta name="application-name" content="React For Beginners - SOLID &amp; React"><meta name="author" content="drag13"><meta name="robots" content="index follow"><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/about/index.1568b79b.css"><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/about/index.0e5ea25d.css"><link rel="stylesheet" href="https://drag13.io/react-learning-course-short/pet-project/index.8e0c3b31.css"></head><body> <div class="reveal"> <div class="slides"> <section> <h1 class="ukraine"> Free React Course <br> For Beginners </h1> </section> <section> <h1>L16 - SOLID &amp; React</h1> <h4> <u> React For Beginners by <a href="https://itera.com/">Itera</a> </u> </h4> </section> <section> <h2>Key Points</h2> <ul> <li class="fade-up fragment">Single Responsibility Principle</li> <li class="fade-up fragment">Open Closed Principle</li> <li class="fade-up fragment">Liskov Substitution Principle</li> <li class="fade-up fragment">Interface Segregation Principle</li> <li class="fade-up fragment">Dependency inversion Principle</li> </ul> </section> <section> <section> <h2> SOLID можна запам'ятати за 1 один день. <br> А зрозуміти через 5 п'ять років.</h2></section> <section> <h2>Навіщо взагалі цей SOLID?</h2> </section> </section> <section> <section> <h2>Принцип єдиної відповідальності</h2> </section> <section> <h3>Кожен об'єкт має виконувати лише один обов'язок або мати єдину причину для зміни</h3> </section> <section> <img src="https://drag13.io/react-learning-course-short/srp.dd575867.jpg" alt=""> </section> <section> <pre><code data-line-numbers="" class="language-tsx">export function User() {
+  const [user, setUser] = useState&lt;User | null&gt;();
+
+  useEffect(() =&gt; {
+    getUser().then(setUser);
+  }, []);
+
+  if (!user) {
+    return &lt;div&gt;Loading...&lt;/div&gt;;
+  }
+
+  return &lt;p&gt;Hello, {user.fullName}&lt;/p&gt;;
+}
+
+function getUser() {
+  return fetch('https://jsonplaceholder.com/users/1')
+    .then((response) =&gt; response.json())
+    .then(({ firstName, secondName }) =&gt; ({
+      fullName: `${firstName} ${secondName}`,
+    }));
+}
+    </code></pre> </section> <section> <h3>Головна ідея - зменшити крихкість коду та складність його окремих елементів</h3> </section> <section> Головна складність SRP - баланс між наочністю коду і трудовитратами з однієї сторони та крихкістю/складгістю не розбитого коду з іншої сторони </section> </section> <section> <section> <h2>Принцип відкритої закритості</h2> </section> <section> Програмні сутності повинні бути відкритими для розширення, але закритими для змін. </section> <section>Тобто, має бути спосіб змінювати поведінку коду без потреби зміни коду</section> <section> <img src="https://drag13.io/react-learning-course-short/ocp.bfa17a05.jpg" alt=""> </section> <section> <h3>Найпростіший приклад</h3> <pre><code data-line-numbers="" class="language-tsx">fetch('https://test.org', { method: 'GET' });
+// and /  /
+fetch('https://test.org', { method: 'POST' });
+    </code></pre> </section> <section> <h3>Приклад з React</h3> <pre><code class="language-tsx" data-line-numbers="">type MoneyProps = {
+  value: number;
+  currency: "₴" | "$" | "€";
+};
+
+export function Money({ value, currency }: MoneyProps) {
+  const amount = value.toFixed(2);
+  if (currency === "$") {
+    return (
+      &lt;span className="currency"&gt;
+        {currency} {amount}
+      &lt;/span&gt;
+    );
+  }
+
+  if (currency === "₴") {
+    return (
+      &lt;span className="currency"&gt;
+        {amount} {currency}
+      &lt;/span&gt;
+    );
+  }
+}
+    </code></pre> </section> <section> Головна ідея - розширення функціоналу з мінімальною зміною вже існуючого коду, що зменшує вірогідність "зламати" існуючий функціонал </section> <section> <p> Головна складність - така гнучкість зменшує наочність коду, що погіршує його читабельність та може збільшити складність </p> </section> </section> <section> <section> <h2>Принцип підстановки Лісков</h2> </section> <section>Об'єкти в програмі можуть бути заміненими їх нащадками без зміни коду програми.</section> <section> Простими словами - всі нащадки мають бути написані так, щоб їх можна було використовувати там, де використовується їх батьки </section> <section><img src="https://drag13.io/react-learning-course-short/lsp-false.df37f78c.png" alt=""></section> <section> <h3>Простий приклад</h3> <pre><code class="language-tsx" data-line-numbers="">class SomeComponent extends PureComponent {
+  render() {} /*😈*/
+}
+    </code></pre> </section> <section> <h3>Трохи хитріше</h3> <pre><code class="language-tsx" data-line-numbers="">class SomeComponent extends PureComponent {
+  setState = null; /*😈*/
+  render() {
+    return &lt;&gt;He-he-he&lt;/&gt;;
+  }
+}
+    </code></pre> </section> <section> Проблема з LSP в тому, що він не завжди очевидний. Але, оскільки React підтримує композицію замість наслідування, це не становить великої проблеми </section> </section> <section> <section> <h2>Принцип розділення інтерфейсу</h2> </section> <section>Багато спеціалізованих інтерфейсів краще за один універсальний</section> <section> <img src="https://drag13.io/react-learning-course-short/isp.d491768f.jpg" alt=""> </section> <section> <pre><code class="language-tsx" data-line-numbers="">interface IUser {
+  name: string;
+  login: () =&gt; Promise&lt;void&gt;;
+}
+
+function UserGreeting({ user }: { user: IUser }) {
+  return &lt;&gt;Hello, {user.name}&lt;/&gt;;
+}
+
+function App() {
+  return &lt;UserGreeting user={{ name: "Vitalii", login: () =&gt; Promise.resolve() }} /&gt;;
+}
+    </code></pre> </section> <section> Головна ідея - спрощення використання коду, оскільки споживач "бачить" лише то, що йому необхідно. Це також призводить до спрощення тестування, оскільки нам потрібно підміняти лише частину реалізації. </section> <section> Для JS/React цей принцип перетворюється на "не вимагай того, що не використовуєш" </section> <section> <pre><code class="language-tsx" data-line-numbers="">// ✅ Use this 
+function UserGreeting({ userName }: { userName: string }) {
+  return &lt;&gt;Hello, {userName}&lt;/&gt;;
+}
+
+// ⛔ Not this
+function UserGreeting({ user }: { user: User }) {
+  return &lt;&gt;Hello, {user.userName}&lt;/&gt;;
+}</code></pre> </section> </section> <section> <section> <h2>Принцип інверсії залежностей</h2> </section> <section> Залежності всередині системи будуються на основі абстракцій, що не повинні залежати від деталей; навпаки, деталі мають залежати від абстракцій. </section> <section> Тобто, код не має покаладатися на конкретну реалізацію, а лише на інтерфейс або тип. </section> <section><img src="https://drag13.io/react-learning-course-short/dip.4b476647.png" alt=""></section> <section> <pre><code class="language-tsx" data-line-numbers="">class UserApi {
+  getUser(id) {
+    return fetch(`https://.../user/${id}`);
+  }
+}</code></pre> </section> <section> <pre><code class="language-tsx" data-line-numbers="">export function User() {
+  const [user, setUser] = useState&lt;User | null&gt;();
+
+  useEffect(() =&gt; {
+    fetch('https://jsonplaceholder.com/users/1')
+      .then((response) =&gt; response.json())
+      .then(setUser);
+  }, []);
+
+  if (!user) {
+    return &lt;div&gt;Loading...&lt;/div&gt;;
+  }
+
+  return &lt;p&gt;Hello, {user.fullName}&lt;/p&gt;;
+}
+    </code></pre> </section> <section> Якщо ви використовуєте JS, достатньо не хардкодити конкретну реалізацію, а отримувати її ззовні. </section> </section> <section> <section> <img src="https://drag13.io/react-learning-course-short/owl.5dfabf11.png" alt=""> </section> <section> Головна складність SOLID загалом - не завчити визнчення принципів, а зрозуміти для чого вони існують і яку проблему вирішують </section> <section> А головна скоадність цієї лекції в тому, що ми намагаємося натягнути принципи OOP на фуннкціональну парадигму, яка панує в React </section> </section> <section> <h2>Takeaway</h2> <ul> <li class="fade-up fragment">Keep your code simple</li> <li class="fade-up fragment">Don't hardcode</li> <li class="fade-up fragment">Don't change to the code unpredictable</li> <li class="fade-up fragment">Ask only needed</li> <li class="fade-up fragment">Don't hardcode (yea, again)</li> </ul> </section> <section> <h2>Join me</h2> <div> <svg height="32" width="32" aria-hidden="true" fill="rgba(29,161,242,1.00)" viewBox="0 0 24 24"><title>Drag13 Twitter profile</title><path d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.67 4.67 0 0 0 2.048-2.578 9.3 9.3 0 0 1-2.958 1.13 4.66 4.66 0 0 0-7.938 4.25 13.229 13.229 0 0 1-9.602-4.868c-.4.69-.63 1.49-.63 2.342A4.66 4.66 0 0 0 3.96 9.824a4.647 4.647 0 0 1-2.11-.583v.06a4.66 4.66 0 0 0 3.737 4.568 4.692 4.692 0 0 1-2.104.08 4.661 4.661 0 0 0 4.352 3.234 9.348 9.348 0 0 1-5.786 1.995 9.5 9.5 0 0 1-1.112-.065 13.175 13.175 0 0 0 7.14 2.093c8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602a9.47 9.47 0 0 0 2.323-2.41z"/></svg> <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/drag137">Twitter</a> </div> <div> <svg height="32" width="32" aria-hidden="true" viewBox="0 0 16 16"><title>Drag13 GitHub profile</title><path fill-rule="evenodd" fill="#fff" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg> <a target="_blank" rel="noopener noreferrer" href="https://github.com/Drag13">GitHub</a> </div> </section></div> </div> <script src="https://drag13.io/react-learning-course-short/about/index.2689c986.js" type="module"></script> <footer class="footer"> <a href="https://itera.com"> <img src="https://drag13.io/react-learning-course-short/Itera-logo-white-fuchsia.b04eab97.jpg" alt="https://itera.com"> </a> </footer> </body></html>
