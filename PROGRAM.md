@@ -333,6 +333,9 @@ Not specified
 - Interface Segregation Principle
 - Dependency inversion Principle
 
+Talk: https://youtube.com/live/1D80PMHEBa0
+
+Presentation - https://drag13.io/react-learning-course-short/solid
 
 ### Home task: 
 

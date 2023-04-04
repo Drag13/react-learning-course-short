@@ -81,7 +81,7 @@ Installed [VsCode](https://code.visualstudio.com/)
 
 ### 15: [Useful tools for the web developer](https://drag13.io/react-learning-course-short/web-tools)
 
-### 16: SOLID &amp; React
+### 16: [SOLID &amp; React](https://youtube.com/live/1D80PMHEBa0)
 
 ## Donations
 
