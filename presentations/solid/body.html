@@ -1,0 +1,276 @@
+<section>
+  <section>
+    <h2>
+      SOLID можна запам'ятати за 1 один день. <br/> А зрозуміти через 5 п'ять років.</section>
+
+    </h2>
+  <section>
+    <h2>Навіщо взагалі цей SOLID?</h2>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Принцип єдиної відповідальності</h2>
+  </section>
+
+  <section>
+    <h3>Кожен об'єкт має виконувати лише один обов'язок або мати єдину причину для зміни</h3>
+  </section>
+
+  <section>
+    <img src="./srp.jpg" alt="" />
+  </section>
+
+  <section>
+    <pre><code data-line-numbers="" class="language-tsx">export function User() {
+  const [user, setUser] = useState&lt;User | null&gt;();
+
+  useEffect(() =&gt; {
+    getUser().then(setUser);
+  }, []);
+
+  if (!user) {
+    return &lt;div&gt;Loading...&lt;/div&gt;;
+  }
+
+  return &lt;p&gt;Hello, {user.fullName}&lt;/p&gt;;
+}
+
+function getUser() {
+  return fetch('https://jsonplaceholder.com/users/1')
+    .then((response) =&gt; response.json())
+    .then(({ firstName, secondName }) =&gt; ({
+      fullName: `${firstName} ${secondName}`,
+    }));
+}
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>Головна ідея - зменшити крихкість коду та складність його окремих елементів</h3>
+  </section>
+
+  <section>
+    Головна складність SRP - баланс між наочністю коду і трудовитратами з однієї сторони та
+    крихкістю/складгістю не розбитого коду з іншої сторони
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Принцип відкритої закритості</h2>
+  </section>
+
+  <section>
+    Програмні сутності повинні бути відкритими для розширення, але закритими для змін.
+  </section>
+
+  <section>Тобто, має бути спосіб змінювати поведінку коду без потреби зміни коду</section>
+
+  <section>
+    <img src="./ocp.jpg" alt="" />
+  </section>
+
+  <section>
+    <h3>Найпростіший приклад</h3>
+    <pre><code data-line-numbers class="language-tsx">fetch('https://test.org', { method: 'GET' });
+// and /  /
+fetch('https://test.org', { method: 'POST' });
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>Приклад з React</h3>
+    <pre><code class="language-tsx" data-line-numbers>type MoneyProps = {
+  value: number;
+  currency: "₴" | "$" | "€";
+};
+
+export function Money({ value, currency }: MoneyProps) {
+  const amount = value.toFixed(2);
+  if (currency === "$") {
+    return (
+      &lt;span className="currency"&gt;
+        {currency} {amount}
+      &lt;/span&gt;
+    );
+  }
+
+  if (currency === "₴") {
+    return (
+      &lt;span className="currency"&gt;
+        {amount} {currency}
+      &lt;/span&gt;
+    );
+  }
+}
+    </code></pre>
+  </section>
+
+  <section>
+    Головна ідея - розширення функціоналу з мінімальною зміною вже існуючого коду, що зменшує
+    вірогідність "зламати" існуючий функціонал
+  </section>
+
+  <section>
+    <p>
+      Головна складність - така гнучкість зменшує наочність коду, що погіршує його читабельність та
+      може збільшити складність
+    </p>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Принцип підстановки Лісков</h2>
+  </section>
+
+  <section>Об'єкти в програмі можуть бути заміненими їх нащадками без зміни коду програми.</section>
+
+  <section>
+    Простими словами - всі нащадки мають бути написані так, щоб їх можна було використовувати там,
+    де використовується їх батьки
+  </section>
+
+  <section><img src="./lsp-false.png" alt="" /></section>
+
+  <section>
+    <h3>Простий приклад</h3>
+    <pre><code class="language-tsx" data-line-numbers>class SomeComponent extends PureComponent {
+  render() {} /*😈*/
+}
+    </code></pre>
+  </section>
+
+  <section>
+    <h3>Трохи хитріше</h3>
+
+    <pre><code class="language-tsx" data-line-numbers>class SomeComponent extends PureComponent {
+  setState = null; /*😈*/
+  render() {
+    return &lt;&gt;He-he-he&lt;/&gt;;
+  }
+}
+    </code></pre>
+  </section>
+
+  <section>
+    Проблема з LSP в тому, що він не завжди очевидний. Але, оскільки React підтримує композицію
+    замість наслідування, це не становить великої проблеми
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Принцип розділення інтерфейсу</h2>
+  </section>
+
+  <section>Багато спеціалізованих інтерфейсів краще за один універсальний</section>
+
+  <section>
+    <img src="./isp.jpg" alt="" />
+  </section>
+
+  <section>
+    <pre><code class="language-tsx" data-line-numbers>interface IUser {
+  name: string;
+  login: () =&gt; Promise&lt;void&gt;;
+}
+
+function UserGreeting({ user }: { user: IUser }) {
+  return &lt;&gt;Hello, {user.name}&lt;/&gt;;
+}
+
+function App() {
+  return &lt;UserGreeting user={{ name: "Vitalii", login: () =&gt; Promise.resolve() }} /&gt;;
+}
+    </code></pre>
+  </section>
+
+  <section>
+    Головна ідея - спрощення використання коду, оскільки споживач "бачить" лише то, що йому
+    необхідно. Це також призводить до спрощення тестування, оскільки нам потрібно підміняти лише
+    частину реалізації.
+  </section>
+
+  <section>
+    Для JS/React цей принцип перетворюється на "не вимагай того, що не використовуєш"
+  </section>
+
+  <section>
+    <pre><code class="language-tsx" data-line-numbers>// ✅ Use this 
+function UserGreeting({ userName }: { userName: string }) {
+  return &lt;&gt;Hello, {userName}&lt;/&gt;;
+}
+
+// ⛔ Not this
+function UserGreeting({ user }: { user: User }) {
+  return &lt;&gt;Hello, {user.userName}&lt;/&gt;;
+}</code></pre>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Принцип інверсії залежностей</h2>
+  </section>
+
+  <section>
+    Залежності всередині системи будуються на основі абстракцій, що не повинні залежати від деталей;
+    навпаки, деталі мають залежати від абстракцій.
+  </section>
+
+  <section>
+    Тобто, код не має покаладатися на конкретну реалізацію, а лише на інтерфейс або тип.
+  </section>
+
+  <section><img src="./dip.png" alt="" /></section>
+
+  <section>
+    <pre><code class="language-tsx" data-line-numbers>class UserApi {
+  getUser(id) {
+    return fetch(`https://.../user/${id}`);
+  }
+}</code></pre>
+  </section>
+
+  <section>
+    <pre><code class="language-tsx" data-line-numbers>export function User() {
+  const [user, setUser] = useState&lt;User | null&gt;();
+
+  useEffect(() =&gt; {
+    fetch('https://jsonplaceholder.com/users/1')
+      .then((response) =&gt; response.json())
+      .then(setUser);
+  }, []);
+
+  if (!user) {
+    return &lt;div&gt;Loading...&lt;/div&gt;;
+  }
+
+  return &lt;p&gt;Hello, {user.fullName}&lt;/p&gt;;
+}
+    </code></pre>
+  </section>
+
+  <section>
+    Якщо ви використовуєте JS, достатньо не хардкодити конкретну реалізацію, а отримувати її ззовні.
+  </section>
+</section>
+
+<section>
+  <section>
+    <img src="./owl.png" alt="" />
+  </section>
+
+  <section>
+    Головна складність SOLID загалом - не завчити визнчення принципів, а зрозуміти для чого вони
+    існують і яку проблему вирішують
+  </section>
+
+  <section>
+    А головна скоадність цієї лекції в тому, що ми намагаємося натягнути принципи OOP на
+    фуннкціональну парадигму, яка панує в React
+  </section>
+</section>
