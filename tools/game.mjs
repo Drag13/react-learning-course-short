@@ -12,7 +12,7 @@ const mapToUser = (input) => {
     separator: ';',
     filter: ({ name }) => !!name,
   });
-  const masked = data.map((x) => ({ ...x, name: smartMask(7, x.name) }));
+  const masked = data.map((x) => ({ ...x, name: smartMask(3, x.name) }));
   const list = splitBySum(50, 'sum', masked);
   save('res.txt', list);
 })();

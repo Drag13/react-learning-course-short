@@ -34,19 +34,33 @@ export function loadCSV(fileName, mapper, { separator = ',', filter } = {}) {
   return resultPromise;
 }
 
+/**
+ *
+ * @param {number} maxSymbols
+ * @param {string} input
+ * @returns {string}
+ */
 export function maskString(maxSymbols, input) {
-  return `${input.slice(0, maxSymbols)}****`;
+  const { length } = input;
+  return maxSymbols > length
+    ? `${input.slice(0, length)}****`
+    : `${input.slice(0, maxSymbols)}****`;
 }
 
 /**
  *
  * @param {number} maxSymbols
- * @param {number} input
+ * @param {string} input
+ * @param {number} boundary
  */
-export function smartMask(maxSymbols, input, boundary = 1) {
-  const { length } = input;
-  const max = maxSymbols > length - boundary ? length - boundary - 1 : maxSymbols;
-  return maskString(max, input);
+export function smartMask(maxSymbols, input) {
+  const fio = input.split(/\s+/);
+  const hasNameAndSecondName = fio.length > 1;
+  if (hasNameAndSecondName) {
+    return `${fio[0]} ${maskString(maxSymbols, fio[1])}`;
+  }
+
+  return maskString(maxSymbols, fio[0]);
 }
 
 export function splitBySum(sum = 50, fieldName = 'sum', arr) {
