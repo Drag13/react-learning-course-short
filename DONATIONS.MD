@@ -2,6 +2,19 @@
 
 | Type | Amount | Target                             |
 | ---- | ------ | ---------------------------------- |
+| +    | 30000  | Platoon internal activities, thanks to M. | 
+| -    | 10708  | Training kit    |
+| -    | 2864   | Aluminum brick  |  
+| -    | 4652   | Electronics | 
+| -    | 1925   | Plastic | 
+| -    | 3671   | Fuel |
+| -    | 3401   | Electronics | 
+| -    | 388    | Electronics |
+| -    | 1220   | Metal fuel can |
+| -    | 272    | Electronics | 
+| -    | 5272   | Training simulator software | 
+| -    | 3961.8 | Fuel | 
+| +    | 20000 | Platoon internal activities, thanks to M. | 
 | -    | 279  | [Happy Meal for Orphans (2x)](https://t.me/toisamyibabich/845) | 
 | +    | 210   | Own Budget
 | -    | 14070 | Medcines | 
